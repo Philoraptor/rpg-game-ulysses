@@ -59,8 +59,17 @@ async function convertAllRsc() {
         height: bmpData.height
       });
 
-      // Copy pixel data
-      png.data = Buffer.from(bmpData.data);
+      // Convert BGR to RGB (BMP stores pixels as BGR, PNG expects RGB)
+      const pixelData = Buffer.from(bmpData.data);
+      for (let i = 0; i < pixelData.length; i += 4) {
+        // Swap red and blue channels
+        const temp = pixelData[i];     // Save blue
+        pixelData[i] = pixelData[i + 2];     // Blue = Red
+        pixelData[i + 2] = temp;             // Red = Blue
+        // Green (i+1) and Alpha (i+3) stay the same
+      }
+
+      png.data = pixelData;
 
       // Write PNG to file
       await new Promise((resolve, reject) => {
