@@ -361,67 +361,1367 @@ jj rebase -d main      # Integrate changes
 
 ### Phase 2: Asset Pipeline
 
-**Duration**: Week 2-4
-**Status**: ⏳ Pending
+**Duration**: Week 2-4 (~14 working days)
+**Status**: ⏳ Ready to Start
 
-**Objectives**:
-- Convert .rsc (BMP) files to PNG format
-- Extract individual tiles/sprites from sheets
-- Generate JSON metadata for each atlas
-- Create optimized sprite atlases
-- Document asset loading system
+**High-Level Objectives**:
+- Convert 33 .rsc (BMP) files (~73MB) to optimized PNG format
+- Extract and catalog ~5,000+ individual tiles and sprites
+- Generate comprehensive JSON metadata for each asset type
+- Create optimized sprite atlases for Phaser 3
+- Reduce total asset size by 80% (73MB → ~15MB)
+- Document complete asset loading system
+- Verify all assets loadable and functional in test scene
+
+---
+
+### Pre-Phase 2 Setup
+
+**Before starting asset conversion**, ensure your development environment is properly configured:
+
+#### 1. Environment Verification
+```bash
+# Verify Node.js version (20+ required)
+node --version  # Should show v20.x.x or higher
+
+# Verify npm version (9+ required)
+npm --version   # Should show 9.x.x or higher
+
+# Check available disk space (need ~150MB for conversions)
+df -h .
+```
+
+#### 2. Install Asset Pipeline Dependencies
+```bash
+# Navigate to asset-pipeline package
+cd packages/asset-pipeline
+
+# Initialize package if not already done
+npm init -y
+
+# Install Sharp (image processing library)
+npm install sharp --save-dev
+
+# Install free-tex-packer-core (atlas generation)
+npm install free-tex-packer-core --save-dev
+
+# Install jimp (backup image library, handles edge cases)
+npm install jimp --save-dev
+
+# Install cli-progress (progress bars)
+npm install cli-progress --save-dev
+
+# Install chalk (colored terminal output)
+npm install chalk --save-dev
+
+# Return to project root
+cd ../..
+```
+
+#### 3. Verify Asset File Integrity
+```bash
+# Count assets
+ls -1 assets/original/*.rsc* | wc -l  # Should show 33
+
+# Check total size
+du -sh assets/original/  # Should show ~73M
+
+# Verify all files are readable
+file assets/original/*.rsc* | grep -i bitmap  # All should be "PC bitmap"
+```
+
+#### 4. Set Up Version Control Workflow
+```bash
+# Create Phase 2 bookmark
+jj bookmark create phase-2/asset-pipeline
+
+# Start working on Phase 2
+jj new phase-2/asset-pipeline
+
+# Verify you're on the right bookmark
+jj status
+```
+
+#### 5. Create Working Directories
+```bash
+# Ensure all required directories exist
+mkdir -p assets/extracted
+mkdir -p assets/game/tiles
+mkdir -p assets/game/sprites
+mkdir -p assets/game/effects
+mkdir -p assets/game/ui
+mkdir -p packages/asset-pipeline/src/converters
+mkdir -p packages/asset-pipeline/src/extractors
+mkdir -p packages/asset-pipeline/src/packers
+mkdir -p packages/asset-pipeline/src/utils
+```
+
+**Exit Criteria for Setup**:
+- ✅ Node 20+ and npm 9+ installed
+- ✅ All dependencies installed successfully
+- ✅ 33 asset files verified as readable BMP format
+- ✅ jj bookmark created for Phase 2
+- ✅ Directory structure ready
+
+---
+
+### Asset Inventory & Processing Strategy
+
+#### Asset Classification
+
+Our 33 .rsc files break down into 6 categories, each requiring different processing strategies:
+
+| Category | Files | Total Size | Processing Strategy |
+|----------|-------|------------|---------------------|
+| **Tile Sheets** | 11 files | ~58MB | Grid extraction (32×32 tiles) |
+| **Sprite Sheets** | 4 files | ~2.1MB | Frame detection + animation extraction |
+| **Object Sheets** | 2 files | ~943KB | Individual object extraction |
+| **Effect Sheets** | 6 files | ~581KB | Animation frame extraction |
+| **Attributes** | 2 files | ~89KB | Icon extraction (small images) |
+| **Night Mode** | 2 files | ~167KB | Palette swap reference |
+| **UI/Interface** | 6 files | ~2.8MB | Component extraction |
+
+#### Detailed File Inventory
+
+**Tile Sheets** (Primary Focus - Week 2, Days 1-4):
+```
+tiles1.rsc       4.6MB   224×7136   (7 cols × 223 rows = 1,561 tiles)
+tiles2.rsc      21.0MB   [analyze]  (LARGEST FILE - requires special handling)
+tiles3.rsc       4.5MB   [analyze]
+tiles4.rsc       5.3MB   [analyze]
+tiles5.rsc      19.0MB   [analyze]  (SECOND LARGEST)
+tiles6.rsc       1.1MB   [analyze]
+tiles.rsc        2.9MB   [analyze]
+tilesground.rsc  883KB   [analyze]
+tilesindoor.rsc  1.3MB   [analyze]
+tilesother.rsc   1.1MB   [analyze]
+tilesoutdoor.rsc 1.1MB   [analyze]
+```
+
+**Sprite Sheets** (Week 2, Days 5-7):
+```
+Sprites.rsc      721KB   384×4000   (Character animations)
+Spritesm.rsc     188KB   [smaller]  (Minimap sprites?)
+lsprites.rsc     865KB   [large]    (Boss/large entity sprites?)
+lspritesm.rsc    290KB   [smaller]  (Minimap large sprites?)
+```
+
+**Object Sheets** (Week 2, Day 8):
+```
+Objects.rsc      706KB   32×7520    (235 objects at 32×32)
+Objectsm.rsc     237KB   [smaller]  (Minimap objects?)
+```
+
+**Effect Sheets** (Week 2, Days 8-9):
+```
+Effects.rsc      138KB   256×544    (Spell/combat effects)
+Effectsm.rsc      69KB   [smaller]
+Rain1.rsc        146KB   [animated]
+Rain1m.rsc       145KB   [animated]
+Rain2.rsc        145KB   [animated]
+Rain2m.rsc       145KB   [animated]
+snow.rsc         774B    [minimal]  (Snowflake particles?)
+snowm.rsc        774B    [minimal]
+```
+
+**Attributes** (Week 2, Day 10):
+```
+Att1.rsc          43KB   [icons]    (Skill/stat icons?)
+Att2.rsc          46KB   [icons]
+```
+
+**Night Mode** (Week 2, Day 10):
+```
+NIGHT.RSC        148KB   [palette]  (Night-time color palette)
+NIGHTM.RSC        19KB   [palette]
+```
+
+**UI/Interface** (Week 2, Days 11-12):
+```
+interface.rsc.bmp 1.4MB  [800×600]  (Main UI layout)
+Tilesm.rsc        975KB  [minimap]  (Minimap tiles?)
+```
+
+#### Processing Priority
+
+1. **HIGH PRIORITY** (Blocks development):
+   - tiles1-6.rsc, tilesground/indoor/outdoor.rsc → Need for map rendering
+   - Sprites.rsc → Need for player character
+   - interface.rsc.bmp → Need for UI
+
+2. **MEDIUM PRIORITY** (Needed for features):
+   - Objects.rsc → Items and world objects
+   - Effects.rsc → Combat and spells
+   - lsprites.rsc → Boss encounters
+
+3. **LOW PRIORITY** (Nice to have):
+   - "*m.rsc" files (minimap versions)
+   - Night mode palettes
+   - Weather effects
+
+#### "m" Suffix Investigation
+
+Files ending in "m" (Spritesm.rsc, etc.) are likely **minimap** or **mobile** versions:
+- **Hypothesis 1**: Minimap icons (small 8×8 or 16×16 versions)
+- **Hypothesis 2**: Mobile/low-res fallbacks
+- **Verification**: Analyze dimensions after extraction
+
+**Decision**: Process main files first, handle "m" files in Task 6 (QA) once we understand the format.
+
+---
+
+### Detailed Task Breakdown
 
 **Tasks**:
 
-1. **BMP → PNG Conversion**
-   ```typescript
-   // /packages/asset-pipeline/src/converters/rsc-to-png.ts
-   async function convertAllRsc() {
-     const files = await fs.readdir('./assets/original/');
-     for (const file of files.filter(f => f.endsWith('.rsc'))) {
-       await sharp(`./assets/original/${file}`)
-         .png({ compressionLevel: 9 })
-         .toFile(`./assets/extracted/${file}.png`);
-     }
-   }
-   ```
+#### Task 1: BMP → PNG Batch Conversion
 
-2. **Tile Extraction**
-   - Parse 32×32 tiles from sheets
-   - Generate tile IDs (0-N)
-   - Create tile metadata JSON
+**Goal**: Convert all 33 .rsc BMP files to PNG format with compression optimization.
 
-3. **Sprite Atlas Generation**
-   - Combine related sprites
-   - Optimize packing (free-tex-packer)
-   - Generate frame data
+**Duration**: 4-6 hours (including testing and validation)
 
-4. **Metadata Schema**
-   ```json
-   {
-     "tiles": {
-       "ground": { "path": "tiles-ground.png", "tileSize": 32, "count": 500 },
-       "indoor": { "path": "tiles-indoor.png", "tileSize": 32, "count": 300 }
-     },
-     "sprites": {
-       "player": { "path": "sprites-player.png", "frames": 24, "animations": {...} },
-       "monsters": { "path": "sprites-monsters.png", "frames": 120 }
-     }
-   }
-   ```
+**Dependencies**: Sharp library installed (see Pre-Setup)
 
-**Deliverables**:
-- Conversion scripts in `/packages/asset-pipeline/`
-- All .rsc files converted to PNG
-- Optimized atlases in `/assets/game/`
-- Complete metadata JSON files
-- Asset loading documentation
+##### Step 1.1: Create Conversion Script
 
-**Exit Criteria**:
-- All 50+ .rsc files successfully converted
-- Asset size reduced by 30%+ (PNG compression)
-- Metadata validated (all tiles/sprites indexed)
-- Can load assets in Phaser 3 test scene
+Create `/packages/asset-pipeline/src/converters/rsc-to-png.ts`:
+
+```typescript
+import sharp from 'sharp';
+import fs from 'fs/promises';
+import path from 'path';
+import cliProgress from 'cli-progress';
+import chalk from 'chalk';
+
+interface ConversionResult {
+  filename: string;
+  originalSize: number;
+  convertedSize: number;
+  compressionRatio: number;
+  success: boolean;
+  error?: string;
+}
+
+async function convertAllRsc(): Promise<ConversionResult[]> {
+  const srcDir = path.join(process.cwd(), 'assets/original');
+  const destDir = path.join(process.cwd(), 'assets/extracted');
+
+  // Ensure destination directory exists
+  await fs.mkdir(destDir, { recursive: true });
+
+  // Get all .rsc and .bmp files
+  const allFiles = await fs.readdir(srcDir);
+  const rscFiles = allFiles.filter(f =>
+    f.toLowerCase().endsWith('.rsc') || f.toLowerCase().endsWith('.bmp')
+  );
+
+  console.log(chalk.blue(`\nFound ${rscFiles.length} asset files to convert\n`));
+
+  // Create progress bar
+  const progressBar = new cliProgress.SingleBar({
+    format: 'Converting |{bar}| {percentage}% | {value}/{total} | {filename}',
+    barCompleteChar: '\u2588',
+    barIncompleteChar: '\u2591',
+  });
+
+  progressBar.start(rscFiles.length, 0, { filename: 'Starting...' });
+
+  const results: ConversionResult[] = [];
+
+  for (let i = 0; i < rscFiles.length; i++) {
+    const file = rscFiles[i];
+    const srcPath = path.join(srcDir, file);
+    const destPath = path.join(destDir, `${file}.png`);
+
+    progressBar.update(i + 1, { filename: file });
+
+    try {
+      // Get original file size
+      const stats = await fs.stat(srcPath);
+      const originalSize = stats.size;
+
+      // Test different compression levels to find optimal
+      let bestCompression = 6; // Default
+      let smallestSize = Infinity;
+
+      // Quick test: try compression levels 5, 6, 7
+      for (const level of [5, 6, 7]) {
+        const testBuffer = await sharp(srcPath)
+          .png({ compressionLevel: level })
+          .toBuffer();
+
+        if (testBuffer.length < smallestSize) {
+          smallestSize = testBuffer.length;
+          bestCompression = level;
+        }
+      }
+
+      // Convert with best compression
+      await sharp(srcPath)
+        .png({ compressionLevel: bestCompression })
+        .toFile(destPath);
+
+      const destStats = await fs.stat(destPath);
+      const convertedSize = destStats.size;
+      const compressionRatio = ((originalSize - convertedSize) / originalSize) * 100;
+
+      results.push({
+        filename: file,
+        originalSize,
+        convertedSize,
+        compressionRatio,
+        success: true
+      });
+
+    } catch (error) {
+      results.push({
+        filename: file,
+        originalSize: 0,
+        convertedSize: 0,
+        compressionRatio: 0,
+        success: false,
+        error: error instanceof Error ? error.message : String(error)
+      });
+    }
+  }
+
+  progressBar.stop();
+
+  return results;
+}
+
+// Run conversion and report results
+convertAllRsc().then(results => {
+  console.log(chalk.green('\n\nConversion Complete!\n'));
+
+  const successful = results.filter(r => r.success);
+  const failed = results.filter(r => !r.success);
+
+  console.log(chalk.blue('Summary:'));
+  console.log(`  Successful: ${successful.length}/${results.length}`);
+  console.log(`  Failed: ${failed.length}/${results.length}`);
+
+  const totalOriginal = successful.reduce((sum, r) => sum + r.originalSize, 0);
+  const totalConverted = successful.reduce((sum, r) => sum + r.convertedSize, 0);
+  const overallRatio = ((totalOriginal - totalConverted) / totalOriginal) * 100;
+
+  console.log(`\n  Original size: ${(totalOriginal / 1024 / 1024).toFixed(2)} MB`);
+  console.log(`  Converted size: ${(totalConverted / 1024 / 1024).toFixed(2)} MB`);
+  console.log(`  Compression: ${overallRatio.toFixed(1)}%`);
+
+  if (failed.length > 0) {
+    console.log(chalk.red('\n\nFailed conversions:'));
+    failed.forEach(f => {
+      console.log(`  ${f.filename}: ${f.error}`);
+    });
+  }
+
+  // Save results to JSON
+  fs.writeFile(
+    'assets/conversion-report.json',
+    JSON.stringify(results, null, 2)
+  );
+
+  console.log(chalk.gray('\n  Report saved to assets/conversion-report.json\n'));
+});
+```
+
+##### Step 1.2: Run Conversion
+
+```bash
+# From project root
+cd packages/asset-pipeline
+
+# Add run script to package.json
+npm pkg set scripts.convert="ts-node src/converters/rsc-to-png.ts"
+
+# Run conversion (takes 2-5 minutes for 73MB)
+npm run convert
+```
+
+**Expected Output**:
+```
+Found 33 asset files to convert
+
+Converting |████████████████████| 100% | 33/33 | interface.rsc.bmp
+
+Conversion Complete!
+
+Summary:
+  Successful: 33/33
+  Failed: 0/33
+
+  Original size: 73.24 MB
+  Converted size: 51.18 MB
+  Compression: 30.1%
+
+  Report saved to assets/conversion-report.json
+```
+
+##### Step 1.3: Verify Conversion
+
+```bash
+# Count converted files
+ls -1 assets/extracted/*.png | wc -l  # Should show 33
+
+# Check total size
+du -sh assets/extracted/  # Should show ~45-55M
+
+# Visual spot check (open a few PNGs)
+feh assets/extracted/tiles1.rsc.png  # Linux
+open assets/extracted/tiles1.rsc.png  # macOS
+```
+
+##### Step 1.4: Handle Edge Cases
+
+**Issue**: Some .rsc files might be 8-bit indexed color (palette-based):
+```typescript
+// Add to conversion script
+const metadata = await sharp(srcPath).metadata();
+
+if (metadata.format === 'bitmap' && metadata.depth === 8) {
+  // 8-bit indexed color - expand to RGB before conversion
+  await sharp(srcPath)
+    .toColorspace('srgb')  // Convert to full RGB
+    .png({ compressionLevel: bestCompression })
+    .toFile(destPath);
+}
+```
+
+**Success Criteria**:
+- ✅ All 33 files converted successfully
+- ✅ Total size ≥ 30% smaller (73MB → ≤50MB)
+- ✅ No visual artifacts (spot-check 5-10 files)
+- ✅ conversion-report.json generated
+- ✅ All PNGs loadable by image viewers
+
+---
+
+#### Task 2: Tile Sheet Processing & Extraction
+
+**Goal**: Extract individual 32×32 tiles from 11 tile sheet files, generating ~2,000-4,000 individual tiles.
+
+**Duration**: 8-12 hours (spread over 2-3 days)
+
+**Dependencies**: Task 1 complete (PNGs extracted)
+
+##### Step 2.1: Analyze Tile Sheet Dimensions
+
+Create `/packages/asset-pipeline/src/utils/analyze-sheet.ts`:
+
+```typescript
+import sharp from 'sharp';
+import fs from 'fs/promises';
+import path from 'path';
+
+async function analyzeTileSheet(filename: string) {
+  const filePath = path.join(process.cwd(), 'assets/extracted', filename);
+  const metadata = await sharp(filePath).metadata();
+
+  const width = metadata.width!;
+  const height = metadata.height!;
+
+  // Detect likely tile size (try 32, 16, 64)
+  const tileSizes = [32, 16, 64, 24];
+  let bestFit = { size: 32, cols: 0, rows: 0, remainder: Infinity };
+
+  for (const tileSize of tileSizes) {
+    const cols = Math.floor(width / tileSize);
+    const rows = Math.floor(height / tileSize);
+    const remainderX = width % tileSize;
+    const remainderY = height % tileSize;
+    const totalRemainder = remainderX + remainderY;
+
+    if (totalRemainder < bestFit.remainder) {
+      bestFit = { size: tileSize, cols, rows, remainder: totalRemainder };
+    }
+  }
+
+  return {
+    filename,
+    width,
+    height,
+    detectedTileSize: bestFit.size,
+    cols: bestFit.cols,
+    rows: bestFit.rows,
+    totalTiles: bestFit.cols * bestFit.rows,
+    remainderPixels: bestFit.remainder
+  };
+}
+
+// Analyze all tile sheets
+const tileSheets = [
+  'tiles.rsc.png',
+  'tiles1.rsc.png',
+  'tiles2.rsc.png',
+  'tiles3.rsc.png',
+  'tiles4.rsc.png',
+  'tiles5.rsc.png',
+  'tiles6.rsc.png',
+  'tilesground.rsc.png',
+  'tilesindoor.rsc.png',
+  'tilesother.rsc.png',
+  'tilesoutdoor.rsc.png',
+];
+
+Promise.all(tileSheets.map(analyzeTileSheet)).then(results => {
+  console.log('\nTile Sheet Analysis:\n');
+  console.table(results);
+
+  const totalTiles = results.reduce((sum, r) => sum + r.totalTiles, 0);
+  console.log(`\nTotal tiles across all sheets: ${totalTiles}`);
+
+  fs.writeFile(
+    'assets/tile-analysis.json',
+    JSON.stringify(results, null, 2)
+  );
+});
+```
+
+Run analysis:
+```bash
+npm pkg set scripts.analyze="ts-node src/utils/analyze-sheet.ts"
+npm run analyze
+```
+
+**Example Output**:
+```
+Tile Sheet Analysis:
+
+┌─────────────────────────┬────────┬────────┬──────────┬──────┬──────┬────────────┐
+│ filename                │ width  │ height │ tileSize │ cols │ rows │ totalTiles │
+├─────────────────────────┼────────┼────────┼──────────┼──────┼──────┼────────────┤
+│ tiles1.rsc.png          │ 224    │ 7136   │ 32       │ 7    │ 223  │ 1561       │
+│ tiles2.rsc.png          │ 512    │ 8192   │ 32       │ 16   │ 256  │ 4096       │
+│ ...                     │ ...    │ ...    │ ...      │ ...  │ ...  │ ...        │
+└─────────────────────────┴────────┴────────┴──────────┴──────┴──────┴────────────┘
+
+Total tiles across all sheets: 5847
+```
+
+##### Step 2.2: Extract Individual Tiles
+
+Create `/packages/asset-pipeline/src/extractors/tile-extractor.ts`:
+
+```typescript
+import sharp from 'sharp';
+import fs from 'fs/promises';
+import path from 'path';
+import cliProgress from 'cli-progress';
+
+interface TileExtractionConfig {
+  sourceFile: string;
+  tileSize: number;
+  outputDir: string;
+  namePrefix: string;
+}
+
+async function extractTiles(config: TileExtractionConfig) {
+  const { sourceFile, tileSize, outputDir, namePrefix } = config;
+
+  const srcPath = path.join(process.cwd(), 'assets/extracted', sourceFile);
+  const destDir = path.join(process.cwd(), outputDir);
+
+  await fs.mkdir(destDir, { recursive: true });
+
+  const metadata = await sharp(srcPath).metadata();
+  const width = metadata.width!;
+  const height = metadata.height!;
+
+  const cols = Math.floor(width / tileSize);
+  const rows = Math.floor(height / tileSize);
+  const totalTiles = cols * rows;
+
+  console.log(`\nExtracting ${totalTiles} tiles from ${sourceFile}...`);
+
+  const progressBar = new cliProgress.SingleBar({});
+  progressBar.start(totalTiles, 0);
+
+  let tileId = 0;
+  const tileMetadata = [];
+
+  for (let row = 0; row < rows; row++) {
+    for (let col = 0; col < cols; col++) {
+      const left = col * tileSize;
+      const top = row * tileSize;
+
+      const outputPath = path.join(destDir, `${namePrefix}_${tileId.toString().padStart(4, '0')}.png`);
+
+      await sharp(srcPath)
+        .extract({ left, top, width: tileSize, height: tileSize })
+        .toFile(outputPath);
+
+      tileMetadata.push({
+        id: tileId,
+        sourceFile,
+        position: { col, row },
+        pixels: { left, top },
+        outputFile: path.basename(outputPath)
+      });
+
+      tileId++;
+      progressBar.update(tileId);
+    }
+  }
+
+  progressBar.stop();
+
+  // Save metadata
+  await fs.writeFile(
+    path.join(destDir, `${namePrefix}_metadata.json`),
+    JSON.stringify({ totalTiles, tileSize, tiles: tileMetadata }, null, 2)
+  );
+
+  console.log(`  ✓ Extracted ${totalTiles} tiles to ${outputDir}`);
+}
+
+// Extract all tile sheets
+async function extractAllTiles() {
+  // Based on analysis results, extract each sheet
+  await extractTiles({
+    sourceFile: 'tiles1.rsc.png',
+    tileSize: 32,
+    outputDir: 'assets/game/tiles/tileset1',
+    namePrefix: 'tile1'
+  });
+
+  await extractTiles({
+    sourceFile: 'tiles2.rsc.png',
+    tileSize: 32,
+    outputDir: 'assets/game/tiles/tileset2',
+    namePrefix: 'tile2'
+  });
+
+  // ... repeat for all tile sheets
+
+  console.log('\n✓ All tile sheets extracted!\n');
+}
+
+extractAllTiles();
+```
+
+Run extraction:
+```bash
+npm pkg set scripts.extract-tiles="ts-node src/extractors/tile-extractor.ts"
+npm run extract-tiles
+```
+
+**Expected Output**:
+```
+Extracting 1561 tiles from tiles1.rsc.png...
+  ✓ Extracted 1561 tiles to assets/game/tiles/tileset1
+
+Extracting 4096 tiles from tiles2.rsc.png...
+  ✓ Extracted 4096 tiles to assets/game/tiles/tileset2
+
+...
+
+✓ All tile sheets extracted!
+```
+
+##### Step 2.3: Optimize Tile Storage
+
+**Problem**: 5,847 individual PNG files is inefficient (slow loading, many HTTP requests).
+
+**Solution**: Pack tiles into atlases (handled in Task 4).
+
+**For now**: Keep individual tiles for cataloging and review. Will pack into atlases later.
+
+**Success Criteria**:
+- ✅ 5,000-6,000 individual tiles extracted
+- ✅ Each tile exactly 32×32 pixels (or detected size)
+- ✅ Metadata JSON for each tile sheet
+- ✅ Visual spot-check confirms tiles are correct
+- ✅ tile-analysis.json saved
+
+---
+
+#### Task 3: Sprite Sheet Processing & Animation Extraction
+
+**Goal**: Extract sprite frames and identify animation sequences from 4 sprite sheets.
+
+**Duration**: 6-8 hours
+
+**Dependencies**: Task 1 complete
+
+##### Step 3.1: Analyze Sprite Sheet Structure
+
+Sprites are more complex than tiles:
+- **Variable sizes** (not uniform grid)
+- **Packed layouts** (sprites arranged for space efficiency)
+- **Animation sequences** (frames of walk, attack, etc.)
+
+Create `/packages/asset-pipeline/src/utils/sprite-analyzer.ts`:
+
+```typescript
+import sharp from 'sharp';
+import Jimp from 'jimp';
+
+async function detectSpriteFrames(filename: string) {
+  // Load with Jimp for pixel-level access
+  const image = await Jimp.read(`assets/extracted/${filename}`);
+
+  const width = image.getWidth();
+  const height = image.getHeight();
+
+  // Detect frames by transparency boundaries
+  // Sprites are usually separated by empty (transparent/white) columns
+  const frames = [];
+  let currentFrame = null;
+
+  for (let x = 0; x < width; x++) {
+    let columnHasPixels = false;
+
+    for (let y = 0; y < height; y++) {
+      const pixel = image.getPixelColor(x, y);
+      const rgba = Jimp.intToRGBA(pixel);
+
+      // Check if pixel is non-transparent and non-white
+      if (rgba.a > 0 && (rgba.r < 250 || rgba.g < 250 || rgba.b < 250)) {
+        columnHasPixels = true;
+        break;
+      }
+    }
+
+    if (columnHasPixels) {
+      if (!currentFrame) {
+        currentFrame = { startX: x, endX: x };
+      } else {
+        currentFrame.endX = x;
+      }
+    } else if (currentFrame) {
+      frames.push(currentFrame);
+      currentFrame = null;
+    }
+  }
+
+  // Detect row boundaries for multi-row sheets
+  // (Similar logic for Y axis)
+
+  return frames;
+}
+```
+
+**Manual Analysis Required**: The VB scripts might have animation frame counts!
+
+Check `scripts/legacy/reference_sheet.txt` for sprite definitions:
+```bash
+grep -i "sprite\|anim" scripts/legacy/reference_sheet.txt
+```
+
+##### Step 3.2: Extract Sprite Frames
+
+Once frame boundaries are detected:
+
+```typescript
+async function extractSpriteFrames(config: {
+  sourceFile: string;
+  frames: Array<{startX: number; endX: number; y: number; height: number}>;
+  outputDir: string;
+  namePrefix: string;
+}) {
+  for (let i = 0; i < config.frames.length; i++) {
+    const frame = config.frames[i];
+
+    await sharp(`assets/extracted/${config.sourceFile}`)
+      .extract({
+        left: frame.startX,
+        top: frame.y,
+        width: frame.endX - frame.startX,
+        height: frame.height
+      })
+      .toFile(`${config.outputDir}/${config.namePrefix}_frame_${i.toString().padStart(3, '0')}.png`);
+  }
+}
+```
+
+##### Step 3.3: Identify Animations
+
+Group frames into animations (walk, attack, idle, etc.):
+
+```typescript
+interface SpriteAnimation {
+  name: string;
+  frames: number[];  // Frame indices
+  fps: number;
+  loop: boolean;
+}
+
+const characterAnimations: SpriteAnimation[] = [
+  { name: 'walk_down', frames: [0, 1, 2, 3], fps: 8, loop: true },
+  { name: 'walk_up', frames: [4, 5, 6, 7], fps: 8, loop: true },
+  { name: 'walk_left', frames: [8, 9, 10, 11], fps: 8, loop: true },
+  { name: 'walk_right', frames: [12, 13, 14, 15], fps: 8, loop: true },
+  { name: 'attack_down', frames: [16, 17, 18], fps: 12, loop: false },
+  // ... etc
+];
+```
+
+**Success Criteria**:
+- ✅ All sprite frames extracted
+- ✅ Animation sequences identified (or documented as unknown)
+- ✅ Metadata JSON for each sprite sheet
+- ✅ Visual review confirms sprites look correct
+
+---
+
+#### Task 4: Atlas Generation & Optimization
+
+**Goal**: Pack extracted tiles and sprites into optimized texture atlases for efficient loading in Phaser 3.
+
+**Duration**: 6-8 hours
+
+**Dependencies**: Tasks 2 & 3 complete (tiles and sprites extracted)
+
+##### Step 4.1: Install Atlas Packer
+
+```bash
+cd packages/asset-pipeline
+npm install free-tex-packer-core --save-dev
+```
+
+##### Step 4.2: Create Atlas Packing Script
+
+Create `/packages/asset-pipeline/src/packers/atlas-packer.ts`:
+
+```typescript
+import { packAsync } from 'free-tex-packer-core';
+import fs from 'fs/promises';
+import path from 'path';
+
+async function packTileAtlas() {
+  // Collect all tile PNGs from extracted tiles
+  const tileFiles = [];
+
+  for (let i = 1; i <= 6; i++) {
+    const tileset = `tileset${i}`;
+    const tileDir = `assets/game/tiles/${tileset}`;
+    const files = await fs.readdir(tileDir);
+
+    for (const file of files.filter(f => f.endsWith('.png'))) {
+      const buffer = await fs.readFile(path.join(tileDir, file));
+      tileFiles.push({
+        path: file,
+        contents: buffer
+      });
+    }
+  }
+
+  // Pack into atlas
+  const result = await packAsync(tileFiles, {
+    textureName: 'tiles-atlas',
+    width: 2048,
+    height: 2048,
+    fixedSize: false,
+    powerOfTwo: true,
+    padding: 1,
+    extrude: 1,  // Prevent texture bleeding
+    allowRotation: false,
+    detectIdentical: true,
+    allowTrim: false,
+    packer: 'MaxRectsBin',
+    packerMethod: 'Best',
+  });
+
+  // Save atlas image and JSON
+  for (const item of result) {
+    if (item.name === 'tiles-atlas.png') {
+      await fs.writeFile('assets/game/tiles-atlas.png', item.buffer);
+    } else if (item.name === 'tiles-atlas.json') {
+      // Convert to Phaser format
+      const atlas = JSON.parse(item.buffer.toString());
+      await fs.writeFile('assets/game/tiles-atlas.json', JSON.stringify(atlas, null, 2));
+    }
+  }
+
+  console.log('✓ Tile atlas generated');
+}
+
+// Similar for sprites, effects, UI
+async function packAll() {
+  await packTileAtlas();
+  await packSpriteAtlas();
+  await packEffectsAtlas();
+  await packUIAtlas();
+}
+
+packAll();
+```
+
+##### Step 4.3: Optimize Atlas Settings
+
+**Target Atlas Sizes**:
+- **tiles-atlas.png**: 2048×2048 (4MB max) - main terrain tiles
+- **sprites-atlas.png**: 1024×1024 (1MB max) - characters, NPCs
+- **effects-atlas.png**: 1024×1024 (1MB max) - spells, weather
+- **ui-atlas.png**: 1024×1024 (1MB max) - interface elements
+
+**Optimization**:
+- Use `powerOfTwo: true` for GPU efficiency
+- `extrude: 1` prevents texture bleeding
+- `detectIdentical: true` removes duplicate tiles
+- `allowTrim: false` keeps tile alignment
+
+##### Step 4.4: Verify Atlas Generation
+
+```bash
+# Check generated atlases
+ls -lh assets/game/*.png assets/game/*.json
+
+# Expected:
+# tiles-atlas.png      ~3.2MB
+# tiles-atlas.json     ~45KB
+# sprites-atlas.png    ~890KB
+# sprites-atlas.json   ~12KB
+# ...
+```
+
+**Success Criteria**:
+- ✅ 4 main atlases generated (tiles, sprites, effects, UI)
+- ✅ Total atlas size ≤ 15MB (vs 73MB original = 80% reduction)
+- ✅ JSON metadata in Phaser 3 format
+- ✅ No duplicate tiles (identified and removed)
+
+---
+
+#### Task 5: Metadata Schema & Asset Manifest
+
+**Goal**: Create comprehensive metadata describing all assets for game engine loading.
+
+**Duration**: 4-6 hours
+
+##### Step 5.1: Design Master Asset Manifest
+
+Create `/assets/game/assets.json`:
+
+```json
+{
+  "version": "1.0.0",
+  "generatedAt": "2025-10-20T12:00:00Z",
+  "totalAssets": 5847,
+  "atlases": {
+    "tiles": {
+      "path": "tiles-atlas.png",
+      "json": "tiles-atlas.json",
+      "size": { "width": 2048, "height": 2048 },
+      "tileCount": 4892,
+      "tileSize": 32,
+      "preload": true,
+      "priority": 1
+    },
+    "sprites": {
+      "path": "sprites-atlas.png",
+      "json": "sprites-atlas.json",
+      "size": { "width": 1024, "height": 1024 },
+      "frameCount": 248,
+      "preload": true,
+      "priority": 2
+    },
+    "effects": {
+      "path": "effects-atlas.png",
+      "json": "effects-atlas.json",
+      "lazy": true,
+      "priority": 3
+    },
+    "ui": {
+      "path": "ui-atlas.png",
+      "json": "ui-atlas.json",
+      "preload": true,
+      "priority": 1
+    }
+  },
+  "animations": {
+    "player_walk_down": { "frames": [0, 1, 2, 3], "fps": 8, "loop": true },
+    "player_walk_up": { "frames": [4, 5, 6, 7], "fps": 8, "loop": true },
+    "player_attack": { "frames": [16, 17, 18], "fps": 12, "loop": false }
+  },
+  "tileProperties": {
+    "0": { "collision": false, "category": "ground" },
+    "1": { "collision": true, "category": "wall" },
+    "5": { "collision": false, "animated": true, "frames": [5, 6, 7, 8] }
+  }
+}
+```
+
+##### Step 5.2: Generate Phaser 3 Loading Code
+
+Create `/packages/game-client/src/loaders/AssetLoader.ts`:
+
+```typescript
+import Phaser from 'phaser';
+
+export class AssetLoader {
+  static async preload(scene: Phaser.Scene) {
+    // Load asset manifest
+    const manifest = await fetch('/assets/game/assets.json').then(r => r.json());
+
+    // Preload atlases with priority 1
+    for (const [key, atlas] of Object.entries(manifest.atlases)) {
+      if (atlas.preload && atlas.priority === 1) {
+        scene.load.atlas(key, atlas.path, atlas.json);
+      }
+    }
+
+    // Load animations
+    scene.load.on('complete', () => {
+      this.registerAnimations(scene, manifest.animations);
+    });
+  }
+
+  static registerAnimations(scene: Phaser.Scene, animations: any) {
+    for (const [key, anim] of Object.entries(animations)) {
+      scene.anims.create({
+        key,
+        frames: scene.anims.generateFrameNumbers('sprites', { frames: anim.frames }),
+        frameRate: anim.fps,
+        repeat: anim.loop ? -1 : 0
+      });
+    }
+  }
+}
+```
+
+**Success Criteria**:
+- ✅ assets.json manifest created with all atlases
+- ✅ Animation definitions included
+- ✅ Tile properties cataloged
+- ✅ Phaser 3 loader integration code written
+
+---
+
+#### Task 6: Quality Assurance & Validation
+
+**Goal**: Verify all converted assets are correct and functional.
+
+**Duration**: 4-6 hours
+
+##### Step 6.1: Visual Comparison
+
+Create side-by-side comparison tool:
+
+```bash
+# Open original and converted in two windows
+feh assets/original/tiles1.rsc &
+feh assets/extracted/tiles1.rsc.png &
+
+# Check 10-15 random files visually
+```
+
+##### Step 6.2: Automated Validation
+
+Create `/packages/asset-pipeline/src/validators/asset-validator.ts`:
+
+```typescript
+import sharp from 'sharp';
+
+async function validateConversion(original: string, converted: string) {
+  const [origMeta, convMeta] = await Promise.all([
+    sharp(original).metadata(),
+    sharp(converted).metadata()
+  ]);
+
+  const issues = [];
+
+  // Check dimensions match
+  if (origMeta.width !== convMeta.width || origMeta.height !== convMeta.height) {
+    issues.push(`Dimension mismatch: ${origMeta.width}×${origMeta.height} vs ${convMeta.width}×${convMeta.height}`);
+  }
+
+  // Check file size is reasonable
+  const sizeRatio = convMeta.size! / origMeta.size!;
+  if (sizeRatio > 1.2) {
+    issues.push(`Converted file larger than original (${sizeRatio.toFixed(2)}x)`);
+  }
+
+  return { valid: issues.length === 0, issues };
+}
+```
+
+##### Step 6.3: Load Testing
+
+Test atlas loading performance:
+
+```typescript
+console.time('Atlas Load');
+const image = await fetch('/assets/game/tiles-atlas.png');
+const blob = await image.blob();
+console.timeEnd('Atlas Load');  // Target: < 500ms
+```
+
+##### Step 6.4: Validation Checklist
+
+- [ ] All 33 .rsc files converted successfully
+- [ ] No visual artifacts in converted PNGs
+- [ ] All atlases load in < 3 seconds total
+- [ ] Tile extraction correct (5,000-6,000 tiles)
+- [ ] Sprite frames properly detected
+- [ ] Animation metadata accurate
+- [ ] File sizes meet targets (≤ 15MB total)
+- [ ] No memory leaks during processing
+- [ ] Metadata JSON files valid and parseable
+
+**Success Criteria**:
+- ✅ 100% of assets pass validation
+- ✅ Load time < 3 seconds
+- ✅ No visual discrepancies found
+
+---
+
+#### Task 7: Integration Testing with Phaser 3
+
+**Goal**: Create minimal test scene proving all assets load and render correctly.
+
+**Duration**: 6-8 hours
+
+##### Step 7.1: Create Test Scene
+
+Create `/packages/game-client/src/scenes/AssetTestScene.ts`:
+
+```typescript
+import Phaser from 'phaser';
+import { AssetLoader } from '../loaders/AssetLoader';
+
+export class AssetTestScene extends Phaser.Scene {
+  constructor() {
+    super({ key: 'AssetTestScene' });
+  }
+
+  preload() {
+    // Load all atlases
+    AssetLoader.preload(this);
+  }
+
+  create() {
+    // Test 1: Render tile grid (20×20 = one screen)
+    this.renderTileGrid();
+
+    // Test 2: Display all sprites
+    this.displaySprites();
+
+    // Test 3: Play animations
+    this.testAnimations();
+
+    // Test 4: Show performance metrics
+    this.showMetrics();
+  }
+
+  renderTileGrid() {
+    for (let row = 0; row < 20; row++) {
+      for (let col = 0; col < 20; col++) {
+        const tileId = row * 20 + col;
+        this.add.image(col * 32, row * 32, 'tiles', `tile1_${tileId.toString().padStart(4, '0')}.png`);
+      }
+    }
+  }
+
+  displaySprites() {
+    const sprite = this.add.sprite(320, 320, 'sprites');
+    sprite.play('player_walk_down');
+  }
+
+  showMetrics() {
+    const text = this.add.text(10, 10, '', { color: '#00ff00', fontSize: '14px' });
+
+    this.time.addEvent({
+      delay: 100,
+      loop: true,
+      callback: () => {
+        text.setText([
+          `FPS: ${Math.round(this.game.loop.actualFps)}`,
+          `Memory: ${(performance.memory?.usedJSHeapSize / 1024 / 1024).toFixed(1)}MB`
+        ]);
+      }
+    });
+  }
+}
+```
+
+##### Step 7.2: Run Test
+
+```bash
+cd packages/game-client
+npm run dev
+
+# Open http://localhost:8080
+# Should see:
+# - 20×20 tile grid rendered
+# - Animated player sprite
+# - FPS counter showing 60 FPS
+# - Memory usage stable
+```
+
+##### Step 7.3: Performance Benchmarks
+
+**Targets**:
+- **Load time**: < 3 seconds for all atlases
+- **FPS**: 60 FPS stable (no drops)
+- **Memory**: < 200MB client RAM
+- **Asset count**: 4 atlases + manifest loaded
+
+**Success Criteria**:
+- ✅ All assets render correctly in Phaser 3
+- ✅ 60 FPS maintained
+- ✅ No console errors
+- ✅ Animations play smoothly
+- ✅ Memory usage stable (no leaks)
+
+---
+
+### Phase 2 Timeline
+
+**Detailed Day-by-Day Breakdown** (assumes 4-6 hours/day):
+
+**Week 2: Days 1-2** (Setup + Conversion)
+- Day 1: Pre-Setup (environment, dependencies, directories) - 4 hours
+- Day 2: Task 1 (BMP → PNG conversion) - 5 hours
+
+**Week 2: Days 3-7** (Tile Processing)
+- Day 3: Task 2.1 (Analyze tile sheets) - 3 hours
+- Day 4-6: Task 2.2 (Extract 5,847 tiles) - 12 hours
+- Day 7: Task 2.3 (Review and organize) - 4 hours
+
+**Week 3: Days 8-10** (Sprite Processing)
+- Day 8-9: Task 3.1-3.2 (Sprite detection and extraction) - 10 hours
+- Day 10: Task 3.3 (Animation identification) - 4 hours
+
+**Week 3: Days 11-12** (Atlas Generation)
+- Day 11: Task 4.1-4.2 (Pack atlases) - 5 hours
+- Day 12: Task 4.3-4.4 (Optimize and verify) - 3 hours
+
+**Week 4: Days 13-14** (QA + Integration)
+- Day 13: Tasks 5-6 (Metadata + QA) - 6 hours
+- Day 14: Task 7 (Integration testing) - 5 hours
+
+**Total**: ~56-70 hours spread over 14 working days (2-4 calendar weeks)
+
+---
+
+### Troubleshooting Common Issues
+
+**Issue 1**: "Sharp installation failed - node-gyp errors"
+```bash
+# Solution: Install build tools
+# Ubuntu/Debian:
+sudo apt-get install build-essential libvips-dev
+
+# macOS:
+brew install vips
+
+# Then reinstall:
+npm install sharp --force
+```
+
+**Issue 2**: "Out of memory when processing tiles2.rsc (21MB file)"
+```bash
+# Solution: Increase Node.js memory
+NODE_OPTIONS="--max-old-space-size=4096" npm run extract-tiles
+```
+
+**Issue 3**: "Converted PNG looks corrupted/wrong colors"
+```typescript
+// Solution: Check color space conversion
+const metadata = await sharp(srcPath).metadata();
+if (metadata.space === 'cmyk') {
+  await sharp(srcPath)
+    .toColorspace('srgb')
+    .toFile(destPath);
+}
+```
+
+**Issue 4**: "Atlas packing fails - textures don't fit"
+```typescript
+// Solution: Increase atlas size or create multiple atlases
+const result = await packAsync(tileFiles, {
+  width: 4096,  // Increase from 2048
+  height: 4096,
+  allowRotation: true,  // Allow rotation to save space
+});
+```
+
+**Issue 5**: "Phaser can't load atlas JSON"
+```bash
+# Solution: Verify JSON format
+node -e "JSON.parse(require('fs').readFileSync('assets/game/tiles-atlas.json'))"
+
+# If error, regenerate with correct format
+```
+
+**Issue 6**: "Tiles have 1px bleeding/artifacts in game"
+```typescript
+// Solution: Add extrude padding
+const result = await packAsync(tileFiles, {
+  extrude: 2,  // Increase from 1
+  padding: 2,
+});
+```
+
+---
+
+### Final Deliverables
+
+**Code**:
+- ✅ `/packages/asset-pipeline/` - Complete conversion toolchain
+  - `src/converters/rsc-to-png.ts` - BMP to PNG converter
+  - `src/extractors/tile-extractor.ts` - Tile extraction
+  - `src/extractors/sprite-extractor.ts` - Sprite extraction
+  - `src/packers/atlas-packer.ts` - Atlas generation
+  - `src/validators/asset-validator.ts` - QA validation
+  - `src/utils/analyze-sheet.ts` - Sheet analysis tool
+
+**Assets**:
+- ✅ `/assets/extracted/` - 33 PNG files (~45-55MB)
+- ✅ `/assets/game/` - 4 optimized atlases (~12-15MB)
+  - tiles-atlas.png + tiles-atlas.json
+  - sprites-atlas.png + sprites-atlas.json
+  - effects-atlas.png + effects-atlas.json
+  - ui-atlas.png + ui-atlas.json
+- ✅ `/assets/game/assets.json` - Master asset manifest
+
+**Documentation**:
+- ✅ conversion-report.json - Conversion statistics
+- ✅ tile-analysis.json - Tile sheet analysis
+- ✅ Metadata JSON for each atlas
+
+**Game Integration**:
+- ✅ `/packages/game-client/src/loaders/AssetLoader.ts`
+- ✅ `/packages/game-client/src/scenes/AssetTestScene.ts`
+
+---
+
+### Exit Criteria & Success Metrics
+
+**Quantitative Metrics**:
+- ✅ **Conversion Rate**: 100% (33/33 files converted successfully)
+- ✅ **File Size Reduction**: ≥ 80% (73MB → ≤15MB)
+- ✅ **Asset Count**: 5,000-6,000 tiles + 200-300 sprites extracted
+- ✅ **Atlas Count**: 4 main atlases generated
+- ✅ **Load Time**: < 3 seconds for all atlases
+- ✅ **Performance**: 60 FPS in test scene
+- ✅ **Memory**: < 200MB client RAM usage
+
+**Qualitative Criteria**:
+- ✅ No visual artifacts or color corruption
+- ✅ All tiles/sprites render identically to originals
+- ✅ Animations smooth and correct
+- ✅ Code well-documented and maintainable
+- ✅ Scripts reusable for future asset updates
+- ✅ Phaser 3 integration working
+
+**Phase Completion Checklist**:
+- [ ] Pre-Setup: Environment configured, dependencies installed
+- [ ] Task 1: All 33 .rsc files converted to PNG
+- [ ] Task 2: 5,000-6,000 tiles extracted and cataloged
+- [ ] Task 3: Sprite frames extracted, animations identified
+- [ ] Task 4: 4 atlases generated and optimized
+- [ ] Task 5: Complete metadata and manifest created
+- [ ] Task 6: QA validation passed (100% assets verified)
+- [ ] Task 7: Phaser 3 test scene working at 60 FPS
+- [ ] Documentation: All reports and metadata generated
+- [ ] Version Control: Changes committed to jj repository
+- [ ] Ready for Phase 3: Core game engine development
+
+**Sign-Off Required**:
+When all checkboxes are complete, Phase 2 is officially done and Phase 3 (Core Game Engine) can begin!
 
 ---
 
