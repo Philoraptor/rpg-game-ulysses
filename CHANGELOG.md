@@ -7,12 +7,52 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Phase 2: Asset Pipeline (Planned)
-- Asset conversion pipeline (BMP → PNG)
-- Tile extraction (~5,000+ tiles)
-- Sprite frame detection and extraction
-- Texture atlas generation (4 atlases, ≤15MB)
-- Phaser 3 integration and testing
+### Phase 2: Asset Pipeline (In Progress)
+- ⏳ Tile extraction (~5,000+ tiles)
+- ⏳ Sprite frame detection and extraction
+- ⏳ Texture atlas generation (4 atlases, ≤15MB)
+- ⏳ Phaser 3 integration and testing
+
+---
+
+## [0.2.0] - 2025-10-18
+
+### Added - Phase 2 Task 1: Asset Conversion Complete ✅
+
+#### Asset Conversion Pipeline
+- **BMP → PNG Conversion**: Successfully converted all 31 legacy .rsc files to PNG format
+  - Original size: 68.29 MB
+  - Converted size: 24.16 MB
+  - Compression: 64.6% (exceeded 30% target by 2x!)
+  - Success rate: 100% (31/31 files)
+
+- **Conversion Tools**:
+  - `packages/asset-pipeline/convert-all.js` - Production conversion script
+  - `packages/asset-pipeline/src/converters/rsc-to-png.ts` - TypeScript version
+  - `packages/asset-pipeline/verify-colors.js` - Color verification utility
+  - `assets/conversion-report.json` - Detailed conversion metrics
+
+- **Technical Achievements**:
+  - Resolved ABGR→RGBA color channel mapping (bmp-js library outputs ABGR format)
+  - Fixed alpha channel transparency (BMPs are 24-bit, forced alpha=255 for opacity)
+  - All PNGs verified with correct RGB colors and full opacity
+  - 31 PNG files extracted to `assets/extracted/`
+
+#### Package Dependencies
+- `bmp-js` - Windows 3.x BMP decoder (Sharp couldn't handle legacy format)
+- `pngjs` - PNG encoder
+- `cli-progress` - Progress bar visualization
+- `chalk@4` - Terminal color output (downgraded from v5 for CommonJS compatibility)
+- `@types/bmp-js`, `@types/pngjs`, `@types/cli-progress` - TypeScript type definitions
+
+### Fixed
+- Color channel issues: Blue hues (attempt 1), yellow hues (attempt 2), full transparency (attempt 3)
+- Final solution: Proper ABGR→RGBA conversion with alpha=255 for opaque images
+
+### Technical Notes
+- Windows BMP files store pixels in ABGR order, not RGB/BGR
+- bmp-js outputs 32-bit ABGR with alpha defaulted to 0 (BMPs are 24-bit RGB)
+- Required channel remapping: ABGR[0,1,2,3] → RGBA[R=3, G=2, B=1, A=255]
 
 ---
 
