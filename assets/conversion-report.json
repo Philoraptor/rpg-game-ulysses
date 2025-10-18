@@ -2,57 +2,57 @@
   {
     "filename": "Att1.rsc",
     "originalSize": 43062,
-    "convertedSize": 1303,
-    "compressionRatio": 96.9741303237193,
+    "convertedSize": 1262,
+    "compressionRatio": 97.069341879151,
     "success": true
   },
   {
     "filename": "Att2.rsc",
     "originalSize": 47094,
-    "convertedSize": 1575,
-    "compressionRatio": 96.65562492037202,
+    "convertedSize": 1513,
+    "compressionRatio": 96.78727651080817,
     "success": true
   },
   {
     "filename": "Effects.rsc",
     "originalSize": 140342,
-    "convertedSize": 47646,
-    "compressionRatio": 66.05007766741247,
+    "convertedSize": 47088,
+    "compressionRatio": 66.44767781562184,
     "success": true
   },
   {
     "filename": "Effectsm.rsc",
     "originalSize": 69750,
-    "convertedSize": 16845,
-    "compressionRatio": 75.8494623655914,
+    "convertedSize": 15717,
+    "compressionRatio": 77.46666666666667,
     "success": true
   },
   {
     "filename": "NIGHT.RSC",
     "originalSize": 150838,
-    "convertedSize": 64783,
-    "compressionRatio": 57.05127355175752,
+    "convertedSize": 64782,
+    "compressionRatio": 57.05193651467136,
     "success": true
   },
   {
     "filename": "NIGHTM.RSC",
     "originalSize": 18494,
-    "convertedSize": 101810,
-    "compressionRatio": -450.5028657943116,
+    "convertedSize": 83370,
+    "compressionRatio": -350.79485238455715,
     "success": true
   },
   {
     "filename": "Objects.rsc",
     "originalSize": 721976,
-    "convertedSize": 171670,
-    "compressionRatio": 76.2222012920097,
+    "convertedSize": 168785,
+    "compressionRatio": 76.62179906257272,
     "success": true
   },
   {
     "filename": "Objectsm.rsc",
     "originalSize": 241720,
-    "convertedSize": 40060,
-    "compressionRatio": 83.42710574218104,
+    "convertedSize": 37627,
+    "compressionRatio": 84.43364223068014,
     "success": true
   },
   {
@@ -65,64 +65,64 @@
   {
     "filename": "Rain1m.rsc",
     "originalSize": 147632,
-    "convertedSize": 3544,
-    "compressionRatio": 97.59943643654492,
+    "convertedSize": 3397,
+    "compressionRatio": 97.69900834507423,
     "success": true
   },
   {
     "filename": "Rain2.rsc",
     "originalSize": 147632,
-    "convertedSize": 6125,
-    "compressionRatio": 95.85117047794516,
+    "convertedSize": 6024,
+    "compressionRatio": 95.91958383006394,
     "success": true
   },
   {
     "filename": "Rain2m.rsc",
     "originalSize": 147632,
-    "convertedSize": 3354,
-    "compressionRatio": 97.72813482171887,
+    "convertedSize": 3218,
+    "compressionRatio": 97.82025577110653,
     "success": true
   },
   {
     "filename": "Sprites.rsc",
     "originalSize": 737630,
-    "convertedSize": 909992,
-    "compressionRatio": -23.36699971530442,
+    "convertedSize": 893638,
+    "compressionRatio": -21.149899000854084,
     "success": true
   },
   {
     "filename": "Spritesm.rsc",
     "originalSize": 192062,
-    "convertedSize": 201200,
-    "compressionRatio": -4.757838614614031,
+    "convertedSize": 184201,
+    "compressionRatio": 4.092949151836386,
     "success": true
   },
   {
     "filename": "Tilesm.rsc",
     "originalSize": 997430,
-    "convertedSize": 62319,
-    "compressionRatio": 93.75204274986716,
+    "convertedSize": 58184,
+    "compressionRatio": 94.16660818303039,
     "success": true
   },
   {
     "filename": "interface.rsc.bmp",
     "originalSize": 1440054,
-    "convertedSize": 16846,
-    "compressionRatio": 98.8301827570355,
+    "convertedSize": 16475,
+    "compressionRatio": 98.85594567981478,
     "success": true
   },
   {
     "filename": "lsprites.rsc",
     "originalSize": 884792,
-    "convertedSize": 198474,
-    "compressionRatio": 77.56828723587013,
+    "convertedSize": 196408,
+    "compressionRatio": 77.80178844293349,
     "success": true
   },
   {
     "filename": "lspritesm.rsc",
     "originalSize": 295992,
-    "convertedSize": 27667,
-    "compressionRatio": 90.65278791318684,
+    "convertedSize": 25368,
+    "compressionRatio": 91.42949809454309,
     "success": true
   },
   {
@@ -135,85 +135,85 @@
   {
     "filename": "snowm.rsc",
     "originalSize": 774,
-    "convertedSize": 148,
-    "compressionRatio": 80.87855297157623,
+    "convertedSize": 145,
+    "compressionRatio": 81.26614987080103,
     "success": true
   },
   {
     "filename": "tiles.rsc",
     "originalSize": 2989110,
-    "convertedSize": 1338850,
-    "compressionRatio": 55.209075611135084,
+    "convertedSize": 1332036,
+    "compressionRatio": 55.43703644228549,
     "success": true
   },
   {
     "filename": "tiles1.rsc",
     "originalSize": 4795446,
-    "convertedSize": 1782796,
-    "compressionRatio": 62.82314512560458,
+    "convertedSize": 1765775,
+    "compressionRatio": 63.17808604246612,
     "success": true
   },
   {
     "filename": "tiles2.rsc",
     "originalSize": 22019478,
-    "convertedSize": 7883324,
-    "compressionRatio": 64.19840651990025,
+    "convertedSize": 7740476,
+    "compressionRatio": 64.84714124467438,
     "success": true
   },
   {
     "filename": "tiles3.rsc",
     "originalSize": 4671799,
-    "convertedSize": 2127266,
-    "compressionRatio": 54.46580642703164,
+    "convertedSize": 2112491,
+    "compressionRatio": 54.78206575240073,
     "success": true
   },
   {
     "filename": "tiles4.rsc",
     "originalSize": 5483574,
-    "convertedSize": 2222043,
-    "compressionRatio": 59.47819797817993,
+    "convertedSize": 2203409,
+    "compressionRatio": 59.81801285074296,
     "success": true
   },
   {
     "filename": "tiles5.rsc",
     "originalSize": 19611704,
-    "convertedSize": 6885898,
-    "compressionRatio": 64.8888337290834,
+    "convertedSize": 6752360,
+    "compressionRatio": 65.56974345523469,
     "success": true
   },
   {
     "filename": "tiles6.rsc",
     "originalSize": 1075256,
-    "convertedSize": 79406,
-    "compressionRatio": 92.61515397263535,
+    "convertedSize": 75523,
+    "compressionRatio": 92.97627727722515,
     "success": true
   },
   {
     "filename": "tilesground.rsc",
     "originalSize": 903222,
-    "convertedSize": 325142,
-    "compressionRatio": 64.00198400836118,
+    "convertedSize": 323219,
+    "compressionRatio": 64.21488847703,
     "success": true
   },
   {
     "filename": "tilesindoor.rsc",
     "originalSize": 1333302,
-    "convertedSize": 477334,
-    "compressionRatio": 64.19910867905396,
+    "convertedSize": 470472,
+    "compressionRatio": 64.71377077361318,
     "success": true
   },
   {
     "filename": "tilesother.rsc",
     "originalSize": 1096758,
-    "convertedSize": 367416,
-    "compressionRatio": 66.49981126191922,
+    "convertedSize": 363203,
+    "compressionRatio": 66.88394340410555,
     "success": true
   },
   {
     "filename": "tilesoutdoor.rsc",
     "originalSize": 1053750,
-    "convertedSize": 363567,
-    "compressionRatio": 65.49779359430605,
+    "convertedSize": 360433,
+    "compressionRatio": 65.79520759193358,
     "success": true
   }
 ]

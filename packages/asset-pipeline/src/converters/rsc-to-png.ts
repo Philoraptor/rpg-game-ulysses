@@ -66,14 +66,15 @@ async function convertAllRsc(): Promise<ConversionResult[]> {
         height: bmpData.height
       });
 
-      // Convert BGR to RGB (BMP stores pixels as BGR, PNG expects RGB)
-      const pixelData = Buffer.from(bmpData.data);
-      for (let i = 0; i < pixelData.length; i += 4) {
-        // Swap red and blue channels
-        const temp = pixelData[i];           // Save blue
-        pixelData[i] = pixelData[i + 2];     // Blue = Red
-        pixelData[i + 2] = temp;             // Red = Blue
-        // Green (i+1) and Alpha (i+3) stay the same
+      // Convert ABGR to RGBA (bmp-js outputs ABGR, PNG expects RGBA)
+      // ABGR: position 0=Alpha, 1=Blue, 2=Green, 3=Red
+      // RGBA: position 0=Red, 1=Green, 2=Blue, 3=Alpha
+      const pixelData = Buffer.allocUnsafe(bmpData.data.length);
+      for (let i = 0; i < bmpData.data.length; i += 4) {
+        pixelData[i]     = bmpData.data[i + 3];  // Red (from position 3)
+        pixelData[i + 1] = bmpData.data[i + 2];  // Green (from position 2)
+        pixelData[i + 2] = bmpData.data[i + 1];  // Blue (from position 1)
+        pixelData[i + 3] = bmpData.data[i];      // Alpha (from position 0)
       }
 
       png.data = pixelData;
