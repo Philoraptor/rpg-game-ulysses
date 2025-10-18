@@ -1,0 +1,147 @@
+import bmp from 'bmp-js';
+import { PNG } from 'pngjs';
+import fs from 'fs/promises';
+import fsSync from 'fs';
+import path from 'path';
+import cliProgress from 'cli-progress';
+import chalk from 'chalk';
+
+console.log('[DEBUG] Script starting, imports loaded');
+
+
+interface ConversionResult {
+  filename: string;
+  originalSize: number;
+  convertedSize: number;
+  compressionRatio: number;
+  success: boolean;
+  error?: string;
+}
+
+async function convertAllRsc(): Promise<ConversionResult[]> {
+  const srcDir = path.join(process.cwd(), 'assets/original');
+  const destDir = path.join(process.cwd(), 'assets/extracted');
+
+  // Ensure destination directory exists
+  await fs.mkdir(destDir, { recursive: true });
+
+  // Get all .rsc and .bmp files
+  const allFiles = await fs.readdir(srcDir);
+  const rscFiles = allFiles.filter(f =>
+    f.toLowerCase().endsWith('.rsc') || f.toLowerCase().endsWith('.bmp')
+  );
+
+  console.log(chalk.blue(`\nFound ${rscFiles.length} asset files to convert\n`));
+
+  // Create progress bar
+  const progressBar = new cliProgress.SingleBar({
+    format: 'Converting |{bar}| {percentage}% | {value}/{total} | {filename}',
+    barCompleteChar: '\u2588',
+    barIncompleteChar: '\u2591',
+  });
+
+  progressBar.start(rscFiles.length, 0, { filename: 'Starting...' });
+
+  const results: ConversionResult[] = [];
+
+  for (let i = 0; i < rscFiles.length; i++) {
+    const file = rscFiles[i];
+    const srcPath = path.join(srcDir, file);
+    const destPath = path.join(destDir, `${file}.png`);
+
+    progressBar.update(i + 1, { filename: file });
+
+    try {
+      // Get original file size
+      const stats = await fs.stat(srcPath);
+      const originalSize = stats.size;
+
+      // Read BMP file
+      const bmpBuffer = await fs.readFile(srcPath);
+      const bmpData = bmp.decode(bmpBuffer);
+
+      // Create PNG
+      const png = new PNG({
+        width: bmpData.width,
+        height: bmpData.height
+      });
+
+      // Copy pixel data
+      png.data = Buffer.from(bmpData.data);
+
+      // Write PNG to file
+      await new Promise<void>((resolve, reject) => {
+        png.pack()
+          .pipe(fsSync.createWriteStream(destPath))
+          .on('finish', resolve)
+          .on('error', reject);
+      });
+
+      const destStats = await fs.stat(destPath);
+      const convertedSize = destStats.size;
+      const compressionRatio = ((originalSize - convertedSize) / originalSize) * 100;
+
+      results.push({
+        filename: file,
+        originalSize,
+        convertedSize,
+        compressionRatio,
+        success: true
+      });
+
+    } catch (error) {
+      results.push({
+        filename: file,
+        originalSize: 0,
+        convertedSize: 0,
+        compressionRatio: 0,
+        success: false,
+        error: error instanceof Error ? error.message : String(error)
+      });
+    }
+  }
+
+  progressBar.stop();
+
+  return results;
+}
+
+// Run conversion and report results
+convertAllRsc()
+  .then(async (results) => {
+    console.log(chalk.green('\n\nConversion Complete!\n'));
+
+    const successful = results.filter(r => r.success);
+    const failed = results.filter(r => !r.success);
+
+    console.log(chalk.blue('Summary:'));
+    console.log(`  Successful: ${successful.length}/${results.length}`);
+    console.log(`  Failed: ${failed.length}/${results.length}`);
+
+    const totalOriginal = successful.reduce((sum, r) => sum + r.originalSize, 0);
+    const totalConverted = successful.reduce((sum, r) => sum + r.convertedSize, 0);
+    const overallRatio = ((totalOriginal - totalConverted) / totalOriginal) * 100;
+
+    console.log(`\n  Original size: ${(totalOriginal / 1024 / 1024).toFixed(2)} MB`);
+    console.log(`  Converted size: ${(totalConverted / 1024 / 1024).toFixed(2)} MB`);
+    console.log(`  Compression: ${overallRatio.toFixed(1)}%`);
+
+    if (failed.length > 0) {
+      console.log(chalk.red('\n\nFailed conversions:'));
+      failed.forEach(f => {
+        console.log(`  ${f.filename}: ${f.error}`);
+      });
+    }
+
+    // Save results to JSON
+    await fs.writeFile(
+      'assets/conversion-report.json',
+      JSON.stringify(results, null, 2)
+    );
+
+    console.log(chalk.gray('\n  Report saved to assets/conversion-report.json\n'));
+  })
+  .catch((error) => {
+    console.error(chalk.red('Fatal error:'), error);
+    process.exit(1);
+  });
