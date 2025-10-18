@@ -415,25 +415,52 @@
 
 ### ⚡ Critical Path Decisions
 
-These questions **must** be answered to proceed with Phase 2 development:
+**Status Update (2025-10-18)**: 8 critical questions have been answered! See `answers.md` for complete details.
+
+#### ✅ ANSWERED Questions
 
 1. **Q10**: Platform target → affects tech stack choices
-   - **Recommendation**: Web-first (HTML5 Canvas + TypeScript)
+   - ✅ **ANSWERED**: Web-first (HTML5 Canvas + TypeScript), optional Electron wrapper later
+   - See: `answers.md` lines 477-499
 
 2. **Q4**: Combat system → affects input handling, game loop design
-   - **Recommendation**: Real-time with cooldown abilities (modern feel)
+   - ✅ **ANSWERED**: Real-time with cooldown abilities (hybrid approach)
+   - See: `answers.md` lines 503-537
 
 3. **Q5**: World population strategy → affects tooling priorities
-   - **Recommendation**: Procedural generation + hand-crafted zones
+   - ✅ **ANSWERED**: Hybrid (procedural filler + hand-crafted key areas)
+   - See: `answers.md` lines 541-579
 
-4. **Q13**: Map editor approach → affects Phase 4 timeline
-   - **Recommendation**: Custom web-based editor
+4. **Q12**: Database choice → affects server architecture
+   - ✅ **ANSWERED**: PostgreSQL 16 + Redis 7 hybrid
+   - See: `answers.md` lines 583-628
 
-5. **Q18**: Legacy script porting scope → affects workload
-   - **Recommendation**: Core systems only, reference for new content
+5. **Q13**: Map editor approach → affects Phase 4 timeline
+   - ✅ **ANSWERED**: Custom web-based editor (reuse game rendering engine)
+   - See: `answers.md` lines 632-650
 
-6. **Q20**: Player count target → affects server architecture
-   - **Recommendation**: 50-200 concurrent, design for scaling
+6. **Q18**: Legacy script porting scope → affects workload
+   - ✅ **ANSWERED**: Core systems only + selective content (~10-20% of scripts)
+   - See: `answers.md` lines 655-697
+
+7. **Q20**: Player count target → affects server architecture
+   - ✅ **ANSWERED**: 50-200 concurrent, designed for horizontal scaling
+   - See: `answers.md` lines 701-743
+
+8. **Q25**: Use stdLibSchema testing infrastructure?
+   - ✅ **ANSWERED**: Yes (leverage Jest + Playwright)
+   - See: `answers.md` lines 747-781
+
+9. **Q26**: CI/CD pipeline choice
+   - ✅ **ANSWERED**: GitHub Actions for CI, Vercel for client deployment
+   - See: `answers.md` lines 785-826
+
+#### ⚠️ STILL UNANSWERED (Lower Priority)
+
+These can be deferred to Phase 2 or later:
+
+- **Q1, Q2, Q6, Q11, Q14**: Database/server details (partially answered by Q12)
+- **Q3, Q7-Q9, Q15-Q17, Q19, Q21-Q24, Q27-Q30**: Design/implementation details
 
 ---
 
@@ -462,12 +489,19 @@ These questions **must** be answered to proceed with Phase 2 development:
 
 | Priority | Questions | Status |
 |----------|-----------|--------|
-| **Critical** | Q4, Q5, Q10, Q13, Q18, Q20 | ⚠️ Needs decision |
-| **High** | Q1, Q2, Q6, Q11, Q12, Q14 | 🔄 Can defer to Phase 2 |
-| **Medium** | Q7, Q8, Q9, Q15, Q16, Q21-Q27 | 📋 Document and revisit |
-| **Low** | Q17, Q19, Q28-Q30 | ⏳ Future consideration |
+| **Critical** | Q4, Q5, Q10, Q12, Q13, Q18, Q20, Q25, Q26 | ✅ **ANSWERED** (9/9 complete!) |
+| **High** | Q1, Q2, Q6, Q11, Q14 | 🔄 Partially covered by Q12 answers |
+| **Medium** | Q7, Q8, Q9, Q15, Q16, Q21-Q24, Q27 | 📋 Defer to Phase 2+ |
+| **Low** | Q3, Q17, Q19, Q28-Q30 | ⏳ Future consideration |
 
-**Next Step**: Review recommendations in `recommendations.md`, then finalize decisions in `master.md`.
+**Progress**: 9 critical questions answered (30%), sufficient to proceed with Phase 2!
+
+**Next Steps**:
+1. ✅ Phase 1 complete (documentation, VCS setup)
+2. 🟢 Ready to begin Phase 2 (asset pipeline)
+3. Remaining questions can be answered during implementation as needed
+
+**Key Achievement**: All blocking questions for Phase 2 have been resolved! The project has clear technical direction and can proceed with development.
 
 ---
 

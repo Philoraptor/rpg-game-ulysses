@@ -92,30 +92,46 @@ npm run format
 
 ## Current Status
 
-**Phase 1: Foundation** ✅ **COMPLETE**
-- [x] Documentation files generated
-- [x] Directory structure organized
-- [x] stdLibSchema symlink created
-- [x] Monorepo initialized
+**Phase 1: Foundation & Documentation** ✅ **COMPLETE** (2025-10-16 to 2025-10-18)
+- [x] 4 comprehensive documentation files (5,264 lines total)
+- [x] 9 critical design questions answered
+- [x] Directory structure organized (5 packages)
+- [x] stdLibSchema symlink created (308 files integrated)
+- [x] Monorepo initialized with workspaces
+- [x] Jujutsu version control initialized
+- [x] GitHub repository created and configured
+- [x] Comprehensive Phase 2 roadmap (1,366 lines, 7 detailed tasks)
 
-**Phase 2: Asset Pipeline** ⏳ **NEXT**
-- [ ] Convert .rsc (BMP) files to PNG
-- [ ] Generate sprite atlases
-- [ ] Create metadata JSON files
+**Phase 2: Asset Pipeline** 🟢 **READY TO START** (Estimated: 14 working days)
+- [ ] Pre-setup: Install dependencies (Sharp, free-tex-packer, jimp)
+- [ ] Task 1: Convert 33 .rsc (BMP) files to PNG (~4-6 hours)
+- [ ] Task 2: Extract ~5,000-6,000 tiles from 11 tile sheets (~8-12 hours)
+- [ ] Task 3: Extract sprite frames and animations (~6-8 hours)
+- [ ] Task 4: Generate 4 optimized texture atlases (≤15MB total) (~6-8 hours)
+- [ ] Task 5: Create asset manifest and metadata (~4-6 hours)
+- [ ] Task 6: Quality assurance validation (~4-6 hours)
+- [ ] Task 7: Phaser 3 integration testing (~6-8 hours)
 
-**Phase 3: Core Engine** ⏳ **UPCOMING**
-- [ ] Set up Phaser 3 client
+**Phase 3: Core Game Engine** ⏳ **UPCOMING** (Week 4-8)
+- [ ] Set up Phaser 3 client with Vite
 - [ ] Implement 8-layer architecture
-- [ ] Player movement on single screen
+- [ ] Player movement on single screen (WASD/arrows)
+- [ ] Camera system (follow player)
+- [ ] Basic collision detection
+
+**Progress**: 1/8 phases complete (12.5%), on track for 6-10 month timeline
 
 ---
 
 ## Documentation
 
-- **[Master Plan](./docs/master.md)** - Complete project roadmap and vision
-- **[Answers](./docs/answers.md)** - Architectural decisions and solutions
-- **[Questions](./docs/questions.md)** - Open design questions (30 questions catalogued)
-- **[Recommendations](./docs/recommendations.md)** - Technology stack and best practices
+- **[Master Plan](./docs/master.md)** (2,474 lines) - Complete 8-phase roadmap with detailed Phase 2 expansion
+- **[Answers](./docs/answers.md)** (847 lines) - Architectural decisions + 9 priority questions answered
+- **[Questions](./docs/questions.md)** (508 lines) - 30 design questions (9 answered, 21 deferred)
+- **[Recommendations](./docs/recommendations.md)** (1,435 lines) - Technology stack + comprehensive Jujutsu guide
+- **[Changelog](./CHANGELOG.md)** - Project progress and version history
+
+**Total Documentation**: 5,264 lines + 20 code examples + 40 executable commands
 
 ---
 
@@ -147,14 +163,21 @@ npm run format
 
 ## Assets
 
-**Original Legacy Assets** (discovered 2025-10-16):
-- 50+ .rsc files (~73MB total)
-- Tiles, sprites, objects, effects, UI
-- 70,000+ lines of VB scripts
-- Reference API documentation
+**Original Legacy Assets** (catalogued 2025-10-16):
+- **33 .rsc/.bmp files** (~73MB total)
+  - 11 tile sheets (58MB) → ~5,000-6,000 tiles estimated
+  - 4 sprite sheets (2.1MB) → character animations
+  - 6 effect sheets (581KB) → weather, spells
+  - 12 other files → objects, UI, attributes, night mode
+- **16 VB script files** (70,000+ lines)
+  - Event system, quest logic, party system
+  - Reference API documentation (447 lines)
 
-**Conversion Status**:
-- ⏳ Pending - Phase 2 will convert to modern PNG atlases
+**Conversion Target** (Phase 2):
+- ✅ 33 PNGs (~45-55MB, 30% reduction)
+- ✅ 4 optimized atlases (~12-15MB, 80% reduction)
+- ✅ Complete metadata JSON + Phaser 3 integration
+- ✅ Load time: < 3 seconds, 60 FPS performance
 
 ---
 
@@ -169,13 +192,44 @@ npm run format
 7. **Phase 7**: Script System & Content (Week 24-32)
 8. **Phase 8**: Polish & Launch (Week 32-40)
 
-**Timeline**: 6-10 months to v1.0.0
+**Timeline**: 6-10 months to v1.0.0 (Target: Mid-2025)
+
+---
+
+## Version Control
+
+**Jujutsu (jj)** with Git backend for GitHub compatibility
+
+```bash
+# Check status
+jj status
+
+# View commit history
+jj log
+
+# Commit changes
+jj commit -m "Your message"
+
+# Push to GitHub
+jj git push
+```
+
+**Repository**: https://github.com/Philoraptor/rpg-game-ulysses
+
+See [`docs/recommendations.md`](./docs/recommendations.md#version-control-jujutsu-jj) for complete Jujutsu guide.
 
 ---
 
 ## Contributing
 
 This project is in active development. Contributions welcome once foundation is complete (Phase 2+).
+
+**Development Workflow**:
+1. Fork the repository on GitHub
+2. Create a feature bookmark: `jj bookmark create feature/your-feature`
+3. Make changes and commit: `jj commit -m "Add feature"`
+4. Push to GitHub: `jj git push --bookmark feature/your-feature`
+5. Create pull request on GitHub
 
 ---
 
@@ -187,13 +241,32 @@ MIT
 
 ## Acknowledgments
 
-- Original assets and scripts from legacy system
-- [stdLibSchema](https://github.com/yourusername/stdLibSchema) - Framework for schematics, testing, and workflows
-- Phaser 3 community
-- TypeScript ecosystem
+- Original assets and scripts from legacy VB system
+- [stdLibSchema](https://github.com/stdlibschema/stdlibschema) - Framework for schematics, testing, and workflows
+- Phaser 3 game framework
+- Jujutsu version control system
+- TypeScript and Node.js ecosystems
 
 ---
 
-**"You are Ulysses, stranded on the beach with scattered resources. The journey to build a world begins now."**
+## Project History
 
-*Session initialized: 2025-10-16*
+**Session 1** (2025-10-16): "Ulysses Stranded on the Beach"
+- Discovered 33 legacy asset files (73MB)
+- Created initial documentation framework
+- Established project vision and 8-phase roadmap
+
+**Session 2** (2025-10-18): "The Shipwreck Becomes a Base Camp"
+- Expanded Phase 2 documentation (64 → 1,366 lines)
+- Answered 9 critical design questions
+- Set up Jujutsu version control + GitHub integration
+- Created comprehensive Jujutsu workflow guide
+- Ready to begin Phase 2 asset pipeline execution
+
+---
+
+**"The shipwreck has become a base camp. The maps are drawn, supplies are organized, and the path forward is clear."**
+
+**Status**: Phase 1 ✅ Complete | Phase 2 🟢 Ready | Repository 🔗 Live
+
+*Last updated: 2025-10-18*
