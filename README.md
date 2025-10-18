@@ -242,7 +242,7 @@ MIT
 ## Acknowledgments
 
 - Original assets and scripts from legacy VB system
-- [stdLibSchema](https://github.com/stdlibschema/stdlibschema) - Framework for schematics, testing, and workflows
+- [stdLibSchema](https://github.com/Philoraptor/stdLibSchema) - Framework for schematics, testing, and workflows
 - Phaser 3 game framework
 - Jujutsu version control system
 - TypeScript and Node.js ecosystems
