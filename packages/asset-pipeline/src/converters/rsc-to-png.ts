@@ -69,12 +69,13 @@ async function convertAllRsc(): Promise<ConversionResult[]> {
       // Convert ABGR to RGBA (bmp-js outputs ABGR, PNG expects RGBA)
       // ABGR: position 0=Alpha, 1=Blue, 2=Green, 3=Red
       // RGBA: position 0=Red, 1=Green, 2=Blue, 3=Alpha
+      // Note: BMPs are 24-bit (no alpha), so bmp-js sets alpha=0. We need alpha=255 (opaque)
       const pixelData = Buffer.allocUnsafe(bmpData.data.length);
       for (let i = 0; i < bmpData.data.length; i += 4) {
         pixelData[i]     = bmpData.data[i + 3];  // Red (from position 3)
         pixelData[i + 1] = bmpData.data[i + 2];  // Green (from position 2)
         pixelData[i + 2] = bmpData.data[i + 1];  // Blue (from position 1)
-        pixelData[i + 3] = bmpData.data[i];      // Alpha (from position 0)
+        pixelData[i + 3] = 255;                  // Alpha (force opaque - BMPs have no alpha)
       }
 
       png.data = pixelData;
