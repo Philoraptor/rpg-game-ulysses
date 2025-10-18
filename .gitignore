@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+build/
+**/dist/
+**/build/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+.cache/
+.temp/
+
+# Large binary files (already committed, but ignore future ones)
+*.rsc
+
+# Asset pipeline temporary files
+assets/extracted/
+assets/game/tiles/
+assets/game/sprites/Sprites/
+
+# QA reports (generated, can be regenerated)
+assets/qa-report.json
