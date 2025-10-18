@@ -1,0 +1,133 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2025-10-18T19:33:37.827Z",
+  "totalAssets": 9733,
+  "atlases": {
+    "sprites-atlas": {
+      "path": "atlases/sprites-atlas.png",
+      "jsonPath": "atlases/sprites-atlas.json",
+      "size": {
+        "width": 2048,
+        "height": 2048
+      },
+      "frameCount": 1500,
+      "preload": true,
+      "priority": 2,
+      "category": "sprites",
+      "fileSize": 902103,
+      "format": "png"
+    },
+    "sprites-large-atlas": {
+      "path": "atlases/sprites-large-atlas.png",
+      "jsonPath": "atlases/sprites-large-atlas.json",
+      "size": {
+        "width": 1024,
+        "height": 1024
+      },
+      "frameCount": 288,
+      "preload": true,
+      "priority": 2,
+      "category": "sprites",
+      "fileSize": 211777,
+      "format": "png"
+    },
+    "tiles-atlas-large": {
+      "path": "atlases/tiles-atlas-large.png",
+      "jsonPath": "atlases/tiles-atlas-large.json",
+      "size": {
+        "width": 4096,
+        "height": 4096
+      },
+      "frameCount": 6384,
+      "preload": true,
+      "priority": 1,
+      "category": "tiles",
+      "fileSize": 7273516,
+      "format": "png"
+    },
+    "tiles-atlas": {
+      "path": "atlases/tiles-atlas.png",
+      "jsonPath": "atlases/tiles-atlas.json",
+      "size": {
+        "width": 2048,
+        "height": 2048
+      },
+      "frameCount": 1561,
+      "preload": true,
+      "priority": 1,
+      "category": "tiles",
+      "fileSize": 1882976,
+      "format": "png"
+    }
+  },
+  "animations": {
+    "player_walk_down": {
+      "frames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fps": 8,
+      "loop": true
+    },
+    "player_walk_up": {
+      "frames": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "fps": 8,
+      "loop": true
+    },
+    "player_walk_left": {
+      "frames": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "fps": 8,
+      "loop": true
+    },
+    "player_walk_right": {
+      "frames": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "fps": 8,
+      "loop": true
+    },
+    "player_idle_down": {
+      "frames": [
+        0
+      ],
+      "fps": 1,
+      "loop": true
+    }
+  },
+  "tileProperties": {
+    "0": {
+      "collision": false,
+      "category": "ground",
+      "walkable": true,
+      "layer": "ground"
+    },
+    "1": {
+      "collision": true,
+      "category": "wall",
+      "walkable": false,
+      "layer": "object"
+    }
+  },
+  "pipeline": {
+    "tileExtraction": {
+      "totalTiles": 169022,
+      "tilesExtracted": 169022,
+      "sheetsProcessed": 31
+    }
+  }
+}

@@ -1,0 +1,5655 @@
+{
+  "sourceFile": "tilesindoor.rsc.png",
+  "tileSize": 32,
+  "grid": {
+    "cols": 7,
+    "rows": 62
+  },
+  "totalTiles": 434,
+  "extractedTiles": 434,
+  "tiles": [
+    {
+      "id": 0,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 0
+      },
+      "pixels": {
+        "left": 0,
+        "top": 0
+      },
+      "outputFile": "tilesindoor_00000.png"
+    },
+    {
+      "id": 1,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 0
+      },
+      "pixels": {
+        "left": 32,
+        "top": 0
+      },
+      "outputFile": "tilesindoor_00001.png"
+    },
+    {
+      "id": 2,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 0
+      },
+      "pixels": {
+        "left": 64,
+        "top": 0
+      },
+      "outputFile": "tilesindoor_00002.png"
+    },
+    {
+      "id": 3,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 0
+      },
+      "pixels": {
+        "left": 96,
+        "top": 0
+      },
+      "outputFile": "tilesindoor_00003.png"
+    },
+    {
+      "id": 4,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 0
+      },
+      "pixels": {
+        "left": 128,
+        "top": 0
+      },
+      "outputFile": "tilesindoor_00004.png"
+    },
+    {
+      "id": 5,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 0
+      },
+      "pixels": {
+        "left": 160,
+        "top": 0
+      },
+      "outputFile": "tilesindoor_00005.png"
+    },
+    {
+      "id": 6,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 0
+      },
+      "pixels": {
+        "left": 192,
+        "top": 0
+      },
+      "outputFile": "tilesindoor_00006.png"
+    },
+    {
+      "id": 7,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 1
+      },
+      "pixels": {
+        "left": 0,
+        "top": 32
+      },
+      "outputFile": "tilesindoor_00007.png"
+    },
+    {
+      "id": 8,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 1
+      },
+      "pixels": {
+        "left": 32,
+        "top": 32
+      },
+      "outputFile": "tilesindoor_00008.png"
+    },
+    {
+      "id": 9,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 1
+      },
+      "pixels": {
+        "left": 64,
+        "top": 32
+      },
+      "outputFile": "tilesindoor_00009.png"
+    },
+    {
+      "id": 10,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 1
+      },
+      "pixels": {
+        "left": 96,
+        "top": 32
+      },
+      "outputFile": "tilesindoor_00010.png"
+    },
+    {
+      "id": 11,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 1
+      },
+      "pixels": {
+        "left": 128,
+        "top": 32
+      },
+      "outputFile": "tilesindoor_00011.png"
+    },
+    {
+      "id": 12,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 1
+      },
+      "pixels": {
+        "left": 160,
+        "top": 32
+      },
+      "outputFile": "tilesindoor_00012.png"
+    },
+    {
+      "id": 13,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 1
+      },
+      "pixels": {
+        "left": 192,
+        "top": 32
+      },
+      "outputFile": "tilesindoor_00013.png"
+    },
+    {
+      "id": 14,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 2
+      },
+      "pixels": {
+        "left": 0,
+        "top": 64
+      },
+      "outputFile": "tilesindoor_00014.png"
+    },
+    {
+      "id": 15,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 2
+      },
+      "pixels": {
+        "left": 32,
+        "top": 64
+      },
+      "outputFile": "tilesindoor_00015.png"
+    },
+    {
+      "id": 16,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 2
+      },
+      "pixels": {
+        "left": 64,
+        "top": 64
+      },
+      "outputFile": "tilesindoor_00016.png"
+    },
+    {
+      "id": 17,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 2
+      },
+      "pixels": {
+        "left": 96,
+        "top": 64
+      },
+      "outputFile": "tilesindoor_00017.png"
+    },
+    {
+      "id": 18,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 2
+      },
+      "pixels": {
+        "left": 128,
+        "top": 64
+      },
+      "outputFile": "tilesindoor_00018.png"
+    },
+    {
+      "id": 19,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 2
+      },
+      "pixels": {
+        "left": 160,
+        "top": 64
+      },
+      "outputFile": "tilesindoor_00019.png"
+    },
+    {
+      "id": 20,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 2
+      },
+      "pixels": {
+        "left": 192,
+        "top": 64
+      },
+      "outputFile": "tilesindoor_00020.png"
+    },
+    {
+      "id": 21,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 3
+      },
+      "pixels": {
+        "left": 0,
+        "top": 96
+      },
+      "outputFile": "tilesindoor_00021.png"
+    },
+    {
+      "id": 22,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 3
+      },
+      "pixels": {
+        "left": 32,
+        "top": 96
+      },
+      "outputFile": "tilesindoor_00022.png"
+    },
+    {
+      "id": 23,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 3
+      },
+      "pixels": {
+        "left": 64,
+        "top": 96
+      },
+      "outputFile": "tilesindoor_00023.png"
+    },
+    {
+      "id": 24,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 3
+      },
+      "pixels": {
+        "left": 96,
+        "top": 96
+      },
+      "outputFile": "tilesindoor_00024.png"
+    },
+    {
+      "id": 25,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 3
+      },
+      "pixels": {
+        "left": 128,
+        "top": 96
+      },
+      "outputFile": "tilesindoor_00025.png"
+    },
+    {
+      "id": 26,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 3
+      },
+      "pixels": {
+        "left": 160,
+        "top": 96
+      },
+      "outputFile": "tilesindoor_00026.png"
+    },
+    {
+      "id": 27,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 3
+      },
+      "pixels": {
+        "left": 192,
+        "top": 96
+      },
+      "outputFile": "tilesindoor_00027.png"
+    },
+    {
+      "id": 28,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 4
+      },
+      "pixels": {
+        "left": 0,
+        "top": 128
+      },
+      "outputFile": "tilesindoor_00028.png"
+    },
+    {
+      "id": 29,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 4
+      },
+      "pixels": {
+        "left": 32,
+        "top": 128
+      },
+      "outputFile": "tilesindoor_00029.png"
+    },
+    {
+      "id": 30,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 4
+      },
+      "pixels": {
+        "left": 64,
+        "top": 128
+      },
+      "outputFile": "tilesindoor_00030.png"
+    },
+    {
+      "id": 31,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 4
+      },
+      "pixels": {
+        "left": 96,
+        "top": 128
+      },
+      "outputFile": "tilesindoor_00031.png"
+    },
+    {
+      "id": 32,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 4
+      },
+      "pixels": {
+        "left": 128,
+        "top": 128
+      },
+      "outputFile": "tilesindoor_00032.png"
+    },
+    {
+      "id": 33,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 4
+      },
+      "pixels": {
+        "left": 160,
+        "top": 128
+      },
+      "outputFile": "tilesindoor_00033.png"
+    },
+    {
+      "id": 34,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 4
+      },
+      "pixels": {
+        "left": 192,
+        "top": 128
+      },
+      "outputFile": "tilesindoor_00034.png"
+    },
+    {
+      "id": 35,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 5
+      },
+      "pixels": {
+        "left": 0,
+        "top": 160
+      },
+      "outputFile": "tilesindoor_00035.png"
+    },
+    {
+      "id": 36,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 5
+      },
+      "pixels": {
+        "left": 32,
+        "top": 160
+      },
+      "outputFile": "tilesindoor_00036.png"
+    },
+    {
+      "id": 37,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 5
+      },
+      "pixels": {
+        "left": 64,
+        "top": 160
+      },
+      "outputFile": "tilesindoor_00037.png"
+    },
+    {
+      "id": 38,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 5
+      },
+      "pixels": {
+        "left": 96,
+        "top": 160
+      },
+      "outputFile": "tilesindoor_00038.png"
+    },
+    {
+      "id": 39,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 5
+      },
+      "pixels": {
+        "left": 128,
+        "top": 160
+      },
+      "outputFile": "tilesindoor_00039.png"
+    },
+    {
+      "id": 40,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 5
+      },
+      "pixels": {
+        "left": 160,
+        "top": 160
+      },
+      "outputFile": "tilesindoor_00040.png"
+    },
+    {
+      "id": 41,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 5
+      },
+      "pixels": {
+        "left": 192,
+        "top": 160
+      },
+      "outputFile": "tilesindoor_00041.png"
+    },
+    {
+      "id": 42,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 6
+      },
+      "pixels": {
+        "left": 0,
+        "top": 192
+      },
+      "outputFile": "tilesindoor_00042.png"
+    },
+    {
+      "id": 43,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 6
+      },
+      "pixels": {
+        "left": 32,
+        "top": 192
+      },
+      "outputFile": "tilesindoor_00043.png"
+    },
+    {
+      "id": 44,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 6
+      },
+      "pixels": {
+        "left": 64,
+        "top": 192
+      },
+      "outputFile": "tilesindoor_00044.png"
+    },
+    {
+      "id": 45,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 6
+      },
+      "pixels": {
+        "left": 96,
+        "top": 192
+      },
+      "outputFile": "tilesindoor_00045.png"
+    },
+    {
+      "id": 46,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 6
+      },
+      "pixels": {
+        "left": 128,
+        "top": 192
+      },
+      "outputFile": "tilesindoor_00046.png"
+    },
+    {
+      "id": 47,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 6
+      },
+      "pixels": {
+        "left": 160,
+        "top": 192
+      },
+      "outputFile": "tilesindoor_00047.png"
+    },
+    {
+      "id": 48,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 6
+      },
+      "pixels": {
+        "left": 192,
+        "top": 192
+      },
+      "outputFile": "tilesindoor_00048.png"
+    },
+    {
+      "id": 49,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 7
+      },
+      "pixels": {
+        "left": 0,
+        "top": 224
+      },
+      "outputFile": "tilesindoor_00049.png"
+    },
+    {
+      "id": 50,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 7
+      },
+      "pixels": {
+        "left": 32,
+        "top": 224
+      },
+      "outputFile": "tilesindoor_00050.png"
+    },
+    {
+      "id": 51,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 7
+      },
+      "pixels": {
+        "left": 64,
+        "top": 224
+      },
+      "outputFile": "tilesindoor_00051.png"
+    },
+    {
+      "id": 52,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 7
+      },
+      "pixels": {
+        "left": 96,
+        "top": 224
+      },
+      "outputFile": "tilesindoor_00052.png"
+    },
+    {
+      "id": 53,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 7
+      },
+      "pixels": {
+        "left": 128,
+        "top": 224
+      },
+      "outputFile": "tilesindoor_00053.png"
+    },
+    {
+      "id": 54,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 7
+      },
+      "pixels": {
+        "left": 160,
+        "top": 224
+      },
+      "outputFile": "tilesindoor_00054.png"
+    },
+    {
+      "id": 55,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 7
+      },
+      "pixels": {
+        "left": 192,
+        "top": 224
+      },
+      "outputFile": "tilesindoor_00055.png"
+    },
+    {
+      "id": 56,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 8
+      },
+      "pixels": {
+        "left": 0,
+        "top": 256
+      },
+      "outputFile": "tilesindoor_00056.png"
+    },
+    {
+      "id": 57,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 8
+      },
+      "pixels": {
+        "left": 32,
+        "top": 256
+      },
+      "outputFile": "tilesindoor_00057.png"
+    },
+    {
+      "id": 58,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 8
+      },
+      "pixels": {
+        "left": 64,
+        "top": 256
+      },
+      "outputFile": "tilesindoor_00058.png"
+    },
+    {
+      "id": 59,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 8
+      },
+      "pixels": {
+        "left": 96,
+        "top": 256
+      },
+      "outputFile": "tilesindoor_00059.png"
+    },
+    {
+      "id": 60,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 8
+      },
+      "pixels": {
+        "left": 128,
+        "top": 256
+      },
+      "outputFile": "tilesindoor_00060.png"
+    },
+    {
+      "id": 61,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 8
+      },
+      "pixels": {
+        "left": 160,
+        "top": 256
+      },
+      "outputFile": "tilesindoor_00061.png"
+    },
+    {
+      "id": 62,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 8
+      },
+      "pixels": {
+        "left": 192,
+        "top": 256
+      },
+      "outputFile": "tilesindoor_00062.png"
+    },
+    {
+      "id": 63,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 9
+      },
+      "pixels": {
+        "left": 0,
+        "top": 288
+      },
+      "outputFile": "tilesindoor_00063.png"
+    },
+    {
+      "id": 64,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 9
+      },
+      "pixels": {
+        "left": 32,
+        "top": 288
+      },
+      "outputFile": "tilesindoor_00064.png"
+    },
+    {
+      "id": 65,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 9
+      },
+      "pixels": {
+        "left": 64,
+        "top": 288
+      },
+      "outputFile": "tilesindoor_00065.png"
+    },
+    {
+      "id": 66,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 9
+      },
+      "pixels": {
+        "left": 96,
+        "top": 288
+      },
+      "outputFile": "tilesindoor_00066.png"
+    },
+    {
+      "id": 67,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 9
+      },
+      "pixels": {
+        "left": 128,
+        "top": 288
+      },
+      "outputFile": "tilesindoor_00067.png"
+    },
+    {
+      "id": 68,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 9
+      },
+      "pixels": {
+        "left": 160,
+        "top": 288
+      },
+      "outputFile": "tilesindoor_00068.png"
+    },
+    {
+      "id": 69,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 9
+      },
+      "pixels": {
+        "left": 192,
+        "top": 288
+      },
+      "outputFile": "tilesindoor_00069.png"
+    },
+    {
+      "id": 70,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 10
+      },
+      "pixels": {
+        "left": 0,
+        "top": 320
+      },
+      "outputFile": "tilesindoor_00070.png"
+    },
+    {
+      "id": 71,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 10
+      },
+      "pixels": {
+        "left": 32,
+        "top": 320
+      },
+      "outputFile": "tilesindoor_00071.png"
+    },
+    {
+      "id": 72,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 10
+      },
+      "pixels": {
+        "left": 64,
+        "top": 320
+      },
+      "outputFile": "tilesindoor_00072.png"
+    },
+    {
+      "id": 73,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 10
+      },
+      "pixels": {
+        "left": 96,
+        "top": 320
+      },
+      "outputFile": "tilesindoor_00073.png"
+    },
+    {
+      "id": 74,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 10
+      },
+      "pixels": {
+        "left": 128,
+        "top": 320
+      },
+      "outputFile": "tilesindoor_00074.png"
+    },
+    {
+      "id": 75,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 10
+      },
+      "pixels": {
+        "left": 160,
+        "top": 320
+      },
+      "outputFile": "tilesindoor_00075.png"
+    },
+    {
+      "id": 76,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 10
+      },
+      "pixels": {
+        "left": 192,
+        "top": 320
+      },
+      "outputFile": "tilesindoor_00076.png"
+    },
+    {
+      "id": 77,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 11
+      },
+      "pixels": {
+        "left": 0,
+        "top": 352
+      },
+      "outputFile": "tilesindoor_00077.png"
+    },
+    {
+      "id": 78,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 11
+      },
+      "pixels": {
+        "left": 32,
+        "top": 352
+      },
+      "outputFile": "tilesindoor_00078.png"
+    },
+    {
+      "id": 79,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 11
+      },
+      "pixels": {
+        "left": 64,
+        "top": 352
+      },
+      "outputFile": "tilesindoor_00079.png"
+    },
+    {
+      "id": 80,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 11
+      },
+      "pixels": {
+        "left": 96,
+        "top": 352
+      },
+      "outputFile": "tilesindoor_00080.png"
+    },
+    {
+      "id": 81,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 11
+      },
+      "pixels": {
+        "left": 128,
+        "top": 352
+      },
+      "outputFile": "tilesindoor_00081.png"
+    },
+    {
+      "id": 82,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 11
+      },
+      "pixels": {
+        "left": 160,
+        "top": 352
+      },
+      "outputFile": "tilesindoor_00082.png"
+    },
+    {
+      "id": 83,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 11
+      },
+      "pixels": {
+        "left": 192,
+        "top": 352
+      },
+      "outputFile": "tilesindoor_00083.png"
+    },
+    {
+      "id": 84,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 12
+      },
+      "pixels": {
+        "left": 0,
+        "top": 384
+      },
+      "outputFile": "tilesindoor_00084.png"
+    },
+    {
+      "id": 85,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 12
+      },
+      "pixels": {
+        "left": 32,
+        "top": 384
+      },
+      "outputFile": "tilesindoor_00085.png"
+    },
+    {
+      "id": 86,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 12
+      },
+      "pixels": {
+        "left": 64,
+        "top": 384
+      },
+      "outputFile": "tilesindoor_00086.png"
+    },
+    {
+      "id": 87,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 12
+      },
+      "pixels": {
+        "left": 96,
+        "top": 384
+      },
+      "outputFile": "tilesindoor_00087.png"
+    },
+    {
+      "id": 88,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 12
+      },
+      "pixels": {
+        "left": 128,
+        "top": 384
+      },
+      "outputFile": "tilesindoor_00088.png"
+    },
+    {
+      "id": 89,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 12
+      },
+      "pixels": {
+        "left": 160,
+        "top": 384
+      },
+      "outputFile": "tilesindoor_00089.png"
+    },
+    {
+      "id": 90,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 12
+      },
+      "pixels": {
+        "left": 192,
+        "top": 384
+      },
+      "outputFile": "tilesindoor_00090.png"
+    },
+    {
+      "id": 91,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 13
+      },
+      "pixels": {
+        "left": 0,
+        "top": 416
+      },
+      "outputFile": "tilesindoor_00091.png"
+    },
+    {
+      "id": 92,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 13
+      },
+      "pixels": {
+        "left": 32,
+        "top": 416
+      },
+      "outputFile": "tilesindoor_00092.png"
+    },
+    {
+      "id": 93,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 13
+      },
+      "pixels": {
+        "left": 64,
+        "top": 416
+      },
+      "outputFile": "tilesindoor_00093.png"
+    },
+    {
+      "id": 94,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 13
+      },
+      "pixels": {
+        "left": 96,
+        "top": 416
+      },
+      "outputFile": "tilesindoor_00094.png"
+    },
+    {
+      "id": 95,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 13
+      },
+      "pixels": {
+        "left": 128,
+        "top": 416
+      },
+      "outputFile": "tilesindoor_00095.png"
+    },
+    {
+      "id": 96,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 13
+      },
+      "pixels": {
+        "left": 160,
+        "top": 416
+      },
+      "outputFile": "tilesindoor_00096.png"
+    },
+    {
+      "id": 97,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 13
+      },
+      "pixels": {
+        "left": 192,
+        "top": 416
+      },
+      "outputFile": "tilesindoor_00097.png"
+    },
+    {
+      "id": 98,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 14
+      },
+      "pixels": {
+        "left": 0,
+        "top": 448
+      },
+      "outputFile": "tilesindoor_00098.png"
+    },
+    {
+      "id": 99,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 14
+      },
+      "pixels": {
+        "left": 32,
+        "top": 448
+      },
+      "outputFile": "tilesindoor_00099.png"
+    },
+    {
+      "id": 100,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 14
+      },
+      "pixels": {
+        "left": 64,
+        "top": 448
+      },
+      "outputFile": "tilesindoor_00100.png"
+    },
+    {
+      "id": 101,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 14
+      },
+      "pixels": {
+        "left": 96,
+        "top": 448
+      },
+      "outputFile": "tilesindoor_00101.png"
+    },
+    {
+      "id": 102,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 14
+      },
+      "pixels": {
+        "left": 128,
+        "top": 448
+      },
+      "outputFile": "tilesindoor_00102.png"
+    },
+    {
+      "id": 103,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 14
+      },
+      "pixels": {
+        "left": 160,
+        "top": 448
+      },
+      "outputFile": "tilesindoor_00103.png"
+    },
+    {
+      "id": 104,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 14
+      },
+      "pixels": {
+        "left": 192,
+        "top": 448
+      },
+      "outputFile": "tilesindoor_00104.png"
+    },
+    {
+      "id": 105,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 15
+      },
+      "pixels": {
+        "left": 0,
+        "top": 480
+      },
+      "outputFile": "tilesindoor_00105.png"
+    },
+    {
+      "id": 106,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 15
+      },
+      "pixels": {
+        "left": 32,
+        "top": 480
+      },
+      "outputFile": "tilesindoor_00106.png"
+    },
+    {
+      "id": 107,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 15
+      },
+      "pixels": {
+        "left": 64,
+        "top": 480
+      },
+      "outputFile": "tilesindoor_00107.png"
+    },
+    {
+      "id": 108,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 15
+      },
+      "pixels": {
+        "left": 96,
+        "top": 480
+      },
+      "outputFile": "tilesindoor_00108.png"
+    },
+    {
+      "id": 109,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 15
+      },
+      "pixels": {
+        "left": 128,
+        "top": 480
+      },
+      "outputFile": "tilesindoor_00109.png"
+    },
+    {
+      "id": 110,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 15
+      },
+      "pixels": {
+        "left": 160,
+        "top": 480
+      },
+      "outputFile": "tilesindoor_00110.png"
+    },
+    {
+      "id": 111,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 15
+      },
+      "pixels": {
+        "left": 192,
+        "top": 480
+      },
+      "outputFile": "tilesindoor_00111.png"
+    },
+    {
+      "id": 112,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 16
+      },
+      "pixels": {
+        "left": 0,
+        "top": 512
+      },
+      "outputFile": "tilesindoor_00112.png"
+    },
+    {
+      "id": 113,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 16
+      },
+      "pixels": {
+        "left": 32,
+        "top": 512
+      },
+      "outputFile": "tilesindoor_00113.png"
+    },
+    {
+      "id": 114,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 16
+      },
+      "pixels": {
+        "left": 64,
+        "top": 512
+      },
+      "outputFile": "tilesindoor_00114.png"
+    },
+    {
+      "id": 115,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 16
+      },
+      "pixels": {
+        "left": 96,
+        "top": 512
+      },
+      "outputFile": "tilesindoor_00115.png"
+    },
+    {
+      "id": 116,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 16
+      },
+      "pixels": {
+        "left": 128,
+        "top": 512
+      },
+      "outputFile": "tilesindoor_00116.png"
+    },
+    {
+      "id": 117,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 16
+      },
+      "pixels": {
+        "left": 160,
+        "top": 512
+      },
+      "outputFile": "tilesindoor_00117.png"
+    },
+    {
+      "id": 118,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 16
+      },
+      "pixels": {
+        "left": 192,
+        "top": 512
+      },
+      "outputFile": "tilesindoor_00118.png"
+    },
+    {
+      "id": 119,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 17
+      },
+      "pixels": {
+        "left": 0,
+        "top": 544
+      },
+      "outputFile": "tilesindoor_00119.png"
+    },
+    {
+      "id": 120,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 17
+      },
+      "pixels": {
+        "left": 32,
+        "top": 544
+      },
+      "outputFile": "tilesindoor_00120.png"
+    },
+    {
+      "id": 121,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 17
+      },
+      "pixels": {
+        "left": 64,
+        "top": 544
+      },
+      "outputFile": "tilesindoor_00121.png"
+    },
+    {
+      "id": 122,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 17
+      },
+      "pixels": {
+        "left": 96,
+        "top": 544
+      },
+      "outputFile": "tilesindoor_00122.png"
+    },
+    {
+      "id": 123,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 17
+      },
+      "pixels": {
+        "left": 128,
+        "top": 544
+      },
+      "outputFile": "tilesindoor_00123.png"
+    },
+    {
+      "id": 124,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 17
+      },
+      "pixels": {
+        "left": 160,
+        "top": 544
+      },
+      "outputFile": "tilesindoor_00124.png"
+    },
+    {
+      "id": 125,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 17
+      },
+      "pixels": {
+        "left": 192,
+        "top": 544
+      },
+      "outputFile": "tilesindoor_00125.png"
+    },
+    {
+      "id": 126,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 18
+      },
+      "pixels": {
+        "left": 0,
+        "top": 576
+      },
+      "outputFile": "tilesindoor_00126.png"
+    },
+    {
+      "id": 127,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 18
+      },
+      "pixels": {
+        "left": 32,
+        "top": 576
+      },
+      "outputFile": "tilesindoor_00127.png"
+    },
+    {
+      "id": 128,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 18
+      },
+      "pixels": {
+        "left": 64,
+        "top": 576
+      },
+      "outputFile": "tilesindoor_00128.png"
+    },
+    {
+      "id": 129,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 18
+      },
+      "pixels": {
+        "left": 96,
+        "top": 576
+      },
+      "outputFile": "tilesindoor_00129.png"
+    },
+    {
+      "id": 130,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 18
+      },
+      "pixels": {
+        "left": 128,
+        "top": 576
+      },
+      "outputFile": "tilesindoor_00130.png"
+    },
+    {
+      "id": 131,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 18
+      },
+      "pixels": {
+        "left": 160,
+        "top": 576
+      },
+      "outputFile": "tilesindoor_00131.png"
+    },
+    {
+      "id": 132,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 18
+      },
+      "pixels": {
+        "left": 192,
+        "top": 576
+      },
+      "outputFile": "tilesindoor_00132.png"
+    },
+    {
+      "id": 133,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 19
+      },
+      "pixels": {
+        "left": 0,
+        "top": 608
+      },
+      "outputFile": "tilesindoor_00133.png"
+    },
+    {
+      "id": 134,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 19
+      },
+      "pixels": {
+        "left": 32,
+        "top": 608
+      },
+      "outputFile": "tilesindoor_00134.png"
+    },
+    {
+      "id": 135,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 19
+      },
+      "pixels": {
+        "left": 64,
+        "top": 608
+      },
+      "outputFile": "tilesindoor_00135.png"
+    },
+    {
+      "id": 136,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 19
+      },
+      "pixels": {
+        "left": 96,
+        "top": 608
+      },
+      "outputFile": "tilesindoor_00136.png"
+    },
+    {
+      "id": 137,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 19
+      },
+      "pixels": {
+        "left": 128,
+        "top": 608
+      },
+      "outputFile": "tilesindoor_00137.png"
+    },
+    {
+      "id": 138,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 19
+      },
+      "pixels": {
+        "left": 160,
+        "top": 608
+      },
+      "outputFile": "tilesindoor_00138.png"
+    },
+    {
+      "id": 139,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 19
+      },
+      "pixels": {
+        "left": 192,
+        "top": 608
+      },
+      "outputFile": "tilesindoor_00139.png"
+    },
+    {
+      "id": 140,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 20
+      },
+      "pixels": {
+        "left": 0,
+        "top": 640
+      },
+      "outputFile": "tilesindoor_00140.png"
+    },
+    {
+      "id": 141,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 20
+      },
+      "pixels": {
+        "left": 32,
+        "top": 640
+      },
+      "outputFile": "tilesindoor_00141.png"
+    },
+    {
+      "id": 142,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 20
+      },
+      "pixels": {
+        "left": 64,
+        "top": 640
+      },
+      "outputFile": "tilesindoor_00142.png"
+    },
+    {
+      "id": 143,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 20
+      },
+      "pixels": {
+        "left": 96,
+        "top": 640
+      },
+      "outputFile": "tilesindoor_00143.png"
+    },
+    {
+      "id": 144,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 20
+      },
+      "pixels": {
+        "left": 128,
+        "top": 640
+      },
+      "outputFile": "tilesindoor_00144.png"
+    },
+    {
+      "id": 145,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 20
+      },
+      "pixels": {
+        "left": 160,
+        "top": 640
+      },
+      "outputFile": "tilesindoor_00145.png"
+    },
+    {
+      "id": 146,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 20
+      },
+      "pixels": {
+        "left": 192,
+        "top": 640
+      },
+      "outputFile": "tilesindoor_00146.png"
+    },
+    {
+      "id": 147,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 21
+      },
+      "pixels": {
+        "left": 0,
+        "top": 672
+      },
+      "outputFile": "tilesindoor_00147.png"
+    },
+    {
+      "id": 148,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 21
+      },
+      "pixels": {
+        "left": 32,
+        "top": 672
+      },
+      "outputFile": "tilesindoor_00148.png"
+    },
+    {
+      "id": 149,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 21
+      },
+      "pixels": {
+        "left": 64,
+        "top": 672
+      },
+      "outputFile": "tilesindoor_00149.png"
+    },
+    {
+      "id": 150,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 21
+      },
+      "pixels": {
+        "left": 96,
+        "top": 672
+      },
+      "outputFile": "tilesindoor_00150.png"
+    },
+    {
+      "id": 151,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 21
+      },
+      "pixels": {
+        "left": 128,
+        "top": 672
+      },
+      "outputFile": "tilesindoor_00151.png"
+    },
+    {
+      "id": 152,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 21
+      },
+      "pixels": {
+        "left": 160,
+        "top": 672
+      },
+      "outputFile": "tilesindoor_00152.png"
+    },
+    {
+      "id": 153,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 21
+      },
+      "pixels": {
+        "left": 192,
+        "top": 672
+      },
+      "outputFile": "tilesindoor_00153.png"
+    },
+    {
+      "id": 154,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 22
+      },
+      "pixels": {
+        "left": 0,
+        "top": 704
+      },
+      "outputFile": "tilesindoor_00154.png"
+    },
+    {
+      "id": 155,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 22
+      },
+      "pixels": {
+        "left": 32,
+        "top": 704
+      },
+      "outputFile": "tilesindoor_00155.png"
+    },
+    {
+      "id": 156,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 22
+      },
+      "pixels": {
+        "left": 64,
+        "top": 704
+      },
+      "outputFile": "tilesindoor_00156.png"
+    },
+    {
+      "id": 157,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 22
+      },
+      "pixels": {
+        "left": 96,
+        "top": 704
+      },
+      "outputFile": "tilesindoor_00157.png"
+    },
+    {
+      "id": 158,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 22
+      },
+      "pixels": {
+        "left": 128,
+        "top": 704
+      },
+      "outputFile": "tilesindoor_00158.png"
+    },
+    {
+      "id": 159,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 22
+      },
+      "pixels": {
+        "left": 160,
+        "top": 704
+      },
+      "outputFile": "tilesindoor_00159.png"
+    },
+    {
+      "id": 160,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 22
+      },
+      "pixels": {
+        "left": 192,
+        "top": 704
+      },
+      "outputFile": "tilesindoor_00160.png"
+    },
+    {
+      "id": 161,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 23
+      },
+      "pixels": {
+        "left": 0,
+        "top": 736
+      },
+      "outputFile": "tilesindoor_00161.png"
+    },
+    {
+      "id": 162,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 23
+      },
+      "pixels": {
+        "left": 32,
+        "top": 736
+      },
+      "outputFile": "tilesindoor_00162.png"
+    },
+    {
+      "id": 163,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 23
+      },
+      "pixels": {
+        "left": 64,
+        "top": 736
+      },
+      "outputFile": "tilesindoor_00163.png"
+    },
+    {
+      "id": 164,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 23
+      },
+      "pixels": {
+        "left": 96,
+        "top": 736
+      },
+      "outputFile": "tilesindoor_00164.png"
+    },
+    {
+      "id": 165,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 23
+      },
+      "pixels": {
+        "left": 128,
+        "top": 736
+      },
+      "outputFile": "tilesindoor_00165.png"
+    },
+    {
+      "id": 166,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 23
+      },
+      "pixels": {
+        "left": 160,
+        "top": 736
+      },
+      "outputFile": "tilesindoor_00166.png"
+    },
+    {
+      "id": 167,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 23
+      },
+      "pixels": {
+        "left": 192,
+        "top": 736
+      },
+      "outputFile": "tilesindoor_00167.png"
+    },
+    {
+      "id": 168,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 24
+      },
+      "pixels": {
+        "left": 0,
+        "top": 768
+      },
+      "outputFile": "tilesindoor_00168.png"
+    },
+    {
+      "id": 169,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 24
+      },
+      "pixels": {
+        "left": 32,
+        "top": 768
+      },
+      "outputFile": "tilesindoor_00169.png"
+    },
+    {
+      "id": 170,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 24
+      },
+      "pixels": {
+        "left": 64,
+        "top": 768
+      },
+      "outputFile": "tilesindoor_00170.png"
+    },
+    {
+      "id": 171,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 24
+      },
+      "pixels": {
+        "left": 96,
+        "top": 768
+      },
+      "outputFile": "tilesindoor_00171.png"
+    },
+    {
+      "id": 172,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 24
+      },
+      "pixels": {
+        "left": 128,
+        "top": 768
+      },
+      "outputFile": "tilesindoor_00172.png"
+    },
+    {
+      "id": 173,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 24
+      },
+      "pixels": {
+        "left": 160,
+        "top": 768
+      },
+      "outputFile": "tilesindoor_00173.png"
+    },
+    {
+      "id": 174,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 24
+      },
+      "pixels": {
+        "left": 192,
+        "top": 768
+      },
+      "outputFile": "tilesindoor_00174.png"
+    },
+    {
+      "id": 175,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 25
+      },
+      "pixels": {
+        "left": 0,
+        "top": 800
+      },
+      "outputFile": "tilesindoor_00175.png"
+    },
+    {
+      "id": 176,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 25
+      },
+      "pixels": {
+        "left": 32,
+        "top": 800
+      },
+      "outputFile": "tilesindoor_00176.png"
+    },
+    {
+      "id": 177,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 25
+      },
+      "pixels": {
+        "left": 64,
+        "top": 800
+      },
+      "outputFile": "tilesindoor_00177.png"
+    },
+    {
+      "id": 178,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 25
+      },
+      "pixels": {
+        "left": 96,
+        "top": 800
+      },
+      "outputFile": "tilesindoor_00178.png"
+    },
+    {
+      "id": 179,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 25
+      },
+      "pixels": {
+        "left": 128,
+        "top": 800
+      },
+      "outputFile": "tilesindoor_00179.png"
+    },
+    {
+      "id": 180,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 25
+      },
+      "pixels": {
+        "left": 160,
+        "top": 800
+      },
+      "outputFile": "tilesindoor_00180.png"
+    },
+    {
+      "id": 181,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 25
+      },
+      "pixels": {
+        "left": 192,
+        "top": 800
+      },
+      "outputFile": "tilesindoor_00181.png"
+    },
+    {
+      "id": 182,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 26
+      },
+      "pixels": {
+        "left": 0,
+        "top": 832
+      },
+      "outputFile": "tilesindoor_00182.png"
+    },
+    {
+      "id": 183,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 26
+      },
+      "pixels": {
+        "left": 32,
+        "top": 832
+      },
+      "outputFile": "tilesindoor_00183.png"
+    },
+    {
+      "id": 184,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 26
+      },
+      "pixels": {
+        "left": 64,
+        "top": 832
+      },
+      "outputFile": "tilesindoor_00184.png"
+    },
+    {
+      "id": 185,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 26
+      },
+      "pixels": {
+        "left": 96,
+        "top": 832
+      },
+      "outputFile": "tilesindoor_00185.png"
+    },
+    {
+      "id": 186,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 26
+      },
+      "pixels": {
+        "left": 128,
+        "top": 832
+      },
+      "outputFile": "tilesindoor_00186.png"
+    },
+    {
+      "id": 187,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 26
+      },
+      "pixels": {
+        "left": 160,
+        "top": 832
+      },
+      "outputFile": "tilesindoor_00187.png"
+    },
+    {
+      "id": 188,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 26
+      },
+      "pixels": {
+        "left": 192,
+        "top": 832
+      },
+      "outputFile": "tilesindoor_00188.png"
+    },
+    {
+      "id": 189,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 27
+      },
+      "pixels": {
+        "left": 0,
+        "top": 864
+      },
+      "outputFile": "tilesindoor_00189.png"
+    },
+    {
+      "id": 190,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 27
+      },
+      "pixels": {
+        "left": 32,
+        "top": 864
+      },
+      "outputFile": "tilesindoor_00190.png"
+    },
+    {
+      "id": 191,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 27
+      },
+      "pixels": {
+        "left": 64,
+        "top": 864
+      },
+      "outputFile": "tilesindoor_00191.png"
+    },
+    {
+      "id": 192,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 27
+      },
+      "pixels": {
+        "left": 96,
+        "top": 864
+      },
+      "outputFile": "tilesindoor_00192.png"
+    },
+    {
+      "id": 193,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 27
+      },
+      "pixels": {
+        "left": 128,
+        "top": 864
+      },
+      "outputFile": "tilesindoor_00193.png"
+    },
+    {
+      "id": 194,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 27
+      },
+      "pixels": {
+        "left": 160,
+        "top": 864
+      },
+      "outputFile": "tilesindoor_00194.png"
+    },
+    {
+      "id": 195,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 27
+      },
+      "pixels": {
+        "left": 192,
+        "top": 864
+      },
+      "outputFile": "tilesindoor_00195.png"
+    },
+    {
+      "id": 196,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 28
+      },
+      "pixels": {
+        "left": 0,
+        "top": 896
+      },
+      "outputFile": "tilesindoor_00196.png"
+    },
+    {
+      "id": 197,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 28
+      },
+      "pixels": {
+        "left": 32,
+        "top": 896
+      },
+      "outputFile": "tilesindoor_00197.png"
+    },
+    {
+      "id": 198,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 28
+      },
+      "pixels": {
+        "left": 64,
+        "top": 896
+      },
+      "outputFile": "tilesindoor_00198.png"
+    },
+    {
+      "id": 199,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 28
+      },
+      "pixels": {
+        "left": 96,
+        "top": 896
+      },
+      "outputFile": "tilesindoor_00199.png"
+    },
+    {
+      "id": 200,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 28
+      },
+      "pixels": {
+        "left": 128,
+        "top": 896
+      },
+      "outputFile": "tilesindoor_00200.png"
+    },
+    {
+      "id": 201,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 28
+      },
+      "pixels": {
+        "left": 160,
+        "top": 896
+      },
+      "outputFile": "tilesindoor_00201.png"
+    },
+    {
+      "id": 202,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 28
+      },
+      "pixels": {
+        "left": 192,
+        "top": 896
+      },
+      "outputFile": "tilesindoor_00202.png"
+    },
+    {
+      "id": 203,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 29
+      },
+      "pixels": {
+        "left": 0,
+        "top": 928
+      },
+      "outputFile": "tilesindoor_00203.png"
+    },
+    {
+      "id": 204,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 29
+      },
+      "pixels": {
+        "left": 32,
+        "top": 928
+      },
+      "outputFile": "tilesindoor_00204.png"
+    },
+    {
+      "id": 205,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 29
+      },
+      "pixels": {
+        "left": 64,
+        "top": 928
+      },
+      "outputFile": "tilesindoor_00205.png"
+    },
+    {
+      "id": 206,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 29
+      },
+      "pixels": {
+        "left": 96,
+        "top": 928
+      },
+      "outputFile": "tilesindoor_00206.png"
+    },
+    {
+      "id": 207,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 29
+      },
+      "pixels": {
+        "left": 128,
+        "top": 928
+      },
+      "outputFile": "tilesindoor_00207.png"
+    },
+    {
+      "id": 208,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 29
+      },
+      "pixels": {
+        "left": 160,
+        "top": 928
+      },
+      "outputFile": "tilesindoor_00208.png"
+    },
+    {
+      "id": 209,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 29
+      },
+      "pixels": {
+        "left": 192,
+        "top": 928
+      },
+      "outputFile": "tilesindoor_00209.png"
+    },
+    {
+      "id": 210,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 30
+      },
+      "pixels": {
+        "left": 0,
+        "top": 960
+      },
+      "outputFile": "tilesindoor_00210.png"
+    },
+    {
+      "id": 211,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 30
+      },
+      "pixels": {
+        "left": 32,
+        "top": 960
+      },
+      "outputFile": "tilesindoor_00211.png"
+    },
+    {
+      "id": 212,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 30
+      },
+      "pixels": {
+        "left": 64,
+        "top": 960
+      },
+      "outputFile": "tilesindoor_00212.png"
+    },
+    {
+      "id": 213,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 30
+      },
+      "pixels": {
+        "left": 96,
+        "top": 960
+      },
+      "outputFile": "tilesindoor_00213.png"
+    },
+    {
+      "id": 214,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 30
+      },
+      "pixels": {
+        "left": 128,
+        "top": 960
+      },
+      "outputFile": "tilesindoor_00214.png"
+    },
+    {
+      "id": 215,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 30
+      },
+      "pixels": {
+        "left": 160,
+        "top": 960
+      },
+      "outputFile": "tilesindoor_00215.png"
+    },
+    {
+      "id": 216,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 30
+      },
+      "pixels": {
+        "left": 192,
+        "top": 960
+      },
+      "outputFile": "tilesindoor_00216.png"
+    },
+    {
+      "id": 217,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 31
+      },
+      "pixels": {
+        "left": 0,
+        "top": 992
+      },
+      "outputFile": "tilesindoor_00217.png"
+    },
+    {
+      "id": 218,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 31
+      },
+      "pixels": {
+        "left": 32,
+        "top": 992
+      },
+      "outputFile": "tilesindoor_00218.png"
+    },
+    {
+      "id": 219,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 31
+      },
+      "pixels": {
+        "left": 64,
+        "top": 992
+      },
+      "outputFile": "tilesindoor_00219.png"
+    },
+    {
+      "id": 220,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 31
+      },
+      "pixels": {
+        "left": 96,
+        "top": 992
+      },
+      "outputFile": "tilesindoor_00220.png"
+    },
+    {
+      "id": 221,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 31
+      },
+      "pixels": {
+        "left": 128,
+        "top": 992
+      },
+      "outputFile": "tilesindoor_00221.png"
+    },
+    {
+      "id": 222,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 31
+      },
+      "pixels": {
+        "left": 160,
+        "top": 992
+      },
+      "outputFile": "tilesindoor_00222.png"
+    },
+    {
+      "id": 223,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 31
+      },
+      "pixels": {
+        "left": 192,
+        "top": 992
+      },
+      "outputFile": "tilesindoor_00223.png"
+    },
+    {
+      "id": 224,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 32
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1024
+      },
+      "outputFile": "tilesindoor_00224.png"
+    },
+    {
+      "id": 225,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 32
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1024
+      },
+      "outputFile": "tilesindoor_00225.png"
+    },
+    {
+      "id": 226,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 32
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1024
+      },
+      "outputFile": "tilesindoor_00226.png"
+    },
+    {
+      "id": 227,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 32
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1024
+      },
+      "outputFile": "tilesindoor_00227.png"
+    },
+    {
+      "id": 228,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 32
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1024
+      },
+      "outputFile": "tilesindoor_00228.png"
+    },
+    {
+      "id": 229,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 32
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1024
+      },
+      "outputFile": "tilesindoor_00229.png"
+    },
+    {
+      "id": 230,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 32
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1024
+      },
+      "outputFile": "tilesindoor_00230.png"
+    },
+    {
+      "id": 231,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 33
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1056
+      },
+      "outputFile": "tilesindoor_00231.png"
+    },
+    {
+      "id": 232,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 33
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1056
+      },
+      "outputFile": "tilesindoor_00232.png"
+    },
+    {
+      "id": 233,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 33
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1056
+      },
+      "outputFile": "tilesindoor_00233.png"
+    },
+    {
+      "id": 234,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 33
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1056
+      },
+      "outputFile": "tilesindoor_00234.png"
+    },
+    {
+      "id": 235,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 33
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1056
+      },
+      "outputFile": "tilesindoor_00235.png"
+    },
+    {
+      "id": 236,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 33
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1056
+      },
+      "outputFile": "tilesindoor_00236.png"
+    },
+    {
+      "id": 237,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 33
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1056
+      },
+      "outputFile": "tilesindoor_00237.png"
+    },
+    {
+      "id": 238,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 34
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1088
+      },
+      "outputFile": "tilesindoor_00238.png"
+    },
+    {
+      "id": 239,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 34
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1088
+      },
+      "outputFile": "tilesindoor_00239.png"
+    },
+    {
+      "id": 240,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 34
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1088
+      },
+      "outputFile": "tilesindoor_00240.png"
+    },
+    {
+      "id": 241,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 34
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1088
+      },
+      "outputFile": "tilesindoor_00241.png"
+    },
+    {
+      "id": 242,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 34
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1088
+      },
+      "outputFile": "tilesindoor_00242.png"
+    },
+    {
+      "id": 243,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 34
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1088
+      },
+      "outputFile": "tilesindoor_00243.png"
+    },
+    {
+      "id": 244,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 34
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1088
+      },
+      "outputFile": "tilesindoor_00244.png"
+    },
+    {
+      "id": 245,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 35
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1120
+      },
+      "outputFile": "tilesindoor_00245.png"
+    },
+    {
+      "id": 246,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 35
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1120
+      },
+      "outputFile": "tilesindoor_00246.png"
+    },
+    {
+      "id": 247,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 35
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1120
+      },
+      "outputFile": "tilesindoor_00247.png"
+    },
+    {
+      "id": 248,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 35
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1120
+      },
+      "outputFile": "tilesindoor_00248.png"
+    },
+    {
+      "id": 249,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 35
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1120
+      },
+      "outputFile": "tilesindoor_00249.png"
+    },
+    {
+      "id": 250,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 35
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1120
+      },
+      "outputFile": "tilesindoor_00250.png"
+    },
+    {
+      "id": 251,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 35
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1120
+      },
+      "outputFile": "tilesindoor_00251.png"
+    },
+    {
+      "id": 252,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 36
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1152
+      },
+      "outputFile": "tilesindoor_00252.png"
+    },
+    {
+      "id": 253,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 36
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1152
+      },
+      "outputFile": "tilesindoor_00253.png"
+    },
+    {
+      "id": 254,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 36
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1152
+      },
+      "outputFile": "tilesindoor_00254.png"
+    },
+    {
+      "id": 255,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 36
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1152
+      },
+      "outputFile": "tilesindoor_00255.png"
+    },
+    {
+      "id": 256,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 36
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1152
+      },
+      "outputFile": "tilesindoor_00256.png"
+    },
+    {
+      "id": 257,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 36
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1152
+      },
+      "outputFile": "tilesindoor_00257.png"
+    },
+    {
+      "id": 258,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 36
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1152
+      },
+      "outputFile": "tilesindoor_00258.png"
+    },
+    {
+      "id": 259,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 37
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1184
+      },
+      "outputFile": "tilesindoor_00259.png"
+    },
+    {
+      "id": 260,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 37
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1184
+      },
+      "outputFile": "tilesindoor_00260.png"
+    },
+    {
+      "id": 261,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 37
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1184
+      },
+      "outputFile": "tilesindoor_00261.png"
+    },
+    {
+      "id": 262,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 37
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1184
+      },
+      "outputFile": "tilesindoor_00262.png"
+    },
+    {
+      "id": 263,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 37
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1184
+      },
+      "outputFile": "tilesindoor_00263.png"
+    },
+    {
+      "id": 264,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 37
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1184
+      },
+      "outputFile": "tilesindoor_00264.png"
+    },
+    {
+      "id": 265,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 37
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1184
+      },
+      "outputFile": "tilesindoor_00265.png"
+    },
+    {
+      "id": 266,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 38
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1216
+      },
+      "outputFile": "tilesindoor_00266.png"
+    },
+    {
+      "id": 267,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 38
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1216
+      },
+      "outputFile": "tilesindoor_00267.png"
+    },
+    {
+      "id": 268,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 38
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1216
+      },
+      "outputFile": "tilesindoor_00268.png"
+    },
+    {
+      "id": 269,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 38
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1216
+      },
+      "outputFile": "tilesindoor_00269.png"
+    },
+    {
+      "id": 270,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 38
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1216
+      },
+      "outputFile": "tilesindoor_00270.png"
+    },
+    {
+      "id": 271,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 38
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1216
+      },
+      "outputFile": "tilesindoor_00271.png"
+    },
+    {
+      "id": 272,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 38
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1216
+      },
+      "outputFile": "tilesindoor_00272.png"
+    },
+    {
+      "id": 273,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 39
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1248
+      },
+      "outputFile": "tilesindoor_00273.png"
+    },
+    {
+      "id": 274,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 39
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1248
+      },
+      "outputFile": "tilesindoor_00274.png"
+    },
+    {
+      "id": 275,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 39
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1248
+      },
+      "outputFile": "tilesindoor_00275.png"
+    },
+    {
+      "id": 276,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 39
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1248
+      },
+      "outputFile": "tilesindoor_00276.png"
+    },
+    {
+      "id": 277,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 39
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1248
+      },
+      "outputFile": "tilesindoor_00277.png"
+    },
+    {
+      "id": 278,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 39
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1248
+      },
+      "outputFile": "tilesindoor_00278.png"
+    },
+    {
+      "id": 279,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 39
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1248
+      },
+      "outputFile": "tilesindoor_00279.png"
+    },
+    {
+      "id": 280,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 40
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1280
+      },
+      "outputFile": "tilesindoor_00280.png"
+    },
+    {
+      "id": 281,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 40
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1280
+      },
+      "outputFile": "tilesindoor_00281.png"
+    },
+    {
+      "id": 282,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 40
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1280
+      },
+      "outputFile": "tilesindoor_00282.png"
+    },
+    {
+      "id": 283,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 40
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1280
+      },
+      "outputFile": "tilesindoor_00283.png"
+    },
+    {
+      "id": 284,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 40
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1280
+      },
+      "outputFile": "tilesindoor_00284.png"
+    },
+    {
+      "id": 285,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 40
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1280
+      },
+      "outputFile": "tilesindoor_00285.png"
+    },
+    {
+      "id": 286,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 40
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1280
+      },
+      "outputFile": "tilesindoor_00286.png"
+    },
+    {
+      "id": 287,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 41
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1312
+      },
+      "outputFile": "tilesindoor_00287.png"
+    },
+    {
+      "id": 288,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 41
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1312
+      },
+      "outputFile": "tilesindoor_00288.png"
+    },
+    {
+      "id": 289,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 41
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1312
+      },
+      "outputFile": "tilesindoor_00289.png"
+    },
+    {
+      "id": 290,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 41
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1312
+      },
+      "outputFile": "tilesindoor_00290.png"
+    },
+    {
+      "id": 291,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 41
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1312
+      },
+      "outputFile": "tilesindoor_00291.png"
+    },
+    {
+      "id": 292,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 41
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1312
+      },
+      "outputFile": "tilesindoor_00292.png"
+    },
+    {
+      "id": 293,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 41
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1312
+      },
+      "outputFile": "tilesindoor_00293.png"
+    },
+    {
+      "id": 294,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 42
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1344
+      },
+      "outputFile": "tilesindoor_00294.png"
+    },
+    {
+      "id": 295,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 42
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1344
+      },
+      "outputFile": "tilesindoor_00295.png"
+    },
+    {
+      "id": 296,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 42
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1344
+      },
+      "outputFile": "tilesindoor_00296.png"
+    },
+    {
+      "id": 297,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 42
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1344
+      },
+      "outputFile": "tilesindoor_00297.png"
+    },
+    {
+      "id": 298,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 42
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1344
+      },
+      "outputFile": "tilesindoor_00298.png"
+    },
+    {
+      "id": 299,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 42
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1344
+      },
+      "outputFile": "tilesindoor_00299.png"
+    },
+    {
+      "id": 300,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 42
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1344
+      },
+      "outputFile": "tilesindoor_00300.png"
+    },
+    {
+      "id": 301,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 43
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1376
+      },
+      "outputFile": "tilesindoor_00301.png"
+    },
+    {
+      "id": 302,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 43
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1376
+      },
+      "outputFile": "tilesindoor_00302.png"
+    },
+    {
+      "id": 303,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 43
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1376
+      },
+      "outputFile": "tilesindoor_00303.png"
+    },
+    {
+      "id": 304,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 43
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1376
+      },
+      "outputFile": "tilesindoor_00304.png"
+    },
+    {
+      "id": 305,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 43
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1376
+      },
+      "outputFile": "tilesindoor_00305.png"
+    },
+    {
+      "id": 306,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 43
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1376
+      },
+      "outputFile": "tilesindoor_00306.png"
+    },
+    {
+      "id": 307,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 43
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1376
+      },
+      "outputFile": "tilesindoor_00307.png"
+    },
+    {
+      "id": 308,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 44
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1408
+      },
+      "outputFile": "tilesindoor_00308.png"
+    },
+    {
+      "id": 309,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 44
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1408
+      },
+      "outputFile": "tilesindoor_00309.png"
+    },
+    {
+      "id": 310,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 44
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1408
+      },
+      "outputFile": "tilesindoor_00310.png"
+    },
+    {
+      "id": 311,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 44
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1408
+      },
+      "outputFile": "tilesindoor_00311.png"
+    },
+    {
+      "id": 312,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 44
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1408
+      },
+      "outputFile": "tilesindoor_00312.png"
+    },
+    {
+      "id": 313,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 44
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1408
+      },
+      "outputFile": "tilesindoor_00313.png"
+    },
+    {
+      "id": 314,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 44
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1408
+      },
+      "outputFile": "tilesindoor_00314.png"
+    },
+    {
+      "id": 315,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 45
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1440
+      },
+      "outputFile": "tilesindoor_00315.png"
+    },
+    {
+      "id": 316,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 45
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1440
+      },
+      "outputFile": "tilesindoor_00316.png"
+    },
+    {
+      "id": 317,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 45
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1440
+      },
+      "outputFile": "tilesindoor_00317.png"
+    },
+    {
+      "id": 318,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 45
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1440
+      },
+      "outputFile": "tilesindoor_00318.png"
+    },
+    {
+      "id": 319,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 45
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1440
+      },
+      "outputFile": "tilesindoor_00319.png"
+    },
+    {
+      "id": 320,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 45
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1440
+      },
+      "outputFile": "tilesindoor_00320.png"
+    },
+    {
+      "id": 321,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 45
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1440
+      },
+      "outputFile": "tilesindoor_00321.png"
+    },
+    {
+      "id": 322,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 46
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1472
+      },
+      "outputFile": "tilesindoor_00322.png"
+    },
+    {
+      "id": 323,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 46
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1472
+      },
+      "outputFile": "tilesindoor_00323.png"
+    },
+    {
+      "id": 324,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 46
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1472
+      },
+      "outputFile": "tilesindoor_00324.png"
+    },
+    {
+      "id": 325,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 46
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1472
+      },
+      "outputFile": "tilesindoor_00325.png"
+    },
+    {
+      "id": 326,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 46
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1472
+      },
+      "outputFile": "tilesindoor_00326.png"
+    },
+    {
+      "id": 327,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 46
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1472
+      },
+      "outputFile": "tilesindoor_00327.png"
+    },
+    {
+      "id": 328,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 46
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1472
+      },
+      "outputFile": "tilesindoor_00328.png"
+    },
+    {
+      "id": 329,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 47
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1504
+      },
+      "outputFile": "tilesindoor_00329.png"
+    },
+    {
+      "id": 330,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 47
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1504
+      },
+      "outputFile": "tilesindoor_00330.png"
+    },
+    {
+      "id": 331,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 47
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1504
+      },
+      "outputFile": "tilesindoor_00331.png"
+    },
+    {
+      "id": 332,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 47
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1504
+      },
+      "outputFile": "tilesindoor_00332.png"
+    },
+    {
+      "id": 333,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 47
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1504
+      },
+      "outputFile": "tilesindoor_00333.png"
+    },
+    {
+      "id": 334,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 47
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1504
+      },
+      "outputFile": "tilesindoor_00334.png"
+    },
+    {
+      "id": 335,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 47
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1504
+      },
+      "outputFile": "tilesindoor_00335.png"
+    },
+    {
+      "id": 336,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 48
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1536
+      },
+      "outputFile": "tilesindoor_00336.png"
+    },
+    {
+      "id": 337,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 48
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1536
+      },
+      "outputFile": "tilesindoor_00337.png"
+    },
+    {
+      "id": 338,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 48
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1536
+      },
+      "outputFile": "tilesindoor_00338.png"
+    },
+    {
+      "id": 339,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 48
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1536
+      },
+      "outputFile": "tilesindoor_00339.png"
+    },
+    {
+      "id": 340,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 48
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1536
+      },
+      "outputFile": "tilesindoor_00340.png"
+    },
+    {
+      "id": 341,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 48
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1536
+      },
+      "outputFile": "tilesindoor_00341.png"
+    },
+    {
+      "id": 342,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 48
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1536
+      },
+      "outputFile": "tilesindoor_00342.png"
+    },
+    {
+      "id": 343,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 49
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1568
+      },
+      "outputFile": "tilesindoor_00343.png"
+    },
+    {
+      "id": 344,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 49
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1568
+      },
+      "outputFile": "tilesindoor_00344.png"
+    },
+    {
+      "id": 345,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 49
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1568
+      },
+      "outputFile": "tilesindoor_00345.png"
+    },
+    {
+      "id": 346,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 49
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1568
+      },
+      "outputFile": "tilesindoor_00346.png"
+    },
+    {
+      "id": 347,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 49
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1568
+      },
+      "outputFile": "tilesindoor_00347.png"
+    },
+    {
+      "id": 348,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 49
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1568
+      },
+      "outputFile": "tilesindoor_00348.png"
+    },
+    {
+      "id": 349,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 49
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1568
+      },
+      "outputFile": "tilesindoor_00349.png"
+    },
+    {
+      "id": 350,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 50
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1600
+      },
+      "outputFile": "tilesindoor_00350.png"
+    },
+    {
+      "id": 351,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 50
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1600
+      },
+      "outputFile": "tilesindoor_00351.png"
+    },
+    {
+      "id": 352,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 50
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1600
+      },
+      "outputFile": "tilesindoor_00352.png"
+    },
+    {
+      "id": 353,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 50
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1600
+      },
+      "outputFile": "tilesindoor_00353.png"
+    },
+    {
+      "id": 354,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 50
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1600
+      },
+      "outputFile": "tilesindoor_00354.png"
+    },
+    {
+      "id": 355,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 50
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1600
+      },
+      "outputFile": "tilesindoor_00355.png"
+    },
+    {
+      "id": 356,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 50
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1600
+      },
+      "outputFile": "tilesindoor_00356.png"
+    },
+    {
+      "id": 357,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 51
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1632
+      },
+      "outputFile": "tilesindoor_00357.png"
+    },
+    {
+      "id": 358,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 51
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1632
+      },
+      "outputFile": "tilesindoor_00358.png"
+    },
+    {
+      "id": 359,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 51
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1632
+      },
+      "outputFile": "tilesindoor_00359.png"
+    },
+    {
+      "id": 360,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 51
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1632
+      },
+      "outputFile": "tilesindoor_00360.png"
+    },
+    {
+      "id": 361,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 51
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1632
+      },
+      "outputFile": "tilesindoor_00361.png"
+    },
+    {
+      "id": 362,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 51
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1632
+      },
+      "outputFile": "tilesindoor_00362.png"
+    },
+    {
+      "id": 363,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 51
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1632
+      },
+      "outputFile": "tilesindoor_00363.png"
+    },
+    {
+      "id": 364,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 52
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1664
+      },
+      "outputFile": "tilesindoor_00364.png"
+    },
+    {
+      "id": 365,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 52
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1664
+      },
+      "outputFile": "tilesindoor_00365.png"
+    },
+    {
+      "id": 366,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 52
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1664
+      },
+      "outputFile": "tilesindoor_00366.png"
+    },
+    {
+      "id": 367,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 52
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1664
+      },
+      "outputFile": "tilesindoor_00367.png"
+    },
+    {
+      "id": 368,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 52
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1664
+      },
+      "outputFile": "tilesindoor_00368.png"
+    },
+    {
+      "id": 369,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 52
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1664
+      },
+      "outputFile": "tilesindoor_00369.png"
+    },
+    {
+      "id": 370,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 52
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1664
+      },
+      "outputFile": "tilesindoor_00370.png"
+    },
+    {
+      "id": 371,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 53
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1696
+      },
+      "outputFile": "tilesindoor_00371.png"
+    },
+    {
+      "id": 372,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 53
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1696
+      },
+      "outputFile": "tilesindoor_00372.png"
+    },
+    {
+      "id": 373,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 53
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1696
+      },
+      "outputFile": "tilesindoor_00373.png"
+    },
+    {
+      "id": 374,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 53
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1696
+      },
+      "outputFile": "tilesindoor_00374.png"
+    },
+    {
+      "id": 375,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 53
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1696
+      },
+      "outputFile": "tilesindoor_00375.png"
+    },
+    {
+      "id": 376,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 53
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1696
+      },
+      "outputFile": "tilesindoor_00376.png"
+    },
+    {
+      "id": 377,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 53
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1696
+      },
+      "outputFile": "tilesindoor_00377.png"
+    },
+    {
+      "id": 378,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 54
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1728
+      },
+      "outputFile": "tilesindoor_00378.png"
+    },
+    {
+      "id": 379,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 54
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1728
+      },
+      "outputFile": "tilesindoor_00379.png"
+    },
+    {
+      "id": 380,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 54
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1728
+      },
+      "outputFile": "tilesindoor_00380.png"
+    },
+    {
+      "id": 381,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 54
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1728
+      },
+      "outputFile": "tilesindoor_00381.png"
+    },
+    {
+      "id": 382,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 54
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1728
+      },
+      "outputFile": "tilesindoor_00382.png"
+    },
+    {
+      "id": 383,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 54
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1728
+      },
+      "outputFile": "tilesindoor_00383.png"
+    },
+    {
+      "id": 384,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 54
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1728
+      },
+      "outputFile": "tilesindoor_00384.png"
+    },
+    {
+      "id": 385,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 55
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1760
+      },
+      "outputFile": "tilesindoor_00385.png"
+    },
+    {
+      "id": 386,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 55
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1760
+      },
+      "outputFile": "tilesindoor_00386.png"
+    },
+    {
+      "id": 387,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 55
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1760
+      },
+      "outputFile": "tilesindoor_00387.png"
+    },
+    {
+      "id": 388,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 55
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1760
+      },
+      "outputFile": "tilesindoor_00388.png"
+    },
+    {
+      "id": 389,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 55
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1760
+      },
+      "outputFile": "tilesindoor_00389.png"
+    },
+    {
+      "id": 390,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 55
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1760
+      },
+      "outputFile": "tilesindoor_00390.png"
+    },
+    {
+      "id": 391,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 55
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1760
+      },
+      "outputFile": "tilesindoor_00391.png"
+    },
+    {
+      "id": 392,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 56
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1792
+      },
+      "outputFile": "tilesindoor_00392.png"
+    },
+    {
+      "id": 393,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 56
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1792
+      },
+      "outputFile": "tilesindoor_00393.png"
+    },
+    {
+      "id": 394,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 56
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1792
+      },
+      "outputFile": "tilesindoor_00394.png"
+    },
+    {
+      "id": 395,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 56
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1792
+      },
+      "outputFile": "tilesindoor_00395.png"
+    },
+    {
+      "id": 396,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 56
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1792
+      },
+      "outputFile": "tilesindoor_00396.png"
+    },
+    {
+      "id": 397,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 56
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1792
+      },
+      "outputFile": "tilesindoor_00397.png"
+    },
+    {
+      "id": 398,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 56
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1792
+      },
+      "outputFile": "tilesindoor_00398.png"
+    },
+    {
+      "id": 399,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 57
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1824
+      },
+      "outputFile": "tilesindoor_00399.png"
+    },
+    {
+      "id": 400,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 57
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1824
+      },
+      "outputFile": "tilesindoor_00400.png"
+    },
+    {
+      "id": 401,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 57
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1824
+      },
+      "outputFile": "tilesindoor_00401.png"
+    },
+    {
+      "id": 402,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 57
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1824
+      },
+      "outputFile": "tilesindoor_00402.png"
+    },
+    {
+      "id": 403,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 57
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1824
+      },
+      "outputFile": "tilesindoor_00403.png"
+    },
+    {
+      "id": 404,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 57
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1824
+      },
+      "outputFile": "tilesindoor_00404.png"
+    },
+    {
+      "id": 405,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 57
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1824
+      },
+      "outputFile": "tilesindoor_00405.png"
+    },
+    {
+      "id": 406,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 58
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1856
+      },
+      "outputFile": "tilesindoor_00406.png"
+    },
+    {
+      "id": 407,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 58
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1856
+      },
+      "outputFile": "tilesindoor_00407.png"
+    },
+    {
+      "id": 408,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 58
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1856
+      },
+      "outputFile": "tilesindoor_00408.png"
+    },
+    {
+      "id": 409,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 58
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1856
+      },
+      "outputFile": "tilesindoor_00409.png"
+    },
+    {
+      "id": 410,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 58
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1856
+      },
+      "outputFile": "tilesindoor_00410.png"
+    },
+    {
+      "id": 411,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 58
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1856
+      },
+      "outputFile": "tilesindoor_00411.png"
+    },
+    {
+      "id": 412,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 58
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1856
+      },
+      "outputFile": "tilesindoor_00412.png"
+    },
+    {
+      "id": 413,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 59
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1888
+      },
+      "outputFile": "tilesindoor_00413.png"
+    },
+    {
+      "id": 414,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 59
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1888
+      },
+      "outputFile": "tilesindoor_00414.png"
+    },
+    {
+      "id": 415,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 59
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1888
+      },
+      "outputFile": "tilesindoor_00415.png"
+    },
+    {
+      "id": 416,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 59
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1888
+      },
+      "outputFile": "tilesindoor_00416.png"
+    },
+    {
+      "id": 417,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 59
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1888
+      },
+      "outputFile": "tilesindoor_00417.png"
+    },
+    {
+      "id": 418,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 59
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1888
+      },
+      "outputFile": "tilesindoor_00418.png"
+    },
+    {
+      "id": 419,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 59
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1888
+      },
+      "outputFile": "tilesindoor_00419.png"
+    },
+    {
+      "id": 420,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 60
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1920
+      },
+      "outputFile": "tilesindoor_00420.png"
+    },
+    {
+      "id": 421,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 60
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1920
+      },
+      "outputFile": "tilesindoor_00421.png"
+    },
+    {
+      "id": 422,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 60
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1920
+      },
+      "outputFile": "tilesindoor_00422.png"
+    },
+    {
+      "id": 423,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 60
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1920
+      },
+      "outputFile": "tilesindoor_00423.png"
+    },
+    {
+      "id": 424,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 60
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1920
+      },
+      "outputFile": "tilesindoor_00424.png"
+    },
+    {
+      "id": 425,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 60
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1920
+      },
+      "outputFile": "tilesindoor_00425.png"
+    },
+    {
+      "id": 426,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 60
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1920
+      },
+      "outputFile": "tilesindoor_00426.png"
+    },
+    {
+      "id": 427,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 61
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1952
+      },
+      "outputFile": "tilesindoor_00427.png"
+    },
+    {
+      "id": 428,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 61
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1952
+      },
+      "outputFile": "tilesindoor_00428.png"
+    },
+    {
+      "id": 429,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 61
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1952
+      },
+      "outputFile": "tilesindoor_00429.png"
+    },
+    {
+      "id": 430,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 61
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1952
+      },
+      "outputFile": "tilesindoor_00430.png"
+    },
+    {
+      "id": 431,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 61
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1952
+      },
+      "outputFile": "tilesindoor_00431.png"
+    },
+    {
+      "id": 432,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 61
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1952
+      },
+      "outputFile": "tilesindoor_00432.png"
+    },
+    {
+      "id": 433,
+      "sourceFile": "tilesindoor.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 61
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1952
+      },
+      "outputFile": "tilesindoor_00433.png"
+    }
+  ],
+  "extractedAt": "2025-10-18T19:06:38.263Z"
+}

@@ -1,0 +1,4654 @@
+{
+  "sourceFile": "tilesother.rsc.png",
+  "tileSize": 32,
+  "grid": {
+    "cols": 7,
+    "rows": 51
+  },
+  "totalTiles": 357,
+  "extractedTiles": 357,
+  "tiles": [
+    {
+      "id": 0,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 0
+      },
+      "pixels": {
+        "left": 0,
+        "top": 0
+      },
+      "outputFile": "tilesother_00000.png"
+    },
+    {
+      "id": 1,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 0
+      },
+      "pixels": {
+        "left": 32,
+        "top": 0
+      },
+      "outputFile": "tilesother_00001.png"
+    },
+    {
+      "id": 2,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 0
+      },
+      "pixels": {
+        "left": 64,
+        "top": 0
+      },
+      "outputFile": "tilesother_00002.png"
+    },
+    {
+      "id": 3,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 0
+      },
+      "pixels": {
+        "left": 96,
+        "top": 0
+      },
+      "outputFile": "tilesother_00003.png"
+    },
+    {
+      "id": 4,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 0
+      },
+      "pixels": {
+        "left": 128,
+        "top": 0
+      },
+      "outputFile": "tilesother_00004.png"
+    },
+    {
+      "id": 5,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 0
+      },
+      "pixels": {
+        "left": 160,
+        "top": 0
+      },
+      "outputFile": "tilesother_00005.png"
+    },
+    {
+      "id": 6,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 0
+      },
+      "pixels": {
+        "left": 192,
+        "top": 0
+      },
+      "outputFile": "tilesother_00006.png"
+    },
+    {
+      "id": 7,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 1
+      },
+      "pixels": {
+        "left": 0,
+        "top": 32
+      },
+      "outputFile": "tilesother_00007.png"
+    },
+    {
+      "id": 8,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 1
+      },
+      "pixels": {
+        "left": 32,
+        "top": 32
+      },
+      "outputFile": "tilesother_00008.png"
+    },
+    {
+      "id": 9,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 1
+      },
+      "pixels": {
+        "left": 64,
+        "top": 32
+      },
+      "outputFile": "tilesother_00009.png"
+    },
+    {
+      "id": 10,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 1
+      },
+      "pixels": {
+        "left": 96,
+        "top": 32
+      },
+      "outputFile": "tilesother_00010.png"
+    },
+    {
+      "id": 11,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 1
+      },
+      "pixels": {
+        "left": 128,
+        "top": 32
+      },
+      "outputFile": "tilesother_00011.png"
+    },
+    {
+      "id": 12,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 1
+      },
+      "pixels": {
+        "left": 160,
+        "top": 32
+      },
+      "outputFile": "tilesother_00012.png"
+    },
+    {
+      "id": 13,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 1
+      },
+      "pixels": {
+        "left": 192,
+        "top": 32
+      },
+      "outputFile": "tilesother_00013.png"
+    },
+    {
+      "id": 14,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 2
+      },
+      "pixels": {
+        "left": 0,
+        "top": 64
+      },
+      "outputFile": "tilesother_00014.png"
+    },
+    {
+      "id": 15,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 2
+      },
+      "pixels": {
+        "left": 32,
+        "top": 64
+      },
+      "outputFile": "tilesother_00015.png"
+    },
+    {
+      "id": 16,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 2
+      },
+      "pixels": {
+        "left": 64,
+        "top": 64
+      },
+      "outputFile": "tilesother_00016.png"
+    },
+    {
+      "id": 17,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 2
+      },
+      "pixels": {
+        "left": 96,
+        "top": 64
+      },
+      "outputFile": "tilesother_00017.png"
+    },
+    {
+      "id": 18,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 2
+      },
+      "pixels": {
+        "left": 128,
+        "top": 64
+      },
+      "outputFile": "tilesother_00018.png"
+    },
+    {
+      "id": 19,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 2
+      },
+      "pixels": {
+        "left": 160,
+        "top": 64
+      },
+      "outputFile": "tilesother_00019.png"
+    },
+    {
+      "id": 20,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 2
+      },
+      "pixels": {
+        "left": 192,
+        "top": 64
+      },
+      "outputFile": "tilesother_00020.png"
+    },
+    {
+      "id": 21,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 3
+      },
+      "pixels": {
+        "left": 0,
+        "top": 96
+      },
+      "outputFile": "tilesother_00021.png"
+    },
+    {
+      "id": 22,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 3
+      },
+      "pixels": {
+        "left": 32,
+        "top": 96
+      },
+      "outputFile": "tilesother_00022.png"
+    },
+    {
+      "id": 23,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 3
+      },
+      "pixels": {
+        "left": 64,
+        "top": 96
+      },
+      "outputFile": "tilesother_00023.png"
+    },
+    {
+      "id": 24,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 3
+      },
+      "pixels": {
+        "left": 96,
+        "top": 96
+      },
+      "outputFile": "tilesother_00024.png"
+    },
+    {
+      "id": 25,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 3
+      },
+      "pixels": {
+        "left": 128,
+        "top": 96
+      },
+      "outputFile": "tilesother_00025.png"
+    },
+    {
+      "id": 26,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 3
+      },
+      "pixels": {
+        "left": 160,
+        "top": 96
+      },
+      "outputFile": "tilesother_00026.png"
+    },
+    {
+      "id": 27,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 3
+      },
+      "pixels": {
+        "left": 192,
+        "top": 96
+      },
+      "outputFile": "tilesother_00027.png"
+    },
+    {
+      "id": 28,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 4
+      },
+      "pixels": {
+        "left": 0,
+        "top": 128
+      },
+      "outputFile": "tilesother_00028.png"
+    },
+    {
+      "id": 29,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 4
+      },
+      "pixels": {
+        "left": 32,
+        "top": 128
+      },
+      "outputFile": "tilesother_00029.png"
+    },
+    {
+      "id": 30,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 4
+      },
+      "pixels": {
+        "left": 64,
+        "top": 128
+      },
+      "outputFile": "tilesother_00030.png"
+    },
+    {
+      "id": 31,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 4
+      },
+      "pixels": {
+        "left": 96,
+        "top": 128
+      },
+      "outputFile": "tilesother_00031.png"
+    },
+    {
+      "id": 32,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 4
+      },
+      "pixels": {
+        "left": 128,
+        "top": 128
+      },
+      "outputFile": "tilesother_00032.png"
+    },
+    {
+      "id": 33,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 4
+      },
+      "pixels": {
+        "left": 160,
+        "top": 128
+      },
+      "outputFile": "tilesother_00033.png"
+    },
+    {
+      "id": 34,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 4
+      },
+      "pixels": {
+        "left": 192,
+        "top": 128
+      },
+      "outputFile": "tilesother_00034.png"
+    },
+    {
+      "id": 35,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 5
+      },
+      "pixels": {
+        "left": 0,
+        "top": 160
+      },
+      "outputFile": "tilesother_00035.png"
+    },
+    {
+      "id": 36,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 5
+      },
+      "pixels": {
+        "left": 32,
+        "top": 160
+      },
+      "outputFile": "tilesother_00036.png"
+    },
+    {
+      "id": 37,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 5
+      },
+      "pixels": {
+        "left": 64,
+        "top": 160
+      },
+      "outputFile": "tilesother_00037.png"
+    },
+    {
+      "id": 38,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 5
+      },
+      "pixels": {
+        "left": 96,
+        "top": 160
+      },
+      "outputFile": "tilesother_00038.png"
+    },
+    {
+      "id": 39,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 5
+      },
+      "pixels": {
+        "left": 128,
+        "top": 160
+      },
+      "outputFile": "tilesother_00039.png"
+    },
+    {
+      "id": 40,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 5
+      },
+      "pixels": {
+        "left": 160,
+        "top": 160
+      },
+      "outputFile": "tilesother_00040.png"
+    },
+    {
+      "id": 41,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 5
+      },
+      "pixels": {
+        "left": 192,
+        "top": 160
+      },
+      "outputFile": "tilesother_00041.png"
+    },
+    {
+      "id": 42,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 6
+      },
+      "pixels": {
+        "left": 0,
+        "top": 192
+      },
+      "outputFile": "tilesother_00042.png"
+    },
+    {
+      "id": 43,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 6
+      },
+      "pixels": {
+        "left": 32,
+        "top": 192
+      },
+      "outputFile": "tilesother_00043.png"
+    },
+    {
+      "id": 44,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 6
+      },
+      "pixels": {
+        "left": 64,
+        "top": 192
+      },
+      "outputFile": "tilesother_00044.png"
+    },
+    {
+      "id": 45,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 6
+      },
+      "pixels": {
+        "left": 96,
+        "top": 192
+      },
+      "outputFile": "tilesother_00045.png"
+    },
+    {
+      "id": 46,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 6
+      },
+      "pixels": {
+        "left": 128,
+        "top": 192
+      },
+      "outputFile": "tilesother_00046.png"
+    },
+    {
+      "id": 47,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 6
+      },
+      "pixels": {
+        "left": 160,
+        "top": 192
+      },
+      "outputFile": "tilesother_00047.png"
+    },
+    {
+      "id": 48,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 6
+      },
+      "pixels": {
+        "left": 192,
+        "top": 192
+      },
+      "outputFile": "tilesother_00048.png"
+    },
+    {
+      "id": 49,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 7
+      },
+      "pixels": {
+        "left": 0,
+        "top": 224
+      },
+      "outputFile": "tilesother_00049.png"
+    },
+    {
+      "id": 50,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 7
+      },
+      "pixels": {
+        "left": 32,
+        "top": 224
+      },
+      "outputFile": "tilesother_00050.png"
+    },
+    {
+      "id": 51,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 7
+      },
+      "pixels": {
+        "left": 64,
+        "top": 224
+      },
+      "outputFile": "tilesother_00051.png"
+    },
+    {
+      "id": 52,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 7
+      },
+      "pixels": {
+        "left": 96,
+        "top": 224
+      },
+      "outputFile": "tilesother_00052.png"
+    },
+    {
+      "id": 53,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 7
+      },
+      "pixels": {
+        "left": 128,
+        "top": 224
+      },
+      "outputFile": "tilesother_00053.png"
+    },
+    {
+      "id": 54,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 7
+      },
+      "pixels": {
+        "left": 160,
+        "top": 224
+      },
+      "outputFile": "tilesother_00054.png"
+    },
+    {
+      "id": 55,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 7
+      },
+      "pixels": {
+        "left": 192,
+        "top": 224
+      },
+      "outputFile": "tilesother_00055.png"
+    },
+    {
+      "id": 56,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 8
+      },
+      "pixels": {
+        "left": 0,
+        "top": 256
+      },
+      "outputFile": "tilesother_00056.png"
+    },
+    {
+      "id": 57,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 8
+      },
+      "pixels": {
+        "left": 32,
+        "top": 256
+      },
+      "outputFile": "tilesother_00057.png"
+    },
+    {
+      "id": 58,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 8
+      },
+      "pixels": {
+        "left": 64,
+        "top": 256
+      },
+      "outputFile": "tilesother_00058.png"
+    },
+    {
+      "id": 59,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 8
+      },
+      "pixels": {
+        "left": 96,
+        "top": 256
+      },
+      "outputFile": "tilesother_00059.png"
+    },
+    {
+      "id": 60,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 8
+      },
+      "pixels": {
+        "left": 128,
+        "top": 256
+      },
+      "outputFile": "tilesother_00060.png"
+    },
+    {
+      "id": 61,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 8
+      },
+      "pixels": {
+        "left": 160,
+        "top": 256
+      },
+      "outputFile": "tilesother_00061.png"
+    },
+    {
+      "id": 62,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 8
+      },
+      "pixels": {
+        "left": 192,
+        "top": 256
+      },
+      "outputFile": "tilesother_00062.png"
+    },
+    {
+      "id": 63,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 9
+      },
+      "pixels": {
+        "left": 0,
+        "top": 288
+      },
+      "outputFile": "tilesother_00063.png"
+    },
+    {
+      "id": 64,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 9
+      },
+      "pixels": {
+        "left": 32,
+        "top": 288
+      },
+      "outputFile": "tilesother_00064.png"
+    },
+    {
+      "id": 65,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 9
+      },
+      "pixels": {
+        "left": 64,
+        "top": 288
+      },
+      "outputFile": "tilesother_00065.png"
+    },
+    {
+      "id": 66,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 9
+      },
+      "pixels": {
+        "left": 96,
+        "top": 288
+      },
+      "outputFile": "tilesother_00066.png"
+    },
+    {
+      "id": 67,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 9
+      },
+      "pixels": {
+        "left": 128,
+        "top": 288
+      },
+      "outputFile": "tilesother_00067.png"
+    },
+    {
+      "id": 68,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 9
+      },
+      "pixels": {
+        "left": 160,
+        "top": 288
+      },
+      "outputFile": "tilesother_00068.png"
+    },
+    {
+      "id": 69,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 9
+      },
+      "pixels": {
+        "left": 192,
+        "top": 288
+      },
+      "outputFile": "tilesother_00069.png"
+    },
+    {
+      "id": 70,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 10
+      },
+      "pixels": {
+        "left": 0,
+        "top": 320
+      },
+      "outputFile": "tilesother_00070.png"
+    },
+    {
+      "id": 71,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 10
+      },
+      "pixels": {
+        "left": 32,
+        "top": 320
+      },
+      "outputFile": "tilesother_00071.png"
+    },
+    {
+      "id": 72,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 10
+      },
+      "pixels": {
+        "left": 64,
+        "top": 320
+      },
+      "outputFile": "tilesother_00072.png"
+    },
+    {
+      "id": 73,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 10
+      },
+      "pixels": {
+        "left": 96,
+        "top": 320
+      },
+      "outputFile": "tilesother_00073.png"
+    },
+    {
+      "id": 74,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 10
+      },
+      "pixels": {
+        "left": 128,
+        "top": 320
+      },
+      "outputFile": "tilesother_00074.png"
+    },
+    {
+      "id": 75,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 10
+      },
+      "pixels": {
+        "left": 160,
+        "top": 320
+      },
+      "outputFile": "tilesother_00075.png"
+    },
+    {
+      "id": 76,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 10
+      },
+      "pixels": {
+        "left": 192,
+        "top": 320
+      },
+      "outputFile": "tilesother_00076.png"
+    },
+    {
+      "id": 77,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 11
+      },
+      "pixels": {
+        "left": 0,
+        "top": 352
+      },
+      "outputFile": "tilesother_00077.png"
+    },
+    {
+      "id": 78,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 11
+      },
+      "pixels": {
+        "left": 32,
+        "top": 352
+      },
+      "outputFile": "tilesother_00078.png"
+    },
+    {
+      "id": 79,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 11
+      },
+      "pixels": {
+        "left": 64,
+        "top": 352
+      },
+      "outputFile": "tilesother_00079.png"
+    },
+    {
+      "id": 80,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 11
+      },
+      "pixels": {
+        "left": 96,
+        "top": 352
+      },
+      "outputFile": "tilesother_00080.png"
+    },
+    {
+      "id": 81,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 11
+      },
+      "pixels": {
+        "left": 128,
+        "top": 352
+      },
+      "outputFile": "tilesother_00081.png"
+    },
+    {
+      "id": 82,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 11
+      },
+      "pixels": {
+        "left": 160,
+        "top": 352
+      },
+      "outputFile": "tilesother_00082.png"
+    },
+    {
+      "id": 83,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 11
+      },
+      "pixels": {
+        "left": 192,
+        "top": 352
+      },
+      "outputFile": "tilesother_00083.png"
+    },
+    {
+      "id": 84,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 12
+      },
+      "pixels": {
+        "left": 0,
+        "top": 384
+      },
+      "outputFile": "tilesother_00084.png"
+    },
+    {
+      "id": 85,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 12
+      },
+      "pixels": {
+        "left": 32,
+        "top": 384
+      },
+      "outputFile": "tilesother_00085.png"
+    },
+    {
+      "id": 86,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 12
+      },
+      "pixels": {
+        "left": 64,
+        "top": 384
+      },
+      "outputFile": "tilesother_00086.png"
+    },
+    {
+      "id": 87,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 12
+      },
+      "pixels": {
+        "left": 96,
+        "top": 384
+      },
+      "outputFile": "tilesother_00087.png"
+    },
+    {
+      "id": 88,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 12
+      },
+      "pixels": {
+        "left": 128,
+        "top": 384
+      },
+      "outputFile": "tilesother_00088.png"
+    },
+    {
+      "id": 89,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 12
+      },
+      "pixels": {
+        "left": 160,
+        "top": 384
+      },
+      "outputFile": "tilesother_00089.png"
+    },
+    {
+      "id": 90,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 12
+      },
+      "pixels": {
+        "left": 192,
+        "top": 384
+      },
+      "outputFile": "tilesother_00090.png"
+    },
+    {
+      "id": 91,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 13
+      },
+      "pixels": {
+        "left": 0,
+        "top": 416
+      },
+      "outputFile": "tilesother_00091.png"
+    },
+    {
+      "id": 92,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 13
+      },
+      "pixels": {
+        "left": 32,
+        "top": 416
+      },
+      "outputFile": "tilesother_00092.png"
+    },
+    {
+      "id": 93,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 13
+      },
+      "pixels": {
+        "left": 64,
+        "top": 416
+      },
+      "outputFile": "tilesother_00093.png"
+    },
+    {
+      "id": 94,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 13
+      },
+      "pixels": {
+        "left": 96,
+        "top": 416
+      },
+      "outputFile": "tilesother_00094.png"
+    },
+    {
+      "id": 95,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 13
+      },
+      "pixels": {
+        "left": 128,
+        "top": 416
+      },
+      "outputFile": "tilesother_00095.png"
+    },
+    {
+      "id": 96,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 13
+      },
+      "pixels": {
+        "left": 160,
+        "top": 416
+      },
+      "outputFile": "tilesother_00096.png"
+    },
+    {
+      "id": 97,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 13
+      },
+      "pixels": {
+        "left": 192,
+        "top": 416
+      },
+      "outputFile": "tilesother_00097.png"
+    },
+    {
+      "id": 98,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 14
+      },
+      "pixels": {
+        "left": 0,
+        "top": 448
+      },
+      "outputFile": "tilesother_00098.png"
+    },
+    {
+      "id": 99,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 14
+      },
+      "pixels": {
+        "left": 32,
+        "top": 448
+      },
+      "outputFile": "tilesother_00099.png"
+    },
+    {
+      "id": 100,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 14
+      },
+      "pixels": {
+        "left": 64,
+        "top": 448
+      },
+      "outputFile": "tilesother_00100.png"
+    },
+    {
+      "id": 101,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 14
+      },
+      "pixels": {
+        "left": 96,
+        "top": 448
+      },
+      "outputFile": "tilesother_00101.png"
+    },
+    {
+      "id": 102,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 14
+      },
+      "pixels": {
+        "left": 128,
+        "top": 448
+      },
+      "outputFile": "tilesother_00102.png"
+    },
+    {
+      "id": 103,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 14
+      },
+      "pixels": {
+        "left": 160,
+        "top": 448
+      },
+      "outputFile": "tilesother_00103.png"
+    },
+    {
+      "id": 104,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 14
+      },
+      "pixels": {
+        "left": 192,
+        "top": 448
+      },
+      "outputFile": "tilesother_00104.png"
+    },
+    {
+      "id": 105,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 15
+      },
+      "pixels": {
+        "left": 0,
+        "top": 480
+      },
+      "outputFile": "tilesother_00105.png"
+    },
+    {
+      "id": 106,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 15
+      },
+      "pixels": {
+        "left": 32,
+        "top": 480
+      },
+      "outputFile": "tilesother_00106.png"
+    },
+    {
+      "id": 107,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 15
+      },
+      "pixels": {
+        "left": 64,
+        "top": 480
+      },
+      "outputFile": "tilesother_00107.png"
+    },
+    {
+      "id": 108,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 15
+      },
+      "pixels": {
+        "left": 96,
+        "top": 480
+      },
+      "outputFile": "tilesother_00108.png"
+    },
+    {
+      "id": 109,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 15
+      },
+      "pixels": {
+        "left": 128,
+        "top": 480
+      },
+      "outputFile": "tilesother_00109.png"
+    },
+    {
+      "id": 110,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 15
+      },
+      "pixels": {
+        "left": 160,
+        "top": 480
+      },
+      "outputFile": "tilesother_00110.png"
+    },
+    {
+      "id": 111,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 15
+      },
+      "pixels": {
+        "left": 192,
+        "top": 480
+      },
+      "outputFile": "tilesother_00111.png"
+    },
+    {
+      "id": 112,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 16
+      },
+      "pixels": {
+        "left": 0,
+        "top": 512
+      },
+      "outputFile": "tilesother_00112.png"
+    },
+    {
+      "id": 113,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 16
+      },
+      "pixels": {
+        "left": 32,
+        "top": 512
+      },
+      "outputFile": "tilesother_00113.png"
+    },
+    {
+      "id": 114,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 16
+      },
+      "pixels": {
+        "left": 64,
+        "top": 512
+      },
+      "outputFile": "tilesother_00114.png"
+    },
+    {
+      "id": 115,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 16
+      },
+      "pixels": {
+        "left": 96,
+        "top": 512
+      },
+      "outputFile": "tilesother_00115.png"
+    },
+    {
+      "id": 116,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 16
+      },
+      "pixels": {
+        "left": 128,
+        "top": 512
+      },
+      "outputFile": "tilesother_00116.png"
+    },
+    {
+      "id": 117,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 16
+      },
+      "pixels": {
+        "left": 160,
+        "top": 512
+      },
+      "outputFile": "tilesother_00117.png"
+    },
+    {
+      "id": 118,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 16
+      },
+      "pixels": {
+        "left": 192,
+        "top": 512
+      },
+      "outputFile": "tilesother_00118.png"
+    },
+    {
+      "id": 119,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 17
+      },
+      "pixels": {
+        "left": 0,
+        "top": 544
+      },
+      "outputFile": "tilesother_00119.png"
+    },
+    {
+      "id": 120,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 17
+      },
+      "pixels": {
+        "left": 32,
+        "top": 544
+      },
+      "outputFile": "tilesother_00120.png"
+    },
+    {
+      "id": 121,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 17
+      },
+      "pixels": {
+        "left": 64,
+        "top": 544
+      },
+      "outputFile": "tilesother_00121.png"
+    },
+    {
+      "id": 122,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 17
+      },
+      "pixels": {
+        "left": 96,
+        "top": 544
+      },
+      "outputFile": "tilesother_00122.png"
+    },
+    {
+      "id": 123,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 17
+      },
+      "pixels": {
+        "left": 128,
+        "top": 544
+      },
+      "outputFile": "tilesother_00123.png"
+    },
+    {
+      "id": 124,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 17
+      },
+      "pixels": {
+        "left": 160,
+        "top": 544
+      },
+      "outputFile": "tilesother_00124.png"
+    },
+    {
+      "id": 125,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 17
+      },
+      "pixels": {
+        "left": 192,
+        "top": 544
+      },
+      "outputFile": "tilesother_00125.png"
+    },
+    {
+      "id": 126,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 18
+      },
+      "pixels": {
+        "left": 0,
+        "top": 576
+      },
+      "outputFile": "tilesother_00126.png"
+    },
+    {
+      "id": 127,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 18
+      },
+      "pixels": {
+        "left": 32,
+        "top": 576
+      },
+      "outputFile": "tilesother_00127.png"
+    },
+    {
+      "id": 128,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 18
+      },
+      "pixels": {
+        "left": 64,
+        "top": 576
+      },
+      "outputFile": "tilesother_00128.png"
+    },
+    {
+      "id": 129,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 18
+      },
+      "pixels": {
+        "left": 96,
+        "top": 576
+      },
+      "outputFile": "tilesother_00129.png"
+    },
+    {
+      "id": 130,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 18
+      },
+      "pixels": {
+        "left": 128,
+        "top": 576
+      },
+      "outputFile": "tilesother_00130.png"
+    },
+    {
+      "id": 131,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 18
+      },
+      "pixels": {
+        "left": 160,
+        "top": 576
+      },
+      "outputFile": "tilesother_00131.png"
+    },
+    {
+      "id": 132,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 18
+      },
+      "pixels": {
+        "left": 192,
+        "top": 576
+      },
+      "outputFile": "tilesother_00132.png"
+    },
+    {
+      "id": 133,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 19
+      },
+      "pixels": {
+        "left": 0,
+        "top": 608
+      },
+      "outputFile": "tilesother_00133.png"
+    },
+    {
+      "id": 134,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 19
+      },
+      "pixels": {
+        "left": 32,
+        "top": 608
+      },
+      "outputFile": "tilesother_00134.png"
+    },
+    {
+      "id": 135,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 19
+      },
+      "pixels": {
+        "left": 64,
+        "top": 608
+      },
+      "outputFile": "tilesother_00135.png"
+    },
+    {
+      "id": 136,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 19
+      },
+      "pixels": {
+        "left": 96,
+        "top": 608
+      },
+      "outputFile": "tilesother_00136.png"
+    },
+    {
+      "id": 137,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 19
+      },
+      "pixels": {
+        "left": 128,
+        "top": 608
+      },
+      "outputFile": "tilesother_00137.png"
+    },
+    {
+      "id": 138,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 19
+      },
+      "pixels": {
+        "left": 160,
+        "top": 608
+      },
+      "outputFile": "tilesother_00138.png"
+    },
+    {
+      "id": 139,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 19
+      },
+      "pixels": {
+        "left": 192,
+        "top": 608
+      },
+      "outputFile": "tilesother_00139.png"
+    },
+    {
+      "id": 140,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 20
+      },
+      "pixels": {
+        "left": 0,
+        "top": 640
+      },
+      "outputFile": "tilesother_00140.png"
+    },
+    {
+      "id": 141,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 20
+      },
+      "pixels": {
+        "left": 32,
+        "top": 640
+      },
+      "outputFile": "tilesother_00141.png"
+    },
+    {
+      "id": 142,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 20
+      },
+      "pixels": {
+        "left": 64,
+        "top": 640
+      },
+      "outputFile": "tilesother_00142.png"
+    },
+    {
+      "id": 143,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 20
+      },
+      "pixels": {
+        "left": 96,
+        "top": 640
+      },
+      "outputFile": "tilesother_00143.png"
+    },
+    {
+      "id": 144,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 20
+      },
+      "pixels": {
+        "left": 128,
+        "top": 640
+      },
+      "outputFile": "tilesother_00144.png"
+    },
+    {
+      "id": 145,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 20
+      },
+      "pixels": {
+        "left": 160,
+        "top": 640
+      },
+      "outputFile": "tilesother_00145.png"
+    },
+    {
+      "id": 146,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 20
+      },
+      "pixels": {
+        "left": 192,
+        "top": 640
+      },
+      "outputFile": "tilesother_00146.png"
+    },
+    {
+      "id": 147,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 21
+      },
+      "pixels": {
+        "left": 0,
+        "top": 672
+      },
+      "outputFile": "tilesother_00147.png"
+    },
+    {
+      "id": 148,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 21
+      },
+      "pixels": {
+        "left": 32,
+        "top": 672
+      },
+      "outputFile": "tilesother_00148.png"
+    },
+    {
+      "id": 149,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 21
+      },
+      "pixels": {
+        "left": 64,
+        "top": 672
+      },
+      "outputFile": "tilesother_00149.png"
+    },
+    {
+      "id": 150,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 21
+      },
+      "pixels": {
+        "left": 96,
+        "top": 672
+      },
+      "outputFile": "tilesother_00150.png"
+    },
+    {
+      "id": 151,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 21
+      },
+      "pixels": {
+        "left": 128,
+        "top": 672
+      },
+      "outputFile": "tilesother_00151.png"
+    },
+    {
+      "id": 152,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 21
+      },
+      "pixels": {
+        "left": 160,
+        "top": 672
+      },
+      "outputFile": "tilesother_00152.png"
+    },
+    {
+      "id": 153,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 21
+      },
+      "pixels": {
+        "left": 192,
+        "top": 672
+      },
+      "outputFile": "tilesother_00153.png"
+    },
+    {
+      "id": 154,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 22
+      },
+      "pixels": {
+        "left": 0,
+        "top": 704
+      },
+      "outputFile": "tilesother_00154.png"
+    },
+    {
+      "id": 155,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 22
+      },
+      "pixels": {
+        "left": 32,
+        "top": 704
+      },
+      "outputFile": "tilesother_00155.png"
+    },
+    {
+      "id": 156,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 22
+      },
+      "pixels": {
+        "left": 64,
+        "top": 704
+      },
+      "outputFile": "tilesother_00156.png"
+    },
+    {
+      "id": 157,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 22
+      },
+      "pixels": {
+        "left": 96,
+        "top": 704
+      },
+      "outputFile": "tilesother_00157.png"
+    },
+    {
+      "id": 158,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 22
+      },
+      "pixels": {
+        "left": 128,
+        "top": 704
+      },
+      "outputFile": "tilesother_00158.png"
+    },
+    {
+      "id": 159,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 22
+      },
+      "pixels": {
+        "left": 160,
+        "top": 704
+      },
+      "outputFile": "tilesother_00159.png"
+    },
+    {
+      "id": 160,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 22
+      },
+      "pixels": {
+        "left": 192,
+        "top": 704
+      },
+      "outputFile": "tilesother_00160.png"
+    },
+    {
+      "id": 161,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 23
+      },
+      "pixels": {
+        "left": 0,
+        "top": 736
+      },
+      "outputFile": "tilesother_00161.png"
+    },
+    {
+      "id": 162,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 23
+      },
+      "pixels": {
+        "left": 32,
+        "top": 736
+      },
+      "outputFile": "tilesother_00162.png"
+    },
+    {
+      "id": 163,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 23
+      },
+      "pixels": {
+        "left": 64,
+        "top": 736
+      },
+      "outputFile": "tilesother_00163.png"
+    },
+    {
+      "id": 164,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 23
+      },
+      "pixels": {
+        "left": 96,
+        "top": 736
+      },
+      "outputFile": "tilesother_00164.png"
+    },
+    {
+      "id": 165,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 23
+      },
+      "pixels": {
+        "left": 128,
+        "top": 736
+      },
+      "outputFile": "tilesother_00165.png"
+    },
+    {
+      "id": 166,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 23
+      },
+      "pixels": {
+        "left": 160,
+        "top": 736
+      },
+      "outputFile": "tilesother_00166.png"
+    },
+    {
+      "id": 167,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 23
+      },
+      "pixels": {
+        "left": 192,
+        "top": 736
+      },
+      "outputFile": "tilesother_00167.png"
+    },
+    {
+      "id": 168,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 24
+      },
+      "pixels": {
+        "left": 0,
+        "top": 768
+      },
+      "outputFile": "tilesother_00168.png"
+    },
+    {
+      "id": 169,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 24
+      },
+      "pixels": {
+        "left": 32,
+        "top": 768
+      },
+      "outputFile": "tilesother_00169.png"
+    },
+    {
+      "id": 170,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 24
+      },
+      "pixels": {
+        "left": 64,
+        "top": 768
+      },
+      "outputFile": "tilesother_00170.png"
+    },
+    {
+      "id": 171,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 24
+      },
+      "pixels": {
+        "left": 96,
+        "top": 768
+      },
+      "outputFile": "tilesother_00171.png"
+    },
+    {
+      "id": 172,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 24
+      },
+      "pixels": {
+        "left": 128,
+        "top": 768
+      },
+      "outputFile": "tilesother_00172.png"
+    },
+    {
+      "id": 173,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 24
+      },
+      "pixels": {
+        "left": 160,
+        "top": 768
+      },
+      "outputFile": "tilesother_00173.png"
+    },
+    {
+      "id": 174,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 24
+      },
+      "pixels": {
+        "left": 192,
+        "top": 768
+      },
+      "outputFile": "tilesother_00174.png"
+    },
+    {
+      "id": 175,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 25
+      },
+      "pixels": {
+        "left": 0,
+        "top": 800
+      },
+      "outputFile": "tilesother_00175.png"
+    },
+    {
+      "id": 176,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 25
+      },
+      "pixels": {
+        "left": 32,
+        "top": 800
+      },
+      "outputFile": "tilesother_00176.png"
+    },
+    {
+      "id": 177,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 25
+      },
+      "pixels": {
+        "left": 64,
+        "top": 800
+      },
+      "outputFile": "tilesother_00177.png"
+    },
+    {
+      "id": 178,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 25
+      },
+      "pixels": {
+        "left": 96,
+        "top": 800
+      },
+      "outputFile": "tilesother_00178.png"
+    },
+    {
+      "id": 179,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 25
+      },
+      "pixels": {
+        "left": 128,
+        "top": 800
+      },
+      "outputFile": "tilesother_00179.png"
+    },
+    {
+      "id": 180,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 25
+      },
+      "pixels": {
+        "left": 160,
+        "top": 800
+      },
+      "outputFile": "tilesother_00180.png"
+    },
+    {
+      "id": 181,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 25
+      },
+      "pixels": {
+        "left": 192,
+        "top": 800
+      },
+      "outputFile": "tilesother_00181.png"
+    },
+    {
+      "id": 182,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 26
+      },
+      "pixels": {
+        "left": 0,
+        "top": 832
+      },
+      "outputFile": "tilesother_00182.png"
+    },
+    {
+      "id": 183,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 26
+      },
+      "pixels": {
+        "left": 32,
+        "top": 832
+      },
+      "outputFile": "tilesother_00183.png"
+    },
+    {
+      "id": 184,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 26
+      },
+      "pixels": {
+        "left": 64,
+        "top": 832
+      },
+      "outputFile": "tilesother_00184.png"
+    },
+    {
+      "id": 185,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 26
+      },
+      "pixels": {
+        "left": 96,
+        "top": 832
+      },
+      "outputFile": "tilesother_00185.png"
+    },
+    {
+      "id": 186,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 26
+      },
+      "pixels": {
+        "left": 128,
+        "top": 832
+      },
+      "outputFile": "tilesother_00186.png"
+    },
+    {
+      "id": 187,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 26
+      },
+      "pixels": {
+        "left": 160,
+        "top": 832
+      },
+      "outputFile": "tilesother_00187.png"
+    },
+    {
+      "id": 188,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 26
+      },
+      "pixels": {
+        "left": 192,
+        "top": 832
+      },
+      "outputFile": "tilesother_00188.png"
+    },
+    {
+      "id": 189,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 27
+      },
+      "pixels": {
+        "left": 0,
+        "top": 864
+      },
+      "outputFile": "tilesother_00189.png"
+    },
+    {
+      "id": 190,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 27
+      },
+      "pixels": {
+        "left": 32,
+        "top": 864
+      },
+      "outputFile": "tilesother_00190.png"
+    },
+    {
+      "id": 191,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 27
+      },
+      "pixels": {
+        "left": 64,
+        "top": 864
+      },
+      "outputFile": "tilesother_00191.png"
+    },
+    {
+      "id": 192,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 27
+      },
+      "pixels": {
+        "left": 96,
+        "top": 864
+      },
+      "outputFile": "tilesother_00192.png"
+    },
+    {
+      "id": 193,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 27
+      },
+      "pixels": {
+        "left": 128,
+        "top": 864
+      },
+      "outputFile": "tilesother_00193.png"
+    },
+    {
+      "id": 194,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 27
+      },
+      "pixels": {
+        "left": 160,
+        "top": 864
+      },
+      "outputFile": "tilesother_00194.png"
+    },
+    {
+      "id": 195,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 27
+      },
+      "pixels": {
+        "left": 192,
+        "top": 864
+      },
+      "outputFile": "tilesother_00195.png"
+    },
+    {
+      "id": 196,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 28
+      },
+      "pixels": {
+        "left": 0,
+        "top": 896
+      },
+      "outputFile": "tilesother_00196.png"
+    },
+    {
+      "id": 197,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 28
+      },
+      "pixels": {
+        "left": 32,
+        "top": 896
+      },
+      "outputFile": "tilesother_00197.png"
+    },
+    {
+      "id": 198,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 28
+      },
+      "pixels": {
+        "left": 64,
+        "top": 896
+      },
+      "outputFile": "tilesother_00198.png"
+    },
+    {
+      "id": 199,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 28
+      },
+      "pixels": {
+        "left": 96,
+        "top": 896
+      },
+      "outputFile": "tilesother_00199.png"
+    },
+    {
+      "id": 200,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 28
+      },
+      "pixels": {
+        "left": 128,
+        "top": 896
+      },
+      "outputFile": "tilesother_00200.png"
+    },
+    {
+      "id": 201,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 28
+      },
+      "pixels": {
+        "left": 160,
+        "top": 896
+      },
+      "outputFile": "tilesother_00201.png"
+    },
+    {
+      "id": 202,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 28
+      },
+      "pixels": {
+        "left": 192,
+        "top": 896
+      },
+      "outputFile": "tilesother_00202.png"
+    },
+    {
+      "id": 203,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 29
+      },
+      "pixels": {
+        "left": 0,
+        "top": 928
+      },
+      "outputFile": "tilesother_00203.png"
+    },
+    {
+      "id": 204,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 29
+      },
+      "pixels": {
+        "left": 32,
+        "top": 928
+      },
+      "outputFile": "tilesother_00204.png"
+    },
+    {
+      "id": 205,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 29
+      },
+      "pixels": {
+        "left": 64,
+        "top": 928
+      },
+      "outputFile": "tilesother_00205.png"
+    },
+    {
+      "id": 206,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 29
+      },
+      "pixels": {
+        "left": 96,
+        "top": 928
+      },
+      "outputFile": "tilesother_00206.png"
+    },
+    {
+      "id": 207,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 29
+      },
+      "pixels": {
+        "left": 128,
+        "top": 928
+      },
+      "outputFile": "tilesother_00207.png"
+    },
+    {
+      "id": 208,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 29
+      },
+      "pixels": {
+        "left": 160,
+        "top": 928
+      },
+      "outputFile": "tilesother_00208.png"
+    },
+    {
+      "id": 209,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 29
+      },
+      "pixels": {
+        "left": 192,
+        "top": 928
+      },
+      "outputFile": "tilesother_00209.png"
+    },
+    {
+      "id": 210,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 30
+      },
+      "pixels": {
+        "left": 0,
+        "top": 960
+      },
+      "outputFile": "tilesother_00210.png"
+    },
+    {
+      "id": 211,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 30
+      },
+      "pixels": {
+        "left": 32,
+        "top": 960
+      },
+      "outputFile": "tilesother_00211.png"
+    },
+    {
+      "id": 212,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 30
+      },
+      "pixels": {
+        "left": 64,
+        "top": 960
+      },
+      "outputFile": "tilesother_00212.png"
+    },
+    {
+      "id": 213,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 30
+      },
+      "pixels": {
+        "left": 96,
+        "top": 960
+      },
+      "outputFile": "tilesother_00213.png"
+    },
+    {
+      "id": 214,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 30
+      },
+      "pixels": {
+        "left": 128,
+        "top": 960
+      },
+      "outputFile": "tilesother_00214.png"
+    },
+    {
+      "id": 215,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 30
+      },
+      "pixels": {
+        "left": 160,
+        "top": 960
+      },
+      "outputFile": "tilesother_00215.png"
+    },
+    {
+      "id": 216,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 30
+      },
+      "pixels": {
+        "left": 192,
+        "top": 960
+      },
+      "outputFile": "tilesother_00216.png"
+    },
+    {
+      "id": 217,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 31
+      },
+      "pixels": {
+        "left": 0,
+        "top": 992
+      },
+      "outputFile": "tilesother_00217.png"
+    },
+    {
+      "id": 218,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 31
+      },
+      "pixels": {
+        "left": 32,
+        "top": 992
+      },
+      "outputFile": "tilesother_00218.png"
+    },
+    {
+      "id": 219,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 31
+      },
+      "pixels": {
+        "left": 64,
+        "top": 992
+      },
+      "outputFile": "tilesother_00219.png"
+    },
+    {
+      "id": 220,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 31
+      },
+      "pixels": {
+        "left": 96,
+        "top": 992
+      },
+      "outputFile": "tilesother_00220.png"
+    },
+    {
+      "id": 221,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 31
+      },
+      "pixels": {
+        "left": 128,
+        "top": 992
+      },
+      "outputFile": "tilesother_00221.png"
+    },
+    {
+      "id": 222,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 31
+      },
+      "pixels": {
+        "left": 160,
+        "top": 992
+      },
+      "outputFile": "tilesother_00222.png"
+    },
+    {
+      "id": 223,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 31
+      },
+      "pixels": {
+        "left": 192,
+        "top": 992
+      },
+      "outputFile": "tilesother_00223.png"
+    },
+    {
+      "id": 224,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 32
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1024
+      },
+      "outputFile": "tilesother_00224.png"
+    },
+    {
+      "id": 225,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 32
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1024
+      },
+      "outputFile": "tilesother_00225.png"
+    },
+    {
+      "id": 226,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 32
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1024
+      },
+      "outputFile": "tilesother_00226.png"
+    },
+    {
+      "id": 227,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 32
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1024
+      },
+      "outputFile": "tilesother_00227.png"
+    },
+    {
+      "id": 228,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 32
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1024
+      },
+      "outputFile": "tilesother_00228.png"
+    },
+    {
+      "id": 229,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 32
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1024
+      },
+      "outputFile": "tilesother_00229.png"
+    },
+    {
+      "id": 230,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 32
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1024
+      },
+      "outputFile": "tilesother_00230.png"
+    },
+    {
+      "id": 231,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 33
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1056
+      },
+      "outputFile": "tilesother_00231.png"
+    },
+    {
+      "id": 232,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 33
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1056
+      },
+      "outputFile": "tilesother_00232.png"
+    },
+    {
+      "id": 233,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 33
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1056
+      },
+      "outputFile": "tilesother_00233.png"
+    },
+    {
+      "id": 234,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 33
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1056
+      },
+      "outputFile": "tilesother_00234.png"
+    },
+    {
+      "id": 235,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 33
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1056
+      },
+      "outputFile": "tilesother_00235.png"
+    },
+    {
+      "id": 236,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 33
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1056
+      },
+      "outputFile": "tilesother_00236.png"
+    },
+    {
+      "id": 237,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 33
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1056
+      },
+      "outputFile": "tilesother_00237.png"
+    },
+    {
+      "id": 238,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 34
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1088
+      },
+      "outputFile": "tilesother_00238.png"
+    },
+    {
+      "id": 239,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 34
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1088
+      },
+      "outputFile": "tilesother_00239.png"
+    },
+    {
+      "id": 240,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 34
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1088
+      },
+      "outputFile": "tilesother_00240.png"
+    },
+    {
+      "id": 241,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 34
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1088
+      },
+      "outputFile": "tilesother_00241.png"
+    },
+    {
+      "id": 242,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 34
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1088
+      },
+      "outputFile": "tilesother_00242.png"
+    },
+    {
+      "id": 243,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 34
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1088
+      },
+      "outputFile": "tilesother_00243.png"
+    },
+    {
+      "id": 244,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 34
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1088
+      },
+      "outputFile": "tilesother_00244.png"
+    },
+    {
+      "id": 245,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 35
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1120
+      },
+      "outputFile": "tilesother_00245.png"
+    },
+    {
+      "id": 246,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 35
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1120
+      },
+      "outputFile": "tilesother_00246.png"
+    },
+    {
+      "id": 247,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 35
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1120
+      },
+      "outputFile": "tilesother_00247.png"
+    },
+    {
+      "id": 248,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 35
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1120
+      },
+      "outputFile": "tilesother_00248.png"
+    },
+    {
+      "id": 249,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 35
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1120
+      },
+      "outputFile": "tilesother_00249.png"
+    },
+    {
+      "id": 250,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 35
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1120
+      },
+      "outputFile": "tilesother_00250.png"
+    },
+    {
+      "id": 251,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 35
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1120
+      },
+      "outputFile": "tilesother_00251.png"
+    },
+    {
+      "id": 252,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 36
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1152
+      },
+      "outputFile": "tilesother_00252.png"
+    },
+    {
+      "id": 253,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 36
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1152
+      },
+      "outputFile": "tilesother_00253.png"
+    },
+    {
+      "id": 254,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 36
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1152
+      },
+      "outputFile": "tilesother_00254.png"
+    },
+    {
+      "id": 255,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 36
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1152
+      },
+      "outputFile": "tilesother_00255.png"
+    },
+    {
+      "id": 256,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 36
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1152
+      },
+      "outputFile": "tilesother_00256.png"
+    },
+    {
+      "id": 257,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 36
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1152
+      },
+      "outputFile": "tilesother_00257.png"
+    },
+    {
+      "id": 258,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 36
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1152
+      },
+      "outputFile": "tilesother_00258.png"
+    },
+    {
+      "id": 259,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 37
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1184
+      },
+      "outputFile": "tilesother_00259.png"
+    },
+    {
+      "id": 260,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 37
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1184
+      },
+      "outputFile": "tilesother_00260.png"
+    },
+    {
+      "id": 261,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 37
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1184
+      },
+      "outputFile": "tilesother_00261.png"
+    },
+    {
+      "id": 262,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 37
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1184
+      },
+      "outputFile": "tilesother_00262.png"
+    },
+    {
+      "id": 263,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 37
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1184
+      },
+      "outputFile": "tilesother_00263.png"
+    },
+    {
+      "id": 264,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 37
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1184
+      },
+      "outputFile": "tilesother_00264.png"
+    },
+    {
+      "id": 265,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 37
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1184
+      },
+      "outputFile": "tilesother_00265.png"
+    },
+    {
+      "id": 266,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 38
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1216
+      },
+      "outputFile": "tilesother_00266.png"
+    },
+    {
+      "id": 267,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 38
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1216
+      },
+      "outputFile": "tilesother_00267.png"
+    },
+    {
+      "id": 268,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 38
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1216
+      },
+      "outputFile": "tilesother_00268.png"
+    },
+    {
+      "id": 269,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 38
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1216
+      },
+      "outputFile": "tilesother_00269.png"
+    },
+    {
+      "id": 270,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 38
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1216
+      },
+      "outputFile": "tilesother_00270.png"
+    },
+    {
+      "id": 271,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 38
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1216
+      },
+      "outputFile": "tilesother_00271.png"
+    },
+    {
+      "id": 272,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 38
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1216
+      },
+      "outputFile": "tilesother_00272.png"
+    },
+    {
+      "id": 273,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 39
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1248
+      },
+      "outputFile": "tilesother_00273.png"
+    },
+    {
+      "id": 274,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 39
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1248
+      },
+      "outputFile": "tilesother_00274.png"
+    },
+    {
+      "id": 275,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 39
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1248
+      },
+      "outputFile": "tilesother_00275.png"
+    },
+    {
+      "id": 276,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 39
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1248
+      },
+      "outputFile": "tilesother_00276.png"
+    },
+    {
+      "id": 277,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 39
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1248
+      },
+      "outputFile": "tilesother_00277.png"
+    },
+    {
+      "id": 278,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 39
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1248
+      },
+      "outputFile": "tilesother_00278.png"
+    },
+    {
+      "id": 279,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 39
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1248
+      },
+      "outputFile": "tilesother_00279.png"
+    },
+    {
+      "id": 280,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 40
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1280
+      },
+      "outputFile": "tilesother_00280.png"
+    },
+    {
+      "id": 281,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 40
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1280
+      },
+      "outputFile": "tilesother_00281.png"
+    },
+    {
+      "id": 282,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 40
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1280
+      },
+      "outputFile": "tilesother_00282.png"
+    },
+    {
+      "id": 283,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 40
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1280
+      },
+      "outputFile": "tilesother_00283.png"
+    },
+    {
+      "id": 284,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 40
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1280
+      },
+      "outputFile": "tilesother_00284.png"
+    },
+    {
+      "id": 285,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 40
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1280
+      },
+      "outputFile": "tilesother_00285.png"
+    },
+    {
+      "id": 286,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 40
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1280
+      },
+      "outputFile": "tilesother_00286.png"
+    },
+    {
+      "id": 287,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 41
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1312
+      },
+      "outputFile": "tilesother_00287.png"
+    },
+    {
+      "id": 288,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 41
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1312
+      },
+      "outputFile": "tilesother_00288.png"
+    },
+    {
+      "id": 289,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 41
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1312
+      },
+      "outputFile": "tilesother_00289.png"
+    },
+    {
+      "id": 290,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 41
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1312
+      },
+      "outputFile": "tilesother_00290.png"
+    },
+    {
+      "id": 291,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 41
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1312
+      },
+      "outputFile": "tilesother_00291.png"
+    },
+    {
+      "id": 292,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 41
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1312
+      },
+      "outputFile": "tilesother_00292.png"
+    },
+    {
+      "id": 293,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 41
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1312
+      },
+      "outputFile": "tilesother_00293.png"
+    },
+    {
+      "id": 294,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 42
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1344
+      },
+      "outputFile": "tilesother_00294.png"
+    },
+    {
+      "id": 295,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 42
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1344
+      },
+      "outputFile": "tilesother_00295.png"
+    },
+    {
+      "id": 296,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 42
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1344
+      },
+      "outputFile": "tilesother_00296.png"
+    },
+    {
+      "id": 297,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 42
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1344
+      },
+      "outputFile": "tilesother_00297.png"
+    },
+    {
+      "id": 298,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 42
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1344
+      },
+      "outputFile": "tilesother_00298.png"
+    },
+    {
+      "id": 299,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 42
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1344
+      },
+      "outputFile": "tilesother_00299.png"
+    },
+    {
+      "id": 300,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 42
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1344
+      },
+      "outputFile": "tilesother_00300.png"
+    },
+    {
+      "id": 301,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 43
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1376
+      },
+      "outputFile": "tilesother_00301.png"
+    },
+    {
+      "id": 302,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 43
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1376
+      },
+      "outputFile": "tilesother_00302.png"
+    },
+    {
+      "id": 303,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 43
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1376
+      },
+      "outputFile": "tilesother_00303.png"
+    },
+    {
+      "id": 304,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 43
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1376
+      },
+      "outputFile": "tilesother_00304.png"
+    },
+    {
+      "id": 305,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 43
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1376
+      },
+      "outputFile": "tilesother_00305.png"
+    },
+    {
+      "id": 306,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 43
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1376
+      },
+      "outputFile": "tilesother_00306.png"
+    },
+    {
+      "id": 307,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 43
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1376
+      },
+      "outputFile": "tilesother_00307.png"
+    },
+    {
+      "id": 308,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 44
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1408
+      },
+      "outputFile": "tilesother_00308.png"
+    },
+    {
+      "id": 309,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 44
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1408
+      },
+      "outputFile": "tilesother_00309.png"
+    },
+    {
+      "id": 310,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 44
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1408
+      },
+      "outputFile": "tilesother_00310.png"
+    },
+    {
+      "id": 311,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 44
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1408
+      },
+      "outputFile": "tilesother_00311.png"
+    },
+    {
+      "id": 312,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 44
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1408
+      },
+      "outputFile": "tilesother_00312.png"
+    },
+    {
+      "id": 313,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 44
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1408
+      },
+      "outputFile": "tilesother_00313.png"
+    },
+    {
+      "id": 314,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 44
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1408
+      },
+      "outputFile": "tilesother_00314.png"
+    },
+    {
+      "id": 315,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 45
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1440
+      },
+      "outputFile": "tilesother_00315.png"
+    },
+    {
+      "id": 316,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 45
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1440
+      },
+      "outputFile": "tilesother_00316.png"
+    },
+    {
+      "id": 317,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 45
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1440
+      },
+      "outputFile": "tilesother_00317.png"
+    },
+    {
+      "id": 318,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 45
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1440
+      },
+      "outputFile": "tilesother_00318.png"
+    },
+    {
+      "id": 319,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 45
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1440
+      },
+      "outputFile": "tilesother_00319.png"
+    },
+    {
+      "id": 320,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 45
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1440
+      },
+      "outputFile": "tilesother_00320.png"
+    },
+    {
+      "id": 321,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 45
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1440
+      },
+      "outputFile": "tilesother_00321.png"
+    },
+    {
+      "id": 322,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 46
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1472
+      },
+      "outputFile": "tilesother_00322.png"
+    },
+    {
+      "id": 323,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 46
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1472
+      },
+      "outputFile": "tilesother_00323.png"
+    },
+    {
+      "id": 324,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 46
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1472
+      },
+      "outputFile": "tilesother_00324.png"
+    },
+    {
+      "id": 325,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 46
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1472
+      },
+      "outputFile": "tilesother_00325.png"
+    },
+    {
+      "id": 326,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 46
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1472
+      },
+      "outputFile": "tilesother_00326.png"
+    },
+    {
+      "id": 327,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 46
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1472
+      },
+      "outputFile": "tilesother_00327.png"
+    },
+    {
+      "id": 328,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 46
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1472
+      },
+      "outputFile": "tilesother_00328.png"
+    },
+    {
+      "id": 329,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 47
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1504
+      },
+      "outputFile": "tilesother_00329.png"
+    },
+    {
+      "id": 330,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 47
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1504
+      },
+      "outputFile": "tilesother_00330.png"
+    },
+    {
+      "id": 331,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 47
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1504
+      },
+      "outputFile": "tilesother_00331.png"
+    },
+    {
+      "id": 332,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 47
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1504
+      },
+      "outputFile": "tilesother_00332.png"
+    },
+    {
+      "id": 333,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 47
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1504
+      },
+      "outputFile": "tilesother_00333.png"
+    },
+    {
+      "id": 334,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 47
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1504
+      },
+      "outputFile": "tilesother_00334.png"
+    },
+    {
+      "id": 335,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 47
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1504
+      },
+      "outputFile": "tilesother_00335.png"
+    },
+    {
+      "id": 336,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 48
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1536
+      },
+      "outputFile": "tilesother_00336.png"
+    },
+    {
+      "id": 337,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 48
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1536
+      },
+      "outputFile": "tilesother_00337.png"
+    },
+    {
+      "id": 338,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 48
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1536
+      },
+      "outputFile": "tilesother_00338.png"
+    },
+    {
+      "id": 339,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 48
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1536
+      },
+      "outputFile": "tilesother_00339.png"
+    },
+    {
+      "id": 340,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 48
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1536
+      },
+      "outputFile": "tilesother_00340.png"
+    },
+    {
+      "id": 341,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 48
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1536
+      },
+      "outputFile": "tilesother_00341.png"
+    },
+    {
+      "id": 342,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 48
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1536
+      },
+      "outputFile": "tilesother_00342.png"
+    },
+    {
+      "id": 343,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 49
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1568
+      },
+      "outputFile": "tilesother_00343.png"
+    },
+    {
+      "id": 344,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 49
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1568
+      },
+      "outputFile": "tilesother_00344.png"
+    },
+    {
+      "id": 345,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 49
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1568
+      },
+      "outputFile": "tilesother_00345.png"
+    },
+    {
+      "id": 346,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 49
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1568
+      },
+      "outputFile": "tilesother_00346.png"
+    },
+    {
+      "id": 347,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 49
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1568
+      },
+      "outputFile": "tilesother_00347.png"
+    },
+    {
+      "id": 348,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 49
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1568
+      },
+      "outputFile": "tilesother_00348.png"
+    },
+    {
+      "id": 349,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 49
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1568
+      },
+      "outputFile": "tilesother_00349.png"
+    },
+    {
+      "id": 350,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 50
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1600
+      },
+      "outputFile": "tilesother_00350.png"
+    },
+    {
+      "id": 351,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 50
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1600
+      },
+      "outputFile": "tilesother_00351.png"
+    },
+    {
+      "id": 352,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 50
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1600
+      },
+      "outputFile": "tilesother_00352.png"
+    },
+    {
+      "id": 353,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 50
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1600
+      },
+      "outputFile": "tilesother_00353.png"
+    },
+    {
+      "id": 354,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 50
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1600
+      },
+      "outputFile": "tilesother_00354.png"
+    },
+    {
+      "id": 355,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 50
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1600
+      },
+      "outputFile": "tilesother_00355.png"
+    },
+    {
+      "id": 356,
+      "sourceFile": "tilesother.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 50
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1600
+      },
+      "outputFile": "tilesother_00356.png"
+    }
+  ],
+  "extractedAt": "2025-10-18T19:06:39.022Z"
+}

@@ -1,0 +1,4563 @@
+{
+  "sourceFile": "tiles6.rsc.png",
+  "tileSize": 32,
+  "grid": {
+    "cols": 7,
+    "rows": 50
+  },
+  "totalTiles": 350,
+  "extractedTiles": 350,
+  "tiles": [
+    {
+      "id": 0,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 0
+      },
+      "pixels": {
+        "left": 0,
+        "top": 0
+      },
+      "outputFile": "tiles6_00000.png"
+    },
+    {
+      "id": 1,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 0
+      },
+      "pixels": {
+        "left": 32,
+        "top": 0
+      },
+      "outputFile": "tiles6_00001.png"
+    },
+    {
+      "id": 2,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 0
+      },
+      "pixels": {
+        "left": 64,
+        "top": 0
+      },
+      "outputFile": "tiles6_00002.png"
+    },
+    {
+      "id": 3,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 0
+      },
+      "pixels": {
+        "left": 96,
+        "top": 0
+      },
+      "outputFile": "tiles6_00003.png"
+    },
+    {
+      "id": 4,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 0
+      },
+      "pixels": {
+        "left": 128,
+        "top": 0
+      },
+      "outputFile": "tiles6_00004.png"
+    },
+    {
+      "id": 5,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 0
+      },
+      "pixels": {
+        "left": 160,
+        "top": 0
+      },
+      "outputFile": "tiles6_00005.png"
+    },
+    {
+      "id": 6,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 0
+      },
+      "pixels": {
+        "left": 192,
+        "top": 0
+      },
+      "outputFile": "tiles6_00006.png"
+    },
+    {
+      "id": 7,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 1
+      },
+      "pixels": {
+        "left": 0,
+        "top": 32
+      },
+      "outputFile": "tiles6_00007.png"
+    },
+    {
+      "id": 8,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 1
+      },
+      "pixels": {
+        "left": 32,
+        "top": 32
+      },
+      "outputFile": "tiles6_00008.png"
+    },
+    {
+      "id": 9,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 1
+      },
+      "pixels": {
+        "left": 64,
+        "top": 32
+      },
+      "outputFile": "tiles6_00009.png"
+    },
+    {
+      "id": 10,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 1
+      },
+      "pixels": {
+        "left": 96,
+        "top": 32
+      },
+      "outputFile": "tiles6_00010.png"
+    },
+    {
+      "id": 11,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 1
+      },
+      "pixels": {
+        "left": 128,
+        "top": 32
+      },
+      "outputFile": "tiles6_00011.png"
+    },
+    {
+      "id": 12,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 1
+      },
+      "pixels": {
+        "left": 160,
+        "top": 32
+      },
+      "outputFile": "tiles6_00012.png"
+    },
+    {
+      "id": 13,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 1
+      },
+      "pixels": {
+        "left": 192,
+        "top": 32
+      },
+      "outputFile": "tiles6_00013.png"
+    },
+    {
+      "id": 14,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 2
+      },
+      "pixels": {
+        "left": 0,
+        "top": 64
+      },
+      "outputFile": "tiles6_00014.png"
+    },
+    {
+      "id": 15,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 2
+      },
+      "pixels": {
+        "left": 32,
+        "top": 64
+      },
+      "outputFile": "tiles6_00015.png"
+    },
+    {
+      "id": 16,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 2
+      },
+      "pixels": {
+        "left": 64,
+        "top": 64
+      },
+      "outputFile": "tiles6_00016.png"
+    },
+    {
+      "id": 17,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 2
+      },
+      "pixels": {
+        "left": 96,
+        "top": 64
+      },
+      "outputFile": "tiles6_00017.png"
+    },
+    {
+      "id": 18,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 2
+      },
+      "pixels": {
+        "left": 128,
+        "top": 64
+      },
+      "outputFile": "tiles6_00018.png"
+    },
+    {
+      "id": 19,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 2
+      },
+      "pixels": {
+        "left": 160,
+        "top": 64
+      },
+      "outputFile": "tiles6_00019.png"
+    },
+    {
+      "id": 20,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 2
+      },
+      "pixels": {
+        "left": 192,
+        "top": 64
+      },
+      "outputFile": "tiles6_00020.png"
+    },
+    {
+      "id": 21,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 3
+      },
+      "pixels": {
+        "left": 0,
+        "top": 96
+      },
+      "outputFile": "tiles6_00021.png"
+    },
+    {
+      "id": 22,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 3
+      },
+      "pixels": {
+        "left": 32,
+        "top": 96
+      },
+      "outputFile": "tiles6_00022.png"
+    },
+    {
+      "id": 23,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 3
+      },
+      "pixels": {
+        "left": 64,
+        "top": 96
+      },
+      "outputFile": "tiles6_00023.png"
+    },
+    {
+      "id": 24,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 3
+      },
+      "pixels": {
+        "left": 96,
+        "top": 96
+      },
+      "outputFile": "tiles6_00024.png"
+    },
+    {
+      "id": 25,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 3
+      },
+      "pixels": {
+        "left": 128,
+        "top": 96
+      },
+      "outputFile": "tiles6_00025.png"
+    },
+    {
+      "id": 26,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 3
+      },
+      "pixels": {
+        "left": 160,
+        "top": 96
+      },
+      "outputFile": "tiles6_00026.png"
+    },
+    {
+      "id": 27,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 3
+      },
+      "pixels": {
+        "left": 192,
+        "top": 96
+      },
+      "outputFile": "tiles6_00027.png"
+    },
+    {
+      "id": 28,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 4
+      },
+      "pixels": {
+        "left": 0,
+        "top": 128
+      },
+      "outputFile": "tiles6_00028.png"
+    },
+    {
+      "id": 29,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 4
+      },
+      "pixels": {
+        "left": 32,
+        "top": 128
+      },
+      "outputFile": "tiles6_00029.png"
+    },
+    {
+      "id": 30,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 4
+      },
+      "pixels": {
+        "left": 64,
+        "top": 128
+      },
+      "outputFile": "tiles6_00030.png"
+    },
+    {
+      "id": 31,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 4
+      },
+      "pixels": {
+        "left": 96,
+        "top": 128
+      },
+      "outputFile": "tiles6_00031.png"
+    },
+    {
+      "id": 32,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 4
+      },
+      "pixels": {
+        "left": 128,
+        "top": 128
+      },
+      "outputFile": "tiles6_00032.png"
+    },
+    {
+      "id": 33,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 4
+      },
+      "pixels": {
+        "left": 160,
+        "top": 128
+      },
+      "outputFile": "tiles6_00033.png"
+    },
+    {
+      "id": 34,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 4
+      },
+      "pixels": {
+        "left": 192,
+        "top": 128
+      },
+      "outputFile": "tiles6_00034.png"
+    },
+    {
+      "id": 35,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 5
+      },
+      "pixels": {
+        "left": 0,
+        "top": 160
+      },
+      "outputFile": "tiles6_00035.png"
+    },
+    {
+      "id": 36,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 5
+      },
+      "pixels": {
+        "left": 32,
+        "top": 160
+      },
+      "outputFile": "tiles6_00036.png"
+    },
+    {
+      "id": 37,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 5
+      },
+      "pixels": {
+        "left": 64,
+        "top": 160
+      },
+      "outputFile": "tiles6_00037.png"
+    },
+    {
+      "id": 38,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 5
+      },
+      "pixels": {
+        "left": 96,
+        "top": 160
+      },
+      "outputFile": "tiles6_00038.png"
+    },
+    {
+      "id": 39,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 5
+      },
+      "pixels": {
+        "left": 128,
+        "top": 160
+      },
+      "outputFile": "tiles6_00039.png"
+    },
+    {
+      "id": 40,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 5
+      },
+      "pixels": {
+        "left": 160,
+        "top": 160
+      },
+      "outputFile": "tiles6_00040.png"
+    },
+    {
+      "id": 41,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 5
+      },
+      "pixels": {
+        "left": 192,
+        "top": 160
+      },
+      "outputFile": "tiles6_00041.png"
+    },
+    {
+      "id": 42,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 6
+      },
+      "pixels": {
+        "left": 0,
+        "top": 192
+      },
+      "outputFile": "tiles6_00042.png"
+    },
+    {
+      "id": 43,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 6
+      },
+      "pixels": {
+        "left": 32,
+        "top": 192
+      },
+      "outputFile": "tiles6_00043.png"
+    },
+    {
+      "id": 44,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 6
+      },
+      "pixels": {
+        "left": 64,
+        "top": 192
+      },
+      "outputFile": "tiles6_00044.png"
+    },
+    {
+      "id": 45,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 6
+      },
+      "pixels": {
+        "left": 96,
+        "top": 192
+      },
+      "outputFile": "tiles6_00045.png"
+    },
+    {
+      "id": 46,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 6
+      },
+      "pixels": {
+        "left": 128,
+        "top": 192
+      },
+      "outputFile": "tiles6_00046.png"
+    },
+    {
+      "id": 47,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 6
+      },
+      "pixels": {
+        "left": 160,
+        "top": 192
+      },
+      "outputFile": "tiles6_00047.png"
+    },
+    {
+      "id": 48,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 6
+      },
+      "pixels": {
+        "left": 192,
+        "top": 192
+      },
+      "outputFile": "tiles6_00048.png"
+    },
+    {
+      "id": 49,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 7
+      },
+      "pixels": {
+        "left": 0,
+        "top": 224
+      },
+      "outputFile": "tiles6_00049.png"
+    },
+    {
+      "id": 50,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 7
+      },
+      "pixels": {
+        "left": 32,
+        "top": 224
+      },
+      "outputFile": "tiles6_00050.png"
+    },
+    {
+      "id": 51,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 7
+      },
+      "pixels": {
+        "left": 64,
+        "top": 224
+      },
+      "outputFile": "tiles6_00051.png"
+    },
+    {
+      "id": 52,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 7
+      },
+      "pixels": {
+        "left": 96,
+        "top": 224
+      },
+      "outputFile": "tiles6_00052.png"
+    },
+    {
+      "id": 53,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 7
+      },
+      "pixels": {
+        "left": 128,
+        "top": 224
+      },
+      "outputFile": "tiles6_00053.png"
+    },
+    {
+      "id": 54,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 7
+      },
+      "pixels": {
+        "left": 160,
+        "top": 224
+      },
+      "outputFile": "tiles6_00054.png"
+    },
+    {
+      "id": 55,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 7
+      },
+      "pixels": {
+        "left": 192,
+        "top": 224
+      },
+      "outputFile": "tiles6_00055.png"
+    },
+    {
+      "id": 56,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 8
+      },
+      "pixels": {
+        "left": 0,
+        "top": 256
+      },
+      "outputFile": "tiles6_00056.png"
+    },
+    {
+      "id": 57,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 8
+      },
+      "pixels": {
+        "left": 32,
+        "top": 256
+      },
+      "outputFile": "tiles6_00057.png"
+    },
+    {
+      "id": 58,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 8
+      },
+      "pixels": {
+        "left": 64,
+        "top": 256
+      },
+      "outputFile": "tiles6_00058.png"
+    },
+    {
+      "id": 59,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 8
+      },
+      "pixels": {
+        "left": 96,
+        "top": 256
+      },
+      "outputFile": "tiles6_00059.png"
+    },
+    {
+      "id": 60,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 8
+      },
+      "pixels": {
+        "left": 128,
+        "top": 256
+      },
+      "outputFile": "tiles6_00060.png"
+    },
+    {
+      "id": 61,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 8
+      },
+      "pixels": {
+        "left": 160,
+        "top": 256
+      },
+      "outputFile": "tiles6_00061.png"
+    },
+    {
+      "id": 62,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 8
+      },
+      "pixels": {
+        "left": 192,
+        "top": 256
+      },
+      "outputFile": "tiles6_00062.png"
+    },
+    {
+      "id": 63,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 9
+      },
+      "pixels": {
+        "left": 0,
+        "top": 288
+      },
+      "outputFile": "tiles6_00063.png"
+    },
+    {
+      "id": 64,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 9
+      },
+      "pixels": {
+        "left": 32,
+        "top": 288
+      },
+      "outputFile": "tiles6_00064.png"
+    },
+    {
+      "id": 65,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 9
+      },
+      "pixels": {
+        "left": 64,
+        "top": 288
+      },
+      "outputFile": "tiles6_00065.png"
+    },
+    {
+      "id": 66,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 9
+      },
+      "pixels": {
+        "left": 96,
+        "top": 288
+      },
+      "outputFile": "tiles6_00066.png"
+    },
+    {
+      "id": 67,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 9
+      },
+      "pixels": {
+        "left": 128,
+        "top": 288
+      },
+      "outputFile": "tiles6_00067.png"
+    },
+    {
+      "id": 68,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 9
+      },
+      "pixels": {
+        "left": 160,
+        "top": 288
+      },
+      "outputFile": "tiles6_00068.png"
+    },
+    {
+      "id": 69,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 9
+      },
+      "pixels": {
+        "left": 192,
+        "top": 288
+      },
+      "outputFile": "tiles6_00069.png"
+    },
+    {
+      "id": 70,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 10
+      },
+      "pixels": {
+        "left": 0,
+        "top": 320
+      },
+      "outputFile": "tiles6_00070.png"
+    },
+    {
+      "id": 71,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 10
+      },
+      "pixels": {
+        "left": 32,
+        "top": 320
+      },
+      "outputFile": "tiles6_00071.png"
+    },
+    {
+      "id": 72,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 10
+      },
+      "pixels": {
+        "left": 64,
+        "top": 320
+      },
+      "outputFile": "tiles6_00072.png"
+    },
+    {
+      "id": 73,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 10
+      },
+      "pixels": {
+        "left": 96,
+        "top": 320
+      },
+      "outputFile": "tiles6_00073.png"
+    },
+    {
+      "id": 74,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 10
+      },
+      "pixels": {
+        "left": 128,
+        "top": 320
+      },
+      "outputFile": "tiles6_00074.png"
+    },
+    {
+      "id": 75,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 10
+      },
+      "pixels": {
+        "left": 160,
+        "top": 320
+      },
+      "outputFile": "tiles6_00075.png"
+    },
+    {
+      "id": 76,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 10
+      },
+      "pixels": {
+        "left": 192,
+        "top": 320
+      },
+      "outputFile": "tiles6_00076.png"
+    },
+    {
+      "id": 77,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 11
+      },
+      "pixels": {
+        "left": 0,
+        "top": 352
+      },
+      "outputFile": "tiles6_00077.png"
+    },
+    {
+      "id": 78,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 11
+      },
+      "pixels": {
+        "left": 32,
+        "top": 352
+      },
+      "outputFile": "tiles6_00078.png"
+    },
+    {
+      "id": 79,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 11
+      },
+      "pixels": {
+        "left": 64,
+        "top": 352
+      },
+      "outputFile": "tiles6_00079.png"
+    },
+    {
+      "id": 80,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 11
+      },
+      "pixels": {
+        "left": 96,
+        "top": 352
+      },
+      "outputFile": "tiles6_00080.png"
+    },
+    {
+      "id": 81,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 11
+      },
+      "pixels": {
+        "left": 128,
+        "top": 352
+      },
+      "outputFile": "tiles6_00081.png"
+    },
+    {
+      "id": 82,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 11
+      },
+      "pixels": {
+        "left": 160,
+        "top": 352
+      },
+      "outputFile": "tiles6_00082.png"
+    },
+    {
+      "id": 83,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 11
+      },
+      "pixels": {
+        "left": 192,
+        "top": 352
+      },
+      "outputFile": "tiles6_00083.png"
+    },
+    {
+      "id": 84,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 12
+      },
+      "pixels": {
+        "left": 0,
+        "top": 384
+      },
+      "outputFile": "tiles6_00084.png"
+    },
+    {
+      "id": 85,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 12
+      },
+      "pixels": {
+        "left": 32,
+        "top": 384
+      },
+      "outputFile": "tiles6_00085.png"
+    },
+    {
+      "id": 86,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 12
+      },
+      "pixels": {
+        "left": 64,
+        "top": 384
+      },
+      "outputFile": "tiles6_00086.png"
+    },
+    {
+      "id": 87,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 12
+      },
+      "pixels": {
+        "left": 96,
+        "top": 384
+      },
+      "outputFile": "tiles6_00087.png"
+    },
+    {
+      "id": 88,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 12
+      },
+      "pixels": {
+        "left": 128,
+        "top": 384
+      },
+      "outputFile": "tiles6_00088.png"
+    },
+    {
+      "id": 89,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 12
+      },
+      "pixels": {
+        "left": 160,
+        "top": 384
+      },
+      "outputFile": "tiles6_00089.png"
+    },
+    {
+      "id": 90,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 12
+      },
+      "pixels": {
+        "left": 192,
+        "top": 384
+      },
+      "outputFile": "tiles6_00090.png"
+    },
+    {
+      "id": 91,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 13
+      },
+      "pixels": {
+        "left": 0,
+        "top": 416
+      },
+      "outputFile": "tiles6_00091.png"
+    },
+    {
+      "id": 92,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 13
+      },
+      "pixels": {
+        "left": 32,
+        "top": 416
+      },
+      "outputFile": "tiles6_00092.png"
+    },
+    {
+      "id": 93,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 13
+      },
+      "pixels": {
+        "left": 64,
+        "top": 416
+      },
+      "outputFile": "tiles6_00093.png"
+    },
+    {
+      "id": 94,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 13
+      },
+      "pixels": {
+        "left": 96,
+        "top": 416
+      },
+      "outputFile": "tiles6_00094.png"
+    },
+    {
+      "id": 95,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 13
+      },
+      "pixels": {
+        "left": 128,
+        "top": 416
+      },
+      "outputFile": "tiles6_00095.png"
+    },
+    {
+      "id": 96,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 13
+      },
+      "pixels": {
+        "left": 160,
+        "top": 416
+      },
+      "outputFile": "tiles6_00096.png"
+    },
+    {
+      "id": 97,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 13
+      },
+      "pixels": {
+        "left": 192,
+        "top": 416
+      },
+      "outputFile": "tiles6_00097.png"
+    },
+    {
+      "id": 98,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 14
+      },
+      "pixels": {
+        "left": 0,
+        "top": 448
+      },
+      "outputFile": "tiles6_00098.png"
+    },
+    {
+      "id": 99,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 14
+      },
+      "pixels": {
+        "left": 32,
+        "top": 448
+      },
+      "outputFile": "tiles6_00099.png"
+    },
+    {
+      "id": 100,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 14
+      },
+      "pixels": {
+        "left": 64,
+        "top": 448
+      },
+      "outputFile": "tiles6_00100.png"
+    },
+    {
+      "id": 101,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 14
+      },
+      "pixels": {
+        "left": 96,
+        "top": 448
+      },
+      "outputFile": "tiles6_00101.png"
+    },
+    {
+      "id": 102,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 14
+      },
+      "pixels": {
+        "left": 128,
+        "top": 448
+      },
+      "outputFile": "tiles6_00102.png"
+    },
+    {
+      "id": 103,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 14
+      },
+      "pixels": {
+        "left": 160,
+        "top": 448
+      },
+      "outputFile": "tiles6_00103.png"
+    },
+    {
+      "id": 104,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 14
+      },
+      "pixels": {
+        "left": 192,
+        "top": 448
+      },
+      "outputFile": "tiles6_00104.png"
+    },
+    {
+      "id": 105,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 15
+      },
+      "pixels": {
+        "left": 0,
+        "top": 480
+      },
+      "outputFile": "tiles6_00105.png"
+    },
+    {
+      "id": 106,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 15
+      },
+      "pixels": {
+        "left": 32,
+        "top": 480
+      },
+      "outputFile": "tiles6_00106.png"
+    },
+    {
+      "id": 107,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 15
+      },
+      "pixels": {
+        "left": 64,
+        "top": 480
+      },
+      "outputFile": "tiles6_00107.png"
+    },
+    {
+      "id": 108,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 15
+      },
+      "pixels": {
+        "left": 96,
+        "top": 480
+      },
+      "outputFile": "tiles6_00108.png"
+    },
+    {
+      "id": 109,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 15
+      },
+      "pixels": {
+        "left": 128,
+        "top": 480
+      },
+      "outputFile": "tiles6_00109.png"
+    },
+    {
+      "id": 110,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 15
+      },
+      "pixels": {
+        "left": 160,
+        "top": 480
+      },
+      "outputFile": "tiles6_00110.png"
+    },
+    {
+      "id": 111,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 15
+      },
+      "pixels": {
+        "left": 192,
+        "top": 480
+      },
+      "outputFile": "tiles6_00111.png"
+    },
+    {
+      "id": 112,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 16
+      },
+      "pixels": {
+        "left": 0,
+        "top": 512
+      },
+      "outputFile": "tiles6_00112.png"
+    },
+    {
+      "id": 113,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 16
+      },
+      "pixels": {
+        "left": 32,
+        "top": 512
+      },
+      "outputFile": "tiles6_00113.png"
+    },
+    {
+      "id": 114,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 16
+      },
+      "pixels": {
+        "left": 64,
+        "top": 512
+      },
+      "outputFile": "tiles6_00114.png"
+    },
+    {
+      "id": 115,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 16
+      },
+      "pixels": {
+        "left": 96,
+        "top": 512
+      },
+      "outputFile": "tiles6_00115.png"
+    },
+    {
+      "id": 116,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 16
+      },
+      "pixels": {
+        "left": 128,
+        "top": 512
+      },
+      "outputFile": "tiles6_00116.png"
+    },
+    {
+      "id": 117,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 16
+      },
+      "pixels": {
+        "left": 160,
+        "top": 512
+      },
+      "outputFile": "tiles6_00117.png"
+    },
+    {
+      "id": 118,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 16
+      },
+      "pixels": {
+        "left": 192,
+        "top": 512
+      },
+      "outputFile": "tiles6_00118.png"
+    },
+    {
+      "id": 119,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 17
+      },
+      "pixels": {
+        "left": 0,
+        "top": 544
+      },
+      "outputFile": "tiles6_00119.png"
+    },
+    {
+      "id": 120,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 17
+      },
+      "pixels": {
+        "left": 32,
+        "top": 544
+      },
+      "outputFile": "tiles6_00120.png"
+    },
+    {
+      "id": 121,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 17
+      },
+      "pixels": {
+        "left": 64,
+        "top": 544
+      },
+      "outputFile": "tiles6_00121.png"
+    },
+    {
+      "id": 122,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 17
+      },
+      "pixels": {
+        "left": 96,
+        "top": 544
+      },
+      "outputFile": "tiles6_00122.png"
+    },
+    {
+      "id": 123,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 17
+      },
+      "pixels": {
+        "left": 128,
+        "top": 544
+      },
+      "outputFile": "tiles6_00123.png"
+    },
+    {
+      "id": 124,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 17
+      },
+      "pixels": {
+        "left": 160,
+        "top": 544
+      },
+      "outputFile": "tiles6_00124.png"
+    },
+    {
+      "id": 125,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 17
+      },
+      "pixels": {
+        "left": 192,
+        "top": 544
+      },
+      "outputFile": "tiles6_00125.png"
+    },
+    {
+      "id": 126,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 18
+      },
+      "pixels": {
+        "left": 0,
+        "top": 576
+      },
+      "outputFile": "tiles6_00126.png"
+    },
+    {
+      "id": 127,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 18
+      },
+      "pixels": {
+        "left": 32,
+        "top": 576
+      },
+      "outputFile": "tiles6_00127.png"
+    },
+    {
+      "id": 128,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 18
+      },
+      "pixels": {
+        "left": 64,
+        "top": 576
+      },
+      "outputFile": "tiles6_00128.png"
+    },
+    {
+      "id": 129,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 18
+      },
+      "pixels": {
+        "left": 96,
+        "top": 576
+      },
+      "outputFile": "tiles6_00129.png"
+    },
+    {
+      "id": 130,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 18
+      },
+      "pixels": {
+        "left": 128,
+        "top": 576
+      },
+      "outputFile": "tiles6_00130.png"
+    },
+    {
+      "id": 131,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 18
+      },
+      "pixels": {
+        "left": 160,
+        "top": 576
+      },
+      "outputFile": "tiles6_00131.png"
+    },
+    {
+      "id": 132,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 18
+      },
+      "pixels": {
+        "left": 192,
+        "top": 576
+      },
+      "outputFile": "tiles6_00132.png"
+    },
+    {
+      "id": 133,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 19
+      },
+      "pixels": {
+        "left": 0,
+        "top": 608
+      },
+      "outputFile": "tiles6_00133.png"
+    },
+    {
+      "id": 134,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 19
+      },
+      "pixels": {
+        "left": 32,
+        "top": 608
+      },
+      "outputFile": "tiles6_00134.png"
+    },
+    {
+      "id": 135,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 19
+      },
+      "pixels": {
+        "left": 64,
+        "top": 608
+      },
+      "outputFile": "tiles6_00135.png"
+    },
+    {
+      "id": 136,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 19
+      },
+      "pixels": {
+        "left": 96,
+        "top": 608
+      },
+      "outputFile": "tiles6_00136.png"
+    },
+    {
+      "id": 137,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 19
+      },
+      "pixels": {
+        "left": 128,
+        "top": 608
+      },
+      "outputFile": "tiles6_00137.png"
+    },
+    {
+      "id": 138,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 19
+      },
+      "pixels": {
+        "left": 160,
+        "top": 608
+      },
+      "outputFile": "tiles6_00138.png"
+    },
+    {
+      "id": 139,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 19
+      },
+      "pixels": {
+        "left": 192,
+        "top": 608
+      },
+      "outputFile": "tiles6_00139.png"
+    },
+    {
+      "id": 140,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 20
+      },
+      "pixels": {
+        "left": 0,
+        "top": 640
+      },
+      "outputFile": "tiles6_00140.png"
+    },
+    {
+      "id": 141,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 20
+      },
+      "pixels": {
+        "left": 32,
+        "top": 640
+      },
+      "outputFile": "tiles6_00141.png"
+    },
+    {
+      "id": 142,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 20
+      },
+      "pixels": {
+        "left": 64,
+        "top": 640
+      },
+      "outputFile": "tiles6_00142.png"
+    },
+    {
+      "id": 143,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 20
+      },
+      "pixels": {
+        "left": 96,
+        "top": 640
+      },
+      "outputFile": "tiles6_00143.png"
+    },
+    {
+      "id": 144,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 20
+      },
+      "pixels": {
+        "left": 128,
+        "top": 640
+      },
+      "outputFile": "tiles6_00144.png"
+    },
+    {
+      "id": 145,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 20
+      },
+      "pixels": {
+        "left": 160,
+        "top": 640
+      },
+      "outputFile": "tiles6_00145.png"
+    },
+    {
+      "id": 146,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 20
+      },
+      "pixels": {
+        "left": 192,
+        "top": 640
+      },
+      "outputFile": "tiles6_00146.png"
+    },
+    {
+      "id": 147,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 21
+      },
+      "pixels": {
+        "left": 0,
+        "top": 672
+      },
+      "outputFile": "tiles6_00147.png"
+    },
+    {
+      "id": 148,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 21
+      },
+      "pixels": {
+        "left": 32,
+        "top": 672
+      },
+      "outputFile": "tiles6_00148.png"
+    },
+    {
+      "id": 149,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 21
+      },
+      "pixels": {
+        "left": 64,
+        "top": 672
+      },
+      "outputFile": "tiles6_00149.png"
+    },
+    {
+      "id": 150,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 21
+      },
+      "pixels": {
+        "left": 96,
+        "top": 672
+      },
+      "outputFile": "tiles6_00150.png"
+    },
+    {
+      "id": 151,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 21
+      },
+      "pixels": {
+        "left": 128,
+        "top": 672
+      },
+      "outputFile": "tiles6_00151.png"
+    },
+    {
+      "id": 152,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 21
+      },
+      "pixels": {
+        "left": 160,
+        "top": 672
+      },
+      "outputFile": "tiles6_00152.png"
+    },
+    {
+      "id": 153,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 21
+      },
+      "pixels": {
+        "left": 192,
+        "top": 672
+      },
+      "outputFile": "tiles6_00153.png"
+    },
+    {
+      "id": 154,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 22
+      },
+      "pixels": {
+        "left": 0,
+        "top": 704
+      },
+      "outputFile": "tiles6_00154.png"
+    },
+    {
+      "id": 155,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 22
+      },
+      "pixels": {
+        "left": 32,
+        "top": 704
+      },
+      "outputFile": "tiles6_00155.png"
+    },
+    {
+      "id": 156,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 22
+      },
+      "pixels": {
+        "left": 64,
+        "top": 704
+      },
+      "outputFile": "tiles6_00156.png"
+    },
+    {
+      "id": 157,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 22
+      },
+      "pixels": {
+        "left": 96,
+        "top": 704
+      },
+      "outputFile": "tiles6_00157.png"
+    },
+    {
+      "id": 158,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 22
+      },
+      "pixels": {
+        "left": 128,
+        "top": 704
+      },
+      "outputFile": "tiles6_00158.png"
+    },
+    {
+      "id": 159,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 22
+      },
+      "pixels": {
+        "left": 160,
+        "top": 704
+      },
+      "outputFile": "tiles6_00159.png"
+    },
+    {
+      "id": 160,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 22
+      },
+      "pixels": {
+        "left": 192,
+        "top": 704
+      },
+      "outputFile": "tiles6_00160.png"
+    },
+    {
+      "id": 161,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 23
+      },
+      "pixels": {
+        "left": 0,
+        "top": 736
+      },
+      "outputFile": "tiles6_00161.png"
+    },
+    {
+      "id": 162,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 23
+      },
+      "pixels": {
+        "left": 32,
+        "top": 736
+      },
+      "outputFile": "tiles6_00162.png"
+    },
+    {
+      "id": 163,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 23
+      },
+      "pixels": {
+        "left": 64,
+        "top": 736
+      },
+      "outputFile": "tiles6_00163.png"
+    },
+    {
+      "id": 164,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 23
+      },
+      "pixels": {
+        "left": 96,
+        "top": 736
+      },
+      "outputFile": "tiles6_00164.png"
+    },
+    {
+      "id": 165,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 23
+      },
+      "pixels": {
+        "left": 128,
+        "top": 736
+      },
+      "outputFile": "tiles6_00165.png"
+    },
+    {
+      "id": 166,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 23
+      },
+      "pixels": {
+        "left": 160,
+        "top": 736
+      },
+      "outputFile": "tiles6_00166.png"
+    },
+    {
+      "id": 167,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 23
+      },
+      "pixels": {
+        "left": 192,
+        "top": 736
+      },
+      "outputFile": "tiles6_00167.png"
+    },
+    {
+      "id": 168,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 24
+      },
+      "pixels": {
+        "left": 0,
+        "top": 768
+      },
+      "outputFile": "tiles6_00168.png"
+    },
+    {
+      "id": 169,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 24
+      },
+      "pixels": {
+        "left": 32,
+        "top": 768
+      },
+      "outputFile": "tiles6_00169.png"
+    },
+    {
+      "id": 170,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 24
+      },
+      "pixels": {
+        "left": 64,
+        "top": 768
+      },
+      "outputFile": "tiles6_00170.png"
+    },
+    {
+      "id": 171,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 24
+      },
+      "pixels": {
+        "left": 96,
+        "top": 768
+      },
+      "outputFile": "tiles6_00171.png"
+    },
+    {
+      "id": 172,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 24
+      },
+      "pixels": {
+        "left": 128,
+        "top": 768
+      },
+      "outputFile": "tiles6_00172.png"
+    },
+    {
+      "id": 173,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 24
+      },
+      "pixels": {
+        "left": 160,
+        "top": 768
+      },
+      "outputFile": "tiles6_00173.png"
+    },
+    {
+      "id": 174,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 24
+      },
+      "pixels": {
+        "left": 192,
+        "top": 768
+      },
+      "outputFile": "tiles6_00174.png"
+    },
+    {
+      "id": 175,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 25
+      },
+      "pixels": {
+        "left": 0,
+        "top": 800
+      },
+      "outputFile": "tiles6_00175.png"
+    },
+    {
+      "id": 176,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 25
+      },
+      "pixels": {
+        "left": 32,
+        "top": 800
+      },
+      "outputFile": "tiles6_00176.png"
+    },
+    {
+      "id": 177,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 25
+      },
+      "pixels": {
+        "left": 64,
+        "top": 800
+      },
+      "outputFile": "tiles6_00177.png"
+    },
+    {
+      "id": 178,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 25
+      },
+      "pixels": {
+        "left": 96,
+        "top": 800
+      },
+      "outputFile": "tiles6_00178.png"
+    },
+    {
+      "id": 179,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 25
+      },
+      "pixels": {
+        "left": 128,
+        "top": 800
+      },
+      "outputFile": "tiles6_00179.png"
+    },
+    {
+      "id": 180,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 25
+      },
+      "pixels": {
+        "left": 160,
+        "top": 800
+      },
+      "outputFile": "tiles6_00180.png"
+    },
+    {
+      "id": 181,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 25
+      },
+      "pixels": {
+        "left": 192,
+        "top": 800
+      },
+      "outputFile": "tiles6_00181.png"
+    },
+    {
+      "id": 182,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 26
+      },
+      "pixels": {
+        "left": 0,
+        "top": 832
+      },
+      "outputFile": "tiles6_00182.png"
+    },
+    {
+      "id": 183,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 26
+      },
+      "pixels": {
+        "left": 32,
+        "top": 832
+      },
+      "outputFile": "tiles6_00183.png"
+    },
+    {
+      "id": 184,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 26
+      },
+      "pixels": {
+        "left": 64,
+        "top": 832
+      },
+      "outputFile": "tiles6_00184.png"
+    },
+    {
+      "id": 185,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 26
+      },
+      "pixels": {
+        "left": 96,
+        "top": 832
+      },
+      "outputFile": "tiles6_00185.png"
+    },
+    {
+      "id": 186,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 26
+      },
+      "pixels": {
+        "left": 128,
+        "top": 832
+      },
+      "outputFile": "tiles6_00186.png"
+    },
+    {
+      "id": 187,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 26
+      },
+      "pixels": {
+        "left": 160,
+        "top": 832
+      },
+      "outputFile": "tiles6_00187.png"
+    },
+    {
+      "id": 188,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 26
+      },
+      "pixels": {
+        "left": 192,
+        "top": 832
+      },
+      "outputFile": "tiles6_00188.png"
+    },
+    {
+      "id": 189,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 27
+      },
+      "pixels": {
+        "left": 0,
+        "top": 864
+      },
+      "outputFile": "tiles6_00189.png"
+    },
+    {
+      "id": 190,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 27
+      },
+      "pixels": {
+        "left": 32,
+        "top": 864
+      },
+      "outputFile": "tiles6_00190.png"
+    },
+    {
+      "id": 191,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 27
+      },
+      "pixels": {
+        "left": 64,
+        "top": 864
+      },
+      "outputFile": "tiles6_00191.png"
+    },
+    {
+      "id": 192,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 27
+      },
+      "pixels": {
+        "left": 96,
+        "top": 864
+      },
+      "outputFile": "tiles6_00192.png"
+    },
+    {
+      "id": 193,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 27
+      },
+      "pixels": {
+        "left": 128,
+        "top": 864
+      },
+      "outputFile": "tiles6_00193.png"
+    },
+    {
+      "id": 194,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 27
+      },
+      "pixels": {
+        "left": 160,
+        "top": 864
+      },
+      "outputFile": "tiles6_00194.png"
+    },
+    {
+      "id": 195,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 27
+      },
+      "pixels": {
+        "left": 192,
+        "top": 864
+      },
+      "outputFile": "tiles6_00195.png"
+    },
+    {
+      "id": 196,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 28
+      },
+      "pixels": {
+        "left": 0,
+        "top": 896
+      },
+      "outputFile": "tiles6_00196.png"
+    },
+    {
+      "id": 197,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 28
+      },
+      "pixels": {
+        "left": 32,
+        "top": 896
+      },
+      "outputFile": "tiles6_00197.png"
+    },
+    {
+      "id": 198,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 28
+      },
+      "pixels": {
+        "left": 64,
+        "top": 896
+      },
+      "outputFile": "tiles6_00198.png"
+    },
+    {
+      "id": 199,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 28
+      },
+      "pixels": {
+        "left": 96,
+        "top": 896
+      },
+      "outputFile": "tiles6_00199.png"
+    },
+    {
+      "id": 200,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 28
+      },
+      "pixels": {
+        "left": 128,
+        "top": 896
+      },
+      "outputFile": "tiles6_00200.png"
+    },
+    {
+      "id": 201,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 28
+      },
+      "pixels": {
+        "left": 160,
+        "top": 896
+      },
+      "outputFile": "tiles6_00201.png"
+    },
+    {
+      "id": 202,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 28
+      },
+      "pixels": {
+        "left": 192,
+        "top": 896
+      },
+      "outputFile": "tiles6_00202.png"
+    },
+    {
+      "id": 203,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 29
+      },
+      "pixels": {
+        "left": 0,
+        "top": 928
+      },
+      "outputFile": "tiles6_00203.png"
+    },
+    {
+      "id": 204,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 29
+      },
+      "pixels": {
+        "left": 32,
+        "top": 928
+      },
+      "outputFile": "tiles6_00204.png"
+    },
+    {
+      "id": 205,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 29
+      },
+      "pixels": {
+        "left": 64,
+        "top": 928
+      },
+      "outputFile": "tiles6_00205.png"
+    },
+    {
+      "id": 206,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 29
+      },
+      "pixels": {
+        "left": 96,
+        "top": 928
+      },
+      "outputFile": "tiles6_00206.png"
+    },
+    {
+      "id": 207,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 29
+      },
+      "pixels": {
+        "left": 128,
+        "top": 928
+      },
+      "outputFile": "tiles6_00207.png"
+    },
+    {
+      "id": 208,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 29
+      },
+      "pixels": {
+        "left": 160,
+        "top": 928
+      },
+      "outputFile": "tiles6_00208.png"
+    },
+    {
+      "id": 209,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 29
+      },
+      "pixels": {
+        "left": 192,
+        "top": 928
+      },
+      "outputFile": "tiles6_00209.png"
+    },
+    {
+      "id": 210,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 30
+      },
+      "pixels": {
+        "left": 0,
+        "top": 960
+      },
+      "outputFile": "tiles6_00210.png"
+    },
+    {
+      "id": 211,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 30
+      },
+      "pixels": {
+        "left": 32,
+        "top": 960
+      },
+      "outputFile": "tiles6_00211.png"
+    },
+    {
+      "id": 212,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 30
+      },
+      "pixels": {
+        "left": 64,
+        "top": 960
+      },
+      "outputFile": "tiles6_00212.png"
+    },
+    {
+      "id": 213,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 30
+      },
+      "pixels": {
+        "left": 96,
+        "top": 960
+      },
+      "outputFile": "tiles6_00213.png"
+    },
+    {
+      "id": 214,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 30
+      },
+      "pixels": {
+        "left": 128,
+        "top": 960
+      },
+      "outputFile": "tiles6_00214.png"
+    },
+    {
+      "id": 215,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 30
+      },
+      "pixels": {
+        "left": 160,
+        "top": 960
+      },
+      "outputFile": "tiles6_00215.png"
+    },
+    {
+      "id": 216,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 30
+      },
+      "pixels": {
+        "left": 192,
+        "top": 960
+      },
+      "outputFile": "tiles6_00216.png"
+    },
+    {
+      "id": 217,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 31
+      },
+      "pixels": {
+        "left": 0,
+        "top": 992
+      },
+      "outputFile": "tiles6_00217.png"
+    },
+    {
+      "id": 218,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 31
+      },
+      "pixels": {
+        "left": 32,
+        "top": 992
+      },
+      "outputFile": "tiles6_00218.png"
+    },
+    {
+      "id": 219,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 31
+      },
+      "pixels": {
+        "left": 64,
+        "top": 992
+      },
+      "outputFile": "tiles6_00219.png"
+    },
+    {
+      "id": 220,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 31
+      },
+      "pixels": {
+        "left": 96,
+        "top": 992
+      },
+      "outputFile": "tiles6_00220.png"
+    },
+    {
+      "id": 221,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 31
+      },
+      "pixels": {
+        "left": 128,
+        "top": 992
+      },
+      "outputFile": "tiles6_00221.png"
+    },
+    {
+      "id": 222,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 31
+      },
+      "pixels": {
+        "left": 160,
+        "top": 992
+      },
+      "outputFile": "tiles6_00222.png"
+    },
+    {
+      "id": 223,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 31
+      },
+      "pixels": {
+        "left": 192,
+        "top": 992
+      },
+      "outputFile": "tiles6_00223.png"
+    },
+    {
+      "id": 224,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 32
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1024
+      },
+      "outputFile": "tiles6_00224.png"
+    },
+    {
+      "id": 225,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 32
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1024
+      },
+      "outputFile": "tiles6_00225.png"
+    },
+    {
+      "id": 226,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 32
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1024
+      },
+      "outputFile": "tiles6_00226.png"
+    },
+    {
+      "id": 227,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 32
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1024
+      },
+      "outputFile": "tiles6_00227.png"
+    },
+    {
+      "id": 228,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 32
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1024
+      },
+      "outputFile": "tiles6_00228.png"
+    },
+    {
+      "id": 229,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 32
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1024
+      },
+      "outputFile": "tiles6_00229.png"
+    },
+    {
+      "id": 230,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 32
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1024
+      },
+      "outputFile": "tiles6_00230.png"
+    },
+    {
+      "id": 231,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 33
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1056
+      },
+      "outputFile": "tiles6_00231.png"
+    },
+    {
+      "id": 232,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 33
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1056
+      },
+      "outputFile": "tiles6_00232.png"
+    },
+    {
+      "id": 233,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 33
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1056
+      },
+      "outputFile": "tiles6_00233.png"
+    },
+    {
+      "id": 234,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 33
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1056
+      },
+      "outputFile": "tiles6_00234.png"
+    },
+    {
+      "id": 235,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 33
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1056
+      },
+      "outputFile": "tiles6_00235.png"
+    },
+    {
+      "id": 236,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 33
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1056
+      },
+      "outputFile": "tiles6_00236.png"
+    },
+    {
+      "id": 237,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 33
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1056
+      },
+      "outputFile": "tiles6_00237.png"
+    },
+    {
+      "id": 238,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 34
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1088
+      },
+      "outputFile": "tiles6_00238.png"
+    },
+    {
+      "id": 239,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 34
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1088
+      },
+      "outputFile": "tiles6_00239.png"
+    },
+    {
+      "id": 240,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 34
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1088
+      },
+      "outputFile": "tiles6_00240.png"
+    },
+    {
+      "id": 241,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 34
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1088
+      },
+      "outputFile": "tiles6_00241.png"
+    },
+    {
+      "id": 242,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 34
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1088
+      },
+      "outputFile": "tiles6_00242.png"
+    },
+    {
+      "id": 243,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 34
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1088
+      },
+      "outputFile": "tiles6_00243.png"
+    },
+    {
+      "id": 244,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 34
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1088
+      },
+      "outputFile": "tiles6_00244.png"
+    },
+    {
+      "id": 245,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 35
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1120
+      },
+      "outputFile": "tiles6_00245.png"
+    },
+    {
+      "id": 246,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 35
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1120
+      },
+      "outputFile": "tiles6_00246.png"
+    },
+    {
+      "id": 247,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 35
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1120
+      },
+      "outputFile": "tiles6_00247.png"
+    },
+    {
+      "id": 248,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 35
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1120
+      },
+      "outputFile": "tiles6_00248.png"
+    },
+    {
+      "id": 249,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 35
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1120
+      },
+      "outputFile": "tiles6_00249.png"
+    },
+    {
+      "id": 250,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 35
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1120
+      },
+      "outputFile": "tiles6_00250.png"
+    },
+    {
+      "id": 251,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 35
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1120
+      },
+      "outputFile": "tiles6_00251.png"
+    },
+    {
+      "id": 252,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 36
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1152
+      },
+      "outputFile": "tiles6_00252.png"
+    },
+    {
+      "id": 253,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 36
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1152
+      },
+      "outputFile": "tiles6_00253.png"
+    },
+    {
+      "id": 254,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 36
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1152
+      },
+      "outputFile": "tiles6_00254.png"
+    },
+    {
+      "id": 255,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 36
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1152
+      },
+      "outputFile": "tiles6_00255.png"
+    },
+    {
+      "id": 256,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 36
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1152
+      },
+      "outputFile": "tiles6_00256.png"
+    },
+    {
+      "id": 257,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 36
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1152
+      },
+      "outputFile": "tiles6_00257.png"
+    },
+    {
+      "id": 258,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 36
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1152
+      },
+      "outputFile": "tiles6_00258.png"
+    },
+    {
+      "id": 259,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 37
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1184
+      },
+      "outputFile": "tiles6_00259.png"
+    },
+    {
+      "id": 260,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 37
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1184
+      },
+      "outputFile": "tiles6_00260.png"
+    },
+    {
+      "id": 261,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 37
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1184
+      },
+      "outputFile": "tiles6_00261.png"
+    },
+    {
+      "id": 262,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 37
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1184
+      },
+      "outputFile": "tiles6_00262.png"
+    },
+    {
+      "id": 263,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 37
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1184
+      },
+      "outputFile": "tiles6_00263.png"
+    },
+    {
+      "id": 264,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 37
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1184
+      },
+      "outputFile": "tiles6_00264.png"
+    },
+    {
+      "id": 265,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 37
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1184
+      },
+      "outputFile": "tiles6_00265.png"
+    },
+    {
+      "id": 266,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 38
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1216
+      },
+      "outputFile": "tiles6_00266.png"
+    },
+    {
+      "id": 267,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 38
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1216
+      },
+      "outputFile": "tiles6_00267.png"
+    },
+    {
+      "id": 268,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 38
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1216
+      },
+      "outputFile": "tiles6_00268.png"
+    },
+    {
+      "id": 269,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 38
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1216
+      },
+      "outputFile": "tiles6_00269.png"
+    },
+    {
+      "id": 270,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 38
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1216
+      },
+      "outputFile": "tiles6_00270.png"
+    },
+    {
+      "id": 271,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 38
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1216
+      },
+      "outputFile": "tiles6_00271.png"
+    },
+    {
+      "id": 272,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 38
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1216
+      },
+      "outputFile": "tiles6_00272.png"
+    },
+    {
+      "id": 273,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 39
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1248
+      },
+      "outputFile": "tiles6_00273.png"
+    },
+    {
+      "id": 274,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 39
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1248
+      },
+      "outputFile": "tiles6_00274.png"
+    },
+    {
+      "id": 275,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 39
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1248
+      },
+      "outputFile": "tiles6_00275.png"
+    },
+    {
+      "id": 276,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 39
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1248
+      },
+      "outputFile": "tiles6_00276.png"
+    },
+    {
+      "id": 277,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 39
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1248
+      },
+      "outputFile": "tiles6_00277.png"
+    },
+    {
+      "id": 278,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 39
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1248
+      },
+      "outputFile": "tiles6_00278.png"
+    },
+    {
+      "id": 279,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 39
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1248
+      },
+      "outputFile": "tiles6_00279.png"
+    },
+    {
+      "id": 280,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 40
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1280
+      },
+      "outputFile": "tiles6_00280.png"
+    },
+    {
+      "id": 281,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 40
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1280
+      },
+      "outputFile": "tiles6_00281.png"
+    },
+    {
+      "id": 282,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 40
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1280
+      },
+      "outputFile": "tiles6_00282.png"
+    },
+    {
+      "id": 283,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 40
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1280
+      },
+      "outputFile": "tiles6_00283.png"
+    },
+    {
+      "id": 284,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 40
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1280
+      },
+      "outputFile": "tiles6_00284.png"
+    },
+    {
+      "id": 285,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 40
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1280
+      },
+      "outputFile": "tiles6_00285.png"
+    },
+    {
+      "id": 286,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 40
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1280
+      },
+      "outputFile": "tiles6_00286.png"
+    },
+    {
+      "id": 287,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 41
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1312
+      },
+      "outputFile": "tiles6_00287.png"
+    },
+    {
+      "id": 288,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 41
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1312
+      },
+      "outputFile": "tiles6_00288.png"
+    },
+    {
+      "id": 289,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 41
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1312
+      },
+      "outputFile": "tiles6_00289.png"
+    },
+    {
+      "id": 290,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 41
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1312
+      },
+      "outputFile": "tiles6_00290.png"
+    },
+    {
+      "id": 291,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 41
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1312
+      },
+      "outputFile": "tiles6_00291.png"
+    },
+    {
+      "id": 292,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 41
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1312
+      },
+      "outputFile": "tiles6_00292.png"
+    },
+    {
+      "id": 293,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 41
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1312
+      },
+      "outputFile": "tiles6_00293.png"
+    },
+    {
+      "id": 294,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 42
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1344
+      },
+      "outputFile": "tiles6_00294.png"
+    },
+    {
+      "id": 295,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 42
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1344
+      },
+      "outputFile": "tiles6_00295.png"
+    },
+    {
+      "id": 296,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 42
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1344
+      },
+      "outputFile": "tiles6_00296.png"
+    },
+    {
+      "id": 297,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 42
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1344
+      },
+      "outputFile": "tiles6_00297.png"
+    },
+    {
+      "id": 298,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 42
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1344
+      },
+      "outputFile": "tiles6_00298.png"
+    },
+    {
+      "id": 299,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 42
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1344
+      },
+      "outputFile": "tiles6_00299.png"
+    },
+    {
+      "id": 300,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 42
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1344
+      },
+      "outputFile": "tiles6_00300.png"
+    },
+    {
+      "id": 301,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 43
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1376
+      },
+      "outputFile": "tiles6_00301.png"
+    },
+    {
+      "id": 302,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 43
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1376
+      },
+      "outputFile": "tiles6_00302.png"
+    },
+    {
+      "id": 303,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 43
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1376
+      },
+      "outputFile": "tiles6_00303.png"
+    },
+    {
+      "id": 304,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 43
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1376
+      },
+      "outputFile": "tiles6_00304.png"
+    },
+    {
+      "id": 305,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 43
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1376
+      },
+      "outputFile": "tiles6_00305.png"
+    },
+    {
+      "id": 306,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 43
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1376
+      },
+      "outputFile": "tiles6_00306.png"
+    },
+    {
+      "id": 307,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 43
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1376
+      },
+      "outputFile": "tiles6_00307.png"
+    },
+    {
+      "id": 308,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 44
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1408
+      },
+      "outputFile": "tiles6_00308.png"
+    },
+    {
+      "id": 309,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 44
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1408
+      },
+      "outputFile": "tiles6_00309.png"
+    },
+    {
+      "id": 310,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 44
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1408
+      },
+      "outputFile": "tiles6_00310.png"
+    },
+    {
+      "id": 311,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 44
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1408
+      },
+      "outputFile": "tiles6_00311.png"
+    },
+    {
+      "id": 312,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 44
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1408
+      },
+      "outputFile": "tiles6_00312.png"
+    },
+    {
+      "id": 313,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 44
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1408
+      },
+      "outputFile": "tiles6_00313.png"
+    },
+    {
+      "id": 314,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 44
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1408
+      },
+      "outputFile": "tiles6_00314.png"
+    },
+    {
+      "id": 315,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 45
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1440
+      },
+      "outputFile": "tiles6_00315.png"
+    },
+    {
+      "id": 316,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 45
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1440
+      },
+      "outputFile": "tiles6_00316.png"
+    },
+    {
+      "id": 317,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 45
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1440
+      },
+      "outputFile": "tiles6_00317.png"
+    },
+    {
+      "id": 318,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 45
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1440
+      },
+      "outputFile": "tiles6_00318.png"
+    },
+    {
+      "id": 319,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 45
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1440
+      },
+      "outputFile": "tiles6_00319.png"
+    },
+    {
+      "id": 320,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 45
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1440
+      },
+      "outputFile": "tiles6_00320.png"
+    },
+    {
+      "id": 321,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 45
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1440
+      },
+      "outputFile": "tiles6_00321.png"
+    },
+    {
+      "id": 322,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 46
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1472
+      },
+      "outputFile": "tiles6_00322.png"
+    },
+    {
+      "id": 323,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 46
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1472
+      },
+      "outputFile": "tiles6_00323.png"
+    },
+    {
+      "id": 324,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 46
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1472
+      },
+      "outputFile": "tiles6_00324.png"
+    },
+    {
+      "id": 325,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 46
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1472
+      },
+      "outputFile": "tiles6_00325.png"
+    },
+    {
+      "id": 326,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 46
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1472
+      },
+      "outputFile": "tiles6_00326.png"
+    },
+    {
+      "id": 327,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 46
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1472
+      },
+      "outputFile": "tiles6_00327.png"
+    },
+    {
+      "id": 328,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 46
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1472
+      },
+      "outputFile": "tiles6_00328.png"
+    },
+    {
+      "id": 329,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 47
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1504
+      },
+      "outputFile": "tiles6_00329.png"
+    },
+    {
+      "id": 330,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 47
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1504
+      },
+      "outputFile": "tiles6_00330.png"
+    },
+    {
+      "id": 331,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 47
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1504
+      },
+      "outputFile": "tiles6_00331.png"
+    },
+    {
+      "id": 332,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 47
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1504
+      },
+      "outputFile": "tiles6_00332.png"
+    },
+    {
+      "id": 333,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 47
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1504
+      },
+      "outputFile": "tiles6_00333.png"
+    },
+    {
+      "id": 334,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 47
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1504
+      },
+      "outputFile": "tiles6_00334.png"
+    },
+    {
+      "id": 335,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 47
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1504
+      },
+      "outputFile": "tiles6_00335.png"
+    },
+    {
+      "id": 336,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 48
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1536
+      },
+      "outputFile": "tiles6_00336.png"
+    },
+    {
+      "id": 337,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 48
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1536
+      },
+      "outputFile": "tiles6_00337.png"
+    },
+    {
+      "id": 338,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 48
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1536
+      },
+      "outputFile": "tiles6_00338.png"
+    },
+    {
+      "id": 339,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 48
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1536
+      },
+      "outputFile": "tiles6_00339.png"
+    },
+    {
+      "id": 340,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 48
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1536
+      },
+      "outputFile": "tiles6_00340.png"
+    },
+    {
+      "id": 341,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 48
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1536
+      },
+      "outputFile": "tiles6_00341.png"
+    },
+    {
+      "id": 342,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 48
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1536
+      },
+      "outputFile": "tiles6_00342.png"
+    },
+    {
+      "id": 343,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 49
+      },
+      "pixels": {
+        "left": 0,
+        "top": 1568
+      },
+      "outputFile": "tiles6_00343.png"
+    },
+    {
+      "id": 344,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 49
+      },
+      "pixels": {
+        "left": 32,
+        "top": 1568
+      },
+      "outputFile": "tiles6_00344.png"
+    },
+    {
+      "id": 345,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 49
+      },
+      "pixels": {
+        "left": 64,
+        "top": 1568
+      },
+      "outputFile": "tiles6_00345.png"
+    },
+    {
+      "id": 346,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 49
+      },
+      "pixels": {
+        "left": 96,
+        "top": 1568
+      },
+      "outputFile": "tiles6_00346.png"
+    },
+    {
+      "id": 347,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 49
+      },
+      "pixels": {
+        "left": 128,
+        "top": 1568
+      },
+      "outputFile": "tiles6_00347.png"
+    },
+    {
+      "id": 348,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 49
+      },
+      "pixels": {
+        "left": 160,
+        "top": 1568
+      },
+      "outputFile": "tiles6_00348.png"
+    },
+    {
+      "id": 349,
+      "sourceFile": "tiles6.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 49
+      },
+      "pixels": {
+        "left": 192,
+        "top": 1568
+      },
+      "outputFile": "tiles6_00349.png"
+    }
+  ],
+  "extractedAt": "2025-10-18T19:06:36.881Z"
+}

@@ -1,0 +1,98 @@
+{
+  "player_walk_down": {
+    "key": "player_walk_down",
+    "frames": [
+      {
+        "key": "Sprites",
+        "frame": "Sprites_frame_0000.png"
+      },
+      {
+        "key": "Sprites",
+        "frame": "Sprites_frame_0001.png"
+      },
+      {
+        "key": "Sprites",
+        "frame": "Sprites_frame_0002.png"
+      },
+      {
+        "key": "Sprites",
+        "frame": "Sprites_frame_0003.png"
+      }
+    ],
+    "frameRate": 8,
+    "repeat": -1,
+    "yoyo": false
+  },
+  "player_walk_left": {
+    "key": "player_walk_left",
+    "frames": [
+      {
+        "key": "Sprites",
+        "frame": "Sprites_frame_0004.png"
+      },
+      {
+        "key": "Sprites",
+        "frame": "Sprites_frame_0005.png"
+      },
+      {
+        "key": "Sprites",
+        "frame": "Sprites_frame_0006.png"
+      },
+      {
+        "key": "Sprites",
+        "frame": "Sprites_frame_0007.png"
+      }
+    ],
+    "frameRate": 8,
+    "repeat": -1,
+    "yoyo": false
+  },
+  "player_walk_right": {
+    "key": "player_walk_right",
+    "frames": [
+      {
+        "key": "Sprites",
+        "frame": "Sprites_frame_0008.png"
+      },
+      {
+        "key": "Sprites",
+        "frame": "Sprites_frame_0009.png"
+      },
+      {
+        "key": "Sprites",
+        "frame": "Sprites_frame_0010.png"
+      },
+      {
+        "key": "Sprites",
+        "frame": "Sprites_frame_0011.png"
+      }
+    ],
+    "frameRate": 8,
+    "repeat": -1,
+    "yoyo": false
+  },
+  "player_walk_up": {
+    "key": "player_walk_up",
+    "frames": [
+      {
+        "key": "Sprites",
+        "frame": "Sprites_frame_0012.png"
+      },
+      {
+        "key": "Sprites",
+        "frame": "Sprites_frame_0013.png"
+      },
+      {
+        "key": "Sprites",
+        "frame": "Sprites_frame_0014.png"
+      },
+      {
+        "key": "Sprites",
+        "frame": "Sprites_frame_0015.png"
+      }
+    ],
+    "frameRate": 8,
+    "repeat": -1,
+    "yoyo": false
+  }
+}

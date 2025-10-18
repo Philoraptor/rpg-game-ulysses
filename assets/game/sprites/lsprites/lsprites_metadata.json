@@ -1,0 +1,4337 @@
+{
+  "sourceFile": "lsprites.rsc.png",
+  "frameSize": {
+    "width": 32,
+    "height": 32
+  },
+  "grid": {
+    "cols": 24,
+    "rows": 12
+  },
+  "totalFrames": 288,
+  "extractedFrames": 288,
+  "animations": [],
+  "frames": [
+    {
+      "frame": 0,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 0
+      },
+      "pixels": {
+        "x": 0,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0000.png"
+    },
+    {
+      "frame": 1,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 0
+      },
+      "pixels": {
+        "x": 32,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0001.png"
+    },
+    {
+      "frame": 2,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 0
+      },
+      "pixels": {
+        "x": 64,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0002.png"
+    },
+    {
+      "frame": 3,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 0
+      },
+      "pixels": {
+        "x": 96,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0003.png"
+    },
+    {
+      "frame": 4,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 0
+      },
+      "pixels": {
+        "x": 128,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0004.png"
+    },
+    {
+      "frame": 5,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 0
+      },
+      "pixels": {
+        "x": 160,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0005.png"
+    },
+    {
+      "frame": 6,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 0
+      },
+      "pixels": {
+        "x": 192,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0006.png"
+    },
+    {
+      "frame": 7,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 7,
+        "row": 0
+      },
+      "pixels": {
+        "x": 224,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0007.png"
+    },
+    {
+      "frame": 8,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 8,
+        "row": 0
+      },
+      "pixels": {
+        "x": 256,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0008.png"
+    },
+    {
+      "frame": 9,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 9,
+        "row": 0
+      },
+      "pixels": {
+        "x": 288,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0009.png"
+    },
+    {
+      "frame": 10,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 10,
+        "row": 0
+      },
+      "pixels": {
+        "x": 320,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0010.png"
+    },
+    {
+      "frame": 11,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 11,
+        "row": 0
+      },
+      "pixels": {
+        "x": 352,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0011.png"
+    },
+    {
+      "frame": 12,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 12,
+        "row": 0
+      },
+      "pixels": {
+        "x": 384,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0012.png"
+    },
+    {
+      "frame": 13,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 13,
+        "row": 0
+      },
+      "pixels": {
+        "x": 416,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0013.png"
+    },
+    {
+      "frame": 14,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 14,
+        "row": 0
+      },
+      "pixels": {
+        "x": 448,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0014.png"
+    },
+    {
+      "frame": 15,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 15,
+        "row": 0
+      },
+      "pixels": {
+        "x": 480,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0015.png"
+    },
+    {
+      "frame": 16,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 16,
+        "row": 0
+      },
+      "pixels": {
+        "x": 512,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0016.png"
+    },
+    {
+      "frame": 17,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 17,
+        "row": 0
+      },
+      "pixels": {
+        "x": 544,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0017.png"
+    },
+    {
+      "frame": 18,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 18,
+        "row": 0
+      },
+      "pixels": {
+        "x": 576,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0018.png"
+    },
+    {
+      "frame": 19,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 19,
+        "row": 0
+      },
+      "pixels": {
+        "x": 608,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0019.png"
+    },
+    {
+      "frame": 20,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 20,
+        "row": 0
+      },
+      "pixels": {
+        "x": 640,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0020.png"
+    },
+    {
+      "frame": 21,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 21,
+        "row": 0
+      },
+      "pixels": {
+        "x": 672,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0021.png"
+    },
+    {
+      "frame": 22,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 22,
+        "row": 0
+      },
+      "pixels": {
+        "x": 704,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0022.png"
+    },
+    {
+      "frame": 23,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 23,
+        "row": 0
+      },
+      "pixels": {
+        "x": 736,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0023.png"
+    },
+    {
+      "frame": 24,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 1
+      },
+      "pixels": {
+        "x": 0,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0024.png"
+    },
+    {
+      "frame": 25,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 1
+      },
+      "pixels": {
+        "x": 32,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0025.png"
+    },
+    {
+      "frame": 26,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 1
+      },
+      "pixels": {
+        "x": 64,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0026.png"
+    },
+    {
+      "frame": 27,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 1
+      },
+      "pixels": {
+        "x": 96,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0027.png"
+    },
+    {
+      "frame": 28,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 1
+      },
+      "pixels": {
+        "x": 128,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0028.png"
+    },
+    {
+      "frame": 29,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 1
+      },
+      "pixels": {
+        "x": 160,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0029.png"
+    },
+    {
+      "frame": 30,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 1
+      },
+      "pixels": {
+        "x": 192,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0030.png"
+    },
+    {
+      "frame": 31,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 7,
+        "row": 1
+      },
+      "pixels": {
+        "x": 224,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0031.png"
+    },
+    {
+      "frame": 32,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 8,
+        "row": 1
+      },
+      "pixels": {
+        "x": 256,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0032.png"
+    },
+    {
+      "frame": 33,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 9,
+        "row": 1
+      },
+      "pixels": {
+        "x": 288,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0033.png"
+    },
+    {
+      "frame": 34,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 10,
+        "row": 1
+      },
+      "pixels": {
+        "x": 320,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0034.png"
+    },
+    {
+      "frame": 35,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 11,
+        "row": 1
+      },
+      "pixels": {
+        "x": 352,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0035.png"
+    },
+    {
+      "frame": 36,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 12,
+        "row": 1
+      },
+      "pixels": {
+        "x": 384,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0036.png"
+    },
+    {
+      "frame": 37,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 13,
+        "row": 1
+      },
+      "pixels": {
+        "x": 416,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0037.png"
+    },
+    {
+      "frame": 38,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 14,
+        "row": 1
+      },
+      "pixels": {
+        "x": 448,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0038.png"
+    },
+    {
+      "frame": 39,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 15,
+        "row": 1
+      },
+      "pixels": {
+        "x": 480,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0039.png"
+    },
+    {
+      "frame": 40,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 16,
+        "row": 1
+      },
+      "pixels": {
+        "x": 512,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0040.png"
+    },
+    {
+      "frame": 41,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 17,
+        "row": 1
+      },
+      "pixels": {
+        "x": 544,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0041.png"
+    },
+    {
+      "frame": 42,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 18,
+        "row": 1
+      },
+      "pixels": {
+        "x": 576,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0042.png"
+    },
+    {
+      "frame": 43,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 19,
+        "row": 1
+      },
+      "pixels": {
+        "x": 608,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0043.png"
+    },
+    {
+      "frame": 44,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 20,
+        "row": 1
+      },
+      "pixels": {
+        "x": 640,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0044.png"
+    },
+    {
+      "frame": 45,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 21,
+        "row": 1
+      },
+      "pixels": {
+        "x": 672,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0045.png"
+    },
+    {
+      "frame": 46,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 22,
+        "row": 1
+      },
+      "pixels": {
+        "x": 704,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0046.png"
+    },
+    {
+      "frame": 47,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 23,
+        "row": 1
+      },
+      "pixels": {
+        "x": 736,
+        "y": 32,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0047.png"
+    },
+    {
+      "frame": 48,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 2
+      },
+      "pixels": {
+        "x": 0,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0048.png"
+    },
+    {
+      "frame": 49,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 2
+      },
+      "pixels": {
+        "x": 32,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0049.png"
+    },
+    {
+      "frame": 50,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 2
+      },
+      "pixels": {
+        "x": 64,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0050.png"
+    },
+    {
+      "frame": 51,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 2
+      },
+      "pixels": {
+        "x": 96,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0051.png"
+    },
+    {
+      "frame": 52,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 2
+      },
+      "pixels": {
+        "x": 128,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0052.png"
+    },
+    {
+      "frame": 53,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 2
+      },
+      "pixels": {
+        "x": 160,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0053.png"
+    },
+    {
+      "frame": 54,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 2
+      },
+      "pixels": {
+        "x": 192,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0054.png"
+    },
+    {
+      "frame": 55,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 7,
+        "row": 2
+      },
+      "pixels": {
+        "x": 224,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0055.png"
+    },
+    {
+      "frame": 56,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 8,
+        "row": 2
+      },
+      "pixels": {
+        "x": 256,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0056.png"
+    },
+    {
+      "frame": 57,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 9,
+        "row": 2
+      },
+      "pixels": {
+        "x": 288,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0057.png"
+    },
+    {
+      "frame": 58,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 10,
+        "row": 2
+      },
+      "pixels": {
+        "x": 320,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0058.png"
+    },
+    {
+      "frame": 59,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 11,
+        "row": 2
+      },
+      "pixels": {
+        "x": 352,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0059.png"
+    },
+    {
+      "frame": 60,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 12,
+        "row": 2
+      },
+      "pixels": {
+        "x": 384,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0060.png"
+    },
+    {
+      "frame": 61,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 13,
+        "row": 2
+      },
+      "pixels": {
+        "x": 416,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0061.png"
+    },
+    {
+      "frame": 62,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 14,
+        "row": 2
+      },
+      "pixels": {
+        "x": 448,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0062.png"
+    },
+    {
+      "frame": 63,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 15,
+        "row": 2
+      },
+      "pixels": {
+        "x": 480,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0063.png"
+    },
+    {
+      "frame": 64,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 16,
+        "row": 2
+      },
+      "pixels": {
+        "x": 512,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0064.png"
+    },
+    {
+      "frame": 65,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 17,
+        "row": 2
+      },
+      "pixels": {
+        "x": 544,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0065.png"
+    },
+    {
+      "frame": 66,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 18,
+        "row": 2
+      },
+      "pixels": {
+        "x": 576,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0066.png"
+    },
+    {
+      "frame": 67,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 19,
+        "row": 2
+      },
+      "pixels": {
+        "x": 608,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0067.png"
+    },
+    {
+      "frame": 68,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 20,
+        "row": 2
+      },
+      "pixels": {
+        "x": 640,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0068.png"
+    },
+    {
+      "frame": 69,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 21,
+        "row": 2
+      },
+      "pixels": {
+        "x": 672,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0069.png"
+    },
+    {
+      "frame": 70,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 22,
+        "row": 2
+      },
+      "pixels": {
+        "x": 704,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0070.png"
+    },
+    {
+      "frame": 71,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 23,
+        "row": 2
+      },
+      "pixels": {
+        "x": 736,
+        "y": 64,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0071.png"
+    },
+    {
+      "frame": 72,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 3
+      },
+      "pixels": {
+        "x": 0,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0072.png"
+    },
+    {
+      "frame": 73,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 3
+      },
+      "pixels": {
+        "x": 32,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0073.png"
+    },
+    {
+      "frame": 74,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 3
+      },
+      "pixels": {
+        "x": 64,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0074.png"
+    },
+    {
+      "frame": 75,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 3
+      },
+      "pixels": {
+        "x": 96,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0075.png"
+    },
+    {
+      "frame": 76,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 3
+      },
+      "pixels": {
+        "x": 128,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0076.png"
+    },
+    {
+      "frame": 77,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 3
+      },
+      "pixels": {
+        "x": 160,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0077.png"
+    },
+    {
+      "frame": 78,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 3
+      },
+      "pixels": {
+        "x": 192,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0078.png"
+    },
+    {
+      "frame": 79,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 7,
+        "row": 3
+      },
+      "pixels": {
+        "x": 224,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0079.png"
+    },
+    {
+      "frame": 80,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 8,
+        "row": 3
+      },
+      "pixels": {
+        "x": 256,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0080.png"
+    },
+    {
+      "frame": 81,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 9,
+        "row": 3
+      },
+      "pixels": {
+        "x": 288,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0081.png"
+    },
+    {
+      "frame": 82,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 10,
+        "row": 3
+      },
+      "pixels": {
+        "x": 320,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0082.png"
+    },
+    {
+      "frame": 83,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 11,
+        "row": 3
+      },
+      "pixels": {
+        "x": 352,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0083.png"
+    },
+    {
+      "frame": 84,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 12,
+        "row": 3
+      },
+      "pixels": {
+        "x": 384,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0084.png"
+    },
+    {
+      "frame": 85,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 13,
+        "row": 3
+      },
+      "pixels": {
+        "x": 416,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0085.png"
+    },
+    {
+      "frame": 86,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 14,
+        "row": 3
+      },
+      "pixels": {
+        "x": 448,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0086.png"
+    },
+    {
+      "frame": 87,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 15,
+        "row": 3
+      },
+      "pixels": {
+        "x": 480,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0087.png"
+    },
+    {
+      "frame": 88,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 16,
+        "row": 3
+      },
+      "pixels": {
+        "x": 512,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0088.png"
+    },
+    {
+      "frame": 89,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 17,
+        "row": 3
+      },
+      "pixels": {
+        "x": 544,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0089.png"
+    },
+    {
+      "frame": 90,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 18,
+        "row": 3
+      },
+      "pixels": {
+        "x": 576,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0090.png"
+    },
+    {
+      "frame": 91,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 19,
+        "row": 3
+      },
+      "pixels": {
+        "x": 608,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0091.png"
+    },
+    {
+      "frame": 92,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 20,
+        "row": 3
+      },
+      "pixels": {
+        "x": 640,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0092.png"
+    },
+    {
+      "frame": 93,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 21,
+        "row": 3
+      },
+      "pixels": {
+        "x": 672,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0093.png"
+    },
+    {
+      "frame": 94,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 22,
+        "row": 3
+      },
+      "pixels": {
+        "x": 704,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0094.png"
+    },
+    {
+      "frame": 95,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 23,
+        "row": 3
+      },
+      "pixels": {
+        "x": 736,
+        "y": 96,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0095.png"
+    },
+    {
+      "frame": 96,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 4
+      },
+      "pixels": {
+        "x": 0,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0096.png"
+    },
+    {
+      "frame": 97,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 4
+      },
+      "pixels": {
+        "x": 32,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0097.png"
+    },
+    {
+      "frame": 98,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 4
+      },
+      "pixels": {
+        "x": 64,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0098.png"
+    },
+    {
+      "frame": 99,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 4
+      },
+      "pixels": {
+        "x": 96,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0099.png"
+    },
+    {
+      "frame": 100,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 4
+      },
+      "pixels": {
+        "x": 128,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0100.png"
+    },
+    {
+      "frame": 101,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 4
+      },
+      "pixels": {
+        "x": 160,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0101.png"
+    },
+    {
+      "frame": 102,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 4
+      },
+      "pixels": {
+        "x": 192,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0102.png"
+    },
+    {
+      "frame": 103,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 7,
+        "row": 4
+      },
+      "pixels": {
+        "x": 224,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0103.png"
+    },
+    {
+      "frame": 104,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 8,
+        "row": 4
+      },
+      "pixels": {
+        "x": 256,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0104.png"
+    },
+    {
+      "frame": 105,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 9,
+        "row": 4
+      },
+      "pixels": {
+        "x": 288,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0105.png"
+    },
+    {
+      "frame": 106,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 10,
+        "row": 4
+      },
+      "pixels": {
+        "x": 320,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0106.png"
+    },
+    {
+      "frame": 107,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 11,
+        "row": 4
+      },
+      "pixels": {
+        "x": 352,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0107.png"
+    },
+    {
+      "frame": 108,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 12,
+        "row": 4
+      },
+      "pixels": {
+        "x": 384,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0108.png"
+    },
+    {
+      "frame": 109,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 13,
+        "row": 4
+      },
+      "pixels": {
+        "x": 416,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0109.png"
+    },
+    {
+      "frame": 110,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 14,
+        "row": 4
+      },
+      "pixels": {
+        "x": 448,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0110.png"
+    },
+    {
+      "frame": 111,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 15,
+        "row": 4
+      },
+      "pixels": {
+        "x": 480,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0111.png"
+    },
+    {
+      "frame": 112,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 16,
+        "row": 4
+      },
+      "pixels": {
+        "x": 512,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0112.png"
+    },
+    {
+      "frame": 113,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 17,
+        "row": 4
+      },
+      "pixels": {
+        "x": 544,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0113.png"
+    },
+    {
+      "frame": 114,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 18,
+        "row": 4
+      },
+      "pixels": {
+        "x": 576,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0114.png"
+    },
+    {
+      "frame": 115,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 19,
+        "row": 4
+      },
+      "pixels": {
+        "x": 608,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0115.png"
+    },
+    {
+      "frame": 116,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 20,
+        "row": 4
+      },
+      "pixels": {
+        "x": 640,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0116.png"
+    },
+    {
+      "frame": 117,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 21,
+        "row": 4
+      },
+      "pixels": {
+        "x": 672,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0117.png"
+    },
+    {
+      "frame": 118,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 22,
+        "row": 4
+      },
+      "pixels": {
+        "x": 704,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0118.png"
+    },
+    {
+      "frame": 119,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 23,
+        "row": 4
+      },
+      "pixels": {
+        "x": 736,
+        "y": 128,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0119.png"
+    },
+    {
+      "frame": 120,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 5
+      },
+      "pixels": {
+        "x": 0,
+        "y": 160,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0120.png"
+    },
+    {
+      "frame": 121,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 5
+      },
+      "pixels": {
+        "x": 32,
+        "y": 160,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0121.png"
+    },
+    {
+      "frame": 122,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 5
+      },
+      "pixels": {
+        "x": 64,
+        "y": 160,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0122.png"
+    },
+    {
+      "frame": 123,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 5
+      },
+      "pixels": {
+        "x": 96,
+        "y": 160,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0123.png"
+    },
+    {
+      "frame": 124,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 5
+      },
+      "pixels": {
+        "x": 128,
+        "y": 160,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0124.png"
+    },
+    {
+      "frame": 125,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 5
+      },
+      "pixels": {
+        "x": 160,
+        "y": 160,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0125.png"
+    },
+    {
+      "frame": 126,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 5
+      },
+      "pixels": {
+        "x": 192,
+        "y": 160,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0126.png"
+    },
+    {
+      "frame": 127,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 7,
+        "row": 5
+      },
+      "pixels": {
+        "x": 224,
+        "y": 160,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0127.png"
+    },
+    {
+      "frame": 128,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 8,
+        "row": 5
+      },
+      "pixels": {
+        "x": 256,
+        "y": 160,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0128.png"
+    },
+    {
+      "frame": 129,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 9,
+        "row": 5
+      },
+      "pixels": {
+        "x": 288,
+        "y": 160,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0129.png"
+    },
+    {
+      "frame": 130,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 10,
+        "row": 5
+      },
+      "pixels": {
+        "x": 320,
+        "y": 160,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0130.png"
+    },
+    {
+      "frame": 131,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 11,
+        "row": 5
+      },
+      "pixels": {
+        "x": 352,
+        "y": 160,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0131.png"
+    },
+    {
+      "frame": 132,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 12,
+        "row": 5
+      },
+      "pixels": {
+        "x": 384,
+        "y": 160,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0132.png"
+    },
+    {
+      "frame": 133,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 13,
+        "row": 5
+      },
+      "pixels": {
+        "x": 416,
+        "y": 160,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0133.png"
+    },
+    {
+      "frame": 134,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 14,
+        "row": 5
+      },
+      "pixels": {
+        "x": 448,
+        "y": 160,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0134.png"
+    },
+    {
+      "frame": 135,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 15,
+        "row": 5
+      },
+      "pixels": {
+        "x": 480,
+        "y": 160,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0135.png"
+    },
+    {
+      "frame": 136,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 16,
+        "row": 5
+      },
+      "pixels": {
+        "x": 512,
+        "y": 160,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0136.png"
+    },
+    {
+      "frame": 137,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 17,
+        "row": 5
+      },
+      "pixels": {
+        "x": 544,
+        "y": 160,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0137.png"
+    },
+    {
+      "frame": 138,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 18,
+        "row": 5
+      },
+      "pixels": {
+        "x": 576,
+        "y": 160,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0138.png"
+    },
+    {
+      "frame": 139,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 19,
+        "row": 5
+      },
+      "pixels": {
+        "x": 608,
+        "y": 160,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0139.png"
+    },
+    {
+      "frame": 140,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 20,
+        "row": 5
+      },
+      "pixels": {
+        "x": 640,
+        "y": 160,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0140.png"
+    },
+    {
+      "frame": 141,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 21,
+        "row": 5
+      },
+      "pixels": {
+        "x": 672,
+        "y": 160,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0141.png"
+    },
+    {
+      "frame": 142,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 22,
+        "row": 5
+      },
+      "pixels": {
+        "x": 704,
+        "y": 160,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0142.png"
+    },
+    {
+      "frame": 143,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 23,
+        "row": 5
+      },
+      "pixels": {
+        "x": 736,
+        "y": 160,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0143.png"
+    },
+    {
+      "frame": 144,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 6
+      },
+      "pixels": {
+        "x": 0,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0144.png"
+    },
+    {
+      "frame": 145,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 6
+      },
+      "pixels": {
+        "x": 32,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0145.png"
+    },
+    {
+      "frame": 146,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 6
+      },
+      "pixels": {
+        "x": 64,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0146.png"
+    },
+    {
+      "frame": 147,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 6
+      },
+      "pixels": {
+        "x": 96,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0147.png"
+    },
+    {
+      "frame": 148,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 6
+      },
+      "pixels": {
+        "x": 128,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0148.png"
+    },
+    {
+      "frame": 149,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 6
+      },
+      "pixels": {
+        "x": 160,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0149.png"
+    },
+    {
+      "frame": 150,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 6
+      },
+      "pixels": {
+        "x": 192,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0150.png"
+    },
+    {
+      "frame": 151,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 7,
+        "row": 6
+      },
+      "pixels": {
+        "x": 224,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0151.png"
+    },
+    {
+      "frame": 152,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 8,
+        "row": 6
+      },
+      "pixels": {
+        "x": 256,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0152.png"
+    },
+    {
+      "frame": 153,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 9,
+        "row": 6
+      },
+      "pixels": {
+        "x": 288,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0153.png"
+    },
+    {
+      "frame": 154,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 10,
+        "row": 6
+      },
+      "pixels": {
+        "x": 320,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0154.png"
+    },
+    {
+      "frame": 155,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 11,
+        "row": 6
+      },
+      "pixels": {
+        "x": 352,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0155.png"
+    },
+    {
+      "frame": 156,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 12,
+        "row": 6
+      },
+      "pixels": {
+        "x": 384,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0156.png"
+    },
+    {
+      "frame": 157,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 13,
+        "row": 6
+      },
+      "pixels": {
+        "x": 416,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0157.png"
+    },
+    {
+      "frame": 158,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 14,
+        "row": 6
+      },
+      "pixels": {
+        "x": 448,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0158.png"
+    },
+    {
+      "frame": 159,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 15,
+        "row": 6
+      },
+      "pixels": {
+        "x": 480,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0159.png"
+    },
+    {
+      "frame": 160,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 16,
+        "row": 6
+      },
+      "pixels": {
+        "x": 512,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0160.png"
+    },
+    {
+      "frame": 161,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 17,
+        "row": 6
+      },
+      "pixels": {
+        "x": 544,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0161.png"
+    },
+    {
+      "frame": 162,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 18,
+        "row": 6
+      },
+      "pixels": {
+        "x": 576,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0162.png"
+    },
+    {
+      "frame": 163,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 19,
+        "row": 6
+      },
+      "pixels": {
+        "x": 608,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0163.png"
+    },
+    {
+      "frame": 164,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 20,
+        "row": 6
+      },
+      "pixels": {
+        "x": 640,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0164.png"
+    },
+    {
+      "frame": 165,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 21,
+        "row": 6
+      },
+      "pixels": {
+        "x": 672,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0165.png"
+    },
+    {
+      "frame": 166,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 22,
+        "row": 6
+      },
+      "pixels": {
+        "x": 704,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0166.png"
+    },
+    {
+      "frame": 167,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 23,
+        "row": 6
+      },
+      "pixels": {
+        "x": 736,
+        "y": 192,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0167.png"
+    },
+    {
+      "frame": 168,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 7
+      },
+      "pixels": {
+        "x": 0,
+        "y": 224,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0168.png"
+    },
+    {
+      "frame": 169,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 7
+      },
+      "pixels": {
+        "x": 32,
+        "y": 224,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0169.png"
+    },
+    {
+      "frame": 170,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 7
+      },
+      "pixels": {
+        "x": 64,
+        "y": 224,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0170.png"
+    },
+    {
+      "frame": 171,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 7
+      },
+      "pixels": {
+        "x": 96,
+        "y": 224,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0171.png"
+    },
+    {
+      "frame": 172,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 7
+      },
+      "pixels": {
+        "x": 128,
+        "y": 224,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0172.png"
+    },
+    {
+      "frame": 173,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 7
+      },
+      "pixels": {
+        "x": 160,
+        "y": 224,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0173.png"
+    },
+    {
+      "frame": 174,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 7
+      },
+      "pixels": {
+        "x": 192,
+        "y": 224,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0174.png"
+    },
+    {
+      "frame": 175,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 7,
+        "row": 7
+      },
+      "pixels": {
+        "x": 224,
+        "y": 224,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0175.png"
+    },
+    {
+      "frame": 176,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 8,
+        "row": 7
+      },
+      "pixels": {
+        "x": 256,
+        "y": 224,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0176.png"
+    },
+    {
+      "frame": 177,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 9,
+        "row": 7
+      },
+      "pixels": {
+        "x": 288,
+        "y": 224,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0177.png"
+    },
+    {
+      "frame": 178,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 10,
+        "row": 7
+      },
+      "pixels": {
+        "x": 320,
+        "y": 224,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0178.png"
+    },
+    {
+      "frame": 179,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 11,
+        "row": 7
+      },
+      "pixels": {
+        "x": 352,
+        "y": 224,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0179.png"
+    },
+    {
+      "frame": 180,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 12,
+        "row": 7
+      },
+      "pixels": {
+        "x": 384,
+        "y": 224,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0180.png"
+    },
+    {
+      "frame": 181,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 13,
+        "row": 7
+      },
+      "pixels": {
+        "x": 416,
+        "y": 224,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0181.png"
+    },
+    {
+      "frame": 182,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 14,
+        "row": 7
+      },
+      "pixels": {
+        "x": 448,
+        "y": 224,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0182.png"
+    },
+    {
+      "frame": 183,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 15,
+        "row": 7
+      },
+      "pixels": {
+        "x": 480,
+        "y": 224,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0183.png"
+    },
+    {
+      "frame": 184,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 16,
+        "row": 7
+      },
+      "pixels": {
+        "x": 512,
+        "y": 224,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0184.png"
+    },
+    {
+      "frame": 185,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 17,
+        "row": 7
+      },
+      "pixels": {
+        "x": 544,
+        "y": 224,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0185.png"
+    },
+    {
+      "frame": 186,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 18,
+        "row": 7
+      },
+      "pixels": {
+        "x": 576,
+        "y": 224,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0186.png"
+    },
+    {
+      "frame": 187,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 19,
+        "row": 7
+      },
+      "pixels": {
+        "x": 608,
+        "y": 224,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0187.png"
+    },
+    {
+      "frame": 188,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 20,
+        "row": 7
+      },
+      "pixels": {
+        "x": 640,
+        "y": 224,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0188.png"
+    },
+    {
+      "frame": 189,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 21,
+        "row": 7
+      },
+      "pixels": {
+        "x": 672,
+        "y": 224,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0189.png"
+    },
+    {
+      "frame": 190,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 22,
+        "row": 7
+      },
+      "pixels": {
+        "x": 704,
+        "y": 224,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0190.png"
+    },
+    {
+      "frame": 191,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 23,
+        "row": 7
+      },
+      "pixels": {
+        "x": 736,
+        "y": 224,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0191.png"
+    },
+    {
+      "frame": 192,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 8
+      },
+      "pixels": {
+        "x": 0,
+        "y": 256,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0192.png"
+    },
+    {
+      "frame": 193,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 8
+      },
+      "pixels": {
+        "x": 32,
+        "y": 256,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0193.png"
+    },
+    {
+      "frame": 194,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 8
+      },
+      "pixels": {
+        "x": 64,
+        "y": 256,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0194.png"
+    },
+    {
+      "frame": 195,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 8
+      },
+      "pixels": {
+        "x": 96,
+        "y": 256,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0195.png"
+    },
+    {
+      "frame": 196,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 8
+      },
+      "pixels": {
+        "x": 128,
+        "y": 256,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0196.png"
+    },
+    {
+      "frame": 197,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 8
+      },
+      "pixels": {
+        "x": 160,
+        "y": 256,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0197.png"
+    },
+    {
+      "frame": 198,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 8
+      },
+      "pixels": {
+        "x": 192,
+        "y": 256,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0198.png"
+    },
+    {
+      "frame": 199,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 7,
+        "row": 8
+      },
+      "pixels": {
+        "x": 224,
+        "y": 256,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0199.png"
+    },
+    {
+      "frame": 200,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 8,
+        "row": 8
+      },
+      "pixels": {
+        "x": 256,
+        "y": 256,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0200.png"
+    },
+    {
+      "frame": 201,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 9,
+        "row": 8
+      },
+      "pixels": {
+        "x": 288,
+        "y": 256,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0201.png"
+    },
+    {
+      "frame": 202,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 10,
+        "row": 8
+      },
+      "pixels": {
+        "x": 320,
+        "y": 256,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0202.png"
+    },
+    {
+      "frame": 203,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 11,
+        "row": 8
+      },
+      "pixels": {
+        "x": 352,
+        "y": 256,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0203.png"
+    },
+    {
+      "frame": 204,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 12,
+        "row": 8
+      },
+      "pixels": {
+        "x": 384,
+        "y": 256,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0204.png"
+    },
+    {
+      "frame": 205,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 13,
+        "row": 8
+      },
+      "pixels": {
+        "x": 416,
+        "y": 256,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0205.png"
+    },
+    {
+      "frame": 206,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 14,
+        "row": 8
+      },
+      "pixels": {
+        "x": 448,
+        "y": 256,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0206.png"
+    },
+    {
+      "frame": 207,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 15,
+        "row": 8
+      },
+      "pixels": {
+        "x": 480,
+        "y": 256,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0207.png"
+    },
+    {
+      "frame": 208,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 16,
+        "row": 8
+      },
+      "pixels": {
+        "x": 512,
+        "y": 256,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0208.png"
+    },
+    {
+      "frame": 209,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 17,
+        "row": 8
+      },
+      "pixels": {
+        "x": 544,
+        "y": 256,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0209.png"
+    },
+    {
+      "frame": 210,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 18,
+        "row": 8
+      },
+      "pixels": {
+        "x": 576,
+        "y": 256,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0210.png"
+    },
+    {
+      "frame": 211,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 19,
+        "row": 8
+      },
+      "pixels": {
+        "x": 608,
+        "y": 256,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0211.png"
+    },
+    {
+      "frame": 212,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 20,
+        "row": 8
+      },
+      "pixels": {
+        "x": 640,
+        "y": 256,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0212.png"
+    },
+    {
+      "frame": 213,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 21,
+        "row": 8
+      },
+      "pixels": {
+        "x": 672,
+        "y": 256,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0213.png"
+    },
+    {
+      "frame": 214,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 22,
+        "row": 8
+      },
+      "pixels": {
+        "x": 704,
+        "y": 256,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0214.png"
+    },
+    {
+      "frame": 215,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 23,
+        "row": 8
+      },
+      "pixels": {
+        "x": 736,
+        "y": 256,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0215.png"
+    },
+    {
+      "frame": 216,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 9
+      },
+      "pixels": {
+        "x": 0,
+        "y": 288,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0216.png"
+    },
+    {
+      "frame": 217,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 9
+      },
+      "pixels": {
+        "x": 32,
+        "y": 288,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0217.png"
+    },
+    {
+      "frame": 218,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 9
+      },
+      "pixels": {
+        "x": 64,
+        "y": 288,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0218.png"
+    },
+    {
+      "frame": 219,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 9
+      },
+      "pixels": {
+        "x": 96,
+        "y": 288,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0219.png"
+    },
+    {
+      "frame": 220,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 9
+      },
+      "pixels": {
+        "x": 128,
+        "y": 288,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0220.png"
+    },
+    {
+      "frame": 221,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 9
+      },
+      "pixels": {
+        "x": 160,
+        "y": 288,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0221.png"
+    },
+    {
+      "frame": 222,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 9
+      },
+      "pixels": {
+        "x": 192,
+        "y": 288,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0222.png"
+    },
+    {
+      "frame": 223,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 7,
+        "row": 9
+      },
+      "pixels": {
+        "x": 224,
+        "y": 288,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0223.png"
+    },
+    {
+      "frame": 224,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 8,
+        "row": 9
+      },
+      "pixels": {
+        "x": 256,
+        "y": 288,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0224.png"
+    },
+    {
+      "frame": 225,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 9,
+        "row": 9
+      },
+      "pixels": {
+        "x": 288,
+        "y": 288,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0225.png"
+    },
+    {
+      "frame": 226,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 10,
+        "row": 9
+      },
+      "pixels": {
+        "x": 320,
+        "y": 288,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0226.png"
+    },
+    {
+      "frame": 227,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 11,
+        "row": 9
+      },
+      "pixels": {
+        "x": 352,
+        "y": 288,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0227.png"
+    },
+    {
+      "frame": 228,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 12,
+        "row": 9
+      },
+      "pixels": {
+        "x": 384,
+        "y": 288,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0228.png"
+    },
+    {
+      "frame": 229,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 13,
+        "row": 9
+      },
+      "pixels": {
+        "x": 416,
+        "y": 288,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0229.png"
+    },
+    {
+      "frame": 230,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 14,
+        "row": 9
+      },
+      "pixels": {
+        "x": 448,
+        "y": 288,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0230.png"
+    },
+    {
+      "frame": 231,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 15,
+        "row": 9
+      },
+      "pixels": {
+        "x": 480,
+        "y": 288,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0231.png"
+    },
+    {
+      "frame": 232,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 16,
+        "row": 9
+      },
+      "pixels": {
+        "x": 512,
+        "y": 288,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0232.png"
+    },
+    {
+      "frame": 233,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 17,
+        "row": 9
+      },
+      "pixels": {
+        "x": 544,
+        "y": 288,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0233.png"
+    },
+    {
+      "frame": 234,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 18,
+        "row": 9
+      },
+      "pixels": {
+        "x": 576,
+        "y": 288,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0234.png"
+    },
+    {
+      "frame": 235,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 19,
+        "row": 9
+      },
+      "pixels": {
+        "x": 608,
+        "y": 288,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0235.png"
+    },
+    {
+      "frame": 236,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 20,
+        "row": 9
+      },
+      "pixels": {
+        "x": 640,
+        "y": 288,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0236.png"
+    },
+    {
+      "frame": 237,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 21,
+        "row": 9
+      },
+      "pixels": {
+        "x": 672,
+        "y": 288,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0237.png"
+    },
+    {
+      "frame": 238,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 22,
+        "row": 9
+      },
+      "pixels": {
+        "x": 704,
+        "y": 288,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0238.png"
+    },
+    {
+      "frame": 239,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 23,
+        "row": 9
+      },
+      "pixels": {
+        "x": 736,
+        "y": 288,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0239.png"
+    },
+    {
+      "frame": 240,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 10
+      },
+      "pixels": {
+        "x": 0,
+        "y": 320,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0240.png"
+    },
+    {
+      "frame": 241,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 10
+      },
+      "pixels": {
+        "x": 32,
+        "y": 320,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0241.png"
+    },
+    {
+      "frame": 242,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 10
+      },
+      "pixels": {
+        "x": 64,
+        "y": 320,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0242.png"
+    },
+    {
+      "frame": 243,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 10
+      },
+      "pixels": {
+        "x": 96,
+        "y": 320,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0243.png"
+    },
+    {
+      "frame": 244,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 10
+      },
+      "pixels": {
+        "x": 128,
+        "y": 320,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0244.png"
+    },
+    {
+      "frame": 245,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 10
+      },
+      "pixels": {
+        "x": 160,
+        "y": 320,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0245.png"
+    },
+    {
+      "frame": 246,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 10
+      },
+      "pixels": {
+        "x": 192,
+        "y": 320,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0246.png"
+    },
+    {
+      "frame": 247,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 7,
+        "row": 10
+      },
+      "pixels": {
+        "x": 224,
+        "y": 320,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0247.png"
+    },
+    {
+      "frame": 248,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 8,
+        "row": 10
+      },
+      "pixels": {
+        "x": 256,
+        "y": 320,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0248.png"
+    },
+    {
+      "frame": 249,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 9,
+        "row": 10
+      },
+      "pixels": {
+        "x": 288,
+        "y": 320,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0249.png"
+    },
+    {
+      "frame": 250,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 10,
+        "row": 10
+      },
+      "pixels": {
+        "x": 320,
+        "y": 320,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0250.png"
+    },
+    {
+      "frame": 251,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 11,
+        "row": 10
+      },
+      "pixels": {
+        "x": 352,
+        "y": 320,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0251.png"
+    },
+    {
+      "frame": 252,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 12,
+        "row": 10
+      },
+      "pixels": {
+        "x": 384,
+        "y": 320,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0252.png"
+    },
+    {
+      "frame": 253,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 13,
+        "row": 10
+      },
+      "pixels": {
+        "x": 416,
+        "y": 320,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0253.png"
+    },
+    {
+      "frame": 254,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 14,
+        "row": 10
+      },
+      "pixels": {
+        "x": 448,
+        "y": 320,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0254.png"
+    },
+    {
+      "frame": 255,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 15,
+        "row": 10
+      },
+      "pixels": {
+        "x": 480,
+        "y": 320,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0255.png"
+    },
+    {
+      "frame": 256,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 16,
+        "row": 10
+      },
+      "pixels": {
+        "x": 512,
+        "y": 320,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0256.png"
+    },
+    {
+      "frame": 257,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 17,
+        "row": 10
+      },
+      "pixels": {
+        "x": 544,
+        "y": 320,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0257.png"
+    },
+    {
+      "frame": 258,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 18,
+        "row": 10
+      },
+      "pixels": {
+        "x": 576,
+        "y": 320,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0258.png"
+    },
+    {
+      "frame": 259,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 19,
+        "row": 10
+      },
+      "pixels": {
+        "x": 608,
+        "y": 320,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0259.png"
+    },
+    {
+      "frame": 260,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 20,
+        "row": 10
+      },
+      "pixels": {
+        "x": 640,
+        "y": 320,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0260.png"
+    },
+    {
+      "frame": 261,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 21,
+        "row": 10
+      },
+      "pixels": {
+        "x": 672,
+        "y": 320,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0261.png"
+    },
+    {
+      "frame": 262,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 22,
+        "row": 10
+      },
+      "pixels": {
+        "x": 704,
+        "y": 320,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0262.png"
+    },
+    {
+      "frame": 263,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 23,
+        "row": 10
+      },
+      "pixels": {
+        "x": 736,
+        "y": 320,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0263.png"
+    },
+    {
+      "frame": 264,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 11
+      },
+      "pixels": {
+        "x": 0,
+        "y": 352,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0264.png"
+    },
+    {
+      "frame": 265,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 11
+      },
+      "pixels": {
+        "x": 32,
+        "y": 352,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0265.png"
+    },
+    {
+      "frame": 266,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 11
+      },
+      "pixels": {
+        "x": 64,
+        "y": 352,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0266.png"
+    },
+    {
+      "frame": 267,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 11
+      },
+      "pixels": {
+        "x": 96,
+        "y": 352,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0267.png"
+    },
+    {
+      "frame": 268,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 11
+      },
+      "pixels": {
+        "x": 128,
+        "y": 352,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0268.png"
+    },
+    {
+      "frame": 269,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 11
+      },
+      "pixels": {
+        "x": 160,
+        "y": 352,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0269.png"
+    },
+    {
+      "frame": 270,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 11
+      },
+      "pixels": {
+        "x": 192,
+        "y": 352,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0270.png"
+    },
+    {
+      "frame": 271,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 7,
+        "row": 11
+      },
+      "pixels": {
+        "x": 224,
+        "y": 352,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0271.png"
+    },
+    {
+      "frame": 272,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 8,
+        "row": 11
+      },
+      "pixels": {
+        "x": 256,
+        "y": 352,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0272.png"
+    },
+    {
+      "frame": 273,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 9,
+        "row": 11
+      },
+      "pixels": {
+        "x": 288,
+        "y": 352,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0273.png"
+    },
+    {
+      "frame": 274,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 10,
+        "row": 11
+      },
+      "pixels": {
+        "x": 320,
+        "y": 352,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0274.png"
+    },
+    {
+      "frame": 275,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 11,
+        "row": 11
+      },
+      "pixels": {
+        "x": 352,
+        "y": 352,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0275.png"
+    },
+    {
+      "frame": 276,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 12,
+        "row": 11
+      },
+      "pixels": {
+        "x": 384,
+        "y": 352,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0276.png"
+    },
+    {
+      "frame": 277,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 13,
+        "row": 11
+      },
+      "pixels": {
+        "x": 416,
+        "y": 352,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0277.png"
+    },
+    {
+      "frame": 278,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 14,
+        "row": 11
+      },
+      "pixels": {
+        "x": 448,
+        "y": 352,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0278.png"
+    },
+    {
+      "frame": 279,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 15,
+        "row": 11
+      },
+      "pixels": {
+        "x": 480,
+        "y": 352,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0279.png"
+    },
+    {
+      "frame": 280,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 16,
+        "row": 11
+      },
+      "pixels": {
+        "x": 512,
+        "y": 352,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0280.png"
+    },
+    {
+      "frame": 281,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 17,
+        "row": 11
+      },
+      "pixels": {
+        "x": 544,
+        "y": 352,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0281.png"
+    },
+    {
+      "frame": 282,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 18,
+        "row": 11
+      },
+      "pixels": {
+        "x": 576,
+        "y": 352,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0282.png"
+    },
+    {
+      "frame": 283,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 19,
+        "row": 11
+      },
+      "pixels": {
+        "x": 608,
+        "y": 352,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0283.png"
+    },
+    {
+      "frame": 284,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 20,
+        "row": 11
+      },
+      "pixels": {
+        "x": 640,
+        "y": 352,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0284.png"
+    },
+    {
+      "frame": 285,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 21,
+        "row": 11
+      },
+      "pixels": {
+        "x": 672,
+        "y": 352,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0285.png"
+    },
+    {
+      "frame": 286,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 22,
+        "row": 11
+      },
+      "pixels": {
+        "x": 704,
+        "y": 352,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0286.png"
+    },
+    {
+      "frame": 287,
+      "sourceFile": "lsprites.rsc.png",
+      "position": {
+        "col": 23,
+        "row": 11
+      },
+      "pixels": {
+        "x": 736,
+        "y": 352,
+        "width": 32,
+        "height": 32
+      },
+      "outputFile": "lsprites_frame_0287.png"
+    }
+  ],
+  "extractedAt": "2025-10-18T19:12:08.034Z"
+}

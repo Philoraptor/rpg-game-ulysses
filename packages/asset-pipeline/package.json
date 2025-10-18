@@ -5,12 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "convert": "ts-node src/converters/rsc-to-png.ts"
+    "convert": "ts-node src/converters/rsc-to-png.ts",
+    "analyze": "ts-node src/utils/analyze-sheet.ts",
+    "extract-tiles": "ts-node src/extractors/tile-extractor.ts",
+    "extract-sprites": "ts-node src/extractors/sprite-extractor.ts",
+    "pack-atlases": "ts-node src/packers/atlas-packer.ts",
+    "generate-manifest": "node --loader ts-node/esm src/cli/generate-manifest.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "devDependencies": {
     "@types/bmp-js": "^0.1.2",
     "@types/cli-progress": "^3.11.6",

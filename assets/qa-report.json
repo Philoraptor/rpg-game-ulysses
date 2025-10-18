@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-10-18T19:35:21.975Z",
+  "passed": true,
+  "summary": {
+    "totalChecks": 3,
+    "passed": 3,
+    "failed": 0,
+    "warnings": 0
+  },
+  "checks": [
+    {
+      "name": "atlas-loadable",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "metrics": {
+        "filesChecked": 8
+      }
+    },
+    {
+      "name": "dimensions",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "metrics": {
+        "atlasesChecked": 4
+      }
+    },
+    {
+      "name": "file-size",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "metrics": {
+        "totalSize": 10270372,
+        "totalSizeMB": "9.79",
+        "targetSizeMB": "15"
+      }
+    }
+  ],
+  "metrics": {
+    "totalSize": 10270372,
+    "atlasCount": 4,
+    "frameCount": 9733,
+    "avgFramesPerAtlas": 2433
+  }
+}

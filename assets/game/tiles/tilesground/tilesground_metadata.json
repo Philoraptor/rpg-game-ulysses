@@ -1,0 +1,2106 @@
+{
+  "sourceFile": "tilesground.rsc.png",
+  "tileSize": 32,
+  "grid": {
+    "cols": 7,
+    "rows": 23
+  },
+  "totalTiles": 161,
+  "extractedTiles": 161,
+  "tiles": [
+    {
+      "id": 0,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 0
+      },
+      "pixels": {
+        "left": 0,
+        "top": 0
+      },
+      "outputFile": "tilesground_00000.png"
+    },
+    {
+      "id": 1,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 0
+      },
+      "pixels": {
+        "left": 32,
+        "top": 0
+      },
+      "outputFile": "tilesground_00001.png"
+    },
+    {
+      "id": 2,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 0
+      },
+      "pixels": {
+        "left": 64,
+        "top": 0
+      },
+      "outputFile": "tilesground_00002.png"
+    },
+    {
+      "id": 3,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 0
+      },
+      "pixels": {
+        "left": 96,
+        "top": 0
+      },
+      "outputFile": "tilesground_00003.png"
+    },
+    {
+      "id": 4,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 0
+      },
+      "pixels": {
+        "left": 128,
+        "top": 0
+      },
+      "outputFile": "tilesground_00004.png"
+    },
+    {
+      "id": 5,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 0
+      },
+      "pixels": {
+        "left": 160,
+        "top": 0
+      },
+      "outputFile": "tilesground_00005.png"
+    },
+    {
+      "id": 6,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 0
+      },
+      "pixels": {
+        "left": 192,
+        "top": 0
+      },
+      "outputFile": "tilesground_00006.png"
+    },
+    {
+      "id": 7,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 1
+      },
+      "pixels": {
+        "left": 0,
+        "top": 32
+      },
+      "outputFile": "tilesground_00007.png"
+    },
+    {
+      "id": 8,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 1
+      },
+      "pixels": {
+        "left": 32,
+        "top": 32
+      },
+      "outputFile": "tilesground_00008.png"
+    },
+    {
+      "id": 9,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 1
+      },
+      "pixels": {
+        "left": 64,
+        "top": 32
+      },
+      "outputFile": "tilesground_00009.png"
+    },
+    {
+      "id": 10,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 1
+      },
+      "pixels": {
+        "left": 96,
+        "top": 32
+      },
+      "outputFile": "tilesground_00010.png"
+    },
+    {
+      "id": 11,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 1
+      },
+      "pixels": {
+        "left": 128,
+        "top": 32
+      },
+      "outputFile": "tilesground_00011.png"
+    },
+    {
+      "id": 12,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 1
+      },
+      "pixels": {
+        "left": 160,
+        "top": 32
+      },
+      "outputFile": "tilesground_00012.png"
+    },
+    {
+      "id": 13,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 1
+      },
+      "pixels": {
+        "left": 192,
+        "top": 32
+      },
+      "outputFile": "tilesground_00013.png"
+    },
+    {
+      "id": 14,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 2
+      },
+      "pixels": {
+        "left": 0,
+        "top": 64
+      },
+      "outputFile": "tilesground_00014.png"
+    },
+    {
+      "id": 15,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 2
+      },
+      "pixels": {
+        "left": 32,
+        "top": 64
+      },
+      "outputFile": "tilesground_00015.png"
+    },
+    {
+      "id": 16,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 2
+      },
+      "pixels": {
+        "left": 64,
+        "top": 64
+      },
+      "outputFile": "tilesground_00016.png"
+    },
+    {
+      "id": 17,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 2
+      },
+      "pixels": {
+        "left": 96,
+        "top": 64
+      },
+      "outputFile": "tilesground_00017.png"
+    },
+    {
+      "id": 18,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 2
+      },
+      "pixels": {
+        "left": 128,
+        "top": 64
+      },
+      "outputFile": "tilesground_00018.png"
+    },
+    {
+      "id": 19,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 2
+      },
+      "pixels": {
+        "left": 160,
+        "top": 64
+      },
+      "outputFile": "tilesground_00019.png"
+    },
+    {
+      "id": 20,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 2
+      },
+      "pixels": {
+        "left": 192,
+        "top": 64
+      },
+      "outputFile": "tilesground_00020.png"
+    },
+    {
+      "id": 21,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 3
+      },
+      "pixels": {
+        "left": 0,
+        "top": 96
+      },
+      "outputFile": "tilesground_00021.png"
+    },
+    {
+      "id": 22,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 3
+      },
+      "pixels": {
+        "left": 32,
+        "top": 96
+      },
+      "outputFile": "tilesground_00022.png"
+    },
+    {
+      "id": 23,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 3
+      },
+      "pixels": {
+        "left": 64,
+        "top": 96
+      },
+      "outputFile": "tilesground_00023.png"
+    },
+    {
+      "id": 24,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 3
+      },
+      "pixels": {
+        "left": 96,
+        "top": 96
+      },
+      "outputFile": "tilesground_00024.png"
+    },
+    {
+      "id": 25,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 3
+      },
+      "pixels": {
+        "left": 128,
+        "top": 96
+      },
+      "outputFile": "tilesground_00025.png"
+    },
+    {
+      "id": 26,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 3
+      },
+      "pixels": {
+        "left": 160,
+        "top": 96
+      },
+      "outputFile": "tilesground_00026.png"
+    },
+    {
+      "id": 27,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 3
+      },
+      "pixels": {
+        "left": 192,
+        "top": 96
+      },
+      "outputFile": "tilesground_00027.png"
+    },
+    {
+      "id": 28,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 4
+      },
+      "pixels": {
+        "left": 0,
+        "top": 128
+      },
+      "outputFile": "tilesground_00028.png"
+    },
+    {
+      "id": 29,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 4
+      },
+      "pixels": {
+        "left": 32,
+        "top": 128
+      },
+      "outputFile": "tilesground_00029.png"
+    },
+    {
+      "id": 30,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 4
+      },
+      "pixels": {
+        "left": 64,
+        "top": 128
+      },
+      "outputFile": "tilesground_00030.png"
+    },
+    {
+      "id": 31,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 4
+      },
+      "pixels": {
+        "left": 96,
+        "top": 128
+      },
+      "outputFile": "tilesground_00031.png"
+    },
+    {
+      "id": 32,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 4
+      },
+      "pixels": {
+        "left": 128,
+        "top": 128
+      },
+      "outputFile": "tilesground_00032.png"
+    },
+    {
+      "id": 33,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 4
+      },
+      "pixels": {
+        "left": 160,
+        "top": 128
+      },
+      "outputFile": "tilesground_00033.png"
+    },
+    {
+      "id": 34,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 4
+      },
+      "pixels": {
+        "left": 192,
+        "top": 128
+      },
+      "outputFile": "tilesground_00034.png"
+    },
+    {
+      "id": 35,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 5
+      },
+      "pixels": {
+        "left": 0,
+        "top": 160
+      },
+      "outputFile": "tilesground_00035.png"
+    },
+    {
+      "id": 36,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 5
+      },
+      "pixels": {
+        "left": 32,
+        "top": 160
+      },
+      "outputFile": "tilesground_00036.png"
+    },
+    {
+      "id": 37,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 5
+      },
+      "pixels": {
+        "left": 64,
+        "top": 160
+      },
+      "outputFile": "tilesground_00037.png"
+    },
+    {
+      "id": 38,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 5
+      },
+      "pixels": {
+        "left": 96,
+        "top": 160
+      },
+      "outputFile": "tilesground_00038.png"
+    },
+    {
+      "id": 39,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 5
+      },
+      "pixels": {
+        "left": 128,
+        "top": 160
+      },
+      "outputFile": "tilesground_00039.png"
+    },
+    {
+      "id": 40,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 5
+      },
+      "pixels": {
+        "left": 160,
+        "top": 160
+      },
+      "outputFile": "tilesground_00040.png"
+    },
+    {
+      "id": 41,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 5
+      },
+      "pixels": {
+        "left": 192,
+        "top": 160
+      },
+      "outputFile": "tilesground_00041.png"
+    },
+    {
+      "id": 42,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 6
+      },
+      "pixels": {
+        "left": 0,
+        "top": 192
+      },
+      "outputFile": "tilesground_00042.png"
+    },
+    {
+      "id": 43,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 6
+      },
+      "pixels": {
+        "left": 32,
+        "top": 192
+      },
+      "outputFile": "tilesground_00043.png"
+    },
+    {
+      "id": 44,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 6
+      },
+      "pixels": {
+        "left": 64,
+        "top": 192
+      },
+      "outputFile": "tilesground_00044.png"
+    },
+    {
+      "id": 45,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 6
+      },
+      "pixels": {
+        "left": 96,
+        "top": 192
+      },
+      "outputFile": "tilesground_00045.png"
+    },
+    {
+      "id": 46,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 6
+      },
+      "pixels": {
+        "left": 128,
+        "top": 192
+      },
+      "outputFile": "tilesground_00046.png"
+    },
+    {
+      "id": 47,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 6
+      },
+      "pixels": {
+        "left": 160,
+        "top": 192
+      },
+      "outputFile": "tilesground_00047.png"
+    },
+    {
+      "id": 48,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 6
+      },
+      "pixels": {
+        "left": 192,
+        "top": 192
+      },
+      "outputFile": "tilesground_00048.png"
+    },
+    {
+      "id": 49,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 7
+      },
+      "pixels": {
+        "left": 0,
+        "top": 224
+      },
+      "outputFile": "tilesground_00049.png"
+    },
+    {
+      "id": 50,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 7
+      },
+      "pixels": {
+        "left": 32,
+        "top": 224
+      },
+      "outputFile": "tilesground_00050.png"
+    },
+    {
+      "id": 51,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 7
+      },
+      "pixels": {
+        "left": 64,
+        "top": 224
+      },
+      "outputFile": "tilesground_00051.png"
+    },
+    {
+      "id": 52,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 7
+      },
+      "pixels": {
+        "left": 96,
+        "top": 224
+      },
+      "outputFile": "tilesground_00052.png"
+    },
+    {
+      "id": 53,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 7
+      },
+      "pixels": {
+        "left": 128,
+        "top": 224
+      },
+      "outputFile": "tilesground_00053.png"
+    },
+    {
+      "id": 54,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 7
+      },
+      "pixels": {
+        "left": 160,
+        "top": 224
+      },
+      "outputFile": "tilesground_00054.png"
+    },
+    {
+      "id": 55,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 7
+      },
+      "pixels": {
+        "left": 192,
+        "top": 224
+      },
+      "outputFile": "tilesground_00055.png"
+    },
+    {
+      "id": 56,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 8
+      },
+      "pixels": {
+        "left": 0,
+        "top": 256
+      },
+      "outputFile": "tilesground_00056.png"
+    },
+    {
+      "id": 57,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 8
+      },
+      "pixels": {
+        "left": 32,
+        "top": 256
+      },
+      "outputFile": "tilesground_00057.png"
+    },
+    {
+      "id": 58,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 8
+      },
+      "pixels": {
+        "left": 64,
+        "top": 256
+      },
+      "outputFile": "tilesground_00058.png"
+    },
+    {
+      "id": 59,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 8
+      },
+      "pixels": {
+        "left": 96,
+        "top": 256
+      },
+      "outputFile": "tilesground_00059.png"
+    },
+    {
+      "id": 60,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 8
+      },
+      "pixels": {
+        "left": 128,
+        "top": 256
+      },
+      "outputFile": "tilesground_00060.png"
+    },
+    {
+      "id": 61,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 8
+      },
+      "pixels": {
+        "left": 160,
+        "top": 256
+      },
+      "outputFile": "tilesground_00061.png"
+    },
+    {
+      "id": 62,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 8
+      },
+      "pixels": {
+        "left": 192,
+        "top": 256
+      },
+      "outputFile": "tilesground_00062.png"
+    },
+    {
+      "id": 63,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 9
+      },
+      "pixels": {
+        "left": 0,
+        "top": 288
+      },
+      "outputFile": "tilesground_00063.png"
+    },
+    {
+      "id": 64,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 9
+      },
+      "pixels": {
+        "left": 32,
+        "top": 288
+      },
+      "outputFile": "tilesground_00064.png"
+    },
+    {
+      "id": 65,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 9
+      },
+      "pixels": {
+        "left": 64,
+        "top": 288
+      },
+      "outputFile": "tilesground_00065.png"
+    },
+    {
+      "id": 66,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 9
+      },
+      "pixels": {
+        "left": 96,
+        "top": 288
+      },
+      "outputFile": "tilesground_00066.png"
+    },
+    {
+      "id": 67,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 9
+      },
+      "pixels": {
+        "left": 128,
+        "top": 288
+      },
+      "outputFile": "tilesground_00067.png"
+    },
+    {
+      "id": 68,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 9
+      },
+      "pixels": {
+        "left": 160,
+        "top": 288
+      },
+      "outputFile": "tilesground_00068.png"
+    },
+    {
+      "id": 69,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 9
+      },
+      "pixels": {
+        "left": 192,
+        "top": 288
+      },
+      "outputFile": "tilesground_00069.png"
+    },
+    {
+      "id": 70,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 10
+      },
+      "pixels": {
+        "left": 0,
+        "top": 320
+      },
+      "outputFile": "tilesground_00070.png"
+    },
+    {
+      "id": 71,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 10
+      },
+      "pixels": {
+        "left": 32,
+        "top": 320
+      },
+      "outputFile": "tilesground_00071.png"
+    },
+    {
+      "id": 72,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 10
+      },
+      "pixels": {
+        "left": 64,
+        "top": 320
+      },
+      "outputFile": "tilesground_00072.png"
+    },
+    {
+      "id": 73,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 10
+      },
+      "pixels": {
+        "left": 96,
+        "top": 320
+      },
+      "outputFile": "tilesground_00073.png"
+    },
+    {
+      "id": 74,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 10
+      },
+      "pixels": {
+        "left": 128,
+        "top": 320
+      },
+      "outputFile": "tilesground_00074.png"
+    },
+    {
+      "id": 75,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 10
+      },
+      "pixels": {
+        "left": 160,
+        "top": 320
+      },
+      "outputFile": "tilesground_00075.png"
+    },
+    {
+      "id": 76,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 10
+      },
+      "pixels": {
+        "left": 192,
+        "top": 320
+      },
+      "outputFile": "tilesground_00076.png"
+    },
+    {
+      "id": 77,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 11
+      },
+      "pixels": {
+        "left": 0,
+        "top": 352
+      },
+      "outputFile": "tilesground_00077.png"
+    },
+    {
+      "id": 78,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 11
+      },
+      "pixels": {
+        "left": 32,
+        "top": 352
+      },
+      "outputFile": "tilesground_00078.png"
+    },
+    {
+      "id": 79,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 11
+      },
+      "pixels": {
+        "left": 64,
+        "top": 352
+      },
+      "outputFile": "tilesground_00079.png"
+    },
+    {
+      "id": 80,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 11
+      },
+      "pixels": {
+        "left": 96,
+        "top": 352
+      },
+      "outputFile": "tilesground_00080.png"
+    },
+    {
+      "id": 81,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 11
+      },
+      "pixels": {
+        "left": 128,
+        "top": 352
+      },
+      "outputFile": "tilesground_00081.png"
+    },
+    {
+      "id": 82,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 11
+      },
+      "pixels": {
+        "left": 160,
+        "top": 352
+      },
+      "outputFile": "tilesground_00082.png"
+    },
+    {
+      "id": 83,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 11
+      },
+      "pixels": {
+        "left": 192,
+        "top": 352
+      },
+      "outputFile": "tilesground_00083.png"
+    },
+    {
+      "id": 84,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 12
+      },
+      "pixels": {
+        "left": 0,
+        "top": 384
+      },
+      "outputFile": "tilesground_00084.png"
+    },
+    {
+      "id": 85,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 12
+      },
+      "pixels": {
+        "left": 32,
+        "top": 384
+      },
+      "outputFile": "tilesground_00085.png"
+    },
+    {
+      "id": 86,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 12
+      },
+      "pixels": {
+        "left": 64,
+        "top": 384
+      },
+      "outputFile": "tilesground_00086.png"
+    },
+    {
+      "id": 87,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 12
+      },
+      "pixels": {
+        "left": 96,
+        "top": 384
+      },
+      "outputFile": "tilesground_00087.png"
+    },
+    {
+      "id": 88,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 12
+      },
+      "pixels": {
+        "left": 128,
+        "top": 384
+      },
+      "outputFile": "tilesground_00088.png"
+    },
+    {
+      "id": 89,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 12
+      },
+      "pixels": {
+        "left": 160,
+        "top": 384
+      },
+      "outputFile": "tilesground_00089.png"
+    },
+    {
+      "id": 90,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 12
+      },
+      "pixels": {
+        "left": 192,
+        "top": 384
+      },
+      "outputFile": "tilesground_00090.png"
+    },
+    {
+      "id": 91,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 13
+      },
+      "pixels": {
+        "left": 0,
+        "top": 416
+      },
+      "outputFile": "tilesground_00091.png"
+    },
+    {
+      "id": 92,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 13
+      },
+      "pixels": {
+        "left": 32,
+        "top": 416
+      },
+      "outputFile": "tilesground_00092.png"
+    },
+    {
+      "id": 93,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 13
+      },
+      "pixels": {
+        "left": 64,
+        "top": 416
+      },
+      "outputFile": "tilesground_00093.png"
+    },
+    {
+      "id": 94,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 13
+      },
+      "pixels": {
+        "left": 96,
+        "top": 416
+      },
+      "outputFile": "tilesground_00094.png"
+    },
+    {
+      "id": 95,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 13
+      },
+      "pixels": {
+        "left": 128,
+        "top": 416
+      },
+      "outputFile": "tilesground_00095.png"
+    },
+    {
+      "id": 96,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 13
+      },
+      "pixels": {
+        "left": 160,
+        "top": 416
+      },
+      "outputFile": "tilesground_00096.png"
+    },
+    {
+      "id": 97,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 13
+      },
+      "pixels": {
+        "left": 192,
+        "top": 416
+      },
+      "outputFile": "tilesground_00097.png"
+    },
+    {
+      "id": 98,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 14
+      },
+      "pixels": {
+        "left": 0,
+        "top": 448
+      },
+      "outputFile": "tilesground_00098.png"
+    },
+    {
+      "id": 99,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 14
+      },
+      "pixels": {
+        "left": 32,
+        "top": 448
+      },
+      "outputFile": "tilesground_00099.png"
+    },
+    {
+      "id": 100,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 14
+      },
+      "pixels": {
+        "left": 64,
+        "top": 448
+      },
+      "outputFile": "tilesground_00100.png"
+    },
+    {
+      "id": 101,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 14
+      },
+      "pixels": {
+        "left": 96,
+        "top": 448
+      },
+      "outputFile": "tilesground_00101.png"
+    },
+    {
+      "id": 102,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 14
+      },
+      "pixels": {
+        "left": 128,
+        "top": 448
+      },
+      "outputFile": "tilesground_00102.png"
+    },
+    {
+      "id": 103,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 14
+      },
+      "pixels": {
+        "left": 160,
+        "top": 448
+      },
+      "outputFile": "tilesground_00103.png"
+    },
+    {
+      "id": 104,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 14
+      },
+      "pixels": {
+        "left": 192,
+        "top": 448
+      },
+      "outputFile": "tilesground_00104.png"
+    },
+    {
+      "id": 105,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 15
+      },
+      "pixels": {
+        "left": 0,
+        "top": 480
+      },
+      "outputFile": "tilesground_00105.png"
+    },
+    {
+      "id": 106,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 15
+      },
+      "pixels": {
+        "left": 32,
+        "top": 480
+      },
+      "outputFile": "tilesground_00106.png"
+    },
+    {
+      "id": 107,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 15
+      },
+      "pixels": {
+        "left": 64,
+        "top": 480
+      },
+      "outputFile": "tilesground_00107.png"
+    },
+    {
+      "id": 108,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 15
+      },
+      "pixels": {
+        "left": 96,
+        "top": 480
+      },
+      "outputFile": "tilesground_00108.png"
+    },
+    {
+      "id": 109,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 15
+      },
+      "pixels": {
+        "left": 128,
+        "top": 480
+      },
+      "outputFile": "tilesground_00109.png"
+    },
+    {
+      "id": 110,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 15
+      },
+      "pixels": {
+        "left": 160,
+        "top": 480
+      },
+      "outputFile": "tilesground_00110.png"
+    },
+    {
+      "id": 111,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 15
+      },
+      "pixels": {
+        "left": 192,
+        "top": 480
+      },
+      "outputFile": "tilesground_00111.png"
+    },
+    {
+      "id": 112,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 16
+      },
+      "pixels": {
+        "left": 0,
+        "top": 512
+      },
+      "outputFile": "tilesground_00112.png"
+    },
+    {
+      "id": 113,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 16
+      },
+      "pixels": {
+        "left": 32,
+        "top": 512
+      },
+      "outputFile": "tilesground_00113.png"
+    },
+    {
+      "id": 114,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 16
+      },
+      "pixels": {
+        "left": 64,
+        "top": 512
+      },
+      "outputFile": "tilesground_00114.png"
+    },
+    {
+      "id": 115,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 16
+      },
+      "pixels": {
+        "left": 96,
+        "top": 512
+      },
+      "outputFile": "tilesground_00115.png"
+    },
+    {
+      "id": 116,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 16
+      },
+      "pixels": {
+        "left": 128,
+        "top": 512
+      },
+      "outputFile": "tilesground_00116.png"
+    },
+    {
+      "id": 117,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 16
+      },
+      "pixels": {
+        "left": 160,
+        "top": 512
+      },
+      "outputFile": "tilesground_00117.png"
+    },
+    {
+      "id": 118,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 16
+      },
+      "pixels": {
+        "left": 192,
+        "top": 512
+      },
+      "outputFile": "tilesground_00118.png"
+    },
+    {
+      "id": 119,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 17
+      },
+      "pixels": {
+        "left": 0,
+        "top": 544
+      },
+      "outputFile": "tilesground_00119.png"
+    },
+    {
+      "id": 120,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 17
+      },
+      "pixels": {
+        "left": 32,
+        "top": 544
+      },
+      "outputFile": "tilesground_00120.png"
+    },
+    {
+      "id": 121,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 17
+      },
+      "pixels": {
+        "left": 64,
+        "top": 544
+      },
+      "outputFile": "tilesground_00121.png"
+    },
+    {
+      "id": 122,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 17
+      },
+      "pixels": {
+        "left": 96,
+        "top": 544
+      },
+      "outputFile": "tilesground_00122.png"
+    },
+    {
+      "id": 123,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 17
+      },
+      "pixels": {
+        "left": 128,
+        "top": 544
+      },
+      "outputFile": "tilesground_00123.png"
+    },
+    {
+      "id": 124,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 17
+      },
+      "pixels": {
+        "left": 160,
+        "top": 544
+      },
+      "outputFile": "tilesground_00124.png"
+    },
+    {
+      "id": 125,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 17
+      },
+      "pixels": {
+        "left": 192,
+        "top": 544
+      },
+      "outputFile": "tilesground_00125.png"
+    },
+    {
+      "id": 126,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 18
+      },
+      "pixels": {
+        "left": 0,
+        "top": 576
+      },
+      "outputFile": "tilesground_00126.png"
+    },
+    {
+      "id": 127,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 18
+      },
+      "pixels": {
+        "left": 32,
+        "top": 576
+      },
+      "outputFile": "tilesground_00127.png"
+    },
+    {
+      "id": 128,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 18
+      },
+      "pixels": {
+        "left": 64,
+        "top": 576
+      },
+      "outputFile": "tilesground_00128.png"
+    },
+    {
+      "id": 129,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 18
+      },
+      "pixels": {
+        "left": 96,
+        "top": 576
+      },
+      "outputFile": "tilesground_00129.png"
+    },
+    {
+      "id": 130,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 18
+      },
+      "pixels": {
+        "left": 128,
+        "top": 576
+      },
+      "outputFile": "tilesground_00130.png"
+    },
+    {
+      "id": 131,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 18
+      },
+      "pixels": {
+        "left": 160,
+        "top": 576
+      },
+      "outputFile": "tilesground_00131.png"
+    },
+    {
+      "id": 132,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 18
+      },
+      "pixels": {
+        "left": 192,
+        "top": 576
+      },
+      "outputFile": "tilesground_00132.png"
+    },
+    {
+      "id": 133,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 19
+      },
+      "pixels": {
+        "left": 0,
+        "top": 608
+      },
+      "outputFile": "tilesground_00133.png"
+    },
+    {
+      "id": 134,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 19
+      },
+      "pixels": {
+        "left": 32,
+        "top": 608
+      },
+      "outputFile": "tilesground_00134.png"
+    },
+    {
+      "id": 135,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 19
+      },
+      "pixels": {
+        "left": 64,
+        "top": 608
+      },
+      "outputFile": "tilesground_00135.png"
+    },
+    {
+      "id": 136,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 19
+      },
+      "pixels": {
+        "left": 96,
+        "top": 608
+      },
+      "outputFile": "tilesground_00136.png"
+    },
+    {
+      "id": 137,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 19
+      },
+      "pixels": {
+        "left": 128,
+        "top": 608
+      },
+      "outputFile": "tilesground_00137.png"
+    },
+    {
+      "id": 138,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 19
+      },
+      "pixels": {
+        "left": 160,
+        "top": 608
+      },
+      "outputFile": "tilesground_00138.png"
+    },
+    {
+      "id": 139,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 19
+      },
+      "pixels": {
+        "left": 192,
+        "top": 608
+      },
+      "outputFile": "tilesground_00139.png"
+    },
+    {
+      "id": 140,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 20
+      },
+      "pixels": {
+        "left": 0,
+        "top": 640
+      },
+      "outputFile": "tilesground_00140.png"
+    },
+    {
+      "id": 141,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 20
+      },
+      "pixels": {
+        "left": 32,
+        "top": 640
+      },
+      "outputFile": "tilesground_00141.png"
+    },
+    {
+      "id": 142,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 20
+      },
+      "pixels": {
+        "left": 64,
+        "top": 640
+      },
+      "outputFile": "tilesground_00142.png"
+    },
+    {
+      "id": 143,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 20
+      },
+      "pixels": {
+        "left": 96,
+        "top": 640
+      },
+      "outputFile": "tilesground_00143.png"
+    },
+    {
+      "id": 144,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 20
+      },
+      "pixels": {
+        "left": 128,
+        "top": 640
+      },
+      "outputFile": "tilesground_00144.png"
+    },
+    {
+      "id": 145,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 20
+      },
+      "pixels": {
+        "left": 160,
+        "top": 640
+      },
+      "outputFile": "tilesground_00145.png"
+    },
+    {
+      "id": 146,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 20
+      },
+      "pixels": {
+        "left": 192,
+        "top": 640
+      },
+      "outputFile": "tilesground_00146.png"
+    },
+    {
+      "id": 147,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 21
+      },
+      "pixels": {
+        "left": 0,
+        "top": 672
+      },
+      "outputFile": "tilesground_00147.png"
+    },
+    {
+      "id": 148,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 21
+      },
+      "pixels": {
+        "left": 32,
+        "top": 672
+      },
+      "outputFile": "tilesground_00148.png"
+    },
+    {
+      "id": 149,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 21
+      },
+      "pixels": {
+        "left": 64,
+        "top": 672
+      },
+      "outputFile": "tilesground_00149.png"
+    },
+    {
+      "id": 150,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 21
+      },
+      "pixels": {
+        "left": 96,
+        "top": 672
+      },
+      "outputFile": "tilesground_00150.png"
+    },
+    {
+      "id": 151,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 21
+      },
+      "pixels": {
+        "left": 128,
+        "top": 672
+      },
+      "outputFile": "tilesground_00151.png"
+    },
+    {
+      "id": 152,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 21
+      },
+      "pixels": {
+        "left": 160,
+        "top": 672
+      },
+      "outputFile": "tilesground_00152.png"
+    },
+    {
+      "id": 153,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 21
+      },
+      "pixels": {
+        "left": 192,
+        "top": 672
+      },
+      "outputFile": "tilesground_00153.png"
+    },
+    {
+      "id": 154,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 0,
+        "row": 22
+      },
+      "pixels": {
+        "left": 0,
+        "top": 704
+      },
+      "outputFile": "tilesground_00154.png"
+    },
+    {
+      "id": 155,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 1,
+        "row": 22
+      },
+      "pixels": {
+        "left": 32,
+        "top": 704
+      },
+      "outputFile": "tilesground_00155.png"
+    },
+    {
+      "id": 156,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 2,
+        "row": 22
+      },
+      "pixels": {
+        "left": 64,
+        "top": 704
+      },
+      "outputFile": "tilesground_00156.png"
+    },
+    {
+      "id": 157,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 3,
+        "row": 22
+      },
+      "pixels": {
+        "left": 96,
+        "top": 704
+      },
+      "outputFile": "tilesground_00157.png"
+    },
+    {
+      "id": 158,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 4,
+        "row": 22
+      },
+      "pixels": {
+        "left": 128,
+        "top": 704
+      },
+      "outputFile": "tilesground_00158.png"
+    },
+    {
+      "id": 159,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 5,
+        "row": 22
+      },
+      "pixels": {
+        "left": 160,
+        "top": 704
+      },
+      "outputFile": "tilesground_00159.png"
+    },
+    {
+      "id": 160,
+      "sourceFile": "tilesground.rsc.png",
+      "position": {
+        "col": 6,
+        "row": 22
+      },
+      "pixels": {
+        "left": 192,
+        "top": 704
+      },
+      "outputFile": "tilesground_00160.png"
+    }
+  ],
+  "extractedAt": "2025-10-18T19:06:37.170Z"
+}
