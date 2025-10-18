@@ -1,0 +1,67 @@
+FUNCTION Main(Player as LONG, Command as STRING, Parm1 as STRING, Parm2 as STRING, Parm3 as STRING) AS LONG 
+If GetPlayerLevel(Player) < 2 Then 'Checks if player level is under 2'
+   PlayerMessage(Player, "=================================================================================", 15) 
+   PlayerMessage(Player, "You awaken in a non-familiar setting. You are not aware of it at the moment, but you are a hero and your arch nemesis is a villian named Voltain Darpick. You have many times in the past defeated him, but the last time, he obtained a particular power that even yourself couldn't defeat.", 14) 
+   PlayerMessage(Player, "   ", 14) 
+   PlayerMessage(Player, "He has completely stripped you of all your powers with a device called the Darkmass Bomb. All you find on your person is a map and a non sharpened dagger. You sit in your bed for awhile and try to recall something, but you cannot seperate dream from reality. Eventually, you decide that following the map would probably be your best option.", 14)
+   PlayerMessage(Player, "=================================================================================", 15)
+End If 
+   
+END FUNCTION
+
+
+
+	RunScript0("Pushback")
+	
+	
+	
+	
+	
+	
+If GetPlayerLevel(Player) < 4 Then 'Checks if player level is less than 4'
+RunScript0("Pushback") 'Pushback
+end if
+
+
+
+
+
+
+map28_7_3
+
+Sub Main(Player as Long)
+PlayerWarp(Player, 1, 6, 7)
+GlobalMessage(GetPlayerName(Player) + " has completed the Under The Lake Quest!", 10)
+If GetPlayerLevel(Player) < 5 Then 'If the player's level is less than 5 
+   Giveobj(Player, 300, 1)
+   PlayerMessage(Player, "=================================================================================", 15) 
+   PlayerMessage(Player, "You received an XP Lamp. Use this to level up and advance to the next area", 14)
+   PlayerMessage(Player, "=================================================================================", 15) 
+End If 
+   Giveobj(Player, 1, 100)
+   PlayerMessage(Player, "=================================================================================", 15) 
+   PlayerMessage(Player, "You have been awarded 100 Amythyst", 14) 
+   PlayerMessage(Player, "=================================================================================", 15) 
+End sub
+
+
+
+
+   GlobalMessage(GetPlayerName(Player) + " has completed Milos Cavery's Love Note!", 11) 'Announce Quest Complete
+
+   
+   
+   
+   
+   
+   
+   
+FUNCTION Main(Player as LONG, Command as STRING, Parm1 as STRING, Parm2 as STRING, Parm3 as STRING) AS LONG 
+
+If GetPlayerLevel(Player) = 1 And HasObj(Player, 48) = 0 Then 'Checks if player level is 1 and has 0 tokens'
+
+PlayerMessage(Player, "You got one!",14)
+PlayerMessage(Player, "Collect 20 and click TRADE at the top right of your screen, and trade me your tokens for a key ",14)
+
+End if
+END FUNCTION

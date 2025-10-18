@@ -1,0 +1,3490 @@
+***List of every script and it's data on the server***
+
+
+----------------- absorb -----------------
+
+
+SUB MAIN(Player as LONG)
+   dim map as long, x as long, y as long, a as long, mana as long
+
+   map=getplayermap(player)
+   x=getplayerx(player)
+   y=getplayery(player)
+   mana=getplayermana(player)
+
+   if mana >=20 then
+      if getplayerflag(player,120) = 1 then
+         for a = 0 to 5
+            If CanAttackMonster(Player, a) Then
+               SetPlayerMana(Player,mana-15)
+               CreateMonsterProjectile(map,a,Player,17,1,0,3)
+               AttackMonster(Player,a,GetPlayerIntelligence(Player)/5)
+               SetPlayerHp(Player,GetPlayerHp(Player)+2*GetPlayerIntelligence(Player)/25)
+            End If
+         next a
+      else
+         playermessage(player,"You must learn this spell first!",green)   
+      end if
+   else
+      playermessage(player,"You must have at least 20 mana to cast Absorb!",green)
+   end if
+if getplayeraccess(player) > 100 then
+setplayermana(player,getplayermana(player)+15)
+end if
+
+END SUB
+
+
+
+
+
+----------------- attackmonster -----------------
+
+
+function main(player as long, monster as long) as long
+if getmonstertype(getplayermap(player),monster) = 6 then
+main = stop
+runscript0("dummies")
+end if
+end function
+
+
+
+
+
+----------------- bash -----------------
+
+
+sub main(player as long)
+'dim map as long, x as long, y as long, monster as long, target as long
+'map = getplayermap(player)
+'x = getplayerx(player)
+'y = getplayery(player)
+'for monster = 0 to 5
+'if getmapsetting(map,5) = 0 then
+'if getmonsterx(map,monster) = getplayerx(player) & getplayery(player)-1 = getmonstery(map,monster) then
+'if getplayerdirection(player) = up then
+'attackmonster(player,monster,getequippedobjnum(player
+end sub
+
+
+
+
+
+----------------- COMMAND -----------------
+
+
+
+FUNCTION Main(Player as LONG, Command as STRING, Parm1 as STRING, Parm2 as STRING, Parm3 as STRING) AS LONG
+main = stop
+dim map as long
+dim x as long
+dim y as long
+dim access as long
+dim p as long
+dim a as long
+dim b as long
+dim c as long
+
+map=getplayermap(player)
+x=getplayerx(PLAYER)
+y=getplayery(player)
+access=getplayeraccess(player)
+p=player
+
+if access = 255 then
+if strcmp(command,"Kill") then
+runscript0("godspell")
+main=stop
+end if
+end if
+
+if access >= 100 then
+if StrCmp(Command, "trees") Then RunScript2("trees", Player, Val(Parm1))
+end if
+
+if strcmp(command,"cast") then
+
+if strcmp(parm1,"absorb") then
+if getplayerflag(player,120) = 1 then
+if getplayermana(player) >= 20 then
+runscript0("absorb")
+else
+playermessage(player,"You need at least 30 Mana to cast Absorb!",green)
+end if
+else
+playermessage(player,"You did not learn Absorb yet!",green)
+end if
+end if
+
+if strcmp(parm1,"supernova") then
+if getplayerflag(player,150) = 1 then
+if getplayermana(player) >= 10 then
+runscript0("nova")
+else
+playermessage(player, "You need 10 mana to cast supernova!", yellow)
+end if
+else
+playermessage(player, "You don't have supernova!", yellow)
+end if
+end if
+
+if strcmp(parm1,"shock") then
+if getplayerflag(player,30) = 1 then
+if getplayermana(player) >= 15 then
+runscript0("shock")
+else
+playermessage(player, "You need 15 mana to cast shock!", yellow)
+end if
+else
+playermessage(player, "You don't have shock!", yellow)
+end if
+end if
+
+if strcmp(parm1,"desolation") then
+if getplayerflag(player,40) = 1 then
+if getplayermana(player) >= 24 then
+runscript0("desolation")
+else
+playermessage(player, "You need 24 mana to cast desolation!", yellow)
+end if
+else
+playermessage(player, "You don't have desolation!", yellow)
+end if
+end if
+
+if strcmp(parm1,"hellfire") then
+if getplayerflag(player,251) = 1 then
+if getplayermana(player) >= 15 then
+runscript0("hellfire")
+else
+playermessage(player, "You need 15 mana to cast hellfire!", yellow)
+end if
+else
+playermessage(player, "You don't have hellfire!", yellow)
+end if
+end if
+
+end if
+
+if strcmp(command,"gods") then
+runscript0("gods")
+main = stop
+end if
+
+
+
+if access = 255 then
+if strcmp(command,"attack") then 
+for c = 0 to 11
+for b = 0 to 11
+for a = 0 to 5
+if getmonsterx(map,b) & getmonstery(map,c) then
+attackmonster(player,a,255)
+createtileeffect(map,getmonsterx(map,a),getmonstery(map,a),2,1,8,0,0)
+end if
+next a
+next b
+next c
+end if
+end if
+
+
+   If StrCmp(Command, "STASH") Then
+      If map = 3 Then
+         If StrCmp(Parm1, "LIST") Then RunScript0("stashlist")
+         If StrCmp(Parm1, "STORE") Then RunScript0("stashstore")
+         If StrCmp(Parm1, "REMOVE") Then RunScript0("stashremove")
+      End If
+   End If
+
+
+if strcmp(command,"info") then runscript0("info")
+
+if access > 0 then
+if strcmp(command,"scripts") then runscript0("scripts")
+if strcmp(command,"kill") then attackplayer(player,val(parm1),255)
+if strcmp(command,"day") then makeday()
+if strcmp(command,"night") then makenight()
+if strcmp(command,"free") then runscript0("freemap")
+if strcmp(command,"give") then giveobj(p,val(parm1),val(parm2))
+if strcmp(command,"sprite") then setplayersprite(p,val(parm1))
+if strcmp(command,"status") then setplayerstatus(p,val(parm1))
+if strcmp(command,"warp") then playerwarp(p,val(parm1),val(parm2),val(parm3))
+if strcmp(command,"flag") then setplayerflag(player,val(parm1),val(parm2))
+if strcmp(command,"objdata") then playermessage(player,str(getobjectdata(val(parm1),val(parm2))),white)
+if strcmp(command,"montype") then playermessage(player,str(getmonstertype(getplayermap(player),val(parm1))),white)
+if strcmp(command,"Flag") then setplayerflag(player,val(parm1),val(parm2))
+If StrCmp(Command, "RUN") Then RunScript0(Parm1)
+end if
+
+if strcmp(command,"cast") then
+if strcmp(parm1,"waterpillar") then
+if getplayerflag(player,200) = 1 then
+if getplayermana(player) >= 6 then
+runscript0("waterpillar1")
+end if
+end if
+end if
+end if
+
+if map = 21 then
+if x = 1 & y = 4 then
+if strcmp(command,"Store") then runscript0("stashstore")
+if strcmp(command,"remove") then runscript0("stashremove")
+if strcmp(command,"list") then runscript0("stashlist")
+main = stop
+end if
+end if
+
+   If StrCmp(Command, "FIX") Then
+      If map = 4 & y = 4 & (x = 3 | x = 6 | x = 9) Then
+         RunScript2("repair", Player, Val(Parm1))
+      End If
+   End If
+
+END FUNCTION
+
+
+
+
+
+----------------- Desolation -----------------
+
+
+function main(player as long) as long
+dim monster as long
+dim map as long
+dim x as long
+dim y as long
+dim mx as long
+dim my as long
+dim sprite as long
+dim speed as long
+dim frame as long
+dim loopcount as long
+dim endsound as long
+dim target as long
+
+
+x=getplayerx(player)
+y=getplayery(player)
+map=getplayermap(player)
+for monster = 0 to 5
+sprite = 7
+speed = 1
+frame = 8
+loopcount = 0
+endsound = 0
+
+
+   if getplayerflag(player,60) = 1 then
+
+      if getmonsterx(map,monster) = x+1 & getmonstery(map,monster) = y then
+      createtileeffect(map,x,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y-1,sprite,speed,frame,loopcount,endsound)
+         createtileeffect(map,x+1,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y+1,sprite,speed,frame,loopcount,endsound)
+      if getplayeraccess(player) = 0 then
+      setplayermana(player,getplayermaxmana(player)-20)
+      end if
+      attackmonster(player,monster,8+getplayerintelligence(player)/2)
+      end if
+      
+
+      if getmonsterx(map,monster) = x & getmonstery(map,monster)= y then
+      createtileeffect(map,x,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y-1,sprite,speed,frame,loopcount,endsound)
+         createtileeffect(map,x+1,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y+1,sprite,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,8+getplayerintelligence(player)/2)
+      if getplayeraccess(player) = 0 then
+      setplayermana(player,getplayermaxmana(player)-20)
+      end if
+      end if
+      
+
+      if getmonsterx(map,monster) = x-1 & getmonstery(map,monster) = y then
+      createtileeffect(map,x,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y,sprite,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,8+getplayerintelligence(player)/2)
+      createtileeffect(map,x,y-1,sprite,speed,frame,loopcount,endsound)
+         createtileeffect(map,x+1,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y+1,sprite,speed,frame,loopcount,endsound)    
+      if getplayeraccess(player) = 0 then
+      setplayermana(player,getplayermaxmana(player)-20)
+      end if
+      end if
+      
+
+      if getmonsterx(map,monster) = x & getmonstery(map,monster) = y+1 then
+      attackmonster(player,monster,8+getplayerintelligence(player)/2)
+      createtileeffect(map,x,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y-1,sprite,speed,frame,loopcount,endsound)
+         createtileeffect(map,x+1,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y+1,sprite,speed,frame,loopcount,endsound)
+      if getplayeraccess(player) = 0 then
+      setplayermana(player,getplayermaxmana(player)-20)
+      end if
+      end if
+      
+
+      if getmonsterx(map,monster) = x & getmonstery(map,monster) = y-1 then
+      createtileeffect(map,x,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y-1,sprite,speed,frame,loopcount,endsound)
+         createtileeffect(map,x+1,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y+1,sprite,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,8+getplayerintelligence(player)/2)
+      if getplayeraccess(player) = 0 then
+      setplayermana(player,getplayermaxmana(player)-20)
+      end if
+      end if
+
+      if getmonsterx(map,monster) = x-1 & getmonstery(map,monster) = y-1 then
+      createtileeffect(map,x,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y-1,sprite,speed,frame,loopcount,endsound)
+        createtileeffect(map,x+1,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y+1,sprite,speed,frame,loopcount,endsound)
+      if getplayeraccess(player) = 0 then
+      setplayermana(player,getplayermaxmana(player)-20)
+      end if
+      attackmonster(player,monster,8+getplayerintelligence(player)/2)
+      end if
+
+      if getmonsterx(map,monster) = x+1 & getmonstery(map,monster) = y+1 then
+      createtileeffect(map,x,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y-1,sprite,speed,frame,loopcount,endsound)
+         createtileeffect(map,x+1,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y+1,sprite,speed,frame,loopcount,endsound)
+      if getplayeraccess(player) = 0 then
+      setplayermana(player,getplayermaxmana(player)-20)
+      end if
+      attackmonster(player,monster,8+getplayerintelligence(player)/2)
+      end if
+
+      if getmonsterx(map,monster) = x-1 & getmonstery(map,monster) = y+1 then
+      createtileeffect(map,x,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y-1,sprite,speed,frame,loopcount,endsound)
+         createtileeffect(map,x+1,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y+1,sprite,speed,frame,loopcount,endsound)
+      if getplayeraccess(player) = 0 then
+      setplayermana(player,getplayermaxmana(player)-20)
+      end if
+      attackmonster(player,monster,8+getplayerintelligence(player)/2)
+      end if
+
+      if getmonsterx(map,monster) = x+1 & getmonstery(map,monster) = y-1 then
+      createtileeffect(map,x,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y-1,sprite,speed,frame,loopcount,endsound)
+         createtileeffect(map,x+1,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y+1,sprite,speed,frame,loopcount,endsound)
+      if getplayeraccess(player) = 0 then
+      setplayermana(player,getplayermaxmana(player)-20)
+      end if
+      attackmonster(player,monster,8+getplayerintelligence(player)/2)
+      end if
+
+   end if
+      next monster
+   end function
+
+
+
+
+
+----------------- dummies -----------------
+
+
+sub main(player as long)
+
+if random(9999) =< 3333+getplayerflag(player,101) then
+
+playermessage(player,"You hit the dummy!",white)
+if getplayerflag(player,101) = 250 then
+playermessage(player,"You are a Dummy Bruiser! (Level 1)",white)
+end if
+if getplayerflag(player,101) = 600 then
+playermessage(player,"You are a Dummy Beater! (Level 2)",white)
+end if
+if getplayerflag(player,101) = 1200 then
+playermessage(player,"You are a Dummy Abuser! (Level 3)",white)
+end if
+if getplayerflag(player,101) = 1800 then
+playermessage(player,"You are a Dummy Crusher! (Level 4)",white)
+end if
+if getplayerflag(player,101) = 3000 then
+playermessage(player,"You are a Dummy Killer! (Level 5)",white)
+end if
+
+if random(9999) =< 3333+getplayerflag(player,101) then
+
+giveplayerexp(player,50)
+setplayerflag(player,101,getplayerflag(player,101)+1)
+
+else
+
+giveplayerexp(player,100)
+setplayerflag(player,101,getplayerflag(player,101)+1)
+end if
+else
+playermessage(player,"Miss!",brightred)
+
+end if
+
+end sub
+
+
+
+
+
+----------------- flags -----------------
+
+
+sub main()
+'Flag 200: Use Water Pillar
+'Flag 100: Reset Spell
+end sub
+
+
+
+
+
+----------------- flamelvl -----------------
+
+
+SUB MAIN(Player as LONG, Parm2 as STRING)
+DIM flag as LONG
+Flag = GetPlayerFlag(Player, 60) 
+
+IF Flag < 11 THEN
+   IF Random(15*Flag) = 1 THEN
+      SetPlayerMaxMana(Player,GetPlayerMana(Player)+3)
+      SetPlayerFlag(Player,60,flag+2)
+      PlayerMessage(Player,"Your Spell skill has risen!",white)
+   END IF
+END IF
+
+END SUB
+
+
+
+
+
+
+----------------- Flames -----------------
+
+
+SUB MAIN(Player as LONG, Parm2 as STRING)
+DIM map as LONG, x as LONG, y as LONG, a as LONG, monx AS LONG, mony as LONG, flag as LONG, magic as LONG, mana as LONG, dir as LONG
+Map=GetPlayerMap(Player)
+x = GetPlayerX(player)
+y = GetPlayerY(Player)
+MonX = GetMonsterX(map,a)
+mony = GetMonsterY(map,a)
+Flag = GetPlayerFlag(Player, 60)
+dir = GetPlayerDirection(Player)
+mana = GetPlayerMana(Player)
+
+   IF (Parm2="l" | Parm2="lo" | Parm2="low") THEN magic = 5
+   IF (Parm2="m" | Parm2="me" | Parm2="med" | Parm2="medi" | Parm2="mediu" | Parm2="medium") THEN magic = 10
+   IF (Parm2="h" | Parm2="hi" | Parm2="hig" | Parm2="high") THEN magic = 15
+
+
+For a = 0 to 5
+
+IF FLAG >= 1 THEN
+   IF MANA >= MAGIC THEN
+      SetPlayerMana(Player,Mana-magic)
+
+'<><><>----ATTACK--UP----<><><>
+
+      IF Dir = 0 THEN
+         CreateTileEffect(Map,x,y-1,1,1,0,0,5)
+            IF monx=x THEN
+               IF mony=y-1 | y-2 | y-3 THEN
+                  IF Random(99)=40+flag*2 THEN
+                     IF Mony=y-1 & monx=x THEN
+                        AttackMonster(Player,a,(1.5*flag)+magic*0.8)
+                        next a
+                        Runscript0("Flamelvl")
+                     END IF
+                     TIMER(Player,1/2,"Flames2")
+                  ELSE
+                     PlayerMessage(Player,"You missed!",red)
+                     TIMER(Player,1/2,"Flames2")
+                  END IF
+               END IF
+            END IF
+         END IF
+
+
+'<><><>----ATTACK--RIGHT----<><><>
+
+      IF Dir = 1 THEN
+         CreateTileEffect(Map,x+1,y,1,1,0,0,5)
+            IF monx=x+1 | x+2 | x+3 THEN
+               IF mony=y  THEN
+                  IF Random(99)=40+flag*2 THEN
+                     IF Mony=y & monx=x+1 THEN
+                        AttackMonster(Player,a,(1.5*flag)+magic*0.8)
+                        next a
+                        Runscript0("Flamelvl")
+                     END IF
+                     TIMER(Player,1/2,"Flames2")
+                  ELSE
+                     PlayerMessage(Player,"You missed!",red)
+                     TIMER(Player,1/2,"Flames2")
+                  END IF
+               END IF
+            END IF
+         END IF
+
+'<><><>----ATTACK--DOWN----<><><>
+
+      IF Dir = 1 THEN
+         CreateTileEffect(Map,x,y-1,1,1,0,0,5)
+            IF monx=x THEN
+               IF mony=y-1 | y-2 | y-3  THEN
+                  IF Random(99)=40+flag*2 THEN
+                     IF Mony=y & monx=x+1 THEN
+                        AttackMonster(Player,a,(1.5*flag)+magic*0.8)
+                        next a
+                        Runscript0("Flamelvl")
+                     END IF
+                     TIMER(Player,1/2,"Flames2")
+                  ELSE
+                     PlayerMessage(Player,"You missed!",red)
+                     TIMER(Player,1/2,"Flames2")
+                  END IF
+               END IF
+            END IF
+         END IF
+
+'<><><>----ATTACK--LEFT----<><><>
+
+      IF Dir = 1 THEN
+         CreateTileEffect(Map,x-1,y,1,1,0,0,5)
+            IF monx=x-1 | x-2 | x-3 THEN
+               IF mony=y  THEN
+                  IF Random(99)=40+flag*2 THEN
+                     IF Mony=y & monx=x+1 THEN
+                        AttackMonster(Player,a,(1.5*flag)+magic*0.8)
+                        next a
+                        Runscript0("Flamelvl")
+                     END IF
+                     TIMER(Player,1/2,"Flames2")
+                  ELSE
+                     PlayerMessage(Player,"You missed!",red)
+                     TIMER(Player,1/2,"Flames2")
+                  END IF
+               END IF
+            END IF
+         END IF
+
+   ELSE
+      PlayerMessage(Player,"You don't have enough Mana!",blue)
+   END IF
+ELSE
+   PlayerMessage(Player,"You must learn this spell first!",green)
+END IF
+      
+END SUB
+
+
+
+
+
+----------------- freemap -----------------
+
+
+sub main(player as long)
+dim a as long, b as long, c as long, d as long
+d = 0
+
+for a = 57 to 5000
+
+for b = 0 to 11
+for c = 0 to 11
+if gettilesprite(a,b,c,0) > 0 then
+goto nexta
+end if
+next b
+next c
+playermessage(player,strcat("Freemap: ",str(a)),white)
+exit sub
+nexta:
+next a
+
+end sub
+
+
+
+
+
+----------------- gods -----------------
+
+
+FUNCTION Main(Player as LONG, Command as STRING, Parm1 as STRING, Parm2 as STRING, Parm3 as STRING) AS LONG
+Dim MAP as long, X as long, Y as long, color as long
+MAP = getplayermap(player)
+X = getplayerx(player)
+Y = getplayery(player)
+dim i as long
+dim highlvl as long
+dim j as long
+PlayerMessage(player,".:Level Ladder:.",yellow)
+For i = 0 to getmaxusers() 'determine highest level..
+If getplayerlevel(i) > highlvl & isplaying(i) & getplayeraccess(i) > 0 Then
+Highlvl = getplayeraccess(i)
+End If
+Next i
+Dim playercount as long
+For i = 0 to Highlvl
+For j = 0 to getmaxusers()
+If highlvl-i = getplayeraccess(j) & isplaying(j) & getplayeraccess(j) > 0 Then
+playercount = playercount+1
+if getplayeraccess(player) = 0 then
+color=yellow
+else
+color=brightblue
+end if
+If playercount = 10 Then Goto EndIt
+PlayerMessage(player,strcat(strcat("<<",strcat(str(playercount),strcat(".   ",strcat(getplayername(j),strcat(".   Access: ",str(getplayeraccess(j))))))),">>"),color)
+End If
+Next j
+Next i
+Endit:
+End Function
+
+
+
+
+
+----------------- Hellfire -----------------
+
+
+function main(player as long) as long
+dim monster as long
+dim map as long
+dim x as long
+dim y as long
+dim mx as long
+dim my as long
+dim sprite as long
+dim speed as long
+dim frame as long
+dim loopcount as long
+dim endsound as long
+dim target as long
+
+x=getplayerx(player)
+y=getplayery(player)
+map=getplayermap(player)
+for monster = 0 to 5
+sprite = 1
+speed = 1
+frame = 8
+loopcount = 0
+endsound = 0
+
+   if getplayerflag(player,251) = 1 then
+
+      if getmonsterx(map,monster) = x+1 & getmonstery(map,monster) = y then
+      createtileeffect(map,x,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y-1,sprite,speed,frame,loopcount,endsound)
+         createtileeffect(map,x+1,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y+1,sprite,speed,frame,loopcount,endsound)
+      setplayermana(player,getplayermana(player)-10)
+      attackmonster(player,monster,3+getplayerintelligence(player)/3)
+      end if
+      
+
+      if getmonsterx(map,monster) = x & getmonstery(map,monster)= y then
+      createtileeffect(map,x,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y-1,sprite,speed,frame,loopcount,endsound)
+         createtileeffect(map,x+1,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y+1,sprite,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,3+getplayerintelligence(player)/3)
+      setplayermana(player,getplayermana(player)-10)
+      end if
+      
+
+      if getmonsterx(map,monster) = x-1 & getmonstery(map,monster) = y then
+      createtileeffect(map,x,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y,sprite,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,3+getplayerintelligence(player)/3)      
+      createtileeffect(map,x,y-1,sprite,speed,frame,loopcount,endsound)
+         createtileeffect(map,x+1,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y+1,sprite,speed,frame,loopcount,endsound)    
+      setplayermana(player,getplayermana(player)-10)
+      end if
+      
+
+      if getmonsterx(map,monster) = x & getmonstery(map,monster) = y+1 then
+      attackmonster(player,monster,3+getplayerintelligence(player)/4)
+      createtileeffect(map,x,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y-1,sprite,speed,frame,loopcount,endsound)
+         createtileeffect(map,x+1,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y+1,sprite,speed,frame,loopcount,endsound)
+      setplayermana(player,getplayermana(player)-10)
+      end if
+      
+
+      if getmonsterx(map,monster) = x & getmonstery(map,monster) = y-1 then
+      createtileeffect(map,x,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y-1,sprite,speed,frame,loopcount,endsound)
+         createtileeffect(map,x+1,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y+1,sprite,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,3+getplayerintelligence(player)/4)
+      setplayermana(player,getplayermana(player)-10)
+      end if
+
+      if getmonsterx(map,monster) = x-1 & getmonstery(map,monster) = y-1 then
+      createtileeffect(map,x,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y-1,sprite,speed,frame,loopcount,endsound)
+        createtileeffect(map,x+1,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y+1,sprite,speed,frame,loopcount,endsound)
+      setplayermana(player,getplayermana(player)-10)
+      attackmonster(player,monster,3+getplayerintelligence(player)/3)
+      end if
+
+      if getmonsterx(map,monster) = x+1 & getmonstery(map,monster) = y+1 then
+      createtileeffect(map,x,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y-1,sprite,speed,frame,loopcount,endsound)
+         createtileeffect(map,x+1,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y+1,sprite,speed,frame,loopcount,endsound)
+      setplayermana(player,getplayermana(player)-10)
+      attackmonster(player,monster,3+getplayerintelligence(player)/3)
+      end if
+
+      if getmonsterx(map,monster) = x-1 & getmonstery(map,monster) = y+1 then
+      createtileeffect(map,x,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y-1,sprite,speed,frame,loopcount,endsound)
+         createtileeffect(map,x+1,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y+1,sprite,speed,frame,loopcount,endsound)
+      setplayermana(player,getplayermana(player)-10)
+      attackmonster(player,monster,3+getplayerintelligence(player)/3)
+      end if
+
+      if getmonsterx(map,monster) = x+1 & getmonstery(map,monster) = y-1 then
+      createtileeffect(map,x,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x,y-1,sprite,speed,frame,loopcount,endsound)
+         createtileeffect(map,x+1,y+1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x+1,y-1,sprite,speed,frame,loopcount,endsound)
+      createtileeffect(map,x-1,y+1,sprite,speed,frame,loopcount,endsound)
+      setplayermana(player,getplayermana(player)-10)
+      attackmonster(player,monster,3+getplayerintelligence(player)/3)
+      end if
+
+   end if
+      next monster
+   end function
+
+
+
+
+
+----------------- info -----------------
+
+
+sub main(player as long)
+dim nextlevel as long, dummylevel as string
+
+if getplayerflag(player,101) =< 249 then
+nextlevel = 250
+dummylevel="Dummy Noob (Level 0)"
+end if
+
+if getplayerflag(player,101) >= 250 & getplayerflag(player,101) =< 599 then
+nextlevel = 600
+dummylevel="Dummy Bruiser (Level 1)"
+end if
+
+if getplayerflag(player,101) >= 600 & getplayerflag(player,101) =< 1199 then
+nextlevel = 1200
+dummylevel="Dummy Beater (Level 2)"
+end if
+
+if getplayerflag(player,101) >= 1200 & getplayerflag(player,101) =< 1799 then
+nextlevel = 1800
+dummylevel="Dummy Abuser (Level 3)"
+end if
+
+if getplayerflag(player,101) >= 1800 & getplayerflag(player,101) =< 2999 then
+nextlevel = 3000
+dummylevel="Dummy Crusher (Level 4)"
+end if
+
+if getplayerflag(player,101) >= 3000 then
+nextlevel = -1
+dummylevel="Dummy Killer (Level 5)"
+end if
+
+
+playermessage(player,strcat4("Dummy Experience: ",str(getplayerflag(player,101)),"/",str(nextlevel)),white)
+playermessage(player,strcat("Dummy Level: ",dummylevel),white)
+end sub
+
+
+
+
+
+----------------- joingame -----------------
+
+
+sub main(player as long)
+runscript0("pulse")
+end sub
+
+
+
+
+
+----------------- joinmap1 -----------------
+
+
+sub main(player as long)
+
+setplayerflag(player,1,1)
+
+end sub
+
+
+
+
+
+----------------- joinmap21 -----------------
+
+
+sub main(player as long)
+playermessage(player,"You can store, remove, and check your stored items by standing in front of the treasure chest, and typing in /store <amount> <obj name in quotes, or object inventory slot number>, /remove <amount> <item name in quotes> or /list to see the items currently stored in your stash.",brightcyan)
+end sub
+
+
+
+
+
+----------------- joinmap22 -----------------
+
+
+sub main(player as long)
+spawnmonster(22,6,2,3,255)
+spawnmonster(22,6,2,9,255)
+spawnmonster(22,6,9,3,255)
+spawnmonster(22,6,9,9,255)
+end sub
+
+
+
+
+
+----------------- Joinmap32 -----------------
+
+
+sub main(player as long)
+playermessage(player,"Type restart to restart this map.",white)
+end sub
+
+
+
+
+
+----------------- joinmap41 -----------------
+
+
+sub main(player as long)
+playermessage(player,"Type 'escape' to free yourself from the maze.",yellow)
+end sub
+
+
+
+
+
+----------------- Joinmap42 -----------------
+
+
+sub main(player as long)
+playermessage(player,"Choose a path...",yellow)
+end sub
+
+
+
+
+
+----------------- JOINMAP43 -----------------
+
+
+SUB Main(Player AS LONG)
+spawnmonster(43,14,2,3,255)
+spawnmonster(43,14,2,9,255)
+spawnmonster(43,14,9,3,255)
+spawnmonster(43,14,9,9,255)
+spawnmonster(43,14,9,9,255)
+spawnmonster(43,14,9,9,255)
+END SUB
+
+
+
+
+
+----------------- joinmap63 -----------------
+
+
+sub main(player as long)
+playermessage(player,"Pick the correct Key.",brightcyan)
+end sub
+
+
+
+
+
+----------------- joinmap7 -----------------
+
+
+sub main(player as long)
+
+setplayerflag(player,1,1)
+
+end sub
+
+
+
+
+
+----------------- map1_4_9 -----------------
+
+
+sub main(player as long)
+
+playermessage(player,"Weaponsmith",white)
+
+end sub
+
+
+
+
+
+----------------- map10_5_3 -----------------
+
+
+function main(player as long) as long
+
+if getplayerflag(player,1) = 1 then
+
+playermessage(player,"You got a broken spear.",white)
+
+setplayerflag(player,2,1)
+
+giveobj(player,14,1)
+
+resetplayerflag(1)
+
+opendoor(10,5,2)
+
+else
+
+playermessage(player,"There is nothing there.",white)
+
+end if
+
+end function
+
+
+
+
+
+
+----------------- map13_1_2 -----------------
+
+
+sub main(player as long)
+playermessage(player,"Do you wish to return to town? (Say ''yes'' if so.)",white)
+end sub
+
+
+
+
+
+----------------- map13_10_2 -----------------
+
+
+sub main(player as long)
+playermessage(player,"Do you wish to return to town? (Say ''yes'' if so.)",white)
+end sub
+
+
+
+
+
+----------------- map2_7_2 -----------------
+
+
+sub main(player as long)
+
+playermessage(player,"Upstairs to the storage room, Go downstairs to get to the Furnace,",yellow)
+
+end sub
+
+
+
+
+
+----------------- map2_9_3 -----------------
+
+
+sub main(player as long)
+
+playermessage(player," You look through the the books, they must be very old.",white)
+
+end sub
+
+
+
+
+
+----------------- map4_3_4 -----------------
+
+
+function main(player as long, command as string, parm1 as string) as long
+
+playermessage(player,"If you wish to repair an object type /fix <inventory slot> to repair that object, requires a Hammer, and 2 pieces of coal.",white)
+
+if hasobj(player,43) = 1 then
+
+   if getplayerflag(player,35) = 1 then
+
+      else
+
+      setplayerflag(player,35,1)
+
+      end if
+            
+      if getplayerflag(player,35) = 1 then
+            
+         if strcmp(command,"fix") then
+
+            if hasobj(player,10) = 2 then
+
+               takeobj(player,10,2)
+
+                  if random(10) = 1 then
+                  takeobj(player,val(parm1),1)
+                  giveobj(player,val(parm1),1)
+                  else
+                  playermessage(player,"Your object was not repaired!",white)
+                  end if
+
+            
+                  if random(5) = 1 then
+                  playermessage(player,"Your mining skill raised, now at skill level 2",white)
+                  setplayerflag(player,35,2)
+                  end if
+
+            end if
+
+         end if
+
+      end if
+
+end if
+
+
+end function
+
+   
+
+
+
+
+
+----------------- map46_2_6 -----------------
+
+
+sub main(player as long)
+
+   if getplayerx(player) = 2 & getplayery(player) = 6 then
+setplayerflag(player,9,1)
+playermessage(player,"X",white)
+if getplayerflag(player,9) >1 then
+resetplayerflag(9)
+end if
+end if
+
+   if getplayerx(player) = 9 & getplayery(player) = 6 then
+playermessage(player,"XX",white)
+   end if
+if getplayerflag(player,9) = 1 then
+setplayerflag(player,9,2)
+else
+resetplayerflag(9)
+end if
+
+   if getplayerx(player) = 2 & getplayery(player) = 8 then
+playermessage(player,"XXX",white)
+
+if getplayerflag(player,9) = 2 then
+setplayerflag(player,9,3)
+else
+resetplayerflag(9)
+end if
+end if
+
+   if getplayerx(player) = 9 & getplayery(player) = 8 then
+playermessage(player,"XXXX",white)
+if getplayerflag(player,9) = 3 then
+playermessage(player," These seem to be directions, You should try to remember these symbols, and the order they are in.",white)
+resetplayerflag(9)
+else
+resetplayerflag(9)
+end if
+end if
+
+
+end sub
+
+
+
+
+
+----------------- map46_2_8 -----------------
+
+
+sub main(player as long)
+
+   if getplayerx(player) = 2 & getplayery(player) = 6 then
+setplayerflag(player,9,1)
+playermessage(player,"X",white)
+if getplayerflag(player,9) >1 then
+resetplayerflag(9)
+end if
+end if
+
+   if getplayerx(player) = 9 & getplayery(player) = 6 then
+playermessage(player,"XX",white)
+   end if
+if getplayerflag(player,9) = 1 then
+setplayerflag(player,9,2)
+else
+resetplayerflag(9)
+end if
+
+   if getplayerx(player) = 2 & getplayery(player) = 8 then
+playermessage(player,"XXX",white)
+
+if getplayerflag(player,9) = 2 then
+setplayerflag(player,9,3)
+else
+resetplayerflag(9)
+end if
+end if
+
+   if getplayerx(player) = 9 & getplayery(player) = 8 then
+playermessage(player,"XXXX",white)
+if getplayerflag(player,9) = 3 then
+playermessage(player," These seem to be directions, You should try to remember these symbols, and the order they are in.",white)
+resetplayerflag(9)
+else
+resetplayerflag(9)
+end if
+end if
+
+
+end sub
+
+
+
+
+
+----------------- map46_9_6 -----------------
+
+
+sub main(player as long)
+
+   if getplayerx(player) = 2 & getplayery(player) = 6 then
+setplayerflag(player,9,1)
+playermessage(player,"X",white)
+if getplayerflag(player,9) >1 then
+resetplayerflag(9)
+end if
+end if
+
+   if getplayerx(player) = 9 & getplayery(player) = 6 then
+playermessage(player,"XX",white)
+   end if
+if getplayerflag(player,9) = 1 then
+setplayerflag(player,9,2)
+else
+resetplayerflag(9)
+end if
+
+   if getplayerx(player) = 2 & getplayery(player) = 8 then
+playermessage(player,"XXX",white)
+
+if getplayerflag(player,9) = 2 then
+setplayerflag(player,9,3)
+else
+resetplayerflag(9)
+end if
+end if
+
+   if getplayerx(player) = 9 & getplayery(player) = 8 then
+playermessage(player,"XXXX",white)
+if getplayerflag(player,9) = 3 then
+playermessage(player," These seem to be directions, You should try to remember these symbols, and the order they are in.",white)
+resetplayerflag(9)
+else
+resetplayerflag(9)
+end if
+end if
+
+
+end sub
+
+
+
+
+
+----------------- map46_9_8 -----------------
+
+
+sub main(player as long)
+
+   if getplayerx(player) = 2 & getplayery(player) = 6 then
+setplayerflag(player,9,1)
+playermessage(player,"X",white)
+if getplayerflag(player,9) >1 then
+resetplayerflag(9)
+end if
+end if
+
+   if getplayerx(player) = 9 & getplayery(player) = 6 then
+playermessage(player,"XX",white)
+   end if
+if getplayerflag(player,9) = 1 then
+setplayerflag(player,9,2)
+else
+resetplayerflag(9)
+end if
+
+   if getplayerx(player) = 2 & getplayery(player) = 8 then
+playermessage(player,"XXX",white)
+
+if getplayerflag(player,9) = 2 then
+setplayerflag(player,9,3)
+else
+resetplayerflag(9)
+end if
+end if
+
+   if getplayerx(player) = 9 & getplayery(player) = 8 then
+playermessage(player,"XXXX",white)
+if getplayerflag(player,9) = 3 then
+playermessage(player," These seem to be directions, You should try to remember these symbols, and the order they are in.",white)
+resetplayerflag(9)
+else
+resetplayerflag(9)
+end if
+end if
+
+
+end sub
+
+
+
+
+
+----------------- map57_5_7 -----------------
+
+
+sub main(player as long)
+
+
+
+end sub
+
+
+
+
+
+----------------- map7_8_6 -----------------
+
+
+sub main(player as long)
+playermessage(player,"The door mysteriously opens..",white)
+opendoor(7,8,5)
+end sub
+
+
+
+
+
+----------------- mapsay13 -----------------
+
+
+function main(player as long, command as string) as long
+
+if getplayerx(player) = 10 & getplayery(player) = 2 | getplayerx(player) = 2 & getplayery(player) = 2 then
+if strcmp(command,"yes") then
+playerwarp(player,1,6,6)
+main = stop
+end if
+end if
+
+end function
+
+
+
+
+
+----------------- mapsay32 -----------------
+
+
+function main(player as long, command as string) as long
+
+if strcmp(command,"restart") then
+playerwarp(player,32,2,11)
+main = stop
+end if
+
+end function
+
+
+
+
+
+----------------- mapsay41 -----------------
+
+
+function main(player as long, command as string) as long
+
+if getplayermap(player) = 41 then
+if strcmp(command,"escape") then
+playerwarp(player,41,9,1)
+main = stop
+end if
+end if
+
+end function
+
+
+
+
+
+----------------- monsterattack -----------------
+
+
+function main(player as long, monster as long) as long
+if getmonstertype(getplayermap(player),monster) = 6 then main = stop
+end function
+
+
+
+
+
+----------------- MONSTERDIE14 -----------------
+
+
+SUB Main(Player AS LONG)
+giveplayerexp(player,1000)
+END SUB
+
+
+
+
+
+----------------- monsterdie3 -----------------
+
+
+sub main(player as long)
+if getplayerlevel(player) <10 then
+giveplayerexp(player,85)
+else
+giveplayerexp(player,45)
+end if
+end sub
+
+
+
+
+
+----------------- MONSTERDIE5 -----------------
+
+
+SUB Main(Player AS LONG)
+giveplayerexp(player,50)
+if getplayerlevel(player) <11 then
+giveplayerexp(player,60)
+end if
+if random(5) = 1 then
+giveobj(player,10,1)
+playermessage(player,"You found some coal!",cyan)
+end if
+END SUB
+
+
+
+
+
+----------------- monsterdie6 -----------------
+
+
+function main(player as long) as long
+main = stop
+end function
+
+
+
+
+
+----------------- nova -----------------
+
+
+function main(player as long) as long
+dim monster as long
+dim map as long
+dim x as long
+dim y as long
+dim mx as long
+dim my as long
+dim sprite as long
+dim speed as long
+dim frame as long
+dim loopcount as long
+dim endsound as long
+
+x=getplayerx(player)
+y=getplayery(player)
+map=getplayermap(player)
+
+sprite = 9
+speed = 1
+frame = 8
+loopcount = 0
+endsound = 0
+   
+   if getplayermana(player) > 10 then
+
+   if getplayerflag(player,251) = 1 then
+
+   for monster = 0 to 5
+
+      if getmonsterx(map,monster) = x+1 & getmonstery(map,monster) = y then
+      createtileeffect(map,x+1,y,sprite,speed,frame,loopcount,endsound)
+      setplayermana(player,getplayermana(player)-5)
+      attackmonster(player,monster,3+getplayerintelligence(player)/4)
+      end if
+      
+
+      if getmonsterx(map,monster) = x & getmonstery(map,monster)= y then
+      createtileeffect(map,x,y,sprite,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,3+getplayerintelligence(player)/4)
+      setplayermana(player,getplayermana(player)-5)
+      end if
+      
+
+      if getmonsterx(map,monster) = x-1 & getmonstery(map,monster) = y then
+      createtileeffect(map,x-1,y,sprite,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,3+getplayerintelligence(player)/4)
+      setplayermana(player,getplayermana(player)-5)
+      end if
+      
+
+      if getmonsterx(map,monster) = x & getmonstery(map,monster) = y+1 then
+      createtileeffect(map,x,y+1,sprite,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,3+getplayerintelligence(player)/4)
+      setplayermana(player,getplayermana(player)-5)
+      end if
+      
+
+      if getmonsterx(map,monster) = x & getmonstery(map,monster) = y-1 then
+      createtileeffect(map,x,y-1,sprite,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,3+getplayerintelligence(player)/4)
+      setplayermana(player,getplayermana(player)-5)
+      end if
+
+   next monster
+   else
+      playermessage(player,"You must learn this spell first!",yellow)   
+   end if
+   else
+      playermessage(player,"You must have at least 10 mana to cast Supernova!",brightred)
+   end if
+
+
+   end function
+
+
+
+
+
+----------------- pengwy -----------------
+
+
+SUB MAIN(Player as LONG)
+END SUB
+
+
+
+
+
+----------------- poll -----------------
+
+
+sub main(player as long, command as string, parm1 as string, parm2 as string, parm3 as string)
+if strcmp(parm1,"begin") then
+if strcmp(parm3,"") then
+if getplayeraccess(player) > 0 then
+if getflag(0) = 0 then
+setflag(0,1)
+globalmessage(strcat("Poll: ",parm2),BrightBlue)
+globalmessage("Please answer '/YES' or '/NO'",BrightGreen)
+else
+playermessage(player,"There is already a poll running.",BrightRed)
+exit sub
+end if
+else
+playermessage(player,"You don't have the access to run a poll.",BrightRed)
+exit sub
+end if
+else
+playermessage(player,"Spaces cannot be used, please combine with -s or _s.",BrightRed)
+exit sub
+end if
+end if
+if strcmp(parm1,"end") then
+dim flags0 as long
+for flags0 = 0 to getmaxusers
+if getplayerflag(flags0,0) = 1 & isplaying(flags0) then
+setplayerflag(flags0,0,0)
+end if
+next flags0
+if getplayeraccess(player) > 0 then
+if getflag(0) = 1 then
+setflag(0,0)
+if getflag(1) = getflag(2) then
+globalmessage("The Poll was a tie, the gods will decide.",BrightBlue)
+setflag(1,0)
+setflag(2,0)
+exit sub
+end if
+if getflag(1) > getflag(2) then
+globalmessage("The Poll was in favor of YES.",BrightBlue)
+setflag(1,0)
+setflag(2,0)
+exit sub
+end if
+if getflag(2) > getflag(1) then
+globalmessage("The Poll was in favor of NO.",BrightBlue)
+setflag(1,0)
+setflag(2,0)
+exit sub
+end if
+else
+playermessage(player,"No poll is running.",brightred)
+end if
+else
+playermessage(player,"You do not have the access to end a poll.",brightred)
+end if
+end if
+end sub
+
+
+
+
+
+----------------- pulse -----------------
+
+
+sub main(player as long)
+
+timer(player,750,"pulse")
+
+end sub
+
+
+
+
+
+----------------- repair -----------------
+
+
+SUB Main(Player as LONG, SlotNum as LONG)
+   Dim ObjectType as LONG
+
+   ObjectType = GetObjectType(GetPlayerInvObject(Player, SlotNum))
+
+   If ObjectType = 1 | ObjectType = 3 Then
+   End If
+
+   If ObjectType = 2 | ObjectType = 4 Then
+   End If
+
+END SUB
+
+
+
+
+
+----------------- resetnova -----------------
+
+
+sub main(player as long)
+setplayerflag(player,250,1)
+end sub
+
+
+
+
+
+----------------- resetspells -----------------
+
+
+sub main(player as long)
+setplayerflag(player,100,0)
+end sub
+
+
+
+
+
+----------------- scripts -----------------
+
+
+sub main(player as long)
+playermessage(player,"attackmonster,bash,COMMAND,dummies,flags,freemap,gods,Hellfire,info,joingame,joinmap1,joinmap22,Joinmap32,joinmap41,Joinmap42,JOINMAP43,joinmap7,map1_4_9,map10_5_3,map13_1_2,map13_10_2,map2_7_2,map2_9_3,map7_8_6,mapsay13,mapsay32,mapsay41,monsterattack,MONSTERDIE14,monsterdie3,MONSTERDIE5,monsterdie6,poll,pulse,resetnova,resetspells,ts1,ts2,ts3,ts4,ts6,ts7,ts8,ts9,ts10,ts11,useobj11,useobj17,useobj25,useobj36,useobj38,useobj40,waterpillar1,waterpillar2,waterpillar3",white)
+end sub
+
+
+
+
+
+----------------- Shock -----------------
+
+
+function main(player as long) as long
+dim monster as long
+dim map as long
+dim x as long
+dim y as long
+dim mx as long
+dim my as long
+dim sprite as long
+dim speed as long
+dim frame as long
+dim loopcount as long
+dim endsound as long
+
+x=getplayerx(player)
+y=getplayery(player)
+map=getplayermap(player)
+
+sprite = 7
+speed = 1
+frame = 8
+loopcount = 0
+endsound = 0
+   
+   if getplayermana(player) > 15 then
+
+   if getplayerflag(player,30) = 1 then
+
+   for monster = 0 to 5
+
+      if getmonsterx(map,monster) = x+1 & getmonstery(map,monster) = y then
+      createtileeffect(map,x+1,y,sprite,speed,frame,loopcount,endsound)
+      if getplayeraccess(player) = 0 then
+      setplayermana(player,getplayermana(player)-15)
+      end if
+      attackmonster(player,monster,4+getplayerintelligence(player)/3)
+      end if
+      
+
+      if getmonsterx(map,monster) = x & getmonstery(map,monster)= y then
+      createtileeffect(map,x,y,sprite,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,4+getplayerintelligence(player)/3)
+      if getplayeraccess(player) = 0 then
+      setplayermana(player,getplayermana(player)-15)
+      end if
+      end if
+      
+
+      if getmonsterx(map,monster) = x-1 & getmonstery(map,monster) = y then
+      createtileeffect(map,x-1,y,sprite,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,4+getplayerintelligence(player)/3)
+      if getplayeraccess(player) = 0 then
+      setplayermana(player,getplayermana(player)-15)
+      end if
+      end if
+      
+
+      if getmonsterx(map,monster) = x & getmonstery(map,monster) = y+1 then
+      createtileeffect(map,x,y+1,sprite,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,4+getplayerintelligence(player)/3)
+      if getplayeraccess(player) = 0 then
+      setplayermana(player,getplayermana(player)-15)
+      end if
+      end if
+      
+
+      if getmonsterx(map,monster) = x & getmonstery(map,monster) = y-1 then
+      createtileeffect(map,x,y-1,sprite,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,4+getplayerintelligence(player)/3)
+      if getplayeraccess(player) = 0 then
+      setplayermana(player,getplayermana(player)-15)
+      end if
+      end if
+
+   next monster
+   else
+      playermessage(player,"You must learn this spell first!",yellow)   
+   end if
+   else
+      playermessage(player,"You must have at least 15 mana to cast Shock!",yellow)
+   end if
+
+
+   end function
+
+
+
+
+
+----------------- stashlist -----------------
+
+
+SUB Main(Player as LONG)
+   Dim i as LONG, ObjNum as LONG
+   Dim Message as STRING
+
+   i = 1
+   ObjNum = ReadIniInt(GetPlayerUser(Player), "Stash", "Slot"+Str(i), 0)
+
+   ''Loop through item bank
+   While ObjNum > 0
+      ''Slot#: ObjectName
+      Message = "Slot "+Str(i)+": "+GetObjectName(ObjNum)
+
+      ''If item is money or projectile ammo add in [amount]
+      If GetObjectType(ObjNum) = 6 | GetObjectType(ObjNum) = 11 Then Message = Message + " ["+ReadIniStr(GetPlayerUser(Player), "Stash", "Data"+Str(i), "0")+"]"
+
+      ''If item is equippable add in stats and durability
+      If GetObjectType(ObjNum) = 1 | GetObjectType(ObjNum) = 2 | GetObjectType(ObjNum) = 3 | GetObjectType(ObjNum) = 4 Then
+         Message = Message + " +" + Str(GetObjectData(ObjNum, 1)) + " ["+Str(Percent(ReadIniInt(GetPlayerUser(Player), "Stash", "Data"+Str(i), 0), GetObjectData(ObjNum, 0)*10)) + "% Durability]"
+      End If
+
+      PlayerMessage(Player, Message, White)
+
+      i = i + 1
+      ObjNum = ReadIniInt(GetPlayerUser(Player), "Stash", "Slot"+Str(i), 0)
+   Wend
+
+   ''No items in item bank
+   If i = 1 & ObjNum = 0 Then PlayerMessage(Player, "Your stash is empty!", White)
+
+END SUB
+
+
+
+
+
+----------------- stashremove -----------------
+
+
+SUB Main(Player as LONG, Command as STRING, Parm1 as STRING, Parm2 as STRING, Parm3 as STRING)
+   Dim i as LONG
+   Dim SlotNum as LONG, ObjNum as LONG
+   Dim Amount as LONG
+
+   ''Get SLOT NUMBER from PLAYER INPUT
+   If StrCmp(Parm2, "") Then
+      PlayerMessage(Player, "You must specify an object!", Yellow)
+      Exit Sub
+   End If
+   If Val(Parm2) = 0 Then
+      ''Allow players to input OBJECT NAMES
+      While SlotNum = 0
+         i = i + 1
+         If Mid(GetObjectName(ReadIniInt(GetPlayerUser(Player), "Stash", "Slot"+Str(i), 0)), 1, Len(Parm2)) = Mid(Parm2, 1, Len(Parm2)) Then
+            SlotNum = i
+            Goto Break1
+         End If
+      Wend
+      Break1:
+      If SlotNum = 0 Then
+         PlayerMessage(Player, "You don't have a "+Parm2+"!", Yellow)
+         Exit Sub
+      End If
+   Else
+      ''If input is the SLOT NUMBER
+      SlotNum = Val(Parm2)
+   End If
+
+   ''Check if slot number is valid
+   If SlotNum < 1 Then
+      PlayerMessage(Player, "That's not a valid slot number!", Yellow)
+      Exit Sub
+   End If
+
+   ''ObjNum is the Object Number of the item in slot SlotNum
+   ObjNum = ReadIniInt(GetPlayerUser(Player), "Stash", "Slot"+Str(SlotNum), 0)
+
+   ''Check if slot is empty
+   If ObjNum = 0 Then
+      PlayerMessage(Player, "That slot is empty!", Yellow)
+      Exit Sub
+   End If
+
+   If GetObjectType(ObjNum) = 6 | GetObjectType(ObjNum) = 11 Then
+   ''If item is a money or projectile ammo type
+      ''Check Amount
+      Amount = Val(Parm1)
+      If Amount <= 0 | Amount > ReadIniInt(GetPlayerUser(Player), "Stash", "Data"+Str(SlotNum), 0) Then Amount = ReadIniInt(GetPlayerUser(Player), "Stash", "Data"+Str(SlotNum), 0)
+
+      ''Check space in inventory
+      If HasObj(Player, ObjNum) = 0 Then
+         i = 1
+         While i <= 31
+            If GetPlayerInvObject(Player, i) = 0 Then i = 32
+            If i = 31 Then
+               PlayerMessage(Player, "You don't have any room in your inventory!", Yellow)
+               Exit Sub
+            End If
+            i = i + 1
+         Wend
+      End If
+
+      ''Give Object
+      GiveObj(Player, ObjNum, Amount)
+
+      ''Write to bank
+      If Amount = ReadIniInt(GetPlayerUser(Player), "Stash", "Data"+Str(SlotNum), 0) Then
+      ''If Removing ALL of the MONEY or PROJECTILE AMMO
+         i = SlotNum
+         While ReadIniInt(GetPlayerUser(Player), "Stash", "Slot"+Str(i), 0) > 0
+            WriteIniStr(GetPlayerUser(Player), "Stash", "Slot"+Str(i), ReadIniStr(GetPlayerUser(Player), "Stash", "Slot"+Str(i+1), "0"))
+            WriteIniStr(GetPlayerUser(Player), "Stash", "Data"+Str(i), ReadIniStr(GetPlayerUser(Player), "Stash", "Data"+Str(i+1), "0"))
+            i = i + 1
+         Wend
+      Else
+      ''Removing just SOME of the MONEY or PROJECTILE AMMO
+         WriteIniStr(GetPlayerUser(Player), "Stash", "Data"+Str(SlotNum), Str(ReadIniInt(GetPlayerUser(Player), "Stash", "Data"+Str(SlotNum), 0) - Amount))
+      End If
+
+   Else
+   ''Item is NOT a money or projectile ammo type
+
+      ''Search for the first blank space in inventory
+      For i = 1 To 31
+         ''Check space in inventory
+         If i = 31 Then
+            PlayerMessage(Player, "You don't have any room in your inventory!", Yellow)
+            Exit Sub
+         End If
+
+         If GetPlayerInvObject(Player, i) = 0 Then Goto Break2
+      Next i
+      Break2:
+
+      ''Give Object
+      GiveObj(Player, ObjNum, 1)
+      SetInvObjectVal(Player, i, ReadIniInt(GetPlayerUser(Player), "Stash", "Data"+Str(SlotNum), 0))
+
+      ''Write to bank
+      i = SlotNum
+      While ReadIniInt(GetPlayerUser(Player), "Stash", "Slot"+Str(i), 0) > 0
+         WriteIniStr(GetPlayerUser(Player), "Stash", "Slot"+Str(i), ReadIniStr(GetPlayerUser(Player), "Stash", "Slot"+Str(i+1), "0"))
+         WriteIniStr(GetPlayerUser(Player), "Stash", "Data"+Str(i), ReadIniStr(GetPlayerUser(Player), "Stash", "Data"+Str(i+1), "0"))
+         i = i + 1
+      Wend
+
+   End If
+
+END SUB
+
+
+
+
+
+----------------- stashstore -----------------
+
+
+SUB Main(Player as LONG, Command as STRING, Parm1 as STRING, Parm2 as STRING, Parm3 as STRING)
+   Dim i as LONG
+   Dim SlotNum as LONG, ObjNum as LONG
+   Dim Amount as LONG
+
+   ''Get SLOT NUMBER from PLAYER INPUT
+   If StrCmp(Parm2, "") Then
+      PlayerMessage(Player, "You must specify an object!", Yellow)
+      Exit Sub
+   End If
+   If Val(Parm2) = 0 Then
+      ''Allow players to input OBJECT NAMES
+      For i = 1 To 30
+         If Mid(GetObjectName(GetPlayerInvObject(Player, i)), 1, Len(Parm2)) = Mid(Parm2, 1, Len(Parm2)) Then
+            SlotNum = i
+            Goto Break
+         End If
+      Next i
+      Break:
+      If SlotNum = 0 Then
+         PlayerMessage(Player, "You don't have a "+Parm2+"!", Yellow)
+         Exit Sub
+      End If
+   Else
+      ''If input is the SLOT NUMBER
+      SlotNum = Val(Parm2)
+   End If
+
+   ''Check if slot number is valid
+   If SlotNum < 1 | SlotNum > 30 Then
+      PlayerMessage(Player, "That's not a valid slot number!", Yellow)
+      Exit Sub
+   End If
+
+   ''ObjNum is the Object Number of the item in slot SlotNum
+   ObjNum = GetPlayerInvObject(Player, SlotNum)
+
+   ''Check if slot is empty
+   If ObjNum = 0 Then
+      PlayerMessage(Player, "That slot is empty!", Yellow)
+      Exit Sub
+   End If
+
+   If GetObjectType(ObjNum) = 6 | GetObjectType(ObjNum) = 11 Then
+   ''If item is a money or projectile ammo type
+      ''Check Amount
+      Amount = Val(Parm1)
+      If Amount <= 0 | Amount > HasObj(Player, ObjNum) Then Amount = HasObj(Player, ObjNum)
+
+      ''Write to bank
+      i = 1
+      While ReadIniInt(GetPlayerUser(Player), "Stash", "Slot"+Str(i), 0) <> ObjNum & ReadIniInt(GetPlayerUser(Player), "Stash", "Slot"+Str(i), 0) > 0
+         i = i + 1
+      Wend
+
+      WriteIniStr(GetPlayerUser(Player), "Stash", "Slot"+Str(i), Str(ObjNum))
+      WriteIniStr(GetPlayerUser(Player), "Stash", "Data"+Str(i), Str(ReadIniInt(GetPlayerUser(Player), "Stash", "Data"+Str(i), 0) + Amount))
+
+      ''Take Object
+      TakeObj(Player, ObjNum, Amount)
+
+   Else
+   ''Item is NOT a money or projectile ammo type
+      ''Write to bank
+
+      i = 1
+      While ReadIniInt(GetPlayerUser(Player), "Stash", "Slot"+Str(i), 0) > 0
+         i = i + 1
+      Wend
+
+      WriteIniStr(GetPlayerUser(Player), "Stash", "Slot"+Str(i), Str(ObjNum))
+      WriteIniStr(GetPlayerUser(Player), "Stash", "Data"+Str(i), Str(GetPlayerInvValue(Player, SlotNum)))
+
+      If SlotNum > 1 Then
+         ''Make a map of player's inventory
+         For i = 1 To SlotNum
+            WriteIniStr(GetPlayerUser(Player), "Inventory", "Slot"+Str(i), Str(GetPlayerInvObject(Player, i)))
+            WriteIniStr(GetPlayerUser(Player), "Inventory", "Data"+Str(i), Str(GetPlayerInvValue(Player, i)))
+            If GetPlayerInvObject(Player, i) = ObjNum Then TakeObj(Player, ObjNum, 1)
+         Next i
+
+         ''Read from map and return items, using space fillers to fill empty spaces
+         For i = 1 To SlotNum-1
+            If ReadIniInt(GetPlayerUser(Player), "Inventory", "Slot"+Str(i), 0) = 0 Then GiveObj(Player, 255, 1)
+            If ReadIniInt(GetPlayerUser(Player), "Inventory", "Slot"+Str(i), 0) = ObjNum Then
+               GiveObj(Player, ObjNum, 1)
+               SetInvObjectVal(Player, i, ReadIniInt(GetPlayerUser(Player), "Inventory", "Data"+Str(i), 0))
+            End If
+         Next i
+
+         ''Destroy space fillers
+         While HasObj(Player, 255) > 0
+            TakeObj(Player, 255, 1)
+         Wend
+      Else
+      ''If item is first slot in inventory we don't have to
+      ''deal with space fillers, multiple items, and such.
+         TakeObj(Player, ObjNum, 1)
+      End If
+   End If
+
+END SUB
+
+
+
+
+
+----------------- trees -----------------
+
+
+
+SUB Main(Player as LONG, Density as LONG)
+   Dim Map as LONG, x as LONG, y as LONG
+   Dim i as LONG, FreeSpaces as LONG
+
+   Map = GetPlayerMap(Player)
+
+   FreeSpaces = 0
+
+   For x = 0 To 11
+      For y = 0 To 11
+         If GetTileSprite(Map, x, y, 2) = 0 Then FreeSpaces = FreeSpaces + 1
+         If GetTileSprite(Map, x, y, 2) = 63 Then
+            SetTileSprite(Map, x, y-1, 3, 56)
+            SetTileAtt(Map, x, y, 1, 0, 0, 0, 0)
+         End If
+      Next y
+   Next x
+   For x = 0 To 11
+      If GetTileSprite(Map, x, 11, 4) = 0 Then FreeSpaces = FreeSpaces + 1
+   Next x
+
+   While i < Density
+      x = Random(12)
+      y = Random(13)
+      If y < 12 Then
+         If GetTileSprite(Map, x, y, 2) = 0 Then
+            SetTileSprite(Map, x, y, 1, 63)
+            SetTileSprite(Map, x, y-1, 3, 56)
+            SetTileAtt(Map, x, y, 1, 0, 0, 0, 0)
+            i = i + 1
+            FreeSpaces = FreeSpaces - 1
+         End If
+      Else
+         If GetTileSprite(Map, x, y-1, 4) = 0 Then
+            SetTileSprite(Map, x, y-1, 3, 56)
+            i = i + 1
+            FreeSpaces = FreeSpaces - 1
+         End If
+      End If
+      If FreeSpaces = 0 Then
+         UpdateMap(Map)
+         Exit Sub
+      End If
+   Wend
+
+   UpdateMap(Map)
+
+END SUB
+
+
+
+
+
+----------------- ts1 -----------------
+
+
+sub main(player as long)
+opendoor(28,7,5)
+opendoor(28,8,5)
+end sub
+
+
+
+
+
+----------------- ts10 -----------------
+
+
+sub main(player as long)
+opendoor(26,9,5)
+opendoor(26,9,6)
+opendoor(26,9,7)
+end sub
+
+
+
+
+
+----------------- ts11 -----------------
+
+
+sub main(player as long)
+if hasobj(player,29) = 1 then
+takeobj(player,29,1)
+giveobj(player,19,1)
+playermessage(player,"You filled your bucket with water.",yellow)
+else
+playermessage(player,"You see water but have nothing to carry it with",yellow)
+end if
+
+end sub
+
+
+
+
+
+----------------- ts12 -----------------
+
+
+sub main(player as long)
+
+if getplayerx(player) = 4 & getplayery(player) = 4 then
+   if getplayerflag(player,10) = 4 then
+      setplayerflag(player,10,5)
+   else
+      if getplayerflag(player,10) > 0 then
+         resetplayerflag(10)
+      else
+         setplayerflag(player,10,1)
+      end if
+   end if
+end if
+
+if getplayerx(player) = 6 & getplayery(player) = 4 then
+   if getplayerflag(player,10) = 7 then
+      opendoor(57,4,3)
+   else
+      if getplayerflag(player,10) >1 then
+         resetplayerflag(10)
+      else
+         setplayerflag(player,10,2)
+      end if
+   end if
+end if
+
+
+if getplayerx(player) = 5 & getplayery(player) = 4 then
+   if getplayerflag(player,10) = 6 then
+      setplayerflag(player,10,7)
+   else
+      if getplayerflag(player,10) >2 then
+         setplayerflag(player,10,3)
+      else
+         resetplayerflag(10)
+      end if
+   end if
+end if
+
+if getplayerx(player) = 7 & getplayery(player) = 4 then
+   if getplayerflag(player,10) = 5 then
+      setplayerflag(player,10,6)
+   else
+      if getplayerflag(player,10) > 3 then
+         resetplayerflag(10)
+      else
+         setplayerflag(player,10,4)
+      end if
+   end if
+end if
+
+end sub
+
+
+
+
+
+----------------- ts13 -----------------
+
+
+sub main(player as long)
+dim x as long
+dim y as long
+
+x=getplayerx(player)
+y=getplayery(player)
+
+      if x = 2 & y = 4 then
+
+         if getplayerflag(player,12) >1 then
+            resetplayerflag(12)
+         else
+            setplayerflag(player,12,1)
+         end if
+
+
+      end if
+
+
+      if x = 5 & y = 4 then
+
+         if getplayerflag(player,12) = 1 then
+            setplayerflag(player,12,2)
+         else
+            resetplayerflag(12)
+         end if
+
+      end if
+
+      if x = 5 & y = 7 then
+         
+         if getplayerflag(player,12) = 2 then
+            setplayerflag(player,12,3)
+         else
+            resetplayerflag(12)
+         end if
+
+      end if
+
+
+      if x = 2 & y = 7 then
+
+         if getplayerflag(player,12) = 3 then
+            setplayerflag(player,12,4)
+         else
+            resetplayerflag(12)
+         end if
+
+      end if
+
+
+      if x = 8 & y = 4 then
+
+         if getplayerflag(player,12) = 4 then
+            setplayerflag(player,12,5)
+         else
+            resetplayerflag(12)
+         end if
+
+      end if
+
+
+      if x = 8 & y = 7 then
+
+         if getplayerflag(player,12) = 5 then
+            opendoor(59,6,0)
+            resetplayerflag(12)
+         else
+            resetplayerflag(12)
+         end if
+
+      end if
+
+
+end sub
+
+
+
+
+
+----------------- ts2 -----------------
+
+
+sub main(player as long)
+playermessage(player,"You observe the fine weapons crafted by the smith.",yellow)
+end sub
+
+
+
+
+
+----------------- ts3 -----------------
+
+
+sub main(player as long)
+playermessage(player,"East to Golien Outpost, West to Xarian mountains.",white)
+end sub
+
+
+
+
+
+----------------- ts4 -----------------
+
+
+sub main(player as long)
+playermessage(player,"You may not enter!",white)
+end sub
+
+
+
+
+
+
+----------------- ts5 -----------------
+
+
+sub main(player as long)
+
+'1
+   if getplayerx(player) = 7 & getplayery(player) = 1 then
+
+         if getplayerflag(player,11) >1 then
+            resetplayerflag(11)
+         end if
+
+      setplayerflag(player,11,1)
+
+   end if
+
+'2
+   if getplayerx(player) = 3 & getplayery(player) = 5 then
+
+         if getplayerflag(player,11) = 1 then
+            setplayerflag(player,11,2)
+         else
+            resetplayerflag(11)
+         end if
+
+   end if
+
+'3
+   if getplayerx(player) = 7 & getplayery(player) = 9 then
+
+         if getplayerflag(player,11) = 2 then
+            setplayerflag(player,11,3)
+         else
+            resetplayerflag(11)
+         end if
+
+   end if
+
+'4
+   if getplayerx(player) = 8 & getplayery(player) = 5 then
+
+         if getplayerflag(player,11) = 3 then
+            setplayerflag(player,11,4)
+         else
+            resetplayerflag(11)
+         end if
+
+   end if
+
+'5
+   if getplayerx(player) = 4 & getplayery(player) = 9 then
+
+         if getplayerflag(player,11) = 4 then
+            opendoor(57,6,3)
+            resetplayerflag(11)
+         else
+            resetplayerflag(11)
+         end if
+            
+   end if
+
+end sub
+
+
+
+
+
+----------------- ts6 -----------------
+
+
+sub main(player as long)
+runscript0("dummies")
+end sub
+
+
+
+
+
+----------------- ts7 -----------------
+
+
+sub main(player as long)
+
+playermessage(player,"Unfinished parts of the quest",white)
+
+end sub
+
+
+
+
+
+----------------- ts8 -----------------
+
+
+sub main(player as long)
+playermessage(player,"Cemetarium: South",cyan)
+end sub
+
+
+
+
+
+----------------- ts9 -----------------
+
+
+sub main(player as long)
+opendoor(26,6,6)
+opendoor(26,6,5)
+opendoor(26,6,4)
+end sub
+
+
+
+
+
+----------------- useobj11 -----------------
+
+
+sub main(player as long)
+if getplayermap(player)=7 & getplayerx(player)=10 & getplayery(player)=9 then
+createtileeffect(7,10,8,1,1,1,2,5)
+playermessage(player,"You burned the Spiderwebs away.",white)
+takeobj(player,11,1)
+opendoor(7,10,8)
+else
+playermessage(player,"you used your torch",white)
+takeobj(player,11,1)
+end if
+end sub
+
+
+
+
+
+----------------- useobj17 -----------------
+
+
+sub main(player as long)
+if getplayerflag(player,200) <> 0 then
+playermessage(player,"You already know this spell.",white)
+else
+if getplayerclass(player) = 1 | getplayerclass(player) = 2 | getplayeraccess(player) >20 then
+playermessage(player,"You learned 'Water Pillar', ''/cast waterpillar'' will summon a pillar of water to lung at your opponents.",white)
+setplayerflag(player,200,1)
+takeobj(player,17,1)
+else
+playermessage(player,"This spell is for 'Mage' and 'Darkmage' classes.",white)
+end if
+end if
+end sub
+
+
+
+
+
+
+----------------- useobj25 -----------------
+
+
+sub main(player as long)
+setplayerhp(player,getplayerhp(player)+100)
+playermessage(player,"Hp + 100",cyan)
+takeobj(player,25,1)
+
+if random(22) = 5 then
+setplayermaxhp(player,getplayermaxhp(player)+2)
+playermessage(player,"The Ice Potion hardens your skin",brightblue)
+playermessage(player,"Max HP + 2",cyan)
+end if
+end sub
+
+
+
+
+
+----------------- useobj36 -----------------
+
+
+sub main(player as long)
+if getplayerflag(player,251) = 1 then
+playermessage(player,"You already know this spell.",white)
+else
+if getplayerclass(player) = 1 | getplayerclass(player) = 2 | getplayeraccess(player) >20 then
+playermessage(player,"You learned Supernova, type /cast Supernova to engulf your enemy with flames!",brightred)
+setplayerflag(player,251,1)
+takeobj(player,36,1)
+else
+playermessage(player,"This spell is for 'Mage' and 'Darkmage' classes.",white)
+end if
+end if
+end sub
+
+
+
+
+
+
+----------------- useobj38 -----------------
+
+
+function main(player as long) as long
+dim monster as long
+dim map as long
+dim x as long
+dim y as long
+dim mx as long
+dim my as long
+dim sprite as long
+dim speed as long
+dim frame as long
+dim loopcount as long
+dim endsound as long
+
+x=getplayerx(player)
+y=getplayery(player)
+map=getplayermap(player)
+for monster = 0 to 5
+sprite = 2
+speed = 1
+frame = 8
+loopcount = 0
+endsound = 0
+
+select case random(7)
+
+case 0
+
+      if getmonsterx(map,monster) = x+1 & getmonstery(map,monster) = y then
+      createtileeffect(map,x+1,y,sprite,speed,frame,loopcount,endsound)
+      setplayermana(player,getplayermana(player)-5)
+      attackmonster(player,monster,3+getplayerintelligence(player)/4)
+      end if
+      
+
+      if getmonsterx(map,monster) = x & getmonstery(map,monster)= y then
+      createtileeffect(map,x,y,sprite,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,3+getplayerintelligence(player)/4)
+      setplayermana(player,getplayermana(player)-5)
+      end if
+      
+
+      if getmonsterx(map,monster) = x-1 & getmonstery(map,monster) = y then
+      createtileeffect(map,x-1,y,sprite,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,3+getplayerintelligence(player)/4)
+      setplayermana(player,getplayermana(player)-5)
+      end if
+      
+
+      if getmonsterx(map,monster) = x & getmonstery(map,monster) = y+1 then
+      createtileeffect(map,x,y+1,sprite,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,3+getplayerintelligence(player)/4)
+      setplayermana(player,getplayermana(player)-5)
+      end if
+      
+
+      if getmonsterx(map,monster) = x & getmonstery(map,monster) = y-1 then
+      createtileeffect(map,x,y-1,sprite,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,3+getplayerintelligence(player)/4)
+      setplayermana(player,getplayermana(player)-5)
+      end if
+
+case 1
+
+  
+
+      if getmonsterx(map,monster) = x+1 & getmonstery(map,monster) = y then
+      createtileeffect(map,x+1,y,9,speed,frame,loopcount,endsound)
+      setplayermana(player,getplayermana(player)-5)
+      attackmonster(player,monster,3+getplayerintelligence(player)/3)
+      end if
+      
+
+      if getmonsterx(map,monster) = x & getmonstery(map,monster)= y then
+      createtileeffect(map,x,y,9,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,3+getplayerintelligence(player)/3)
+      setplayermana(player,getplayermana(player)-5)
+      end if
+      
+
+      if getmonsterx(map,monster) = x-1 & getmonstery(map,monster) = y then
+      createtileeffect(map,x-1,y,9,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,3+getplayerintelligence(player)/3)
+      setplayermana(player,getplayermana(player)-5)
+      end if
+      
+
+      if getmonsterx(map,monster) = x & getmonstery(map,monster) = y+1 then
+      createtileeffect(map,x,y+1,9,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,3+getplayerintelligence(player)/3)
+      setplayermana(player,getplayermana(player)-5)
+      end if
+      
+
+      if getmonsterx(map,monster) = x & getmonstery(map,monster) = y-1 then
+      createtileeffect(map,x,y-1,9,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,3+getplayerintelligence(player)/3)
+      setplayermana(player,getplayermana(player)-5)
+      end if
+
+
+case 2
+
+
+      if getmonsterx(map,monster) = x+1 & getmonstery(map,monster) = y then
+      createtileeffect(map,x+1,y,2,speed,frame,loopcount,endsound)
+      setplayermana(player,getplayermana(player)-5)
+      attackmonster(player,monster,3+getplayerintelligence(player)/3)
+      end if
+      
+
+      if getmonsterx(map,monster) = x & getmonstery(map,monster)= y then
+      createtileeffect(map,x,y,2,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,3+getplayerintelligence(player)/3)
+      setplayermana(player,getplayermana(player)-5)
+      end if
+      
+
+      if getmonsterx(map,monster) = x-1 & getmonstery(map,monster) = y then
+      createtileeffect(map,x-1,y,2,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,3+getplayerintelligence(player)/3)
+      setplayermana(player,getplayermana(player)-5)
+      end if
+      
+
+      if getmonsterx(map,monster) = x & getmonstery(map,monster) = y+1 then
+      createtileeffect(map,x,y+1,2,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,3+getplayerintelligence(player)/3)
+      setplayermana(player,getplayermana(player)-5)
+      end if
+      
+
+      if getmonsterx(map,monster) = x & getmonstery(map,monster) = y-1 then
+      createtileeffect(map,x,y-1,2,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,3+getplayerintelligence(player)/3)
+      setplayermana(player,getplayermana(player)-5)
+      end if
+
+case 3
+
+
+      if getmonsterx(map,monster) = x+1 & getmonstery(map,monster) = y then
+      createtileeffect(map,x+1,y,4,speed,frame,loopcount,endsound)
+      setplayermana(player,getplayermana(player)-5)
+      attackmonster(player,monster,3+getplayerintelligence(player)/3)
+      end if
+      
+
+      if getmonsterx(map,monster) = x & getmonstery(map,monster)= y then
+      createtileeffect(map,x,y,4,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,3+getplayerintelligence(player)/3)
+      setplayermana(player,getplayermana(player)-5)
+      end if
+      
+
+      if getmonsterx(map,monster) = x-1 & getmonstery(map,monster) = y then
+      createtileeffect(map,x-1,y,4,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,3+getplayerintelligence(player)/3)
+      setplayermana(player,getplayermana(player)-5)
+      end if
+      
+
+      if getmonsterx(map,monster) = x & getmonstery(map,monster) = y+1 then
+      createtileeffect(map,x,y+1,4,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,3+getplayerintelligence(player)/3)
+      setplayermana(player,getplayermana(player)-5)
+      end if
+      
+
+      if getmonsterx(map,monster) = x & getmonstery(map,monster) = y-1 then
+      createtileeffect(map,x,y-1,4,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,3+getplayerintelligence(player)/3)
+      setplayermana(player,getplayermana(player)-5)
+      end if
+   
+case 4
+
+
+      if getmonsterx(map,monster) = x+1 & getmonstery(map,monster) = y then
+      createtileeffect(map,x+1,y,7,speed,frame,loopcount,endsound)
+      setplayermana(player,getplayermana(player)-5)
+      attackmonster(player,monster,3+getplayerintelligence(player)/3)
+      end if
+      
+
+      if getmonsterx(map,monster) = x & getmonstery(map,monster)= y then
+      createtileeffect(map,x,y,7,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,3+getplayerintelligence(player)/3)
+      setplayermana(player,getplayermana(player)-5)
+      end if
+      
+
+      if getmonsterx(map,monster) = x-1 & getmonstery(map,monster) = y then
+      createtileeffect(map,x-1,y,7,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,3+getplayerintelligence(player)/3)
+      setplayermana(player,getplayermana(player)-5)
+      end if
+      
+
+      if getmonsterx(map,monster) = x & getmonstery(map,monster) = y+1 then
+      createtileeffect(map,x,y+1,7,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,3+getplayerintelligence(player)/3)
+      setplayermana(player,getplayermana(player)-5)
+      end if
+      
+
+      if getmonsterx(map,monster) = x & getmonstery(map,monster) = y-1 then
+      createtileeffect(map,x,y-1,7,speed,frame,loopcount,endsound)
+      attackmonster(player,monster,3+getplayerintelligence(player)/3)
+      setplayermana(player,getplayermana(player)-5)
+      end if
+
+case 5
+
+playermessage(player,"You failed to cast the spell!",yellow)
+
+case 6
+
+runscript0("shock")
+   
+end select
+
+next monster
+   end function
+
+
+
+
+
+
+----------------- useobj40 -----------------
+
+
+sub main(player as long)
+if getplayerflag(player,251) = 1 then
+playermessage(player,"You already know this spell.",white)
+else
+if getplayerclass(player) = 1 | getplayerclass(player) = 2 | getplayeraccess(player) >20 then
+playermessage(player,"You learned Hellfire, type /cast hellfire to engulf your enemy with flames!",brightred)
+setplayerflag(player,251,1)
+takeobj(player,40,1)
+else
+playermessage(player,"This spell is for 'Mage' and 'Darkmage' classes.",white)
+end if
+end if
+end sub
+
+
+
+
+
+
+----------------- useobj41 -----------------
+
+
+sub main(player as long)
+setplayerhp(player,getplayerhp(player)+20)
+setplayermana(player,getplayermana(player)+20)
+setplayerenergy(player,getplayerenergy(player)+20)
+takeobj(player,41,1)
+playermessage(player,"The Serum floods you body with energy!",white)
+end sub
+
+
+
+
+
+----------------- useobj45 -----------------
+
+
+sub main(player as long)
+if getplayerflag(player,30) = 1 then
+playermessage(player,"You already know this spell.",white)
+else
+if getplayerclass(player) = 1| getplayeraccess(player) >20 then
+playermessage(player,"You learned shock, type /cast shock to Electrify your enemy!",yellow)
+setplayerflag(player,30,1)
+takeobj(player,45,1)
+else
+playermessage(player,"This spell is for 'Mage'only.",white)
+end if
+end if
+end sub
+
+
+
+
+
+
+----------------- useobj47 -----------------
+
+
+sub main(player as long)
+
+if getplayerlevel(player) > 70 then
+
+if getplayerflag(player,60) = 1 then
+playermessage(player,"You already know this spell.",white)
+else
+if getplayerclass(player) = 1| getplayeraccess(player) >20 then
+playermessage(player,"You learned shock, type /cast Desolation to conjure a powerful wave of destruction!",yellow)
+setplayerflag(player,60,1)
+takeobj(player,47,1)
+else
+playermessage(player,"This spell is for 'Mage'only.",white)
+end if
+end if
+
+end if
+
+end sub
+
+
+
+
+
+
+----------------- useobj54 -----------------
+
+
+SUB MAIN(Player as long)
+
+IF GetPlayerFlag(Player,120) = 1 then
+   PlayerMessage(Player,"You already learned this spell!",brightcyan)
+ELSE
+
+if getplayerclass(player) = 1 | getplayeraccess(player) =>100 then
+      SetPlayerFlag(Player,120,1)
+   TakeObj(Player,54,1)
+   PlayerMessage(Player,"You learned Absorb!... Type /cast Absorb in a map with monsters to use!",brightgreen)
+ELSE
+   PlayerMessage(Player,"You must be a Mage to use this spell!",brightgreen)
+END IF
+END IF
+
+END SUB
+
+
+
+
+
+----------------- useobj55 -----------------
+
+
+SUB MAIN(Player as long)
+
+IF GetPlayerFlag(Player,320) = 1 then
+   PlayerMessage(Player,"You already learned this spell!",brightcyan)
+ELSE
+
+if getplayerclass(player) = 1 | getplayeraccess(player) =>100 then
+      SetPlayerFlag(Player,320,1)
+   TakeObj(Player,55,1)
+   PlayerMessage(Player,"You learned Absorb!... Type /cast Absorb in a map with monsters to use!",brightgreen)
+ELSE
+   PlayerMessage(Player,"You must be a Mage to use this spell!",brightgreen)
+END IF
+END IF
+
+END SUB
+
+
+
+
+
+----------------- waterpillar1 -----------------
+
+
+sub main(player as long)
+dim map as long, x as long, y as long, sprite as long, speed as long, frame as long, loopcount as long, endsound as long, dir as long
+dim monster as long, target as long
+
+map = getplayermap(player)
+x = getplayerx(player)
+y = getplayery(player)
+sprite = 11
+speed = 1
+frame = 8
+loopcount = 0
+endsound = 0
+dir = getplayerdirection(player)
+
+if getplayerflag(player,100) = 0 then
+setplayerflag(player,100,1)
+setplayerfrozen(player,1)
+timer(player,3,"resetspells")
+setplayermana(player,getplayermana(player)-6)
+
+if dir = up then
+if gettileatt(map,x,y-1) = 1 then
+setplayerfrozen(player,0)
+exit sub
+end if
+createtileeffect(map,x,y-1,sprite,speed,frame,loopcount,endsound)
+'----------Attack Monster--------------
+for monster = 0 to 5
+if getmonsterx(map,monster) = getplayerx(player) then
+if getplayery(player)-1 = getmonstery(map,monster) then
+if getmapsetting(map,5) = 0 then
+attackmonster(player,monster,3+(getplayerintelligence(player)/5))
+end if
+end if
+end if
+next monster
+'--------------------------------------
+'---------Attack Player----------------
+for target = 0 to getmaxusers
+if getplayerx(target) = getplayerx(player) & getplayery(player)-1 = getplayery(target) then
+if isplaying(target) then
+if getmapsetting(map,1) = 0 then
+if getmapsetting(map,6) <> 0 then goto pkmapup
+if getplayerguild(player) <> 0 & getplayerguild(target) <> 0 & getplayerguild(player) <> getplayerguild(target) & getmapsetting(map,7) = 0 then
+pkmapup:
+attackplayer(player,target,3+(getplayerintelligence(player)/5))
+end if
+end if
+end if
+end if
+next target
+
+if y = 1 then
+setplayerfrozen(player,0)
+exit sub
+end if
+end if
+
+if dir = down then
+if gettileatt(map,x,y+1) = 1 then
+setplayerfrozen(player,0)
+exit sub
+end if
+createtileeffect(map,x,y+1,sprite,speed,frame,loopcount,endsound)
+
+'----------Attack Monster--------------
+for monster = 0 to 5
+if getmonsterx(map,monster) = getplayerx(player) then
+if getplayery(player)+1 = getmonstery(map,monster) then
+if getmapsetting(map,5) = 0 then
+attackmonster(player,monster,3+(getplayerintelligence(player)/5))
+end if
+end if
+end if
+next monster
+'--------------------------------------
+'---------Attack Player----------------
+for target = 0 to getmaxusers
+if getplayerx(target) = getplayerx(player) & getplayery(player)+1 = getplayery(target) then
+if isplaying(target) then
+if getmapsetting(map,1) = 0 then
+if getmapsetting(map,6) <> 0 then goto pkmapdown
+if getplayerguild(player) <> 0 & getplayerguild(target) <> 0 & getplayerguild(player) <> getplayerguild(target) & getmapsetting(map,7) = 0 then
+pkmapdown:
+attackplayer(player,target,3+(getplayerintelligence(player)/5))
+end if
+end if
+end if
+end if
+next target
+
+if y = 10 then
+setplayerfrozen(player,0)
+exit sub
+end if
+end if
+
+if dir = left then
+if gettileatt(map,x-1,y) = 1 then
+setplayerfrozen(player,0)
+exit sub
+end if
+createtileeffect(map,x-1,y,sprite,speed,frame,loopcount,endsound)
+
+'----------Attack Monster--------------
+for monster = 0 to 5
+if getmonstery(map,monster) = getplayery(player) then
+if getplayerx(player)-1 = getmonsterx(map,monster) then
+if getmapsetting(map,5) = 0 then
+attackmonster(player,monster,3+(getplayerintelligence(player)/5))
+end if
+end if
+end if
+next monster
+'--------------------------------------
+'---------Attack Player----------------
+for target = 0 to getmaxusers
+if getplayery(target) = getplayery(player) & getplayerx(player)-1 = getplayerx(target) then
+if isplaying(target) then
+if getmapsetting(map,1) = 0 then
+if getmapsetting(map,6) <> 0 then goto pkmapleft
+if getplayerguild(player) <> 0 & getplayerguild(target) <> 0 & getplayerguild(player) <> getplayerguild(target) & getmapsetting(map,7) = 0 then
+pkmapleft:
+attackplayer(player,target,3+(getplayerintelligence(player)/5))
+end if
+end if
+end if
+end if
+next target
+
+if x = 1 then
+setplayerfrozen(player,0)
+exit sub
+end if
+end if
+
+if dir = right then
+if gettileatt(map,x+1,y) = 1 then
+setplayerfrozen(player,0)
+exit sub
+end if
+createtileeffect(map,x+1,y,sprite,speed,frame,loopcount,endsound)
+
+'----------Attack Monster--------------
+for monster = 0 to 5
+if getmonstery(map,monster) = getplayery(player) then
+if getplayerx(player)+1 = getmonsterx(map,monster) then
+if getmapsetting(map,5) = 0 then
+attackmonster(player,monster,3+(getplayerintelligence(player)/5))
+end if
+end if
+end if
+next monster
+'--------------------------------------
+'---------Attack Player----------------
+for target = 0 to getmaxusers
+if getplayery(target) = getplayery(player) & getplayerx(player)+1 = getplayerx(target) then
+if isplaying(target) then
+if getmapsetting(map,1) = 0 then
+if getmapsetting(map,6) <> 0 then goto pkmapright
+if getplayerguild(player) <> 0 & getplayerguild(target) <> 0 & getplayerguild(player) <> getplayerguild(target) & getmapsetting(map,7) = 0 then
+pkmapright:
+attackplayer(player,target,3+(getplayerintelligence(player)/5))
+end if
+end if
+end if
+end if
+next target
+
+if x = 10 then
+setplayerfrozen(player,0)
+exit sub
+end if
+end if
+
+microtimer(player,50,"waterpillar2")
+end if
+
+end sub
+
+
+
+
+
+----------------- waterpillar2 -----------------
+
+
+sub main(player as long)
+dim map as long, x as long, y as long, sprite as long, speed as long, frame as long, loopcount as long, endsound as long, dir as long
+dim monster as long, target as long
+
+map = getplayermap(player)
+x = getplayerx(player)
+y = getplayery(player)
+sprite = 11
+speed = 1
+frame = 8
+loopcount = 0
+endsound = 0
+dir = getplayerdirection(player)
+
+if dir = up then
+if gettileatt(map,x,y-2) = 1 then
+setplayerfrozen(player,0)
+exit sub
+end if
+createtileeffect(map,x,y-2,sprite,speed,frame,loopcount,endsound)
+'----------Attack Monster--------------
+for monster = 0 to 5
+if getmonsterx(map,monster) = getplayerx(player) then
+if getplayery(player)-2 = getmonstery(map,monster) then
+if getmapsetting(map,5) = 0 then
+attackmonster(player,monster,2+(getplayerintelligence(player)/5))
+end if
+end if
+end if
+next monster
+'--------------------------------------
+'---------Attack Player----------------
+for target = 0 to getmaxusers
+if getplayerx(target) = getplayerx(player) & getplayery(player)-2 = getplayery(target) then
+if isplaying(target) then
+if getmapsetting(map,1) = 0 then
+if getmapsetting(map,6) <> 0 then goto pkmapup
+if getplayerguild(player) <> 0 & getplayerguild(target) <> 0 & getplayerguild(player) <> getplayerguild(target) & getmapsetting(map,7) = 0 then
+pkmapup:
+attackplayer(player,target,2+(getplayerintelligence(player)/5))
+end if
+end if
+end if
+end if
+next target
+
+if y = 2 then
+setplayerfrozen(player,0)
+exit sub
+end if
+end if
+
+if dir = down then
+if gettileatt(map,x,y+2) = 1 then
+setplayerfrozen(player,0)
+exit sub
+end if
+createtileeffect(map,x,y+2,sprite,speed,frame,loopcount,endsound)
+
+'----------Attack Monster--------------
+for monster = 0 to 5
+if getmonsterx(map,monster) = getplayerx(player) then
+if getplayery(player)+2 = getmonstery(map,monster) then
+if getmapsetting(map,5) = 0 then
+attackmonster(player,monster,2+(getplayerintelligence(player)/5))
+end if
+end if
+end if
+next monster
+'--------------------------------------
+'---------Attack Player----------------
+for target = 0 to getmaxusers
+if getplayerx(target) = getplayerx(player) & getplayery(player)+2 = getplayery(target) then
+if isplaying(target) then
+if getmapsetting(map,1) = 0 then
+if getmapsetting(map,6) <> 0 then goto pkmapdown
+if getplayerguild(player) <> 0 & getplayerguild(target) <> 0 & getplayerguild(player) <> getplayerguild(target) & getmapsetting(map,7) = 0 then
+pkmapdown:
+attackplayer(player,target,2+(getplayerintelligence(player)/5))
+end if
+end if
+end if
+end if
+next target
+
+if y = 9 then
+setplayerfrozen(player,0)
+exit sub
+end if
+end if
+
+if dir = left then
+if gettileatt(map,x-2,y) = 1 then
+setplayerfrozen(player,0)
+exit sub
+end if
+createtileeffect(map,x-2,y,sprite,speed,frame,loopcount,endsound)
+
+'----------Attack Monster--------------
+for monster = 0 to 5
+if getmonstery(map,monster) = getplayery(player) then
+if getplayerx(player)-2 = getmonsterx(map,monster) then
+if getmapsetting(map,5) = 0 then
+attackmonster(player,monster,2+(getplayerintelligence(player)/5))
+end if
+end if
+end if
+next monster
+'--------------------------------------
+'---------Attack Player----------------
+for target = 0 to getmaxusers
+if getplayery(target) = getplayery(player) & getplayerx(player)-2 = getplayerx(target) then
+if isplaying(target) then
+if getmapsetting(map,1) = 0 then
+if getmapsetting(map,6) <> 0 then goto pkmapleft
+if getplayerguild(player) <> 0 & getplayerguild(target) <> 0 & getplayerguild(player) <> getplayerguild(target) & getmapsetting(map,7) = 0 then
+pkmapleft:
+attackplayer(player,target,2+(getplayerintelligence(player)/5))
+end if
+end if
+end if
+end if
+next target
+
+if x = 2 then
+setplayerfrozen(player,0)
+exit sub
+end if
+end if
+
+if dir = right then
+if gettileatt(map,x+2,y) = 1 then
+setplayerfrozen(player,0)
+exit sub
+end if
+createtileeffect(map,x+2,y,sprite,speed,frame,loopcount,endsound)
+
+'----------Attack Monster--------------
+for monster = 0 to 5
+if getmonstery(map,monster) = getplayery(player) then
+if getplayerx(player)+2 = getmonsterx(map,monster) then
+if getmapsetting(map,5) = 0 then
+attackmonster(player,monster,2+(getplayerintelligence(player)/5))
+end if
+end if
+end if
+next monster
+'--------------------------------------
+'---------Attack Player----------------
+for target = 0 to getmaxusers
+if getplayery(target) = getplayery(player) & getplayerx(player)+2 = getplayerx(target) then
+if isplaying(target) then
+if getmapsetting(map,1) = 0 then
+if getmapsetting(map,6) <> 0 then goto pkmapright
+if getplayerguild(player) <> 0 & getplayerguild(target) <> 0 & getplayerguild(player) <> getplayerguild(target) & getmapsetting(map,7) = 0 then
+pkmapright:
+attackplayer(player,target,2+(getplayerintelligence(player)/5))
+end if
+end if
+end if
+end if
+next target
+
+if x = 9 then
+setplayerfrozen(player,0)
+exit sub
+end if
+end if
+
+microtimer(player,50,"waterpillar3")
+
+end sub
+
+
+
+
+
+----------------- waterpillar3 -----------------
+
+
+sub main(player as long)
+dim map as long, x as long, y as long, sprite as long, speed as long, frame as long, loopcount as long, endsound as long, dir as long
+dim monster as long, target as long
+
+map = getplayermap(player)
+x = getplayerx(player)
+y = getplayery(player)
+sprite = 11
+speed = 1
+frame = 8
+loopcount = 0
+endsound = 0
+dir = getplayerdirection(player)
+
+setplayerfrozen(player,0)
+
+if dir = up then
+if gettileatt(map,x,y-3) = 1 then
+setplayerfrozen(player,0)
+exit sub
+end if
+createtileeffect(map,x,y-3,sprite,speed,frame,loopcount,endsound)
+'----------Attack Monster--------------
+for monster = 0 to 5
+if getmonsterx(map,monster) = getplayerx(player) then
+if getplayery(player)-3 = getmonstery(map,monster) then
+if getmapsetting(map,5) = 0 then
+attackmonster(player,monster,1+(getplayerintelligence(player)/5))
+end if
+end if
+end if
+next monster
+'--------------------------------------
+'---------Attack Player----------------
+for target = 0 to getmaxusers
+if getplayerx(target) = getplayerx(player) & getplayery(player)-3 = getplayery(target) then
+if isplaying(target) then
+if getmapsetting(map,1) = 0 then
+if getmapsetting(map,6) <> 0 then goto pkmapup
+if getplayerguild(player) <> 0 & getplayerguild(target) <> 0 & getplayerguild(player) <> getplayerguild(target) & getmapsetting(map,7) = 0 then
+pkmapup:
+attackplayer(player,target,1+(getplayerintelligence(player)/5))
+end if
+end if
+end if
+end if
+next target
+
+if y = 3 then
+setplayerfrozen(player,0)
+exit sub
+end if
+end if
+
+if dir = down then
+if gettileatt(map,x,y+3) = 1 then
+setplayerfrozen(player,0)
+exit sub
+end if
+createtileeffect(map,x,y+3,sprite,speed,frame,loopcount,endsound)
+
+'----------Attack Monster--------------
+for monster = 0 to 5
+if getmonsterx(map,monster) = getplayerx(player) then
+if getplayery(player)+3 = getmonstery(map,monster) then
+if getmapsetting(map,5) = 0 then
+attackmonster(player,monster,1+(getplayerintelligence(player)/5))
+end if
+end if
+end if
+next monster
+'--------------------------------------
+'---------Attack Player----------------
+for target = 0 to getmaxusers
+if getplayerx(target) = getplayerx(player) & getplayery(player)+3 = getplayery(target) then
+if isplaying(target) then
+if getmapsetting(map,1) = 0 then
+if getmapsetting(map,6) <> 0 then goto pkmapdown
+if getplayerguild(player) <> 0 & getplayerguild(target) <> 0 & getplayerguild(player) <> getplayerguild(target) & getmapsetting(map,7) = 0 then
+pkmapdown:
+attackplayer(player,target,1+(getplayerintelligence(player)/5))
+end if
+end if
+end if
+end if
+next target
+
+if y = 8 then
+setplayerfrozen(player,0)
+exit sub
+end if
+end if
+
+if dir = left then
+if gettileatt(map,x-3,y) = 1 then
+setplayerfrozen(player,0)
+exit sub
+end if
+createtileeffect(map,x-3,y,sprite,speed,frame,loopcount,endsound)
+
+'----------Attack Monster--------------
+for monster = 0 to 5
+if getmonstery(map,monster) = getplayery(player) then
+if getplayerx(player)-3 = getmonsterx(map,monster) then
+if getmapsetting(map,5) = 0 then
+attackmonster(player,monster,1+(getplayerintelligence(player)/5))
+end if
+end if
+end if
+next monster
+'--------------------------------------
+'---------Attack Player----------------
+for target = 0 to getmaxusers
+if getplayery(target) = getplayery(player) & getplayerx(player)-3 = getplayerx(target) then
+if isplaying(target) then
+if getmapsetting(map,1) = 0 then
+if getmapsetting(map,6) <> 0 then goto pkmapleft
+if getplayerguild(player) <> 0 & getplayerguild(target) <> 0 & getplayerguild(player) <> getplayerguild(target) & getmapsetting(map,7) = 0 then
+pkmapleft:
+attackplayer(player,target,1+(getplayerintelligence(player)/5))
+end if
+end if
+end if
+end if
+next target
+
+if x = 3 then
+setplayerfrozen(player,0)
+exit sub
+end if
+end if
+
+if dir = right then
+if gettileatt(map,x+3,y) = 1 then
+setplayerfrozen(player,0)
+exit sub
+end if
+createtileeffect(map,x+3,y,sprite,speed,frame,loopcount,endsound)
+
+'----------Attack Monster--------------
+for monster = 0 to 5
+if getmonstery(map,monster) = getplayery(player) then
+if getplayerx(player)+3 = getmonsterx(map,monster) then
+if getmapsetting(map,5) = 0 then
+attackmonster(player,monster,1+(getplayerintelligence(player)/5))
+end if
+end if
+end if
+next monster
+'--------------------------------------
+'---------Attack Player----------------
+for target = 0 to getmaxusers
+if getplayery(target) = getplayery(player) & getplayerx(player)+3 = getplayerx(target) then
+if isplaying(target) then
+if getmapsetting(map,1) = 0 then
+if getmapsetting(map,6) <> 0 then goto pkmapright
+if getplayerguild(player) <> 0 & getplayerguild(target) <> 0 & getplayerguild(player) <> getplayerguild(target) & getmapsetting(map,7) = 0 then
+pkmapright:
+attackplayer(player,target,1+(getplayerintelligence(player)/5))
+end if
+end if
+end if
+end if
+next target
+
+if x = 8 then
+setplayerfrozen(player,0)
+exit sub
+end if
+end if
+
+end sub
+
+
+

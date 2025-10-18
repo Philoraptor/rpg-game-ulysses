@@ -1,0 +1,36 @@
+SUB Main(Player as LONG, Target as LONG)
+   Dim i as LONG, map as long, x as long, y as long, players as long, a as long, check as long, speed as long, totalframes as long, loopcount as long, sprite as long, z as long
+
+   If GetPlayerClass(Player) = 1 | GetPlayerClass(Player) = 4 | GetPlayerAccess(Player) > 0 Then
+      If ReadIniInt("playerflags", GetPlayerUser(Player), "cure", 8) = 1 | GetPlayerAccess(Player) > 0 Then
+         If GetPlayerMana(Player) >= 15 Then
+            SetPlayerMana(Player, GetPlayerMana(Player) - 15)
+               SetPlayerHP(Player, GetPlayerHP(Player)+10)
+   
+sprite = 3
+speed = 10
+totalframes = 15
+loopcount = 0
+totalframes = 8
+map = getplayermap(player)
+x = getplayerx(player)
+y = getplayery(player)
+for z = 0 to 0
+      if GetTileAtt(getplayermap(player), x, y)<>1 then
+         if getplayerdirection(player)=0 then y = y
+         if getplayerdirection(player)=1 then y = y
+         if getplayerdirection(player)=2 then x = x
+         if getplayerdirection(player)=3 then x = x
+ CreateTileEffect(map,x,y, sprite, speed,8,loopcount,0)
+End if
+         Else
+            PlayerMessage(Player, "You need 10 mana to cast cure!", Yellow)
+         End If
+      Else
+         PlayerMessage(Player, "You don't know how to cast cure!", Yellow)
+      End If
+   Else
+      PlayerMessage(Player, "You need to be a mage or a paladin to cast cure!", Yellow)
+   End If
+
+END SUB

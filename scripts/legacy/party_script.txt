@@ -1,0 +1,371 @@
+'Party [/God editscript Command]
+
+
+‘ party chat (shortcut)
+  If strcmp(command, "p") Then
+      RunScript0("partychat")
+      Exit Function
+    End If
+
+
+If strcmp(Command, "party") Then
+If strcmp(Parm1, "") Then
+RunScript0("party")
+Exit Function
+End If
+If strcmp(Parm1, "new") Then
+RunScript1("partynew", Player)
+Exit Function
+End If
+If strcmp(Parm1, "invite") Then
+RunScript2("partyinvite", Player, FindPlayer(Parm2))
+Exit Function
+End If
+If strcmp(Parm1, "join") Then
+RunScript1("partyjoin", Player)
+Exit Function
+End If
+If strcmp(Parm1, "leave") Then
+RunScript1("partyleave", Player)
+Exit Function
+End If
+If strcmp(Parm1, "leader") Then
+RunScript2("partyleader", Player, FindPlayer(Parm2))
+Exit Function
+End If
+If strcmp(Parm1, "boot") Then
+RunScript2("partyboot", Player, FindPlayer(Parm2))
+Exit Function
+End If
+If strcmp(Parm1, "roll") Then
+RunScript1("partyroll", Player)
+Exit Function
+End If
+If strcmp(Parm1, "who") Then
+RunScript1("partywho", Player)
+Exit Function
+End If
+If strcmp(Parm1, "chat") Then
+RunScript0("partychat")
+Exit Function
+End If
+If StrCmp(Parm1, "help") Then
+RunScript1("partyhelp", Player)
+Exit Function
+End If
+
+PlayerMessage(Player, "That is an invalid Party command.", Yellow)
+Exit Function
+End If
+
+
+
+‘Party New [/God editscript PartyNew]
+
+
+Function Main(Player as Long) AS LONG
+dim X as Long, Loop as Long, Cost as Long
+Cost = 500
+
+
+If GetPlayerFlag(Player, 201) = 0 Then
+If HasObj(Player, 6) >= Cost Then
+  X = 0
+Start:
+  X = X + 1
+  For Loop = 1 To GetMaxUsers()
+ If GetPlayerFlag(Loop, 201) = X Then
+GoTo Start
+ End If
+  Next Loop
+  TakeObj(Player, 6, Cost)
+  SetFlag(113, GetFlag(113) + Cost) 'Gold Collected
+  SetPlayerFlag(Player, 201, X)
+  SetPlayerFlag(Player, 202, 1)
+  PlayerMessage(Player, "You have created a Party!", Yellow)
+  PlayerMessage(Player, "Type /party invite <player> to invite others to join.", Grey)
+Else
+PlayerMessage(Player, strcat("It costs ", strcat(str(Cost), " Gold to start a Party.")), Grey)
+End If
+Else
+PlayerMessage(Player, "You are already in a Party.", Grey)
+End If
+
+
+End Function
+
+
+
+‘Party Invite [/God editscript PartyInvite]
+
+
+Function Main(Player as Long, Target as Long) AS LONG
+dim Loop as Long, Count as Long
+
+
+If GetPlayerFlag(Player, 201) > 0 Then
+If GetPlayerFlag(Player, 202) = 1 Then
+For Loop = 1 To GetMaxUsers()
+If GetPlayerFlag(Loop, 201) = GetPlayerFlag(Player, 201) Then Count = Count + 1
+If Count >= 10 Then 
+PlayerMessage(Player, "Your Party is full.", Grey)
+Exit Function
+End If
+Next Loop
+If GetPlayerFlag(Target, 203) = GetPlayerFlag(Player, 201) Then
+PlayerMessage(Player, strcat("You have already invited ", strcat(GetPlayerName(Target), " to your party.")), Grey)
+Else
+PlayerMessage(Player, strcat("You have invited ", strcat(GetPlayerName(Target), " to your Party.")), White)
+PlayerMessage(Target, strcat(GetPlayerName(Player), " has invited you to their Party. Type /party join."), White)
+SetPlayerFlag(Target, 203, GetPlayerFlag(Player, 201))
+End If
+Else
+PlayerMessage(Player, "You are not Leader of the Party.", Grey)
+End If
+Else
+PlayerMessage(Player, "You are not in a Party.", Grey)
+End If
+
+
+End Function
+
+
+
+‘Party Join [/God editscript PartyJoin]
+
+
+Function Main(Player as Long) AS LONG
+dim Loop as Long, Count as Long
+
+
+If GetPlayerFlag(Player, 201) = 0 Then
+If GetPlayerFlag(Player, 203) > 0 Then
+For Loop = 1 To GetMaxUsers()
+If GetPlayerFlag(Loop, 201) = GetPlayerFlag(Player, 203) Then Count = Count + 1
+If Count >= 10 Then 
+PlayerMessage(Player, "That Party is full.", Grey)
+Exit Function
+End If
+Next Loop
+SetPlayerFlag(Player, 201, GetPlayerFlag(Player, 203))
+SetPlayerFlag(Player, 203, 0)
+PlayerMessage(Player, "You have joined a Party!", Yellow)
+PlayerMessage(Player, "To leave the party type /party leave.", White)
+RunScript1("partylist", Player)
+For Loop = 1 To GetMaxUsers()
+If Player <> Loop Then
+If GetPlayerFlag(Loop, 201) = GetPlayerFlag(Player, 201) Then
+PlayerMessage(Loop, strcat(GetPlayerName(Player), " has joined your Party."), White)
+End If
+End If
+Next Loop
+Else
+PlayerMessage(Player, "You have not been invited to a Party.", Grey)
+End If
+Else
+PlayerMessage(Player, "You are already in a Party.", Grey)
+End If
+
+
+End Function
+
+
+
+‘Party Leave [/God editscript PartyLeave]
+
+
+Function Main(Player as Long) AS LONG
+dim Loop as Long, Leader as Long
+
+
+If GetPlayerFlag(Player, 201) > 0 Then
+For Loop = 1 To GetMaxUsers()
+If Player <> Loop Then
+If GetPlayerFlag(Loop, 201) = GetPlayerFlag(Player, 201) Then
+PlayerMessage(Loop, strcat(GetPlayerName(Player), " has left your Party."), White)
+End If
+End If
+Next Loop
+For Loop = 1 To GetMaxUsers()
+If Player <> Loop Then
+If GetPlayerFlag(Loop, 201) = GetPlayerFlag(Player, 201) Then
+Leader = Loop
+Goto Finish
+End If
+End If
+Next Loop
+End If
+
+
+Finish:
+RunScript2("partyleader", Player, Leader)
+SetPlayerFlag(Player, 201, 0)
+SetPlayerFlag(Player, 202, 0)
+PlayerMessage(Player, "You are no longer part of any Party.", Grey)
+
+
+End Function
+
+
+
+‘Party Leader [/God editscript PartyLeader]
+
+
+Function Main(Player as Long, Target as Long) AS LONG
+
+
+If GetPlayerFlag(Player, 201) > 0 Then
+If GetPlayerFlag(Player, 202) = 1 Then
+If GetPlayerFlag(Player, 201) = GetPlayerFlag(Target, 201) Then
+SetPlayerFlag(Target, 202, 1)
+SetPlayerFlag(Player, 202, 0)
+PlayerMessage(Player, strcat("You have made ", strcat(GetPlayerName(Target), " Leader of the Party.")), White)
+PlayerMessage(Target, "You are now Leader of the Party.", White)
+Else
+PlayerMessage(Player, "That player is not in your Party.", Grey)
+End If
+Else
+PlayerMessage(Player, "You are not Leader of the Party.", Grey)
+End If
+Else
+PlayerMessage(Player, "You are not in a Party.", Grey)
+End If
+
+
+End Function
+
+
+
+‘Party Boot [/God editscript PartyBoot]
+
+
+Function Main(Player as Long, Target as Long) AS LONG
+
+
+If GetPlayerFlag(Player, 201) > 0 Then
+If GetPlayerFlag(Player, 202) = 1 Then
+If GetPlayerFlag(Player, 201) = GetPlayerFlag(Target, 201) Then
+SetPlayerFlag(Target, 201, 0)
+PlayerMessage(Player, strcat("You have booted ", strcat(GetPlayerName(Target), " from the Party.")), White)
+PlayerMessage(Target, "You have been booted from the Party.", White)
+Exit Function
+Else
+PlayerMessage(Player, "That player is not in your Party.", Grey)
+End If
+Else
+PlayerMessage(Player, "You are not Leader of the Party.", Grey)
+End If
+Else
+PlayerMessage(Player, "You are not in a Party.", Grey)
+End If
+
+
+End Function
+
+
+
+‘Party Roll [/God editscript PartyRoll]
+
+
+Function Main(Player as Long) AS LONG
+dim Loop as Long
+
+
+If GetPlayerFlag(Player, 201) > 0 Then
+If GetPlayerFlag(Player, 202) = 1 Then
+PlayerMessage(Player, "=Party Dice Rolls=", Yellow)
+For Loop = 1 To GetMaxUsers()
+If GetPlayerFlag(Loop, 201) = GetPlayerFlag(Player, 201) Then
+PlayerMessage(Player, strcat(GetPlayerName(Loop), strcat(" - ", str(Random(100) + 1))), Grey)
+End If
+Next Loop
+Else
+PlayerMessage(Player, "You are not Leader of the Party.", Grey)
+End If
+Else
+PlayerMessage(Player, "You are not in a party.", Grey)
+End If
+
+
+End Function
+
+
+
+‘Party Who [/God editscript PartyWho]
+
+
+Function Main(Player as Long) AS LONG
+dim Loop as Long, Message as String
+
+
+If GetPlayerFlag(Player, 201) > 0 Then
+PlayerMessage(Player, "=Party Member List=", Yellow)
+For Loop = 1 To GetMaxUsers()
+If GetPlayerFlag(Loop, 201) = GetPlayerFlag(Player, 201) Then
+If GetPlayerFlag(Loop, 202) = 1 Then
+Message = strcat(GetPlayerName(Loop), strcat(" - ", strcat(str(GetPlayerLevel(Loop))," - Leader")))
+Else
+Message = strcat(GetPlayerName(Loop), strcat(" - ", str(GetPlayerLevel(Loop))))
+End If
+PlayerMessage(Player, Message, Grey)
+End If
+Next Loop
+Else
+PlayerMessage(Player, "You are not in a party.", Grey)
+End If
+
+
+End Function
+
+
+‘PartyChat [/God editscript PartyChat]
+
+
+Function Main(Player as Long, Command as String, Parm1 as String, Parm2 as String) AS LONG
+dim Loop as Long
+
+
+If GetPlayerFlag(Player, 201) > 0 Then
+For Loop = 1 To GetMaxUsers()
+If GetPlayerFlag(Loop, 201) = GetPlayerFlag(Player, 201) Then
+PlayerMessage(Loop, strcat(GetPlayerName(Player), strcat(" -> Party: ", Parm2)), White)
+End If
+Next Loop
+Else
+PlayerMessage(Player, "You are not in a party.", Grey)
+End If
+
+
+End Function
+
+
+
+‘PartGame [/God editscript PartGame]
+
+
+If GetPlayerFlag(Player, 201) > 0 Then
+For Loop = 1 To GetMaxUsers()
+If GetPlayerFlag(Loop, 201) = GetPlayerFlag(Player, 201) Then
+PlayerMessage(Loop, strcat(GetPlayerName(Player), " has left your party."), White)
+End If
+Next Loop
+If GetPlayerFlag(Player, 202) = 1 Then
+SetPlayerFlag(Player, 202, 0)
+For Loop = 1 To GetMaxUsers()
+If GetPlayerFlag(Loop, 201) = GetPlayerFlag(Player, 201) Then
+SetPlayerFlag(Loop, 202, 1)
+Goto Finish
+End If
+Next Loop
+End If
+End If
+
+
+*** I need the “Goto Finish” in partgame **
+I believe the go to finish was after the final END IF
+
+Where is goto finish? check at the PARTGAME event very bottom you will see FINISH: 
+
+
+
+Written by The Zeus

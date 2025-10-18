@@ -1,0 +1,17 @@
+====================================
+Take Infinite Amount of Items (TakeObj) *Credits to Matt Dauler (Chuck)
+====================================
+
+Function Main(Player as Long) As Long
+Dim A as Long, B as Long, Item as Long
+
+Item = 6 'Change this to your item number you want to take away
+
+For A = 1 To HasObj(Player, Item)
+	B = B + 1
+Next A
+
+PlayerMessage(Player, "Found " + Str(B) + " items.", White)
+TakeObj(Player, Item, B)
+
+End Function

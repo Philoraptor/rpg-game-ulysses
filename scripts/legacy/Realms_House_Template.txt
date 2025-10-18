@@ -1,0 +1,106 @@
+================================================
+================================================
+ODYSSEY ONLINE CLASSIC MEGA HOUSE GUIDE FOR GODS
+================================================
+================================================
+
+
+
+
+
+------------------------------
+FREQUENT WARP LOCATIONS
+------------------------------
+Hero's - 1588, 2, 11
+Bog - 1314, 8, 6
+Tower - 95, 4, 8
+
+
+
+
+
+------------------------------
+ENTRANCE TO HOUSE OUTSIDE CHD
+------------------------------
+
+Sub Main(Player As Long)
+
+If GetPlayerHP(Player) <> GetPlayerMaxHP(Player) And GetPlayerGuild(Player) > 0 Then
+    RunScript0("PushBack")
+Else
+    PlayerWarp(Player, MAP#, X, Y)
+End If
+
+End Sub
+
+
+
+
+------------------------------
+HOUSE NAME
+------------------------------
+
+Sub Main(Player As Long)
+
+CreateMapStaticText(MAP#,X,Y,"Player's House", BrightCyan)
+ 
+End Sub
+
+
+
+
+------------------------------
+HOUSE GATE
+------------------------------
+
+Function Main(Player as Long) as Long
+    
+If GetPlayerUser(Player) = "PLAYERUSER" or GetPlayerUser(Player) = "PLAYER2USER" Then
+    OpenDoor(MAP#, X, Y)
+Else
+    Main = Stop
+End If
+	
+End Function
+
+
+
+
+
+------------------------------
+HOUSE VAULT
+------------------------------
+
+Sub Main(Player as Long)
+
+If GetPlayerUser(Player) = "PLAYERUSER" Then
+	If GetPlayerDirection(Player) = DIRECTION Then
+		PlayerWarp(Player, MAP#, X, Y) 'Tele in to Vault
+	Else
+		PlayerWarp(Player, MAP#, X, Y) 'Tele outside Vault
+	End If
+Else
+	PlayerWarp(Player, MAP#, X, Y) 'Tele outside Vault
+End If
+
+End Sub
+
+
+
+
+
+
+------------------------------
+SPRITE TILE
+------------------------------
+
+Function Main(Player as Long) as Long
+
+SetPlayerSprite(Player, SPRITE#)
+    If GetPlayerStatus(Player) = 1 Then 
+        SetPlayerStatus(Player, 1)
+    Else
+        SetPlayerStatus(Player, STATUS#)
+    End If
+
+End Function

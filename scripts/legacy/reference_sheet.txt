@@ -1,0 +1,446 @@
+==========================
+Header & Footer
+==========================
+Sub Main(Player as Long)
+
+End Sub
+
+
+
+==========================================
+TEXT COLOR CODES
+==========================================
+
+0 = Black
+1 = Blue
+2 = Green
+3 = Cyan
+4 = Red
+5 = Magenta
+6 = Brown
+7 = Grey
+8 = DarkGrey
+9 = BrightBlue
+10 = BrightGreen
+11 = BrightCyan
+12 = BrightRed
+13 = BrightMagenta
+14 = Yellow
+15 = White
+
+
+
+================================
+VARIABLES
+================================
+
+PlayerMessage(Player, "Hello there!", 14) 'Send Player a message
+
+GlobalMessage(GetPlayerName(Player) + " has completed the Under The Lake Quest!", 10) 'Send a Global Message to everybody
+
+CreateMapFloatText(30, 11, 3, "Hello There!", 15) 'Create float text at coordinates 
+
+CreateMapStaticText(30, 11, 3, "Hello There!", 15) 'Create static text at coordinates
+    
+GiveObj(Player, 3, 150) 'Give object 3, quantity 150 to player
+
+TakeObj(Player, 6, 3000) 'Take object 6, quantity 3000 from player
+	
+PlayerWarp(Player, 1, 6, 7) 'Warp player to coordinates
+
+ResetMap(934) 'Reset map 934
+
+OpenDoor(1000, 2, 1) 'Open door at coordinates
+
+SetPlayerHP(Player, GetPlayerMaxHP(Player)) 'Give player Max HP
+
+SetPlayerEnergy(Player, 100) 'Give player 100 Energy
+
+SetPlayerMana(Player, 50) 'Give player 50 Mana
+	
+SetPlayerStatus(Player,Random(24)) 'Set random status, max status 24
+
+SetPlayerStatus(Player, 20) 'Set status to status 20
+	
+SetPlayerSprite(Player,Random(289)) 'Set random sprite, max sprite 289
+
+SetPlayerSprite(Player, 115) 'Set sprite to sprite 115
+
+SetPlayerClass(Player, 1) 'Set player class to #1
+	
+RunScript0("Pushback") 'Push back 1 tile	
+
+SetPlayerIsDead(Player, False) 'Dead player comes back to life
+	
+PlayerMessage(Player,"Abyss Quest - " + str(GetPlayerFlag(Player,907)) + " completion(s).", White) 'Display Value of Flag 907
+	
+	
+	
+	
+================================
+CONDITIONALS
+================================
+If GetPlayerLevel(Player) = 1 And HasObj(Player, 48) = 1 Then 'Activate if player level is equal 1 AND player has object 48, quantity 1'
+Else 'Activate following if above parameters are not met
+Main = Stop 'Stop action
+Main = Continue 'Continue action
+End If 'End if statement
+	
+If GetPlayerLevel(Player) < 5 Then 'Activate if player level is less than 5
+If GetPlayerLevel(Player) > 5 Then 'Activate if player level is greater than 5
+If GetPlayerLevel(Player) = 5 Then 'Activate if player level is equal to 5
+If GetPlayerLevel(Player) >= 5 Then 'Activate if player level is greater than or equal to 5
+If GetPlayerLevel(Player) <= 5 Then 'Activate if player level is less than or equal to 5
+If GetPlayerLevel(Player) <> 5 Then 'Activate if player level does not equal 5
+
+If Message = "CatDog" Then 'Activate if player says term CatDog
+
+If HasObj(Player, 24) > 8 Then 'Activate if player has object 48, quantity greater than 8'
+
+If GetPlayerStatus(Player) = 24 Then 'Activate if player status is 24
+If GetPlayerSprite(Player) = 115 Then 'Activate if player sprite is 115
+
+If GetPlayerAccess(Player) < 1 Then 'Activate if player is mortal
+If GetPlayerAccess(Player) > 1 Then 'Activate if player is a god
+
+If GetPlayerHP(Player) = GetPlayerMaxHP(Player) Then 'Activate if player HP is full
+If GetPlayerEnergy(Player) = GetPlayerMaxEnergy(Player) Then 'Activate if player Energy is full
+If GetPlayerMana(Player) = GetPlayerMaxMana(Player) Then 'Activate if player Mana is full
+If GetPlayerMana(Player) < GetPlayerMaxMana(Player) Then 'Activate if player mana is less than max
+
+If GetPlayerEquipped(Player, 0) = 0 Then 'Activate if Weapon slot unequipped
+If GetPlayerEquipped(Player, 1) = 0 Then 'Activate if Shield slot unequipped
+If GetPlayerEquipped(Player, 2) = 0 Then 'Activate if Armor slot unequipped
+If GetPlayerEquipped(Player, 3) = 0 Then 'Activate if Helm slot unequipped
+If GetPlayerEquipped(Player, 4) = 0 Then 'Activate if Ring slot unequipped
+
+If GetPlayerName(Player) = "QBcrusher" Then 'Activate if player name is QBcrusher
+
+If GetPlayerGuild(Player) = 1 Then 'Activate if player is guilded
+
+If GetPlayerFlag(Player, 900) = 0 Then Colour = BrightRed Else Colour = BrightGreen	'If flag 900 value is 0, Color Red. If above 1, color green
+
+
+
+
+
+================================
+EVENTS
+================================
+PlayerRegen 'Event runs when a player regens
+MonsterDie# 'Event runs when specified monster dies
+PlayerDie# 'Event runs when a player dies
+AttackPlayer# 'Event runs when player attacks another player
+UseObj# 'Event runs when player uses specified object
+DropObj# 'Event runs when player drops specified object
+GetObj# 'Event runs when player gets specified object
+JoinMap# 'Event runs when player joins specified map
+PartMap# 'Event runs when player leaves specified map
+Map#_#_# 'Event runs when player steps on script tile at specified coordinates
+CatchFish 'Event runs when player catches fish
+ChopLumber 'Event runs when player chops lumber
+MineOre 'Event runs when player mines ore
+JoinGame 'Event runs when player joins game
+PartGame 'Event runs when player leaves game
+PlayerResurrect 'Event runs when player respawns
+MapSay# 'Event runs when you say something on a specific map
+AttackMonster 'Event runs when you attack a specific monster
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=================================
+Incog
+================================
+FUNCTION Main(Player as LONG, Command as STRING, Parm1 as STRING, Parm2 as STRING, Parm3 as STRING) AS LONG 
+
+SetPlayerStatus(Player,Random(24))
+SetPlayerSprite(Player,Random(289))
+
+END FUNCTION
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===================================
+Mapfind (Command Script)
+===================================
+Case "Mapfind"
+	Call Playermessage(Player, "This script takes a while, so be patient.", Yellow)
+	WriteIniStr("mapfind", Getplayername(Player), "Parm1", Parm1)
+	WriteIniStr("mapfind", Getplayername(Player), "Parm2", Parm2)
+	WriteIniStr("mapfind", Getplayername(Player), "Parm3", Parm3)
+	Call Timer(Player, 2, "Mapfind")
+
+
+
+
+
+
+==================================
+Mapfind (Script)
+==================================
+Sub Main(Player as long)
+Dim I as long, J as long, MapName as string
+Dim Parm1 as string, Parm2 as string, Parm3 as string
+	Parm1 = ReadIniStr("mapfind", Getplayername(Player), "Parm1", "")
+	Parm2 = ReadIniStr("mapfind", Getplayername(Player), "Parm2", "")
+	Parm3 = ReadIniStr("mapfind", Getplayername(Player), "Parm3", "")
+	J = Getplayerflag(Player, 63)
+	For I = J to (J + 499)
+		Mapname = Getmapname(I)
+		If Instr(MapName, Parm1) Then
+			If Parm2 = "" Or Instr(MapName, Parm2) > 0 Then
+				If Parm3 = "" Or Instr(MapName, Parm3) > 0 Then
+					Call Playermessage(Player, MapName + "-" + str(I), brightblue)
+				End If
+			End If
+		End If
+	Next
+	If J > 2499 Then
+		Setplayerflag(Player, 63, 0)
+		Call Playermessage(Player, "Script finished.", Yellow)
+	Else
+		Call Setplayerflag(Player, 63, J + 500)
+		Call Timer(Player, 0, "Mapfind")
+	End If
+End Sub
+
+
+
+
+
+
+=====================================
+Lowest Used Map (Command Script)
+======================================
+Case "LowestMap"
+	For I = 1 to 3000
+		If Strcmp(Getmapname(I), "") Then
+			Playermessage(Player, "Map " + Str(I) + " is the lowest free map.", yellow)
+			I = 3000
+		End If
+	Next
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+==============================================
+House Vault *credits Jamie Ryan*
+==============================================
+Sub Main(Player as Long)
+
+If getplayername(player) = "Dante" Then
+	If GetPlayerDirection(Player) = Left Then
+		PlayerWarp(Player, 2999, 3, 3)
+	Else
+		PlayerWarp(Player, 2999, 5, 3)
+	End If
+Else
+	PlayerWarp(Player, 2999, 5, 3)
+End If
+End sub
+
+
+
+
+============================================
+Player Commands (Command Script)
+=============================================
+'PLAYER COMMANDS
+Select Case Command
+	Case "hide"
+		if getplayeraccess(player) => 2 then
+		setplayersprite(player, 255)
+		setplayerstatus(player, 25)
+		end if
+		Case "unhide"
+		if getplayeraccess(player) => 2 then
+		setplayersprite(player, random(203))
+		setplayerstatus(player, random(24))
+		end if	
+    Case "GODS"
+	For i = 1 to GetMaxUsers()
+		If GetPlayerAccess(i) > 0 And IsPlaying(i) Then
+			If numGods = 0 Then
+				gods = GetPlayerName(i)
+			Else
+				gods = gods + ", " + GetPlayerName(i)
+			End If
+			numGods = numGods + 1
+		End If
+	Next i
+	If numGods = 0 Then PlayerMessage(Player, "There are no gods currently online", YELLOW)
+	If numGods = 1 Then PlayerMessage(Player, "There is one god online: " + gods, YELLOW)
+	If numGods > 1 Then PlayerMessage(Player, "There are " + Str(numGods) + " gods online: " + gods, YELLOW)
+    Case Else
+	
+	
+
+
+
+
+
+
+
+================================================
+Push Script *credit The Zeus*
+================================================
+Function Main(Player as Long) AS LONG
+'Store Command - Push
+Dim Map as Long, StartX as Long, StartY as Long
+Dim CheckX as Long, CheckY as Long, DestX as Long, DestY as Long
+Dim Loop as Long
+
+Map = GetPlayerMap(Player)
+StartX = GetPlayerX(Player)
+StartY = GetPlayerY(Player)
+
+'if getplayerhp(player) <> getplayermaxhp(player) then
+    'playermessage(player, "Push requires full hp to use.",white)
+    'exit function
+'end if
+
+'Push timer - currently disabled
+If GetPlayerFlag(Player, 109) > 0 Then Exit Function
+
+If GetPlayerHP(Player) > Divide(GetPlayerMaxHP(Player), 2) Then
+    PlayerMessage(Player, "You must be below 20% health to cast this spell.", White)
+    Exit Function
+End If
+
+If HasObj(Player, 280) >= 1 Then
+    TakeObj(Player, 280, 1)
+Else
+    PlayerMessage(Player, "You need Ancient Relics to cast this spell!", Grey)
+    Exit function
+End If
+
+
+
+If GetPlayerGuild(Player) > 0 Then
+
+
+SetPlayerFlag(Player, 109, 1)
+Timer(Player, 1, "PushTimer")
+
+Select Case GetPlayerDirection(Player)
+    Case Up
+        CheckX = StartX
+        CheckY = StartY - 1
+        DestX = CheckX
+        DestY = CheckY - 1
+    Case Down
+        CheckX = StartX
+        CheckY = StartY + 1
+        DestX = CheckX
+        DestY = CheckY + 1
+    Case Left
+        CheckX = StartX - 1
+        CheckY = StartY
+        DestX = CheckX - 1
+        DestY = CheckY
+    Case Right
+        CheckX = StartX + 1
+        CheckY = StartY
+        DestX = CheckX + 1
+        DestY = CheckY
+End Select
+
+'Check bounds, if an invalid place to check then exit the script
+If CheckX < 0 | CheckY < 0 | CheckX > 11 | CheckY > 11 Then Exit Function
+If DestX < 0 | DestY < 0 | DestX > 11 | DestY > 11 Then Exit Function
+
+If RunScript3("CheckAtt", Player, CheckX, CheckY) = Stop Then Exit Function
+If RunScript3("CheckAtt2", Player, CheckX, CheckY) = Stop Then Exit Function
+If RunScript3("CheckAtt", Player, DestX, DestY) = Stop Then Exit Function
+If RunScript3("CheckAtt2", Player, DestX, DestY) = Stop Then Exit Function
+'If GetTileAtt(Map, CheckX, CheckY) > 0 Then Exit function
+'If GetTileAtt(Map, DestX, DestY) > 0 Then Exit function
+'If GetTileAtt2(Map, CheckX, CheckY) > 0 Then Exit function
+'If GetTileAtt2(Map, DestX, DestY) > 0 Then Exit function
+
+For Loop = 1 To GetMaxUsers()
+    If IsPlaying(Loop) Then
+        If GetPlayerAccess(Loop) = 0 Then
+            If GetPlayerMap(Loop) = Map Then
+                If GetPlayerX(Loop) = CheckX Then
+                    If GetPlayerY(Loop) = CheckY Then 'Target in position
+                        If GetPlayerHP(Loop) = GetPlayerMaxHP(Loop) Then 'Full HP
+                            PlayerWarp(Loop, Map, DestX, DestY)
+                        End If
+                    End If
+                End If
+            End If
+        End If
+    End If
+Next Loop
+
+Else
+    PlayerMessage(Player, "You must be in a guild to cast this spell.", Grey)
+    
+end if
+
+End Function
+
+
+
+
+

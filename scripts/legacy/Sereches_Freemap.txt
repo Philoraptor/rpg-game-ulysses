@@ -1,0 +1,50 @@
+Sub Main(Player as long)
+Dim M as long, Maps as string, StM as long, EdM as long
+
+for M = 1 to 5000
+   If Blank(M) Then
+      If StM = 0 then StM = M
+      EdM = M
+   Else
+      If StM > 0 Then
+         If StM <> EdM Then
+            Maps = Maps + " " + Str(StM) + "-" + Str(EdM)
+         Else
+            Maps = Maps + " " + Str(StM)
+         End If
+         StM = 0
+         EdM = 0
+      End If
+   End If
+Next M
+If StM > 0 Then
+   If StM <> EdM Then
+      Maps = Maps + " " + Str(StM) + "-" + Str(EdM)
+   Else
+      Maps = Maps + " " + Str(StM)
+   End If
+End If
+PlayerMessage(Player, "Available maps" + Maps, Cyan)
+   
+
+
+End Sub
+Function Blank(Map as long) as long
+Dim X as long, Y as long, L as long
+
+If GEtMapName(Map) <> "" Then Goto DONE
+
+For X = 0 to 11
+For Y = 0 to 11
+For L = 0 to 5
+If GetTileSprite(Map, X, Y, L) > 0 Then
+Goto DONE
+End If
+Next L
+If GetTileAtt(Map, X, Y) > 0 Then Goto DONE
+If GetTileAtt2(Map, X, Y) > 0 Then Goto DONE
+Next Y
+Next X
+Blank = 1
+Done:
+End Function

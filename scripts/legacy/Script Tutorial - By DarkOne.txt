@@ -1,0 +1,71 @@
+Scripting Tutorial By: DarkOne
+
+STEP #1: 'The Bascics'
+there are 2 main types everyone should know before scripting, these types are:
+1. LONG
+2. STRING
+
+A "LONG" is another word for number, so basicly the computer see's a long as a number.
+A "STRING" is another word for text, so the computer see's a string as text, like "Hello my name is DarkOne."
+
+So we have the 2 types down now we can begin Labeling them Or "Variable Declaration."
+You basicly declare variables like this:
+Ex: the variable we will use will be 'A'. so to declare 'A' to be a 'LONG' we type:
+
+       A As LONG
+
+    this basicly means
+
+       A = A Number
+
+by defualt every long to start out with equals 0, so later on you will have to change it to be w/e number 
+you need, or want it to be by simply puting for example:
+
+       A = 4
+
+so now variable A will be equal to 4 until it is changed.
+Now onto declaring a variable as a 'STRING', it basicly looks the same:
+      A As STRING
+   this basicly means
+
+      A = a text
+
+by defualt A will then be equal to "", or basicly nothing, just blank text, wth no space or anything, you can
+change a string by simple putting for example:
+
+      A = "Hello im DarkOne, im trying to teach you to script because you can't."
+
+simple, you just put some text in parenthasies, and have the variable equal whatever the text is:
+
+     Variable = Text
+
+now that we know what the 2 main types are we can move on to step 2. 
+
+STEP #2: 'Basic SUB's And FUNCTION's'
+Ok, there is also 2 other things you must know before scripting. These are:
+1. SUB
+2. FUNCTION
+
+A 'SUB' is basicly something that does an action or changes something, but does not return data.
+A 'FUNCTION' is basicly something that does an action to find what it equals, and does return data.
+
+ok first lets do a sub, its basicly like this, in odyssey scripting you just put"
+
+SUB Main( )
+END SUB
+
+ok thats the basis of a sub but to add parameters in it that it will use to run, you put something like for example:
+
+SUB Main(Player As LONG)
+END SUB
+
+that means that that sub will have a pre-declared long in it that is or can be used in the sub. You can also add
+more of these variable into the sub to like:
+
+SUB Main(Player As LONG, A As STRING)
+END SUB
+
+in odyssey you can have up to 5 paameters in any sub or function, but 4 is the limit when it comes to script running,
+since runscript sends to the script a maximun of 4 parameters.
+
+ you may be confused but just bare with me, the more you read the more clear it will become.

@@ -1,0 +1,173 @@
+sub main(player as long, choice as long)
+'INIT THE VARIABLES
+'--------------------------
+dim card as string
+dim dealer as long
+dim plyer as long
+dim crand as long
+dim suit as string
+dim srand as long
+dim cands as string
+dim blkchecker as long
+dim playerflag as long
+dim dealerflag as long
+dim a as long
+dim playingflag as long
+playerflag = 5
+dealerflag = 6
+playingflag = 7
+
+if choice = 0 & getplayerflag(Player,playingflag) = 0 then
+	setplayerflag(player,playingflag,1)
+	setplayerflag(player,playerflag,0)
+	setplayerflag(player,dealerflag,0)
+	playermessage(Player,"~-~-~-~-~-~-~-~-~-~-~-~-~-~-~",white)
+	srand = random(3)
+	crand = random(12)
+	plyer = 2
+	dealer = 1
+'--------------------------
+'DEAL
+'--------------------------
+	playermessage(player,"You get a",yellow)
+	runscript4("getcardnsuit",player,crand,srand,2)
+	srand = random(3)
+	crand = random(12)
+	runscript4("getcardnsuit",player,crand,srand,2)
+	srand = random(3)
+	crand = random(12)
+	playermessage(Player,"Dealer gets a",yellow)
+	runscript4("getcardnsuit",player,crand,srand,1)
+	srand = random(3)
+	crand = random(12)
+	runscript4("getcardnsuit",player,crand,srand,1)
+	playermessage(Player,"~-~-~-~-~-~-~-~-~-~-~-~-~-~-~",white)
+'--------------------------
+else
+	if choice = 1 & getplayerflag(player,playingflag) = 1 then
+'HIT
+'--------------------------
+		playermessage(player,"You get a",yellow)
+		srand = random(4)
+		crand = random(13)
+		runscript4("getcardnsuit",player,crand,srand,2)
+'--------------------------
+	else
+		if choice = 2 & getplayerflag(player,playingflag) = 1 then
+'STAY
+'--------------------------
+			playermessage(player,"You decide to stay...",yellow)
+stay:
+			if getplayerflag(player,playingflag) = 1 then
+				if getplayerflag(player,dealerflag) < 16 & getplayerflag(Player,dealerflag) > 0 then
+					srand = random(3)
+					crand = random(12)
+					playermessage(player,"Dealer hits...",white)
+				runscript4("getcardnsuit",player,crand,srand,1)
+					goto stay
+				else
+					playermessage(player,"Dealer stays...",yellow)
+					runscript0("checkbwin")
+				end if
+			end if
+'--------------------------
+		end if
+	end if
+end if
+
+end sub
+
+sub main(player as long,crand as long,srand as long,DOP as long)
+dim card as string,suit as string, value as long
+dim playerflag as long,dealerflag as long,playingflag as long
+'playermessage(player,str(DOP),white)
+playerflag = 5
+dealerflag = 6
+playingflag = 7
+select case srand
+case 0
+suit = "spades"
+case 1
+suit = "hearts"
+case 2
+suit = "clubs"
+case 3
+suit = "dimands"
+end select
+select case crand
+case 0
+card = "two"
+value = 2
+case 1
+card = "three"
+value = 3
+case 2
+card = "four"
+value = 4
+case 3
+card = "five"
+value = 5
+case 4
+card = "six"
+value = 6
+case 5
+card = "seven"
+value = 7
+case 6
+card = "eight"
+value = 8
+case 7
+card = "nine"
+value = 9
+case 8
+card = "ten"
+value = 10
+case 9
+card = "jack"
+value = 10
+case 10
+card = "queen"
+value = 10
+case 11
+card = "king"
+value = 10
+case 12
+card = "ace"
+value = 11
+end select
+playermessage(player,strcat(strcat(card," of "),suit),brightgreen)
+'DEALER OR PLAYER
+'dealer
+'-------------------
+if DOP = 1 then
+setplayerflag(player,dealerflag,getplayerflag(Player,dealerflag)+value)
+'playermessage(player,strcat("DEALER: ",str(getplayerflag(player,dealerflag))),white)
+else
+'player
+setplayerflag(player,playerflag,getplayerflag(Player,playerflag)+value)
+'playermessage(player,strcat("PLAYER: ",str(getplayerflag(player,playerflag))),white)
+end if
+'-------------------
+'BUST
+'-------------------
+if getplayerflag(player,playerflag) > 21 then
+playermessage(player,"BUST!!!",white)
+setplayerflag(Player,playerflag,0)
+runscript0("checkbwin")
+end if
+if getplayerflag(player,dealerflag) > 21 then
+playermessage(player,"Dealer busts!",brightgreen)
+setplayerflag(player,dealerflag,0)
+runscript0("checkbwin")
+end if
+'-------------------
+'BLACKJACK
+'-------------------
+if getplayerflag(player,playerflag) = 21 then
+playermessage(player,"Blackjack!!!",brightgreen)
+end if
+if getplayerflag(player,dealerflag) = 21 then
+playermessage(player,"Dealer gets blackjack!",white)
+end if
+'-------------------
+end sub

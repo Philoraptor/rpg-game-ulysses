@@ -1,0 +1,130 @@
+FUNCTION Main(Player AS LONG) AS LONG
+   ' Troll Chieftain
+   dim X as long, Y as long, A as long, B as long, C as long, D as long, E as long, F as long, MYMAP1 as long, MYX1 as long, MYX2 as long, MYY1 as long, MYY2 as long
+   X=random(100)
+   A=random(100)
+   B=random(100)
+   Y=random(100)
+   C=random(100)
+   D=random(100)
+   E=random(100)
+   F=random(100)
+   MYMAP1=GetPlayerMap(Player)
+   MYX1=GetPlayerX(Player) + 1
+   MYY1=GetPlayerY(Player) + 1
+   MYX2=GetPlayerX(Player) - 1
+   MYY2=GetPlayerY(Player) - 1
+
+   If X > 90 Then
+   MapMessage(1477, "Troll Chieftain calls for help.", brightred)
+   SpawnMonster(MYMAP1,1,MYX1,MYY1)
+   End If
+   
+   
+   If A > 91 Then
+   MapMessage(1477, "Troll Chieftain calls for help.", brightred)
+   SpawnMonster(MYMAP1,1,MYX1,MYY1)
+   SpawnMonster(MYMAP1,1,MYX1,MYY2)
+   End If
+   
+   If B > 92 Then
+   MapMessage(1477, "Troll Chieftain calls for help.", brightred)
+   SpawnMonster(MYMAP1,1,MYX1,MYY1)
+   SpawnMonster(MYMAP1,1,MYX1,MYY2)
+   SpawnMonster(MYMAP1,1,MYX2,MYY2)
+   End If
+   
+   If Y > 93 Then
+   MapMessage(1442, "Troll Chieftain calls for help.", brightred)
+   SpawnMonster(MYMAP1,1,MYX1,MYY1)
+   SpawnMonster(MYMAP1,1,MYX1,MYY2)
+   SpawnMonster(MYMAP1,1,MYX2,MYY2)
+   SpawnMonster(MYMAP1,1,MYX2,MYY1)
+
+   IF C > 96 then
+    IF GetPlayerX(Player) > 1 then
+     IF GetPlayerY(Player) > 1 then
+      IF GetPlayerX(Player) < 10 then
+       IF GetPlayerY(Player) < 10 then
+        PlayerWarp(Player, GetPlayerMap(Player), MYX1, MYY1)
+        SetPlayerHP(Player, GetPlayerHP(Player) - 10)  
+        CreateMapFloatText(MYMAP1, GetMonsterX(MYMAP1, 32), GetMonsterY(MYMAP1, 32), "Slapped Away!", white)
+       END IF
+      END IF
+     END IF
+    END IF
+   END IF
+   ELSE
+    PlayerWarp(Player, GetPlayerMap(Player), 5, 5)
+    SetPlayerHP(Player, GetPlayerHP(Player) - 20)
+    CreateMapFloatText(MYMAP1, GetMonsterX(MYMAP1, 32), GetMonsterY(MYMAP1, 32), "The Wall Won't Save You!", white)
+   END IF    
+
+   IF D > 96 then
+    IF GetPlayerX(Player) > 1 then
+     IF GetPlayerY(Player) > 1 then
+      IF GetPlayerX(Player) < 10 then
+       IF GetPlayerY(Player) < 10 then
+        PlayerWarp(Player, GetPlayerMap(Player), MYX2, MYY1)
+        SetPlayerHP(Player, GetPlayerHP(Player) - 10)  
+        CreateMapFloatText(MYMAP1, GetMonsterX(MYMAP1, 32), GetMonsterY(MYMAP1, 32), "Slapped Away!", white)
+       END IF
+      END IF
+     END IF
+    END IF
+   END IF
+   ELSE
+    PlayerWarp(Player, GetPlayerMap(Player), 5, 5)
+    SetPlayerHP(Player, GetPlayerHP(Player) - 20)
+    CreateMapFloatText(MYMAP1, GetMonsterX(MYMAP1, 32), GetMonsterY(MYMAP1, 32), "The Wall Won't Save You!", white)
+   END IF
+
+   IF E > 96 then
+    IF GetPlayerX(Player) > 1 then
+     IF GetPlayerY(Player) > 1 then
+      IF GetPlayerX(Player) < 10 then
+       IF GetPlayerY(Player) < 10 then
+        PlayerWarp(Player, GetPlayerMap(Player), MYX1, MYY2)
+        SetPlayerHP(Player, GetPlayerHP(Player) - 10)  
+        CreateMapFloatText(MYMAP1, GetMonsterX(MYMAP1, 32), GetMonsterY(MYMAP1, 32), "Slapped Away!", white)
+       END IF
+      END IF
+     END IF
+    END IF
+   END IF
+   ELSE
+    PlayerWarp(Player, GetPlayerMap(Player), 5, 5)
+    SetPlayerHP(Player, GetPlayerHP(Player) - 20)
+    CreateMapFloatText(MYMAP1, GetMonsterX(MYMAP1, 32), GetMonsterY(MYMAP1, 32), "The Wall Won't Save You!", white)
+   END IF
+
+   IF F > 96 then
+    IF GetPlayerX(Player) > 1 then
+     IF GetPlayerY(Player) > 1 then
+      IF GetPlayerX(Player) < 10 then
+       IF GetPlayerY(Player) < 10 then
+        PlayerWarp(Player, GetPlayerMap(Player), MYX2, MYY2)
+        SetPlayerHP(Player, GetPlayerHP(Player) - 10)  
+        CreateMapFloatText(MYMAP1, GetMonsterX(MYMAP1, 32), GetMonsterY(MYMAP1, 32), "Slapped Away!", white)
+       END IF
+      END IF
+     END IF
+    END IF
+   END IF
+   ELSE
+    PlayerWarp(Player, GetPlayerMap(Player), 5, 5)
+    SetPlayerHP(Player, GetPlayerHP(Player) - 20)
+    CreateMapFloatText(MYMAP1, GetMonsterX(MYMAP1, 32), GetMonsterY(MYMAP1, 32), "The Wall Won't Save You!", white)
+   END IF
+
+   End If
+   
+      Main = Continue
+   
+   END FUNCTION
+   
+   
+   
+   
+   
+Written by The Zeus

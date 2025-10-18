@@ -1,0 +1,54 @@
+Type Prof
+    Dim Index AS LONG
+    Dim Slotnum AS LONG
+    Dim Itemnum AS LONG
+    Dim TimesNeeded AS LONG
+    Dim Times AS LONG
+    Dim Prof AS LONG
+    Dim Mod AS LONG
+    Dim Cap AS LONG
+End Type
+
+Function Proficiency(Player AS Prof) AS LONG
+    Dim A AS LONG
+    Player.Slotnum = GetPlayerEquipped(Player.Index,1)
+    Player.Itemnum = GetPlayerInvObject(Player.Index, Player.Slotnum)
+    Player.TimesNeeded = ReadiniInt("Items.ini",Str(Player.Itemnum),"Times",0)
+    If Player.TimesNeeded > 0 Then
+        Player.Times = GetPlayerObjFlag(Player.Index,Player.Slotnum,0)
+        Player.Mod = Player.Times/Player.TimesNeeded
+        If Player.Mod > 0 then
+            Player.Cap = ReadiniInt("Items.ini",Str(Player.Itemnum),"Cap",0)
+            If Player.Mod > Player.Cap Then
+                Player.Mod = Player.Cap
+            End If
+            Player.Times=Player.Times+1
+            SetPlayerObjFlag(Player.Index,Player.Slotnum,0,Player.Times)
+            Proficiency = Continue
+        End If
+    End If
+End Function
+
+Function Main(Attacker AS LONG, Monster AS LONG, Damage AS LONG) AS LONG
+    Dim Player AS Prof
+    Main=Continue
+    If Damage > 0 Then
+        Player.Index=Attacker
+        If Proficiency(Player) then
+            AttackMonster(Attacker,Monster,Damage + Player.Mod)
+            Main=Stop
+        End If
+    End If
+End Function
+
+
+
+
+
+
+
+
+
+Dim a as playertype
+a.get(player)
+playermessage(player, a.name, white)

@@ -1,0 +1,43 @@
+FUNCTION Main(Player as LONG, Command as STRING, Parm1 as STRING, Parm2 as STRING, Parm3 as STRING) AS LONG 
+
+If GetPlayerLevel(Player) < 5 Then 'Check if player is below level 5
+    PlayerWarp(Player,15,5,8)   
+    PlayerMessage(Player, "You can't attempt this quest until you are level 5.", 12) 'Message sent to player if not level 5'
+End If
+
+   createmapfloattext(30,11,3,"TROLOLOLOLOOLOLOLOLOOL",15)
+
+If GetPlayerLevel(Player) = 5 Then 'Check if player level is 5
+   PlayerMessage(Player, "=================================================================================", 15) 
+   PlayerMessage(Player, "   ", 14) 
+   PlayerMessage(Player, "=================================================================================", 15)    
+End If
+
+If GetPlayerLevel(Player) = 6 Then 'Check if player level is 6
+   PlayerMessage(Player, "=================================================================================", 15) 
+   PlayerMessage(Player, "   ", 14) 
+   PlayerMessage(Player, "=================================================================================", 15)    
+End If
+
+
+If GetPlayerLevel(Player) = 7 Then 'Check if player level is 7
+   PlayerMessage(Player, "=================================================================================", 15) 
+   PlayerMessage(Player, "   ", 14) 
+   PlayerMessage(Player, "=================================================================================", 15)    
+End If
+
+
+If GetPlayerLevel(Player) = 8 Then 'Check if player level is 8
+   PlayerMessage(Player, "=================================================================================", 15) 
+   PlayerMessage(Player, "   ", 14) 
+   PlayerMessage(Player, "=================================================================================", 15)    
+End If
+
+
+If GetPlayerLevel(Player) = 9 Then 'Check if player level is 9
+   PlayerMessage(Player, "=================================================================================", 15) 
+   PlayerMessage(Player, "   ", 14) 
+   PlayerMessage(Player, "=================================================================================", 15)    
+End If  
+ 
+END FUNCTION

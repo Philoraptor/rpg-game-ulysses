@@ -1,0 +1,73 @@
+//script = Command
+//add these lines
+
+Case "HouseBoot"
+	RunScript2("HouseBoot", Player, Target)
+
+Case "HouseGuards"
+	RunScript2("HouseGuards", Player, Target)
+
+
+//script = HouseBoot
+Sub Main(Player as Long, Target as Long)
+Dim User as Long, Map as Long, BootMap as Long, BootX as Long, BootY as Long
+
+User = GetPlayerUser(Player)
+Map = GetPlayerMap(Target)
+
+Select Case User
+	Case "Fankadore"
+		If Map <> 1988 & Map <> 1989 & Map <> 1990 Then Goto Fail
+		BootMap = 500
+		BootX = 5
+		BootY = 10
+	Case "Dante"
+		If Map <> 567 & Map <> 129 Then Goto Fail
+		BootMap = 500
+		BootX = 5
+		BootY = 10
+	Case "remote"
+		If Map <> 2000 & Map <> 666 Then Goto Fail
+		BootMap = 1
+		BootX = 5
+		BootY = 5
+	Case Else
+		Fail:
+		PlayerMessage(Player, "You do not have permission to boot from that house.", DarkGrey)
+		Exit Sub
+End Select
+
+PlayerWarp(Target, BootMap, BootX, BootY)
+PlayerMessage(Player, "You have booted " + GetPlayerName(Target) + " from the house!", White)
+PlayerMessage(Target, GetPlayerName(Player) + " has booted you from the house!", White)
+
+End Sub
+
+//script = HouseGuards
+Sub Main(Player as Long, Target as Long)
+Dim User as Long, Map as Long, Monster as Long
+
+User = GetPlayerUser(Player)
+Map = GetPlayerMap(Target)
+
+Select Case User
+	Case "Fankadore"
+		If Map <> 1988 & Map <> 1989 & Map <> 1990 Then Goto Fail
+	Case "Dante"
+		If Map <> 567 & Map <> 129 & Map <> 1988 & Map <> 1989 & Map <> 1990 Then Goto Fail
+	Case "remote"
+		If Map <> 2000 & Map <> 666 Then Goto Fail
+	Case Else
+		Fail:
+		PlayerMessage(Player, "You do not have permission to set guards from that house.", DarkGrey)
+		Exit Sub
+End Select
+
+For Monster = 0 To 19
+	SetMonsterTarget(Map, Monster, Target)
+Next Monster
+
+PlayerMessage(Player, "You have set the house guards on " + GetPlayerName(Target) + "!", White)
+PlayerMessage(Target, GetPlayerName(Player) + " has set the house guards on you!", White)
+
+End Sub
