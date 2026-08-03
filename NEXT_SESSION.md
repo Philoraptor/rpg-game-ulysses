@@ -5,6 +5,21 @@
 **Last Session**: 2025-10-18
 **Prepared By**: Claude (Session 2)
 
+> **FIX (2026-08-03 review):** This whole guide is one session stale — Phase 2 was
+> **completed** later the same day it was "ready to start" (see `docs/phase-2.md` and
+> commit df010f4c), so Options A/B/C below are resolved. The 2026-08 session begins the
+> playable vertical slice (Phase 3 re-scope): Necromancer, town + well quest, offline
+> server, spell book. See `docs/master.md` review annotations for the current direction.
+>
+> **SESSION 3 RESULT (2026-08-03):** The slice SHIPPED — `npm install && npm run
+> dev:client` (or `npx vite` in `packages/game-client/`) boots a playable game at
+> http://localhost:8080. Well Quest completable end-to-end; spell book on B; save in
+> localStorage. Read `docs/spellbook.md` + the Phase 3 SHIPPED note in `docs/master.md`.
+> **Next session candidates:** attune a locked grimoire page (Bone Armor wants the
+> equipment system; Last Rites wants the death-trigger hook) · third/fourth world screen
+> using the junction archetypes (`+`, `T`, `||`, `=`) · rat respawns + XP/levels · sound
+> (PlayCustomWav ports) · monster casters to justify Sepulchral Hush.
+
 ---
 
 ## Quick Status Check

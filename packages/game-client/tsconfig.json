@@ -14,9 +14,10 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
+      "@shared/*": ["../shared/src/*"],
       "@assets/*": ["../../assets/game/*"]
     }
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "../shared/src/**/*"],
   "exclude": ["node_modules", "dist"]
 }

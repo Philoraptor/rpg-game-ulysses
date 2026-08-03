@@ -2,11 +2,12 @@
  * Game Configuration
  *
  * @module game-client/config/game
- * @fileoverview Phaser 3 game configuration
+ * @fileoverview Phaser 3 game configuration.
  */
 
 import Phaser from 'phaser';
-import { AssetTestScene } from '../scenes/AssetTestScene';
+import { BootScene } from '../scenes/BootScene';
+import { GameScene } from '../scenes/GameScene';
 
 export const gameConfig: Phaser.Types.Core.GameConfig = {
   type: Phaser.AUTO,
@@ -17,20 +18,11 @@ export const gameConfig: Phaser.Types.Core.GameConfig = {
   pixelArt: true,
   antialias: false,
   roundPixels: true,
-  physics: {
-    default: 'arcade',
-    arcade: {
-      gravity: { x: 0, y: 0 },
-      debug: false,
-    },
-  },
-  scene: [AssetTestScene],
+  scene: [BootScene, GameScene],
   fps: {
     target: 60,
-    forceSetTimeOut: true,
   },
   scale: {
-    mode: Phaser.Scale.FIT,
-    autoCenter: Phaser.Scale.CENTER_BOTH,
+    mode: Phaser.Scale.NONE,
   },
 };

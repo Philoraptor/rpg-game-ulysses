@@ -12,6 +12,11 @@ A modern 2D top-down RPG game built with TypeScript, HTML5 Canvas/Phaser 3, and 
 - **World Size**: 256×256 screens (65,536 total screens)
 - **Architecture**: 8-layer modular system
 - **Technology**: TypeScript + Phaser 3 + Node.js + Fastify + PostgreSQL + Redis
+
+> **TODO (2026-08-03 review):** Fastify/PostgreSQL/Redis are deferred — the game now runs
+> with a **built-in offline server** (in-page authoritative simulation, no install
+> prerequisites beyond Node + npm). Prerequisites below should drop PostgreSQL/Redis
+> until multiplayer work actually starts.
 - **Framework Integration**: Leverages [stdLibSchema](./stdLibSchema/) for code generation, testing, and workflows
 
 ---

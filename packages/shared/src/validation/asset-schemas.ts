@@ -145,19 +145,19 @@ export const AssetManifestSchema = z.object({
 
   // Atlas collection
   atlases: z
-    .record(AtlasMetadataSchema)
+    .record(z.string(), AtlasMetadataSchema)
     .describe('Map of atlas name to metadata'),
 
   // Animation definitions
   animations: z
-    .record(AnimationSchema)
+    .record(z.string(), AnimationSchema)
     .optional()
     .default({})
     .describe('Map of animation name to definition'),
 
   // Tile properties
   tileProperties: z
-    .record(TilePropertiesSchema)
+    .record(z.string(), TilePropertiesSchema)
     .optional()
     .default({})
     .describe('Map of tile ID to properties'),
