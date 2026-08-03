@@ -5,6 +5,12 @@
 **Last Session**: 2025-10-18
 **Prepared By**: Claude (Session 2)
 
+> **FIX (2026-08-03 review):** This whole guide is one session stale — Phase 2 was
+> **completed** later the same day it was "ready to start" (see `docs/phase-2.md` and
+> commit df010f4c), so Options A/B/C below are resolved. The 2026-08 session begins the
+> playable vertical slice (Phase 3 re-scope): Necromancer, town + well quest, offline
+> server, spell book. See `docs/master.md` review annotations for the current direction.
+
 ---
 
 ## Quick Status Check

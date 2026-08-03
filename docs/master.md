@@ -4,6 +4,10 @@
 **Initialization**: 2025-10-16 - "Ulysses Stranded on the Beach"
 **Status**: ✅ Phase 1 Complete | 🟢 Phase 2 Starting
 
+> **FIX (2026-08-03 review):** Status line is stale. Phase 2 completed 2025-10-18 (see
+> `docs/phase-2.md`: 31/31 conversions, 4 atlases, browser-verified 60 FPS). Phase 3
+> (playable client) is the live phase as of the 2026-08 session.
+
 ---
 
 ## Executive Summary
@@ -39,6 +43,12 @@ This document outlines the complete vision and roadmap for developing a modern 2
 ## Vision & Goals
 
 ### The Vision
+
+> **TODO (2026-08-03 review):** Descope "MMORPG" for now. Two sessions in ten months is a
+> solo-hobby cadence; an authoritative networked server, PostgreSQL, Redis, JWT auth, and
+> 50-200 concurrent players are all downstream of a game that is fun for one player. Pivot:
+> **offline-first** — run the authoritative simulation as a built-in local server behind a
+> transport interface, so multiplayer remains a swap-in, not a rewrite. See Phase 6 note.
 
 Create a **modern, web-based 2D top-down MMORPG** that combines:
 - **Retro Aesthetic**: Preserve the charm of classic pixel-art RPGs
@@ -196,6 +206,12 @@ Cache:       Redis integration for performance
 | **Database** | PostgreSQL | 16 | Persistent data |
 | **Cache** | Redis | 7 | Session, leaderboards |
 | **ORM** | Drizzle | Latest | Type-safe queries |
+
+> **TODO (2026-08-03 review):** Rows 5-8 (Fastify/PostgreSQL/Redis/Drizzle) are deferred —
+> the client now ships a **built-in offline server** (`LocalGameServer`, in-page,
+> authoritative) and persistence is `localStorage`/IndexedDB until multiplayer is real.
+> Zustand is also unnecessary: game state lives server-side (local server), and the thin
+> client UI doesn't need a second store.
 | **Testing** | Jest + Playwright | Via stdLibSchema | Unit + E2E tests |
 | **State (Client)** | Zustand | 4.x | Lightweight state |
 | **WebSocket** | ws | 8.x | Real-time communication |
@@ -282,6 +298,12 @@ Cache:       Redis integration for performance
 
 ### Jujutsu (jj) Repository
 
+> **FIX (2026-08-03 review):** In practice, sessions since October run in remote
+> environments (Claude Code cloud, GitHub-integrated) where only plain `git` is available;
+> every commit since Phase 2 has been authored with git. Keep jj as a local-machine option,
+> but the documented workflow of record should be git, or contributors will follow commands
+> that don't exist in their environment.
+
 **Chosen VCS**: Jujutsu with Git backend
 - **Local**: Use `jj` commands for development
 - **Remote**: GitHub at https://github.com/Philoraptor/rpg-game-ulysses
@@ -363,6 +385,15 @@ jj rebase -d main      # Integrate changes
 
 **Duration**: Week 2-4 (~14 working days)
 **Status**: 🔄 In Progress (Task 1 Complete ✅)
+
+> **FIX (2026-08-03 review):** Phase 2 is ✅ **COMPLETE** (2025-10-18, ~5 hours — not 14
+> days). The checklist at the end of this phase was never ticked, and the "⏳" objectives
+> above are all done: 169,022 tiles extracted, 4 atlases in `assets/game/atlases/`,
+> manifest + Zod validation + QA report shipped. See `docs/phase-2.md` for final numbers.
+> Two estimate corrections for future planning: the file count was **31**, not 33, and
+> Sharp could not read Windows 3.x BMPs — the working converter is **bmp-js + pngjs**
+> (`packages/asset-pipeline/convert-all.js`), so the Sharp-based code blocks below are
+> historical reference, not the implementation.
 
 **High-Level Objectives**:
 - ✅ Convert 31 .rsc (BMP) files (~68MB) to optimized PNG format → **24.16 MB (64.6% compression)**
@@ -1747,6 +1778,13 @@ When all checkboxes are complete, Phase 2 is officially done and Phase 3 (Core G
 **Duration**: Week 4-8
 **Status**: ⏳ Pending
 
+> **TODO (2026-08-03 review):** Phase 3 re-scoped as a **playable vertical slice** rather
+> than engine-only: town screen + well dungeon, Necromancer player class, wandering NPCs
+> with ambient chatter, the Well Quest (giant mutated rats), real-time cooldown combat,
+> partner companion reward (Mage/Knight/Barbarian), and the Spell Book (see Phase 7 note —
+> the spell system was missing from this plan entirely). Engine layers 1-6 get built *in
+> service of* the slice instead of speculatively. Started 2026-08-03 on this branch.
+
 **Objectives**:
 - Set up Phaser 3 game client
 - Implement 8-layer architecture
@@ -1911,6 +1949,12 @@ When all checkboxes are complete, Phase 2 is officially done and Phase 3 (Core G
 **Duration**: Week 12-18
 **Status**: ⏳ Pending
 
+> **TODO (2026-08-03 review):** Six weeks of custom editor before any shipped gameplay is
+> the plan's biggest sequencing risk. Screens are plain JSON (see Phase 4 format) —
+> hand-author or generate them for now, and evaluate **Tiled** (mature, free, exports
+> JSON) before committing to a bespoke editor. Build custom only if Tiled's model truly
+> can't express the event/flag layers.
+
 **Objectives**:
 - Web-based map editor
 - Tile palette selection
@@ -1977,6 +2021,13 @@ When all checkboxes are complete, Phase 2 is officially done and Phase 3 (Core G
 
 **Duration**: Week 18-24
 **Status**: ⏳ Pending
+
+> **TODO (2026-08-03 review):** Superseded initially by the **built-in offline server**:
+> `LocalGameServer` runs the authoritative simulation (movement validation, NPC AI, combat,
+> quests, flags) in-page, exchanging the same `ClientMessage`/`ServerMessage` protocol over
+> an in-memory `Transport`. When multiplayer becomes a priority, this phase's Fastify + WS
+> stack implements the *same* Transport interface — client code unchanged. Do not build
+> auth/PostgreSQL/Redis before there is a second player to synchronize.
 
 **Objectives**:
 - Node.js + Fastify server
@@ -2145,6 +2196,16 @@ When all checkboxes are complete, Phase 2 is officially done and Phase 3 (Core G
    - Damage calculation
    - Experience/leveling
 
+   > **FIX (2026-08-03 review):** The plan has abilities/cooldowns but **no spell system
+   > at all** — no spell book, no spell learning, no per-class spell lists, no animation
+   > definitions — despite the legacy scripts being full of spells (Hellfire, Nova,
+   > Waterpillar, cure/cure2, godspell; Mage/Darkmage class gating; "You must learn this
+   > spell first!" learning flags; Effects.rsc animation frames). **Added 2026-08:** a
+   > Spell Book system — spells organized by school and tier, each entry carrying a
+   > natural-language description of its animation script, per-class grimoires
+   > (Necromancer for the player; Mage/Knight/Barbarian kits for partner companions).
+   > Data lives in `packages/shared/src/data/spellbook.ts`; design doc `docs/spellbook.md`.
+
 5. **Inventory & Items**
    - Draggable inventory UI
    - Equipment slots (weapon, shield, armor, helm, ring)
@@ -2249,6 +2310,13 @@ When all checkboxes are complete, Phase 2 is officially done and Phase 3 (Core G
 ## Detailed Roadmap
 
 ### Timeline Overview (6-10 Months)
+
+> **FIX (2026-08-03 review):** Calibrate to reality: Phases 1-2 took 2 sessions over 3
+> days in Oct 2025, then the project slept ~9.5 months. Week-numbered milestones are
+> fiction at this cadence. Re-plan in **session-sized vertical slices** (each session ends
+> with something playable and a committed handoff), not calendar weeks. The 65,536-screen
+> world should likewise be a **sparse registry** (screens exist only when authored) —
+> Q5/Q7 already point this way; make it the recorded decision.
 
 ```
 Month 1-2:   Phase 1-2  (Foundation + Asset Pipeline)

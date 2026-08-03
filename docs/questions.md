@@ -42,6 +42,11 @@
 
 **Recommendation**: Start with classic class-based system (proven model from legacy scripts).
 
+> **FIX (2026-08-03 review):** Q2 is now ANSWERED by user direction: **class-based**.
+> Player class: **Necromancer**. Companion classes: **Mage, Knight, Barbarian** (earned
+> via the Well Quest). Legacy scripts corroborate (Mage/Darkmage gated spells). Move this
+> to answers.md on next doc pass.
+
 ---
 
 **Q3: Is permadeath a feature?**
@@ -149,6 +154,11 @@
 **Legacy system**: VB scripts suggest server-authoritative model (server-side scripting).
 
 **Recommendation**: Authoritative server using Node.js + TypeScript (matches stdLibSchema stack).
+
+> **FIX (2026-08-03 review):** Q11 ANSWERED with a refinement: authoritative simulation,
+> but hosted **in-page as a built-in offline server** (`LocalGameServer` behind a
+> `Transport` interface). Client-server discipline is preserved from day one; the network
+> hop is added later without touching game logic.
 
 ---
 
