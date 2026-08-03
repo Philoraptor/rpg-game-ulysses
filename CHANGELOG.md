@@ -312,6 +312,40 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.3.0] - 2026-08-03 (Session 3: The Well Quest — playable vertical slice)
+
+### Added
+- **Built-in offline server**: `LocalGameServer` runs the authoritative simulation
+  in-page behind the shared `ClientMessage`/`ServerMessage` protocol and a `Transport`
+  seam (`packages/shared/src/protocol/messages.ts`); Phase 6 swaps the transport, not
+  the logic
+- **The Spell Book** (`packages/shared/src/data/spellbook.ts` + `docs/spellbook.md`):
+  15 spells derived from the legacy scripts, organized by grimoire/school/tier, each
+  with a natural-language animation script and provenance; in-game overlay on B
+- **Playable slice**: 3 screens (town / well depths / strand), Necromancer player,
+  6 ambient-chatter NPCs, Well Quest vs 5 Giant Mutated Rats + Rat Matriarch,
+  partner reward (Mage/Knight/Barbarian) with companion combat AI, wraith summon,
+  localStorage save/restore, legacy 16-color message log, HUD with cooldown sweeps
+- **World mechanics** (locked with the user this session): tall-decor layering
+  (walk behind buildings), step-on warp tiles (well mouth, rope platform), edge-slide
+  screen transitions via `NEIGHBORS` graph with junction archetypes (+/T/||/=),
+  companions pass-through for their owner
+- **Colorkey pipeline step**: `packages/asset-pipeline/colorkey-alpha.cjs` converts
+  the legacy pure-black transparency key to real alpha (`.alpha.png` siblings)
+
+### Changed
+- `game-client` rebuilt from the AssetTestScene stub into BootScene/GameScene +
+  DOM HUD (`src/ui/GameUI.ts`); vite/tsconfig gained the `@shared` alias
+- Phase 0 review annotations (TODO/FIX) added across master.md, README,
+  NEXT_SESSION, questions.md; zod v4 API fix in shared asset-schemas
+
+### Verified
+- `tsc --noEmit` clean; `vite build` clean; Playwright bot completes the full quest
+  loop end-to-end (brief -> descend -> clear den -> partner -> edge-slide) with zero
+  console errors
+
+---
+
 ## Future Changelog Entries (Template)
 
 ### [0.2.0] - TBD (Phase 2 Complete)
@@ -350,4 +384,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 **Project Code**: ULYSSES (Unified Layer System for Screen-Editable Scenarios)
 **Repository**: https://github.com/Philoraptor/rpg-game-ulysses
 **Started**: 2025-10-16
-**Status**: Phase 1 Complete, Phase 2 Ready
+**Status**: Phase 3 vertical slice playable (2026-08-03)

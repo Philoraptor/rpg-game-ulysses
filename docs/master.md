@@ -1784,6 +1784,26 @@ When all checkboxes are complete, Phase 2 is officially done and Phase 3 (Core G
 > partner companion reward (Mage/Knight/Barbarian), and the Spell Book (see Phase 7 note —
 > the spell system was missing from this plan entirely). Engine layers 1-6 get built *in
 > service of* the slice instead of speculatively. Started 2026-08-03 on this branch.
+>
+> **SHIPPED (2026-08-03, same session):** The slice is playable end-to-end and
+> browser-verified (Playwright bot completes the full quest loop; production build clean).
+> Three screens (Haven-by-the-Sea, The Well Depths, The Strand), 6 chattering NPCs, 5
+> castable Necromancer spells + wraith summon, 5 giant mutated rats + Rat Matriarch,
+> partner choice + companion AI, save/restore via localStorage. Design decisions locked
+> in-session with the user:
+> - **Layering**: ground → flat decor → entities (row-depth) → tall decor (roofs, tree
+>   crowns, well rim) drawn above entities on rows north of them, so characters walk
+>   visually behind buildings. Buildings are multi-tile pieces (roof rows walkable,
+>   wall rows collide).
+> - **Warp tiles**: single step-on tiles (the well mouth starts the Well Quest descent;
+>   the rope platform returns). Warp arrival points sit OFF the return warp's axis —
+>   a held movement key must never ping-pong two warps.
+> - **Edge slides**: walking off an open border cell continues to the neighboring screen
+>   at the opposite edge (`NEIGHBORS` graph). A fully obstructed side means no neighbor
+>   is programmed — the obstruction is the visual promise. World screens should be
+>   authored in junction archetypes: `+` crossroads, `T`, `||` corridors, `=`, dead-ends.
+>   (Town is a T today: south edge + the well going down. The Strand is a dead-end.)
+> - **Companions never body-block their owner** (player passes through partner/summon).
 
 **Objectives**:
 - Set up Phaser 3 game client

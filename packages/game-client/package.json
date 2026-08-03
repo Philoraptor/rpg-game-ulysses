@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "predev": "node ../asset-pipeline/prepare-runtime-assets.cjs",
     "dev": "vite",
+    "prebuild": "node ../asset-pipeline/prepare-runtime-assets.cjs",
     "build": "vite build",
     "preview": "vite preview"
   },
